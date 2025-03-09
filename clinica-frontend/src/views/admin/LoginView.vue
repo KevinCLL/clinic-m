@@ -22,6 +22,7 @@
               required
               class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm"
               placeholder="Usuario"
+              autocomplete="username"
             />
           </div>
           <div>
@@ -34,12 +35,19 @@
               required
               class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm"
               placeholder="Contraseña"
+              autocomplete="current-password"
             />
           </div>
         </div>
 
         <div v-if="error" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
           <span class="block sm:inline">{{ error }}</span>
+        </div>
+
+        <div class="text-sm text-center mb-4">
+          <p class="text-gray-600">
+            Credenciales por defecto: admin / admin123
+          </p>
         </div>
 
         <div>

@@ -79,6 +79,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import clinicInfoService from '../../services/clinicInfoService'
 
 const route = useRoute()
 const seccion = computed(() => route.params.seccion)
@@ -88,41 +89,12 @@ const mensajeExito = ref('')
 const mensajeError = ref('')
 const guardando = ref(false)
 
-// Datos de las secciones (simulados para testing)
-const secciones = {
-  inicio: {
-    id: 'inicio',
-    nombre: 'Página de Inicio',
-    titulo: 'Bienvenido a Clínica Salud',
-    contenido: 'Somos una clínica comprometida con tu salud y bienestar...',
-    publicado: true
-  },
-  servicios: {
-    id: 'servicios',
-    nombre: 'Nuestros Servicios',
-    titulo: 'Servicios que ofrecemos',
-    contenido: 'En Clínica Salud ofrecemos una amplia gama de servicios médicos...',
-    publicado: true
-  },
-  contacto: {
-    id: 'contacto',
-    nombre: 'Información de Contacto',
-    titulo: 'Contacta con nosotros',
-    contenido: 'Puedes encontrarnos en la siguiente dirección...',
-    publicado: true
-  },
-  nosotros: {
-    id: 'nosotros',
-    nombre: 'Sobre Nosotros',
-    titulo: 'Nuestra Historia',
-    contenido: 'Clínica Salud fue fundada en el año 2010 con el objetivo de...',
-    publicado: true
-  }
-}
+// Estado para secciones (ahora se cargan del backend)
+const secciones = ref({})
 
 // Datos de la sección actual
 const seccionData = computed(() => {
-  return secciones[seccion.value] || {
+  return secciones.value[seccion.value] || {
     id: 'desconocido',
     nombre: 'Sección Desconocida',
     titulo: '',
@@ -139,44 +111,102 @@ const formData = ref({
 })
 
 // Cargar datos iniciales
-onMounted(() => {
-  reiniciarForm()
-})
+onMounted(async () => {
+  try {
+    guardando.value = true;
+
+    // Cargar todas las secciones disponibles
+    const response = await clinicInfoService.getAllSections(true);
+    console.log('Respuesta secciones:', response);
+
+    if (response && response.data) {
+      // Convertir el array de secciones a un objeto para fácil acceso
+      response.data.forEach(section => {
+        secciones.value[section.sectionId] = {
+          id: section.sectionId,
+          nombre: section.sectionName,
+          titulo: section.title,
+          contenido: section.content,
+          publicado: section.published
+        };
+      });
+
+      console.log('Secciones cargadas:', secciones.value);
+    }
+
+    reiniciarForm();
+  } catch (error) {
+    console.error('Error al cargar las secciones:', error);
+    mensajeError.value = 'No se pudieron cargar los datos. Por favor, intenta de nuevo más tarde.';
+  } finally {
+    guardando.value = false;
+  }
+});
 
 // Reiniciar formulario con los datos originales
 const reiniciarForm = () => {
-  formData.value = {
-    titulo: seccionData.value.titulo,
-    contenido: seccionData.value.contenido,
-    publicado: seccionData.value.publicado
+  if (seccionData.value) {
+    formData.value = {
+      titulo: seccionData.value.titulo,
+      contenido: seccionData.value.contenido,
+      publicado: seccionData.value.publicado
+    };
+    console.log('Formulario reiniciado con:', formData.value);
+  } else {
+    formData.value = {
+      titulo: '',
+      contenido: '',
+      publicado: true
+    };
+    console.log('Formulario reiniciado con valores vacíos');
   }
-  mensajeExito.value = ''
-  mensajeError.value = ''
-}
+  mensajeExito.value = '';
+  mensajeError.value = '';
+};
 
-// Simular guardar cambios
-const guardarCambios = () => {
-  guardando.value = true
-  mensajeExito.value = ''
-  mensajeError.value = ''
+// Guardar cambios en el backend
+const guardarCambios = async () => {
+  guardando.value = true;
+  mensajeExito.value = '';
+  mensajeError.value = '';
 
-  // Simulación de una petición al backend
-  setTimeout(() => {
-    try {
-      // Actualizamos los datos de la sección (en un caso real esto se enviaría al backend)
-      secciones[seccion.value] = {
-        ...seccionData.value,
+  try {
+    console.log('Enviando actualización para sección:', seccion.value);
+    console.log('Datos a enviar:', formData.value);
+
+    // Preparar datos para enviar al backend
+    const sectionData = {
+      title: formData.value.titulo,
+      content: formData.value.contenido,
+      published: formData.value.publicado
+    };
+
+    console.log('Datos formateados para API:', sectionData);
+
+    // Enviar los datos al backend
+    const response = await clinicInfoService.updateSection(seccion.value, sectionData);
+    console.log('Respuesta del servidor:', response);
+
+    // Actualizar los datos locales
+    if (secciones.value[seccion.value]) {
+      secciones.value[seccion.value] = {
+        ...secciones.value[seccion.value],
         titulo: formData.value.titulo,
         contenido: formData.value.contenido,
         publicado: formData.value.publicado
-      }
-
-      mensajeExito.value = '¡Los cambios se han guardado correctamente!'
-    } catch (error) {
-      mensajeError.value = 'Hubo un error al guardar los cambios. Inténtalo de nuevo.'
-    } finally {
-      guardando.value = false
+      };
     }
-  }, 1000)
-}
+
+    mensajeExito.value = '¡Los cambios se han guardado correctamente!';
+  } catch (error) {
+    console.error('Error al guardar cambios:', error);
+    if (error.response) {
+      console.error('Respuesta de error:', error.response.data);
+      console.error('Estado HTTP:', error.response.status);
+    }
+    mensajeError.value = error.response?.data?.message || 'Hubo un error al guardar los cambios. Inténtalo de nuevo.';
+  } finally {
+    guardando.value = false;
+  }
+};
 </script>
