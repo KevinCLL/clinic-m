@@ -26,6 +26,7 @@ const corsOptions = {
         'https://tu-app.github.io'        // Si usas GitHub Pages
       ]
     : [
+        'http://localhost:7777',
         'http://localhost:3000', 
         'http://localhost:5173',
         'http://localhost:5174',

@@ -1,21 +1,14 @@
 <template>
-  <component :is="layoutComponent" />
+  <router-view />
 </template>
 
-<script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-import MainLayout from '@/layouts/MainLayout.vue'
-
-const layouts = {
-  MainLayout
+/* Estilos globales */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
 }
-
-const route = useRoute()
-
-const layoutComponent = computed(() => {
-  const layoutName = route.meta.layout
-  return layouts[layoutName] || layouts.MainLayout
-})
-</script>
+</style>

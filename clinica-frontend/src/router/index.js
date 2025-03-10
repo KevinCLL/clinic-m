@@ -16,7 +16,6 @@ import EditarContenido from '../views/admin/EditarContenido.vue'
 
 // Route configuration
 const routes = [
-  // Public routes with MainLayout
   {
     path: '/',
     component: MainLayout,
@@ -24,8 +23,32 @@ const routes = [
       {
         path: '',
         name: 'home',
-        component: HomeView,
-        meta: { requiresAuth: false }
+        component: HomeView
+      },
+      {
+        path: 'quienes-somos',
+        name: 'quienes-somos',
+        component: () => import('@/views/public/QuienesSomos.vue')
+      },
+      {
+        path: 'especialidades',
+        name: 'especialidades',
+        component: () => import('@/views/public/Especialidades.vue')
+      },
+      {
+        path: 'servicios',
+        name: 'servicios',
+        component: () => import('@/views/public/Servicios.vue')
+      },
+      {
+        path: 'nuestro-espacio',
+        name: 'nuestro-espacio',
+        component: () => import('@/views/public/NuestroEspacio.vue')
+      },
+      {
+        path: 'contacto',
+        name: 'contacto',
+        component: () => import('@/views/public/Contacto.vue')
       }
     ]
   },
