@@ -22,7 +22,7 @@ const props = defineProps({
   },
   variant: {
     type: String,
-    default: 'primary' // primary, secondary, outline
+    default: 'teal' // teal, secondary, outline-teal, outline-secondary
   }
 });
 
@@ -33,21 +33,30 @@ const isRouterLink = computed(() => props.to && !isLink.value);
 
 const buttonClasses = computed(() => {
   const classes = [
-    'inline-block px-6 py-2 rounded-full font-medium transition-colors duration-200 text-center'
+    'inline-block px-6 py-2 rounded-lg font-medium transition-all duration-300 text-center'
   ];
 
   switch (props.variant) {
-    case 'primary':
-      classes.push('bg-coral-500 text-white hover:bg-coral-600');
+    case 'teal':
+      classes.push('bg-teal-600 text-white hover:bg-teal-700 hover:shadow-teal-sm');
       break;
     case 'secondary':
-      classes.push('bg-blue-900 text-white hover:bg-blue-800');
+      classes.push('bg-blue-800 text-white hover:bg-blue-700 hover:shadow-blue-sm');
       break;
-    case 'outline':
-      classes.push('border border-coral-500 text-coral-500 hover:bg-coral-50');
+    case 'outline-teal':
+      classes.push('border border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 hover:border-teal-700');
+      break;
+    case 'outline-secondary':
+      classes.push('border border-blue-800 text-blue-800 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-700');
+      break;
+    case 'primary': // Para compatibilidad con código existente
+      classes.push('bg-teal-600 text-white hover:bg-teal-700 hover:shadow-teal-sm');
+      break;
+    case 'outline': // Para compatibilidad con código existente
+      classes.push('border border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 hover:border-teal-700');
       break;
     default:
-      classes.push('bg-coral-500 text-white hover:bg-coral-600');
+      classes.push('bg-teal-600 text-white hover:bg-teal-700 hover:shadow-teal-sm');
   }
 
   return classes.join(' ');
@@ -55,22 +64,44 @@ const buttonClasses = computed(() => {
 </script>
 
 <style scoped>
-.bg-coral-500 {
-  background-color: #ff8c7a;
+/* Colores de ASATI */
+.text-teal-600 {
+  color: #009B8F;
 }
-.bg-coral-600 {
-  background-color: #ff7c6a;
+.text-teal-700 {
+  color: #00877C;
 }
-.hover\:bg-coral-600:hover {
-  background-color: #ff7c6a;
+.border-teal-600 {
+  border-color: #009B8F;
 }
-.text-coral-500 {
-  color: #ff8c7a;
+.border-teal-700 {
+  border-color: #00877C;
 }
-.border-coral-500 {
-  border-color: #ff8c7a;
+.bg-teal-50 {
+  background-color: #E6F7F5;
 }
-.hover\:bg-coral-50:hover {
-  background-color: #fff3f1;
+.bg-teal-600 {
+  background-color: #009B8F;
+}
+.bg-teal-700 {
+  background-color: #00877C;
+}
+.hover\:bg-teal-50:hover {
+  background-color: #E6F7F5;
+}
+.hover\:bg-teal-700:hover {
+  background-color: #00877C;
+}
+.hover\:text-teal-700:hover {
+  color: #00877C;
+}
+.hover\:border-teal-700:hover {
+  border-color: #00877C;
+}
+.hover\:shadow-teal-sm:hover {
+  box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
+}
+.hover\:shadow-blue-sm:hover {
+  box-shadow: 0 4px 8px -1px rgba(30, 64, 175, 0.25);
 }
 </style>
