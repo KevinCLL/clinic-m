@@ -1,84 +1,102 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="py-16 md:py-24 bg-gray-100">
+    <section class="py-16 md:py-20 bg-gray-100">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
+        <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Atención Integral a la Salud Mental</h1>
           <p class="text-gray-700 mb-8 leading-relaxed">
-            Entendemos que la salud mental y física están intrínsecamente relacionadas y deben
-            ser abordadas de manera integral y multidisciplinar. Nos dedicamos a ofrecer
-            tratamientos especializados respaldados por la evidencia científica, proporcionando
-            atención tanto a niños y adolescentes como a adultos.
+            La salud mental es un estado de bienestar mental que permite a las personas hacer frente a los momentos de estrés de la vida,
+            desarrollar todas sus habilidades, poder aprender y trabajar adecuadamente y contribuir a la mejora de su comunidad.
+            Es parte fundamental de la salud y el bienestar que sustenta nuestras capacidades individuales y colectivas para tomar decisiones,
+            establecer relaciones y dar forma al mundo en el que vivimos.
           </p>
-          <Button to="/servicios" text="Ver Servicios" />
+          <p class="text-gray-700 mb-8 leading-relaxed">
+            La salud mental es, además, un derecho humano fundamental y un elemento esencial para el desarrollo personal, comunitario y socioeconómico.
+            Es más que la mera ausencia de trastornos mentales. Se da en un proceso complejo, que cada persona experimenta de una manera diferente,
+            con diversos grados de dificultad y angustia y resultados sociales y clínicos que pueden ser muy diferentes.
+          </p>
+          <Button to="/servicios" text="Ver Servicios" variant="primary" class="text-lg" />
         </div>
       </div>
     </section>
 
-    <!-- Slider Section "Dónde ponemos el foco" -->
-    <section class="py-16 bg-gray-800 text-white">
+    <!-- Servicios Destacados Section -->
+    <section class="py-16 md:py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Dónde ponemos el foco</h2>
+        <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Nuestros Servicios</h2>
 
-        <Slider :slides="focusSlides">
-          <template #default="{ slide }">
-            <div class="text-center px-4 md:px-16">
-              <h3 class="text-xl font-semibold mb-4">{{ slide.title }}</h3>
-              <p class="italic text-gray-200">{{ slide.content }}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Servicio 1: Psicoterapia -->
+          <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+            <div class="h-60 overflow-hidden">
+              <img src="@/assets/images/placeholder.jpg" alt="Psicoterapia" class="w-full h-full object-cover">
             </div>
-          </template>
-        </Slider>
-      </div>
-    </section>
-
-    <!-- Sobre Nosotras Section -->
-    <section class="py-16">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row gap-8 items-center">
-          <div class="md:w-1/2">
-            <img src="@/assets/images/team-meeting.jpg" alt="Equipo de profesionales" class="rounded-lg shadow-lg w-full h-auto" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-blue-900 mb-2">Psicoterapia</h3>
+              <p class="text-gray-700 mb-4">Acompañamiento terapéutico personalizado para ayudarte a desarrollar herramientas de afrontamiento y mejorar tu bienestar.</p>
+              <Button to="/servicios#psicoterapia" text="Más información" variant="outline" />
+            </div>
           </div>
-          <div class="md:w-1/2">
-            <div class="text-sm uppercase tracking-wide text-blue-800 font-semibold mb-2">SOBRE NOSOTRAS</div>
-            <h2 class="text-3xl font-bold text-blue-900 mb-4">Equipo Interdisciplinar de Profesionales</h2>
-            <p class="text-gray-700 mb-6">
-              Nuestro equipo está liderado por profesionales de la psiquiatría y la
-              psicología clínica, con una amplia experiencia en el abordaje del trauma, los
-              trastornos de personalidad y el trastorno mental grave entre otras. Adoptamos un
-              enfoque colaborativo y personalizado para cada paciente, evaluando los casos de
-              manera conjunta para poder combinar diferentes perspectivas y modelos
-              terapéuticos y hacer la derivación al profesional que más se adapte a las
-              necesidades específicas de cada persona.
-            </p>
-            <Button to="/quienes-somos" text="Leer Más" />
+
+          <!-- Servicio 2: Psiquiatría -->
+          <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+            <div class="h-60 overflow-hidden">
+              <img src="@/assets/images/placeholder.jpg" alt="Psiquiatría" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-blue-900 mb-2">Psiquiatría</h3>
+              <p class="text-gray-700 mb-4">Evaluación, diagnóstico y tratamiento farmacológico de trastornos mentales con un enfoque integral y humanista.</p>
+              <Button to="/servicios#psiquiatria" text="Más información" variant="outline" />
+            </div>
+          </div>
+
+          <!-- Servicio 3: Mindfulness -->
+          <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+            <div class="h-60 overflow-hidden">
+              <img src="@/assets/images/placeholder.jpg" alt="Mindfulness" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-blue-900 mb-2">Mindfulness</h3>
+              <p class="text-gray-700 mb-4">Aprende técnicas de atención plena para reducir el estrés, mejorar la concentración y cultivar el bienestar emocional.</p>
+              <Button to="/servicios#mindfulness" text="Más información" variant="outline" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Etapas Vitales Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 md:py-20 bg-gray-100">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-blue-900 text-center mb-12">Te acompañamos en todas las etapas de la vida</h2>
+        <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Te acompañamos en todas las etapas de la vida</h2>
 
-        <div class="flex overflow-x-auto pb-8 space-x-6 justify-center">
-          <div v-for="(stage, index) in lifeStages" :key="index" class="flex-shrink-0">
-            <div class="w-40 h-40 rounded-full overflow-hidden">
-              <img src="@/assets/images/child.jpg" :alt="stage.alt" class="w-full h-full object-cover" />
-            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
+          <div v-for="(stage, index) in lifeStages" :key="index" class="text-center">
+            <router-link :to="stage.route" class="block transition-transform hover:scale-105">
+              <div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 shadow-lg">
+                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="font-semibold text-lg text-blue-900">{{ stage.title }}</h3>
+            </router-link>
           </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <Button to="/servicios" text="Ver todos los servicios" variant="primary" />
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="py-16">
+    <section class="py-16 md:py-20 bg-white">
       <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row">
+        <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Contacto</h2>
+
+        <div class="flex flex-col md:flex-row rounded-lg overflow-hidden shadow-lg">
           <!-- Información de contacto -->
           <div class="bg-gray-800 text-white p-8 md:w-2/5">
-            <h2 class="text-2xl font-bold mb-6">Contacto</h2>
+            <h3 class="text-2xl font-bold mb-6">Información</h3>
             <div class="mb-4">
               <p class="mb-1">C/Péris y Valero 178, bajo</p>
               <p>46006 Valencia</p>
@@ -88,24 +106,24 @@
               <p>info@clinicasati.es</p>
             </div>
             <div class="flex space-x-3">
-              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center">
+              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center">
+              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center">
+              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center">
+              <a href="#" class="bg-white text-gray-800 h-8 w-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
           </div>
 
           <!-- Formulario de contacto -->
-          <div class="bg-white p-8 md:w-3/5 shadow-lg">
-            <h2 class="text-2xl font-bold text-blue-900 mb-6">Envíanos un mensaje</h2>
+          <div class="bg-gray-50 p-8 md:w-3/5">
+            <h3 class="text-2xl font-bold text-blue-900 mb-6">Envíanos un mensaje</h3>
             <form @submit.prevent="submitForm">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -166,31 +184,39 @@
 <script setup>
 import { ref } from 'vue';
 import Button from '@/components/Button.vue';
-import Slider from '@/components/Slider.vue';
-
-// Datos para el slider de "Dónde ponemos el foco"
-const focusSlides = [
-  {
-    title: "El vínculo terapéutico:",
-    content: "es el término utilizado para describir la relación entre el terapeuta y el paciente en una sesión de terapia. Se trata de una relación que se basa en la confianza, la empatía y el respeto mutuo, y que es esencial para el éxito de cualquier proceso terapéutico."
-  },
-  {
-    title: "La evidencia científica:",
-    content: "Utilizamos técnicas y métodos terapéuticos respaldados por la investigación científica, asegurando que nuestros tratamientos sean efectivos y estén a la vanguardia de la práctica clínica."
-  },
-  {
-    title: "Enfoque multidisciplinar:",
-    content: "Creemos en la importancia de abordar la salud mental desde diferentes perspectivas profesionales, integrando conocimientos de psiquiatría, psicología, neuropsicología y otras disciplinas."
-  }
-];
 
 // Datos para la sección de etapas vitales
 const lifeStages = [
-  {  alt: 'Infancia' },
-  { alt: 'Adolescencia' },
-  { alt: 'Adultos jóvenes' },
-  { alt: 'Maternidad' },
-  { alt: 'Tercera edad' }
+  {
+    title: 'Infancia',
+    alt: 'Niños jugando',
+    image: '/src/assets/images/child.jpg',
+    route: '/servicios#infancia'
+  },
+  {
+    title: 'Adolescencia',
+    alt: 'Adolescentes',
+    image: '/src/assets/images/placeholder.jpg',
+    route: '/servicios#adolescencia'
+  },
+  {
+    title: 'Adultos',
+    alt: 'Adultos',
+    image: '/src/assets/images/placeholder.jpg',
+    route: '/servicios#adultos'
+  },
+  {
+    title: 'Perinatal',
+    alt: 'Embarazo y maternidad',
+    image: '/src/assets/images/placeholder.jpg',
+    route: '/servicios#perinatal'
+  },
+  {
+    title: 'Tercera edad',
+    alt: 'Adultos mayores',
+    image: '/src/assets/images/placeholder.jpg',
+    route: '/servicios#tercera-edad'
+  }
 ];
 
 // Estado del formulario
