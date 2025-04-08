@@ -83,9 +83,8 @@ const toggleMobileMenu = () => {
 const menuItems = [
   { name: 'Inicio', path: '/' },
   { name: 'Quiénes somos', path: '/quienes-somos' },
-  { name: 'Especialidades', path: '/especialidades' },
-  { name: 'Servicios', path: '/servicios' },
   { name: 'Nuestro espacio', path: '/nuestro-espacio' },
+  { name: 'Qué ofrecemos', path: '/que-ofrecemos' },
   { name: 'Contacto', path: '/contacto' }
 ];
 </script>

@@ -31,14 +31,24 @@ const routes = [
         component: () => import('@/views/public/QuienesSomos.vue')
       },
       {
-        path: 'especialidades',
-        name: 'especialidades',
-        component: () => import('@/views/public/Especialidades.vue')
+        path: 'que-ofrecemos',
+        name: 'que-ofrecemos',
+        component: () => import('@/views/public/QueOfrecemos.vue')
       },
       {
-        path: 'servicios',
-        name: 'servicios',
-        component: () => import('@/views/public/Servicios.vue')
+        path: 'actividades',
+        name: 'actividades',
+        component: () => import('@/views/public/Actividades.vue')
+      },
+      {
+        path: 'servicios/:id',
+        name: 'servicio-detalle',
+        component: () => import('@/views/public/ServicioDetalle.vue')
+      },
+      {
+        path: 'actividades/:id',
+        name: 'actividad-detalle',
+        component: () => import('@/views/public/ActividadDetalle.vue')
       },
       {
         path: 'nuestro-espacio',
@@ -90,7 +100,16 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  // Configuración para desplazar al principio de la página en cada navegación
+  scrollBehavior(to, from, savedPosition) {
+    // Si hay una posición guardada (usando botones de navegación), usar esa posición
+    if (savedPosition) {
+      return savedPosition
+    }
+    // De lo contrario, desplazarse al principio
+    return { top: 0 }
+  }
 })
 
 // Navigation guard para proteger rutas
