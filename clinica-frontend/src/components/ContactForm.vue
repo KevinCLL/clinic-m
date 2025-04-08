@@ -3,17 +3,20 @@
     <!-- Columna izquierda: Mapa y datos de contacto -->
     <div class="lg:w-1/3 flex flex-col">
       <!-- Mapa real de OpenStreetMap -->
-      <div class="rounded-t-xl overflow-hidden">
-        <iframe
-          width="100%"
-          height="195"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.37523627281189%2C39.45782276238325%2C-0.37280082702638%2C39.45936023947621&amp;layer=mapnik&amp;marker=39.45859151155501%2C-0.3740185499191284"
-          style="border: none">
-        </iframe>
+      <div class="rounded-t-xl overflow-hidden shadow-md">
+        <div class="relative overflow-hidden shadow-inner" style="height: 195px;">
+          <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.37523627281189%2C39.45782276238325%2C-0.37280082702638%2C39.45936023947621&amp;layer=mapnik&amp;marker=39.45859151155501%2C-0.3740185499191284"
+            style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            class="filter brightness-105 contrast-95">
+          </iframe>
+        </div>
       </div>
 
       <!-- Información de contacto -->
@@ -117,12 +120,12 @@
         </div>
 
         <!-- Mensaje -->
-        <div>
+        <div class="flex-grow">
           <label for="mensaje" class="block text-sm text-gray-600 mb-1">Mensaje</label>
           <textarea
             id="mensaje"
             v-model="form.mensaje"
-            :rows="messageRows"
+            :rows="messageRows || 8"
             class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
           ></textarea>
         </div>
@@ -145,7 +148,7 @@
         <!-- Botón de envío -->
         <button
           type="submit"
-          class="w-full py-2 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-500 transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+          class="w-full py-2 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-500 transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 cursor-pointer"
         >
           Enviar
           <i v-if="showIcon" class="fas fa-paper-plane ml-2"></i>
@@ -166,7 +169,7 @@ defineProps({
   },
   messageRows: {
     type: Number,
-    default: 3
+    default: 8
   },
   showIcon: {
     type: Boolean,

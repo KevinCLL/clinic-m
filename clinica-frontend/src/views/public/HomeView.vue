@@ -123,13 +123,15 @@
         <h2 class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">Contacto</h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Estamos aquí para escucharte y acompañarte en tu proceso</p>
 
-        <ContactForm
-          title="Envíanos un mensaje"
-          :messageRows="5"
-          :showIcon="true"
-          :showPrivacidad="false"
-          @form-submitted="handleHomeFormSubmit"
-        />
+        <div class="max-w-6xl mx-auto">
+          <ContactForm
+            title="Envíanos un mensaje"
+            :messageRows="8"
+            :showIcon="true"
+            :showPrivacidad="false"
+            @form-submitted="handleHomeFormSubmit"
+          />
+        </div>
       </div>
     </section>
   </div>

@@ -43,7 +43,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center">
             <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-8 transform transition-all duration-700 hover:-translate-y-2 group">
               <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/sala_terapia.png" alt="Sala de terapia" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
               </div>
             </div>
             <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
@@ -77,7 +77,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center">
             <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-8 transform transition-all duration-700 hover:-translate-y-2 group">
               <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Sala infantil" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/espacio_infantil.png" alt="Sala infantil" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
               </div>
             </div>
             <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
@@ -94,7 +94,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 transform transition-all duration-700 hover:-translate-y-2 group">
               <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia grupal" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/terapia_grupal.png" alt="Sala de terapia grupal" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
               </div>
             </div>
             <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
@@ -111,7 +111,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center">
             <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-8 transform transition-all duration-700 hover:-translate-y-2 group">
               <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Exterior" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/exterior.png" alt="Exterior" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
               </div>
             </div>
             <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">

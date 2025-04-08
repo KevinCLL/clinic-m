@@ -21,6 +21,9 @@
       <div class="container mx-auto px-4 relative z-10 max-w-6xl">
         <ContactForm
           title="Envíanos un mensaje"
+          :messageRows="8"
+          :showIcon="true"
+          :showPrivacidad="true"
           @form-submitted="handleFormSubmit"
         />
       </div>

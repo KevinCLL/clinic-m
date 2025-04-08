@@ -1,11 +1,11 @@
 <template>
   <div class="main-layout">
-    <Contacto />
+    <router-view />
   </div>
 </template>
 
 <script setup>
-import Contacto from '@/components/Contacto.vue'
+// Ya no se necesita importar el componente Contacto eliminado
 </script>
 
 <style scoped>
