@@ -1,177 +1,127 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
     <!-- Cabecera de la página -->
-    <section class="py-16 bg-gray-100">
-      <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-bold text-center text-blue-900 mb-4">Nuestro Espacio</h1>
-        <p class="text-center text-gray-700 max-w-3xl mx-auto">
-          Diseñado para ofrecer un ambiente acogedor, tranquilo y profesional donde puedas sentirte cómodo durante tu proceso terapéutico.
+    <section class="relative py-16 md:py-24 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold text-center text-teal-800 mb-6">Nuestro Espacio</h1>
+        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+          En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan. Por eso, hemos diseñado cada espacio con sumo cuidado para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés. Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
         </p>
       </div>
     </section>
 
-    <!-- Galería de imágenes -->
-    <section class="py-16">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="@/assets/images/placeholder.jpg" alt="Recepción" class="w-full h-64 object-cover">
-          </div>
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia" class="w-full h-64 object-cover">
-          </div>
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="@/assets/images/placeholder.jpg" alt="Sala de espera" class="w-full h-64 object-cover">
-          </div>
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="@/assets/images/placeholder.jpg" alt="Sala infantil" class="w-full h-64 object-cover">
-          </div>
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia grupal" class="w-full h-64 object-cover">
-          </div>
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="@/assets/images/placeholder.jpg" alt="Exterior" class="w-full h-64 object-cover">
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Nuestras Instalaciones - Diseño alternado -->
+    <section class="py-16 md:py-24 bg-white relative">
+      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-teal-50 opacity-50"></div>
+      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-50"></div>
 
-    <!-- Descripción del espacio -->
-    <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
-          <h2 class="text-3xl font-bold text-blue-900 mb-6">Un Espacio Pensado para Tu Bienestar</h2>
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center text-teal-800 mb-16">Nuestras Instalaciones</h2>
 
-          <p class="text-gray-700 mb-6">
-            En Clínica Asati hemos diseñado cuidadosamente cada rincón para crear un ambiente que favorezca el bienestar y la comodidad. Nuestras instalaciones cuentan con:
-          </p>
-
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <div class="flex-shrink-0 h-6 w-6 text-coral-500 mr-3 mt-1">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg text-blue-900 mb-1">Consultas privadas y confortables</h3>
-                <p class="text-gray-700">
-                  Espacios acogedores e insonorizados que garantizan la privacidad y confidencialidad de las sesiones, creando un entorno propicio para la terapia.
-                </p>
+        <!-- Espacio 1: Recepción (Imagen a la izquierda) -->
+        <div class="max-w-6xl mx-auto mb-24">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 transform transition-all duration-700 hover:-translate-y-2 group">
+              <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
+                <img src="@/assets/images/recepcion.png" alt="Recepción" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
               </div>
             </div>
-
-            <div class="flex items-start">
-              <div class="flex-shrink-0 h-6 w-6 text-coral-500 mr-3 mt-1">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg text-blue-900 mb-1">Sala de espera tranquila</h3>
-                <p class="text-gray-700">
-                  Un espacio relajante donde podrás aguardar tu cita con comodidad, con acceso a bebidas calientes y agua fresca.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="flex-shrink-0 h-6 w-6 text-coral-500 mr-3 mt-1">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg text-blue-900 mb-1">Sala de terapia infantil</h3>
-                <p class="text-gray-700">
-                  Especialmente diseñada para los más pequeños, con materiales adaptados para facilitar la expresión y el trabajo terapéutico a través del juego.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="flex-shrink-0 h-6 w-6 text-coral-500 mr-3 mt-1">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg text-blue-900 mb-1">Sala para terapia grupal y talleres</h3>
-                <p class="text-gray-700">
-                  Un espacio amplio y versátil para las sesiones grupales, talleres y actividades formativas que organizamos periódicamente.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="flex-shrink-0 h-6 w-6 text-coral-500 mr-3 mt-1">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg text-blue-900 mb-1">Accesibilidad</h3>
-                <p class="text-gray-700">
-                  Nuestras instalaciones son totalmente accesibles para personas con movilidad reducida, y contamos con aseos adaptados.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="flex-shrink-0 h-6 w-6 text-coral-500 mr-3 mt-1">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg text-blue-900 mb-1">Ubicación céntrica</h3>
-                <p class="text-gray-700">
-                  Situados en C/Péris y Valero 178, bajo, en una zona bien comunicada y con facilidad para aparcar en los alrededores.
-                </p>
-              </div>
+            <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
+              <h3 class="text-2xl font-semibold text-teal-700 mb-4">Recepción</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Espacio acogedor donde te recibimos y te acompañamos desde el primer momento. Nuestro personal te atenderá con calidez, haciendo que te sientas bienvenido/a desde que cruzas nuestra puerta. Diseñado para transmitir serenidad y profesionalidad, es el primer contacto con nuestro concepto de bienestar.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Mapa y ubicación -->
-    <section class="py-16">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Cómo Llegar</h2>
-
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <!-- Aquí iría un iframe de Google Maps o similar -->
-            <div class="h-96 bg-gray-200 flex items-center justify-center">
-              <p class="text-gray-600">Mapa de ubicación (iframe de Google Maps)</p>
+        <!-- Espacio 2: Sala de Terapia (Imagen a la derecha) -->
+        <div class="max-w-6xl mx-auto mb-24">
+          <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-8 transform transition-all duration-700 hover:-translate-y-2 group">
+              <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
+                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+              </div>
             </div>
-
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-900 mb-4">Dirección y Transporte</h3>
-
-              <div class="mb-4">
-                <p class="font-semibold text-blue-900">Dirección:</p>
-                <p class="text-gray-700">C/Péris y Valero 178, bajo</p>
-                <p class="text-gray-700">46006 Valencia</p>
-              </div>
-
-              <div class="mb-4">
-                <p class="font-semibold text-blue-900">Transporte público:</p>
-                <ul class="list-disc list-inside text-gray-700 ml-4">
-                  <li>Metro: Líneas 3 y 5, estación Amistat</li>
-                  <li>Autobús: Líneas 13, 14, 15 y 99</li>
-                </ul>
-              </div>
-
-              <div>
-                <p class="font-semibold text-blue-900">Aparcamiento:</p>
-                <p class="text-gray-700">Zona de aparcamiento regulado en los alrededores. Parking público a 200 metros.</p>
-              </div>
+            <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
+              <h3 class="text-2xl font-semibold text-teal-700 mb-4">Sala de Terapia</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Nuestras salas de terapia individual están diseñadas para proporcionar un ambiente íntimo y seguro donde puedas expresarte con total libertad y confianza. Con aislamiento acústico, mobiliario confortable y una iluminación cuidadosamente seleccionada, creamos el entorno perfecto para el proceso terapéutico.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Call to action para visita virtual -->
-    <section class="py-12 bg-blue-900 text-white">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl font-bold mb-4">¿Quieres conocer mejor nuestras instalaciones?</h2>
-        <p class="mb-6 max-w-2xl mx-auto">
-          Solicita una visita previa o consulta cualquier duda sobre nuestro espacio o servicios. Estaremos encantados de atenderte.
-        </p>
-        <a href="/contacto" class="inline-block px-6 py-3 bg-coral-500 text-white rounded-full font-medium hover:bg-coral-600 transition">
-          Contactar
-        </a>
+        <!-- Espacio 3: Sala de Espera (Imagen a la izquierda) -->
+        <div class="max-w-6xl mx-auto mb-24">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 transform transition-all duration-700 hover:-translate-y-2 group">
+              <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
+                <img src="@/assets/images/sala_espera.png" alt="Sala de espera" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
+              <h3 class="text-2xl font-semibold text-teal-700 mb-4">Sala de Espera</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Un espacio tranquilo con asientos cómodos donde podrás relajarte antes de tu cita. Disponemos de agua, revistas y una pequeña biblioteca con material sobre bienestar emocional. Hemos cuidado cada detalle para que incluso el tiempo de espera sea una experiencia agradable y relajante.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Espacio 4: Espacio Infantil (Imagen a la derecha) -->
+        <div class="max-w-6xl mx-auto mb-24">
+          <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-8 transform transition-all duration-700 hover:-translate-y-2 group">
+              <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
+                <img src="@/assets/images/placeholder.jpg" alt="Sala infantil" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
+              <h3 class="text-2xl font-semibold text-teal-700 mb-4">Espacio Infantil</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Un ambiente colorido y adaptado para los más pequeños, con materiales y juegos terapéuticos que facilitan la expresión y el desarrollo de habilidades socio-emocionales. Este espacio está especialmente diseñado para que niños y adolescentes se sientan cómodos y puedan trabajar a través del juego.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Espacio 5: Sala de Terapia Grupal (Imagen a la izquierda) -->
+        <div class="max-w-6xl mx-auto mb-24">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 transform transition-all duration-700 hover:-translate-y-2 group">
+              <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
+                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia grupal" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
+              <h3 class="text-2xl font-semibold text-teal-700 mb-4">Sala de Terapia Grupal</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Espacio amplio y versátil para sesiones grupales, talleres y actividades de mindfulness, diseñado para fomentar la interacción y el aprendizaje compartido. Equipado con todo lo necesario para diversas dinámicas terapéuticas y formativas en un ambiente cálido y profesional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Espacio 6: Exterior (Imagen a la derecha) -->
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-8 transform transition-all duration-700 hover:-translate-y-2 group">
+              <div class="rounded-xl overflow-hidden shadow-soft transition-all duration-300 group-hover:shadow-teal-lg">
+                <img src="@/assets/images/placeholder.jpg" alt="Exterior" class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
+              <h3 class="text-2xl font-semibold text-teal-700 mb-4">Exterior</h3>
+              <p class="text-gray-700 leading-relaxed">
+                La fachada y entrada a nuestra clínica, con acceso adaptado y un diseño que refleja la calidez y profesionalidad que encontrarás en nuestro interior. Nuestra ubicación ofrece comodidad y accesibilidad para todos nuestros visitantes.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -182,13 +132,38 @@
 </script>
 
 <style scoped>
-.text-coral-500 {
-  color: #ff8c7a;
+/* Colores basados en el logo ASATI */
+.text-teal-600 {
+  color: #009B8F;
 }
-.bg-coral-500 {
-  background-color: #ff8c7a;
+.text-teal-700 {
+  color: #00877C;
 }
-.hover\:bg-coral-600:hover {
-  background-color: #ff7c6a;
+.text-teal-800 {
+  color: #007267;
+}
+.bg-teal-50 {
+  background-color: #E6F7F5;
+}
+.bg-teal-500 {
+  background-color: #009B8F;
+}
+.bg-teal-600 {
+  background-color: #00877C;
+}
+.bg-teal-700 {
+  background-color: #007267;
+}
+.hover\:bg-teal-500:hover {
+  background-color: #009B8F;
+}
+.shadow-soft {
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+}
+.shadow-teal-lg {
+  box-shadow: 0 10px 20px -5px rgba(0, 155, 143, 0.3);
+}
+.shadow-teal-sm {
+  box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
 }
 </style>

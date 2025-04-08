@@ -123,104 +123,21 @@
         <h2 class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">Contacto</h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Estamos aquí para escucharte y acompañarte en tu proceso</p>
 
-        <div class="flex flex-col md:flex-row rounded-xl overflow-hidden shadow-soft-lg">
-          <!-- Información de contacto -->
-          <div class="bg-teal-700 text-white p-10 md:w-2/5">
-            <h3 class="text-2xl font-bold mb-8 text-teal-50">Información</h3>
-            <div class="mb-6 flex items-start">
-              <div class="text-teal-300 mr-4 mt-1"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <p class="mb-1">C/Péris y Valero 178, bajo</p>
-                <p>46006 Valencia</p>
-              </div>
-            </div>
-            <div class="mb-8 flex items-start">
-              <div class="text-teal-300 mr-4 mt-1"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <p class="mb-1">688764073</p>
-                <p>info@clinicasati.es</p>
-              </div>
-            </div>
-            <div class="flex space-x-3">
-              <a href="#" class="bg-teal-50 text-teal-700 h-10 w-10 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="bg-teal-50 text-teal-700 h-10 w-10 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="bg-teal-50 text-teal-700 h-10 w-10 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" class="bg-teal-50 text-teal-700 h-10 w-10 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Formulario de contacto -->
-          <div class="bg-white p-10 md:w-3/5">
-            <h3 class="text-2xl font-bold text-teal-700 mb-6">Envíanos un mensaje</h3>
-            <form @submit.prevent="submitForm">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-                <div>
-                  <label for="nombre" class="block text-sm text-gray-600 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    v-model="form.nombre"
-                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
-                  >
-                </div>
-                <div>
-                  <label for="apellidos" class="block text-sm text-gray-600 mb-1">Apellidos</label>
-                  <input
-                    type="text"
-                    id="apellidos"
-                    v-model="form.apellidos"
-                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
-                  >
-                </div>
-              </div>
-
-              <div class="mb-5">
-                <label for="email" class="block text-sm text-gray-600 mb-1">Email *</label>
-                <input
-                  type="email"
-                  id="email"
-                  v-model="form.email"
-                  required
-                  class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
-                >
-              </div>
-
-              <div class="mb-6">
-                <label for="mensaje" class="block text-sm text-gray-600 mb-1">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  v-model="form.mensaje"
-                  rows="5"
-                  class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                class="w-full py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition-all hover:shadow-teal-sm flex items-center justify-center"
-              >
-                <span>Enviar</span>
-                <i class="fas fa-paper-plane ml-2"></i>
-              </button>
-            </form>
-          </div>
-        </div>
+        <ContactForm
+          title="Envíanos un mensaje"
+          :messageRows="5"
+          :showIcon="true"
+          :showPrivacidad="false"
+          @form-submitted="handleHomeFormSubmit"
+        />
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import Button from '@/components/Button.vue';
+import ContactForm from '@/components/ContactForm.vue';
 
 // Datos para la sección de etapas vitales
 const lifeStages = [
@@ -256,25 +173,11 @@ const lifeStages = [
   }
 ];
 
-// Estado del formulario
-const form = ref({
-  nombre: '',
-  apellidos: '',
-  email: '',
-  mensaje: ''
-});
-
-// Método para enviar el formulario
-const submitForm = () => {
+// Método para manejar el envío del formulario del componente ContactForm
+const handleHomeFormSubmit = (formData) => {
   // Aquí implementarías la lógica para enviar el formulario
-  console.log('Formulario enviado:', form.value);
-  // Restablecer el formulario después del envío
-  form.value = {
-    nombre: '',
-    apellidos: '',
-    email: '',
-    mensaje: ''
-  };
+  console.log('Formulario enviado:', formData);
+
   // Mostrar un mensaje de confirmación
   alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
 };
