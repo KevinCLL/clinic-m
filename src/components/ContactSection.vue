@@ -10,7 +10,7 @@
       <div class="max-w-6xl mx-auto">
         <ContactForm
           :title="formTitle"
-          :messageRows="14"
+          :messageRows="isMobile ? 3 : 14"
           :showIcon="true"
           :showPrivacidad="false"
           @form-submitted="handleFormSubmit"
@@ -22,7 +22,21 @@
 
 <script setup>
 import ContactForm from '@/components/ContactForm.vue';
-import { defineProps, defineEmits } from 'vue';
+import { defineProps, defineEmits, ref, onMounted, onUnmounted } from 'vue';
+
+const isMobile = ref(window.innerWidth < 768);
+
+const checkMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', checkMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile);
+});
 
 defineProps({
   title: {
@@ -55,7 +69,6 @@ const handleFormSubmit = (formData) => {
 </script>
 
 <style scoped>
-
 .text-teal-600 {
   color: #009B8F;
 }

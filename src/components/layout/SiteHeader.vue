@@ -1,8 +1,6 @@
 <template>
   <header>
-
     <div class="container mx-auto px-4 py-4">
-
       <div class="flex justify-between items-center mb-4">
         <div class="hidden md:block">
           <a href="tel:688764073" class="text-teal-700 mr-2 hover:text-teal-600 transition-colors duration-300 text-lg">688764073</a>
@@ -23,16 +21,14 @@
         </div>
       </div>
 
-
-      <div class="flex justify-center">
+      <div class="flex justify-center" ref="logoContainer">
         <router-link to="/" class="block">
           <img src="@/assets/images/logo.png" alt="Clínica Asati" class="w-auto" />
         </router-link>
       </div>
     </div>
 
-
-    <nav class="bg-white shadow-md">
+    <nav :class="['bg-white shadow-md', {'md:relative sticky top-0 z-50': isSticky}]" ref="navBar">
       <div class="container mx-auto">
         <div class="hidden md:flex justify-center">
           <router-link
@@ -47,12 +43,17 @@
           </router-link>
         </div>
 
-
         <div class="md:hidden">
-          <button @click="toggleMobileMenu" class="w-full flex justify-between items-center p-4 text-teal-800">
-            <span class="font-medium text-lg">Menú</span>
-            <i class="fas text-lg" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
-          </button>
+          <div class="flex items-center justify-between">
+            <transition name="fade-slide">
+              <div v-if="isSticky" class="text-teal-800 font-semibold py-4 pl-4 transition-all duration-300 text-base">
+                ASATI - CLÍNICA DE SALUD MENTAL
+              </div>
+            </transition>
+            <button @click="toggleMobileMenu" class="p-4 text-teal-800 ml-auto">
+              <i class="fas text-lg" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+            </button>
+          </div>
 
           <transition name="mobile-menu">
             <div v-if="mobileMenuOpen" class="pb-2">
@@ -75,13 +76,32 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const mobileMenuOpen = ref(false);
+const navBar = ref(null);
+const logoContainer = ref(null);
+const isSticky = ref(false);
 
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
 };
+
+const checkStickyNav = () => {
+  if (logoContainer.value && navBar.value) {
+    const logoBottom = logoContainer.value.getBoundingClientRect().bottom;
+    isSticky.value = logoBottom <= 0;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', checkStickyNav);
+  checkStickyNav();
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', checkStickyNav);
+});
 
 const menuItems = [
   { name: 'Inicio', path: '/' },
@@ -93,12 +113,10 @@ const menuItems = [
 </script>
 
 <style scoped>
-
 .router-link-active {
   color: #009B8F;
   font-weight: 500;
 }
-
 
 .mobile-menu-enter-active,
 .mobile-menu-leave-active {
@@ -113,6 +131,24 @@ const menuItems = [
   opacity: 0;
 }
 
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-slide-enter-from,
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
 
 .text-teal-600 {
   color: #009B8F;

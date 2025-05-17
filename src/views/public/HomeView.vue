@@ -107,11 +107,24 @@
         <h2 class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">Te acompañamos en todas las etapas de la vida</h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Nuestro equipo de especialistas te ofrece apoyo profesional adaptado a cada momento vital</p>
 
+        <!-- Versión móvil (hasta sm) -->
+        <div class="flex flex-wrap justify-center gap-6 sm:hidden max-w-5xl mx-auto">
+          <div v-for="(stage, index) in lifeStages" :key="`mobile-${index}`" class="w-36 flex flex-col items-center transition-transform duration-300 hover:scale-105">
+            <router-link :to="stage.route" class="block group flex flex-col items-center">
+              <div class="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-soft-lg relative">
+                <div class="absolute inset-0 bg-teal-500 opacity-0 transition-opacity group-hover:opacity-20"></div>
+                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="font-semibold text-base text-teal-700 group-hover:text-teal-600 transition-colors text-center">{{ stage.title }}</h3>
+            </router-link>
+          </div>
+        </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center max-w-5xl mx-auto">
-          <div v-for="(stage, index) in lifeStages" :key="index" class="text-center transition-transform duration-300 hover:scale-105">
-            <router-link :to="stage.route" class="block group">
-              <div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-5 shadow-soft-lg relative">
+        <!-- Versión tablet/desktop (sm y superior) -->
+        <div class="hidden sm:grid sm:grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 max-w-5xl mx-auto">
+          <div v-for="(stage, index) in lifeStages" :key="`desktop-${index}`" class="text-center flex flex-col items-center transition-transform duration-300 hover:scale-105">
+            <router-link :to="stage.route" class="block group flex flex-col items-center">
+              <div class="w-40 h-40 rounded-full overflow-hidden mb-5 shadow-soft-lg relative">
                 <div class="absolute inset-0 bg-teal-500 opacity-0 transition-opacity group-hover:opacity-20"></div>
                 <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" />
               </div>
