@@ -151,40 +151,45 @@
 import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
 
+// Importación de imágenes
+import imgChild from '@/assets/images/child.png';
+import imgTeen from '@/assets/images/teen.png';
+import imgAdult from '@/assets/images/adult.png';
+import imgPerinatal from '@/assets/images/perinatal.png';
+import imgThirdAge from '@/assets/images/third_age.png';
 
 const lifeStages = [
   {
     title: 'Infancia',
     alt: 'Niños jugando',
-    image: '@/assets/images/child.png',
+    image: imgChild,
     route: { name: 'servicio-detalle', params: { id: 'infancia-adolescencia' }}
   },
   {
     title: 'Adolescencia',
     alt: 'Adolescentes',
-    image: '@/assets/images/teen.png',
+    image: imgTeen,
     route: { name: 'servicio-detalle', params: { id: 'infancia-adolescencia' }}
   },
   {
     title: 'Adultos',
     alt: 'Adultos',
-    image: '@/assets/images/adult.png',
+    image: imgAdult,
     route: { name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}
   },
   {
     title: 'Perinatal',
     alt: 'Embarazo y maternidad',
-    image: '@/assets/images/perinatal.png',
+    image: imgPerinatal,
     route: { name: 'servicio-detalle', params: { id: 'perinatal' }}
   },
   {
     title: 'Tercera edad',
     alt: 'Adultos mayores',
-    image: '@/assets/images/third_age.png',
+    image: imgThirdAge,
     route: { name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}
   }
 ];
-
 
 const handleHomeFormSubmit = (formData) => {
 
