@@ -56,8 +56,22 @@
 
     
     <link href="./dist/styles.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/clinic-m/assets/index-EpliH4FE.js"></script>
-    <link rel="stylesheet" crossorigin href="/clinic-m/assets/index-DI1sY9qc.css">
+    
+    <!-- Script para manejar redirecciones desde 404.html -->
+    <script>
+      (function() {
+        // Verificar si hay una redirección almacenada
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        
+        // Si hay una redirección, redirigir a la ruta correcta
+        if (redirect && redirect !== location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/clinic-m/assets/index-BKk_cUPL.js"></script>
+    <link rel="stylesheet" crossorigin href="/clinic-m/assets/index-CPEEL3dO.css">
   </head>
   <body>
     <div id="app"></div>

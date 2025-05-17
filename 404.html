@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redireccionando...</title>
+  <script>
+    // Extraer la ruta base del repositorio en GitHub Pages
+    var segmentCount = 1; // Normalmente es 1 para un repositorio de usuario (username.github.io/repo-name)
+    var location = window.location;
+    
+    // Recoger la URL actual
+    var currentUrl = location.href;
+    
+    // Guardar la parte de la ruta que viene después de /clinic-m/ (o lo que sea la base)
+    var redirectPath = currentUrl.split('/').slice(segmentCount + 2).join('/');
+    
+    // Asegurar que comenzamos con la base correcta y añadimos los parámetros de consulta si existen
+    redirectPath = location.pathname.split('/').slice(segmentCount + 1).join('/');
+    if (location.search) {
+      redirectPath += location.search;
+    }
+    if (location.hash) {
+      redirectPath += location.hash;
+    }
+    
+    // Obtener la ruta base
+    var pathSegments = location.pathname.split('/');
+    var baseUrl = '';
+    if (pathSegments.length > 1) {
+      baseUrl = '/' + pathSegments[1] + '/';
+    }
+    
+    // Redirigir a index.html con la URL base y la ruta correcta
+    sessionStorage.redirect = redirectPath || '/';
+    location.href = baseUrl;
+  </script>
+</head>
+<body>
+  Redireccionando...
+</body>
+</html> 
