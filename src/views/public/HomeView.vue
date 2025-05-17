@@ -156,31 +156,31 @@ const lifeStages = [
   {
     title: 'Infancia',
     alt: 'Niños jugando',
-    image: '/src/assets/images/child.png',
+    image: '@/assets/images/child.png',
     route: { name: 'servicio-detalle', params: { id: 'infancia-adolescencia' }}
   },
   {
     title: 'Adolescencia',
     alt: 'Adolescentes',
-    image: '/src/assets/images/teen.png',
+    image: '@/assets/images/teen.png',
     route: { name: 'servicio-detalle', params: { id: 'infancia-adolescencia' }}
   },
   {
     title: 'Adultos',
     alt: 'Adultos',
-    image: '/src/assets/images/adult.png',
+    image: '@/assets/images/adult.png',
     route: { name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}
   },
   {
     title: 'Perinatal',
     alt: 'Embarazo y maternidad',
-    image: '/src/assets/images/perinatal.png',
+    image: '@/assets/images/perinatal.png',
     route: { name: 'servicio-detalle', params: { id: 'perinatal' }}
   },
   {
     title: 'Tercera edad',
     alt: 'Adultos mayores',
-    image: '/src/assets/images/third_age.png',
+    image: '@/assets/images/third_age.png',
     route: { name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}
   }
 ];
