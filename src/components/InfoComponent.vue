@@ -59,7 +59,7 @@ const buttonColorClass = computed(() => {
 </script>
 
 <style scoped>
-/* Colores personalizados para el tema teal */
+
 .text-teal-800 {
   color: #007267;
 }
@@ -73,7 +73,7 @@ const buttonColorClass = computed(() => {
   background-color: #007267;
 }
 
-/* Colores personalizados para el tema purple */
+
 .text-purple-800 {
   color: #523D86;
 }

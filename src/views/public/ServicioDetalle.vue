@@ -213,7 +213,7 @@ const servicioActual = computed(() => {
 </script>
 
 <style scoped>
-/* Colores basados en el logo ASATI */
+
 .text-teal-500 {
   color: #00ADA0;
 }

@@ -102,14 +102,14 @@ const router = createRouter({
   routes,
 
   scrollBehavior(to, from, savedPosition) {
-    // Esperamos a que las transiciones de página terminen
+
     return new Promise((resolve) => {
       setTimeout(() => {
         if (to.hash) {
           resolve({
             el: to.hash,
             behavior: 'smooth',
-            top: 80 // Offset para considerar headers fijos
+            top: 80
           })
         } else if (savedPosition) {
           resolve({
@@ -123,7 +123,7 @@ const router = createRouter({
             behavior: 'smooth'
           })
         }
-      }, 350) // Este valor debe coincidir con la duración de la transición
+      }, 350)
     })
   }
 })

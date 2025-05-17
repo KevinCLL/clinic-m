@@ -194,7 +194,7 @@ defineOptions({
 </script>
 
 <style scoped>
-/* Colores basados en el tema morado */
+
 .text-purple-500 {
   color: #8A64A3;
 }

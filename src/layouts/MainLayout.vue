@@ -8,13 +8,13 @@
         </transition>
       </router-view>
     </main>
-    <Footer />
+    <SiteFooter />
   </div>
 </template>
 
 <script setup>
 import SiteHeader from '@/components/layout/SiteHeader.vue';
-import Footer from '@/components/layout/Footer.vue';
+import SiteFooter from '@/components/layout/SiteFooter.vue';
 </script>
 
 <style scoped>

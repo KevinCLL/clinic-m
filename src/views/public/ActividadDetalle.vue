@@ -246,7 +246,7 @@ const actividadActual = computed(() => {
 </script>
 
 <style scoped>
-/* Colores basados en el logo ASATI con tonos púrpura */
+
 .text-purple-500 {
   color: #8A64A3;
 }

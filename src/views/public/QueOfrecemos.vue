@@ -304,7 +304,7 @@ defineOptions({
 </script>
 
 <style scoped>
-/* Colores basados en el logo ASATI */
+
 .text-teal-600 {
   color: #009B8F;
 }

@@ -5,19 +5,19 @@
 
       <div class="flex justify-between items-center mb-4">
         <div class="hidden md:block">
-          <a href="tel:688764073" class="text-teal-700 mr-2 hover:text-teal-600 transition-colors duration-300">688764073</a>
+          <a href="tel:688764073" class="text-teal-700 mr-2 hover:text-teal-600 transition-colors duration-300 text-lg">688764073</a>
           <span class="text-gray-400 mx-1">|</span>
-          <a href="mailto:info@clinicasati.com" class="text-teal-700 hover:text-teal-600 transition-colors duration-300">info@clinicasati.com</a>
+          <a href="mailto:info@clinicasati.com" class="text-teal-700 hover:text-teal-600 transition-colors duration-300 text-lg">info@clinicasati.com</a>
         </div>
 
         <div class="hidden md:flex space-x-3 ml-auto">
-          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300">
+          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300 text-xl">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300">
+          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300 text-xl">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300">
+          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300 text-xl">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -39,7 +39,7 @@
             v-for="item in menuItems"
             :key="item.path"
             :to="item.path"
-            class="px-5 py-4 text-teal-800 hover:text-teal-600 transition-all duration-300 relative group"
+            class="px-5 py-4 text-teal-800 hover:text-teal-600 transition-all duration-300 relative group text-lg font-normal"
             :class="{ 'font-medium': $route.path === item.path }"
           >
             {{ item.name }}
@@ -50,8 +50,8 @@
 
         <div class="md:hidden">
           <button @click="toggleMobileMenu" class="w-full flex justify-between items-center p-4 text-teal-800">
-            <span class="font-medium">Menú</span>
-            <i class="fas" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+            <span class="font-medium text-lg">Menú</span>
+            <i class="fas text-lg" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
           </button>
 
           <transition name="mobile-menu">
@@ -60,7 +60,7 @@
                 v-for="item in menuItems"
                 :key="item.path"
                 :to="item.path"
-                class="block px-4 py-2 text-teal-800 hover:bg-teal-50 transition-all duration-300"
+                class="block px-4 py-3 text-teal-800 hover:bg-teal-50 transition-all duration-300 text-lg"
                 :class="{ 'bg-teal-50 text-teal-700 font-medium': $route.path === item.path }"
                 @click="mobileMenuOpen = false"
               >
@@ -93,13 +93,13 @@ const menuItems = [
 </script>
 
 <style scoped>
-/* Personalización para el elemento activo del menú */
+
 .router-link-active {
-  color: #009B8F; /* Color turquesa para el elemento activo */
+  color: #009B8F;
   font-weight: 500;
 }
 
-/* Transición para el menú móvil */
+
 .mobile-menu-enter-active,
 .mobile-menu-leave-active {
   transition: max-height 0.3s ease, opacity 0.3s ease;
@@ -113,7 +113,7 @@ const menuItems = [
   opacity: 0;
 }
 
-/* Colores ASATI */
+
 .text-teal-600 {
   color: #009B8F;
 }

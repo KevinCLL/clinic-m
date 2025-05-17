@@ -98,7 +98,7 @@ const iconColorClass = computed(() => {
 </script>
 
 <style scoped>
-/* Colores personalizados */
+
 .text-teal-500 {
   color: #00ADA0;
 }

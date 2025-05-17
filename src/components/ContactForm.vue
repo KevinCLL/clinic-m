@@ -224,7 +224,7 @@ const submitForm = () => {
 </script>
 
 <style scoped>
-/* Colores basados en el logo ASATI */
+
 .text-teal-200 {
   color: #9FE7E0;
 }

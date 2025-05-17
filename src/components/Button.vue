@@ -64,7 +64,7 @@ const buttonClasses = computed(() => {
 </script>
 
 <style scoped>
-/* Colores de ASATI */
+
 .text-teal-600 {
   color: #009B8F;
 }
