@@ -8,8 +8,8 @@
           <p class="mb-2 text-lg">C/Péris y Valero 178, bajo</p>
           <p class="mb-4 text-lg">46006 Valencia</p>
 
-          <p class="mb-2 text-lg">688764073</p>
-          <p class="mb-4 text-lg">info@clinicasati.es</p>
+          <p class="mb-2 text-lg"><a href="tel:688764073" class="hover:text-teal-300 transition">688764073</a></p>
+          <p class="mb-4 text-lg"><a href="mailto:info@clinicasati.es" class="hover:text-teal-300 transition">info@clinicasati.es</a></p>
 
 
           <div class="flex space-x-4 mt-3">
