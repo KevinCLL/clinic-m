@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   const isDev = mode === 'development'
 
   return {
-    base: '/',
+    base: process.env.NODE_ENV === "production" ? "/clinic-m/" : "/",
     plugins: [vueDevTools(), tailwindcss(), vue()],
     resolve: {
       alias: {
