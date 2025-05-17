@@ -28,9 +28,13 @@
     </header>
 
 
-    <main class="flex-grow bg-gray-100">
+    <main class="flex-grow bg-gray-100 overflow-hidden">
       <div class="container mx-auto px-4 py-8">
-        <router-view />
+        <router-view v-slot="{ Component }">
+          <transition name="page-transition" mode="out-in">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </div>
     </main>
 
@@ -58,3 +62,20 @@ const logout = () => {
   router.push('/admin-login')
 }
 </script>
+
+<style scoped>
+.page-transition-enter-active,
+.page-transition-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-transition-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style>

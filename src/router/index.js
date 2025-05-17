@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 
@@ -103,12 +102,29 @@ const router = createRouter({
   routes,
 
   scrollBehavior(to, from, savedPosition) {
-
-    if (savedPosition) {
-      return savedPosition
-    }
-
-    return { top: 0 }
+    // Esperamos a que las transiciones de página terminen
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        if (to.hash) {
+          resolve({
+            el: to.hash,
+            behavior: 'smooth',
+            top: 80 // Offset para considerar headers fijos
+          })
+        } else if (savedPosition) {
+          resolve({
+            ...savedPosition,
+            behavior: 'smooth'
+          })
+        } else {
+          resolve({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })
+        }
+      }, 350) // Este valor debe coincidir con la duración de la transición
+    })
   }
 })
 

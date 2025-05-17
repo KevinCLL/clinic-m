@@ -3,22 +3,7 @@
 </template>
 
 <script setup>
-import { watch } from 'vue';
-import { useRoute } from 'vue-router';
-
-const route = useRoute();
-
-
-watch(
-  () => route.path,
-  () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto'
-    });
-  }
-);
+// El scrollBehavior ya está configurado en el router
 </script>
 
 <style>
@@ -29,5 +14,22 @@ watch(
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #333;
+  overflow-x: hidden; /* Previene scroll horizontal durante transiciones */
+  scroll-behavior: smooth; /* Asegura transiciones suaves en toda la app */
+}
+
+/* Estilos para transiciones entre rutas */
+.router-link-active {
+  transition: color 0.3s ease;
+}
+
+/* Animaciones globales */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

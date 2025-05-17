@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col min-h-screen">
-    <Header />
-    <main class="flex-grow">
+    <SiteHeader />
+    <main class="flex-grow overflow-hidden">
       <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
+        <transition name="page-transition" mode="out-in">
           <component :is="Component" />
         </transition>
       </router-view>
@@ -13,28 +13,23 @@
 </template>
 
 <script setup>
-import { onMounted, watch } from 'vue';
-import { useRoute } from 'vue-router';
-import Header from '@/components/layout/Header.vue';
+import SiteHeader from '@/components/layout/SiteHeader.vue';
 import Footer from '@/components/layout/Footer.vue';
-
-const route = useRoute();
-
-
-watch(
-  () => route.path,
-  () => {
-
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant'
-    });
-  }
-);
-
-onMounted(() => {
-
-  window.scrollTo(0, 0);
-});
 </script>
+
+<style scoped>
+.page-transition-enter-active,
+.page-transition-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-transition-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style>
