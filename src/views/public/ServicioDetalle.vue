@@ -27,7 +27,7 @@
                 <h2 class="text-2xl font-bold text-teal-700 mb-6">{{ servicioActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
-                  <p v-for="(parrafo, index) in servicioActual.contenido" :key="index" class="mb-4">
+                  <p v-for="(parrafo, index) in servicioActual.contenido" :key="index" class="mb-4 text-justify">
                     {{ parrafo }}
                   </p>
                 </div>
@@ -73,7 +73,7 @@
                 <div class="space-y-4">
                   <div v-for="(pregunta, index) in servicioActual.preguntas" :key="index">
                     <h4 class="font-medium text-teal-600 mb-1">{{ pregunta.pregunta }}</h4>
-                    <p class="text-gray-600 text-sm">{{ pregunta.respuesta }}</p>
+                    <p class="text-gray-600 text-sm text-justify">{{ pregunta.respuesta }}</p>
                   </div>
                 </div>
               </div>

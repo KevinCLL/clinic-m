@@ -7,7 +7,7 @@
 
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-teal-800 mb-6">Qué Ofrecemos</h1>
-        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+        <p class="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed text-justify">
           Independientemente de la especialidad de la que partimos (medicina, psicología…) y de si intervenimos a nivel farmacológico, psicoterapéutico o ambas, siempre hacemos un acompañamiento terapéutico y adaptamos el proceso a las necesidades individuales de cada persona. Intentamos acompañar siempre desde la horizontalidad, teniendo en cuenta nuestro criterio profesional y nuestra experiencia, pero respetando los tiempos, las inquietudes y las preferencias de la persona.
         </p>
       </div>

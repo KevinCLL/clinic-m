@@ -7,7 +7,7 @@
 
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-purple-800 mb-6">Actividades de promoción de la salud mental</h1>
-        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+        <p class="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed text-justify">
           Complementamos nuestros servicios terapéuticos con actividades que promueven el bienestar integral. Nuestro enfoque va más allá de la terapia tradicional, ofreciendo herramientas para el autocuidado y el desarrollo personal.
         </p>
       </div>

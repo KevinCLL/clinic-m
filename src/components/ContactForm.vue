@@ -145,29 +145,15 @@
         </div>
 
 
-        <div class="flex-grow">
+        <div>
           <label for="mensaje" class="block text-sm text-gray-600 mb-1">Mensaje</label>
           <textarea
             id="mensaje"
             v-model="form.mensaje"
             :rows="messageRows || 8"
             class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
+            style="width: 100%; box-sizing: border-box; resize: vertical;"
           ></textarea>
-        </div>
-
-
-        <div v-if="showPrivacidad">
-          <label class="flex items-start">
-            <input
-              type="checkbox"
-              v-model="form.privacidad"
-              required
-              class="mr-2 mt-1"
-            >
-            <span class="text-sm text-gray-700">
-              He leído y acepto la <a href="#" class="text-teal-600 hover:underline">política de privacidad</a>.
-            </span>
-          </label>
         </div>
 
 

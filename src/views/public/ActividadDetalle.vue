@@ -27,7 +27,7 @@
                 <h2 class="text-2xl font-bold text-purple-700 mb-6">{{ actividadActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
-                  <p v-for="(parrafo, index) in actividadActual.contenido" :key="index" class="mb-4">
+                  <p v-for="(parrafo, index) in actividadActual.contenido" :key="index" class="mb-4 text-justify">
                     {{ parrafo }}
                   </p>
                 </div>
@@ -121,7 +121,7 @@
 
               <div class="bg-white rounded-xl shadow-soft p-6">
                 <h3 class="text-xl font-bold text-purple-700 mb-4">¿A quién va dirigido?</h3>
-                <p class="text-gray-700 mb-4">{{ actividadActual.destinatarios }}</p>
+                <p class="text-gray-700 mb-4 text-justify">{{ actividadActual.destinatarios }}</p>
 
                 <div class="space-y-3 mt-6">
                   <h4 class="font-medium text-purple-600">¿Quieres participar?</h4>

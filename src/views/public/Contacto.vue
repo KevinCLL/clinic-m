@@ -13,32 +13,20 @@
       </div>
     </section>
 
-
-    <section class="py-12 bg-white relative">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-teal-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-30"></div>
-
-      <div class="container mx-auto px-4 relative z-10 max-w-6xl">
-        <ContactForm
-          title="Envíanos un mensaje"
-          :messageRows="8"
-          :showIcon="true"
-          :showPrivacidad="true"
-          @form-submitted="handleFormSubmit"
-        />
-      </div>
-    </section>
+    <ContactSection
+      :showTitle="false"
+      :showSubtitle="false"
+      @form-submitted="handleFormSubmit"
+    />
   </div>
 </template>
 
 <script setup>
-import ContactForm from '@/components/ContactForm.vue';
-
+import ContactSection from '@/components/ContactSection.vue';
 
 defineOptions({
   name: 'ContactoView'
 });
-
 
 const handleFormSubmit = (formData) => {
   console.log('Formulario enviado desde la página de contacto:', formData);

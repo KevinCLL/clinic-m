@@ -8,13 +8,13 @@
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-6 leading-tight">Atención Integral a la <span class="text-teal-600">Salud Mental</span></h1>
-          <p class="text-gray-700 mb-8 leading-relaxed text-lg">
+          <p class="text-gray-700 mb-8 leading-relaxed text-lg text-justify">
             La salud mental es un estado de bienestar mental que permite a las personas hacer frente a los momentos de estrés de la vida,
             desarrollar todas sus habilidades, poder aprender y trabajar adecuadamente y contribuir a la mejora de su comunidad.
             Es parte fundamental de la salud y el bienestar que sustenta nuestras capacidades individuales y colectivas para tomar decisiones,
             establecer relaciones y dar forma al mundo en el que vivimos.
           </p>
-          <p class="text-gray-700 mb-8 leading-relaxed text-lg">
+          <p class="text-gray-700 mb-8 leading-relaxed text-lg text-justify">
             La salud mental es, además, un derecho humano fundamental y un elemento esencial para el desarrollo personal, comunitario y socioeconómico.
             Es más que la mera ausencia de trastornos mentales. Se da en un proceso complejo, que cada persona experimenta de una manera diferente,
             con diversos grados de dificultad y angustia y resultados sociales y clínicos que pueden ser muy diferentes.
@@ -43,7 +43,9 @@
               </router-link>
             </div>
             <div class="p-8 border-t border-teal-50">
-              <h3 class="text-xl font-semibold text-teal-700 mb-3">Psicoterapia</h3>
+              <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicoterapia' }}">
+                <h3 class="text-xl font-semibold text-teal-700 mb-3 hover:text-teal-600 transition-colors">Psicoterapia</h3>
+              </router-link>
               <p class="text-gray-700 mb-5">Acompañamiento terapéutico personalizado para desarrollar herramientas de afrontamiento.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'psicoterapia' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105" />
             </div>
@@ -57,7 +59,9 @@
               </router-link>
             </div>
             <div class="p-8 border-t border-teal-50">
-              <h3 class="text-xl font-semibold text-teal-700 mb-3">Psiquiatría</h3>
+              <router-link :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}">
+                <h3 class="text-xl font-semibold text-teal-700 mb-3 hover:text-teal-600 transition-colors">Psiquiatría</h3>
+              </router-link>
               <p class="text-gray-700 mb-5">Evaluación, diagnóstico y tratamiento farmacológico de trastornos mentales con un enfoque integral y humanista.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105" />
             </div>
@@ -71,7 +75,9 @@
               </router-link>
             </div>
             <div class="p-8 border-t border-teal-50">
-              <h3 class="text-xl font-semibold text-teal-700 mb-3">Mindfulness</h3>
+              <router-link :to="{ name: 'servicio-detalle', params: { id: 'mindfulness' }}">
+                <h3 class="text-xl font-semibold text-teal-700 mb-3 hover:text-teal-600 transition-colors">Mindfulness</h3>
+              </router-link>
               <p class="text-gray-700 mb-5">Aprende técnicas de atención plena para reducir el estrés, mejorar la concentración y cultivar el bienestar emocional.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'mindfulness' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105" />
             </div>
@@ -120,32 +126,17 @@
       </div>
     </section>
 
-
-    <section class="py-20 md:py-28 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/4 w-96 h-96 rounded-full bg-teal-50 opacity-70"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-70"></div>
-
-      <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">Contacto</h2>
-        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Estamos aquí para escucharte y acompañarte en tu proceso</p>
-
-        <div class="max-w-6xl mx-auto">
-          <ContactForm
-            title="Envíanos un mensaje"
-            :messageRows="8"
-            :showIcon="true"
-            :showPrivacidad="false"
-            @form-submitted="handleHomeFormSubmit"
-          />
-        </div>
-      </div>
-    </section>
+    <ContactSection
+      title="Contacto"
+      subtitle="Estamos aquí para escucharte y acompañarte en tu proceso"
+      @form-submitted="handleHomeFormSubmit"
+    />
   </div>
 </template>
 
 <script setup>
 import Button from '@/components/Button.vue';
-import ContactForm from '@/components/ContactForm.vue';
+import ContactSection from '@/components/ContactSection.vue';
 
 
 const lifeStages = [

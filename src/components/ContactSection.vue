@@ -1,0 +1,71 @@
+<template>
+  <section class="py-12 md:py-20 bg-white relative overflow-hidden">
+    <div class="absolute -right-32 top-1/4 w-96 h-96 rounded-full bg-teal-50 opacity-70"></div>
+    <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-70"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 v-if="showTitle" class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">{{ title }}</h2>
+      <p v-if="showSubtitle" class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">{{ subtitle }}</p>
+
+      <div class="max-w-6xl mx-auto">
+        <ContactForm
+          :title="formTitle"
+          :messageRows="14"
+          :showIcon="true"
+          :showPrivacidad="false"
+          @form-submitted="handleFormSubmit"
+        />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import ContactForm from '@/components/ContactForm.vue';
+import { defineProps, defineEmits } from 'vue';
+
+defineProps({
+  title: {
+    type: String,
+    default: 'Contacto'
+  },
+  subtitle: {
+    type: String,
+    default: 'Estamos aquí para escucharte y acompañarte en tu proceso'
+  },
+  formTitle: {
+    type: String,
+    default: 'Envíanos un mensaje'
+  },
+  showTitle: {
+    type: Boolean,
+    default: true
+  },
+  showSubtitle: {
+    type: Boolean,
+    default: true
+  }
+});
+
+const emit = defineEmits(['form-submitted']);
+
+const handleFormSubmit = (formData) => {
+  emit('form-submitted', formData);
+};
+</script>
+
+<style scoped>
+/* Colores basados en el logo ASATI */
+.text-teal-600 {
+  color: #009B8F;
+}
+.text-teal-700 {
+  color: #00877C;
+}
+.text-teal-800 {
+  color: #007267;
+}
+.bg-teal-50 {
+  background-color: #E6F7F5;
+}
+</style>

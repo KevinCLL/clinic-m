@@ -7,7 +7,7 @@
 
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-teal-800 mb-6">Nuestro Espacio</h1>
-        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed text-justify">
           En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan. Por eso, hemos diseñado cada espacio con sumo cuidado para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés. Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
         </p>
       </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
               <h3 class="text-2xl font-semibold text-teal-700 mb-4">Recepción</h3>
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify">
                 Espacio acogedor donde te recibimos y te acompañamos desde el primer momento. Nuestro personal te atenderá con calidez, haciendo que te sientas bienvenido/a desde que cruzas nuestra puerta. Diseñado para transmitir serenidad y profesionalidad, es el primer contacto con nuestro concepto de bienestar.
               </p>
             </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
               <h3 class="text-2xl font-semibold text-teal-700 mb-4">Sala de Terapia</h3>
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify">
                 Nuestras salas de terapia individual están diseñadas para proporcionar un ambiente íntimo y seguro donde puedas expresarte con total libertad y confianza. Con aislamiento acústico, mobiliario confortable y una iluminación cuidadosamente seleccionada, creamos el entorno perfecto para el proceso terapéutico.
               </p>
             </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
               <h3 class="text-2xl font-semibold text-teal-700 mb-4">Sala de Espera</h3>
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify">
                 Un espacio tranquilo con asientos cómodos donde podrás relajarte antes de tu cita. Disponemos de agua, revistas y una pequeña biblioteca con material sobre bienestar emocional. Hemos cuidado cada detalle para que incluso el tiempo de espera sea una experiencia agradable y relajante.
               </p>
             </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
               <h3 class="text-2xl font-semibold text-teal-700 mb-4">Espacio Infantil</h3>
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify">
                 Un ambiente colorido y adaptado para los más pequeños, con materiales y juegos terapéuticos que facilitan la expresión y el desarrollo de habilidades socio-emocionales. Este espacio está especialmente diseñado para que niños y adolescentes se sientan cómodos y puedan trabajar a través del juego.
               </p>
             </div>
@@ -99,7 +99,7 @@
             </div>
             <div class="w-full md:w-1/2 md:pl-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-left">
               <h3 class="text-2xl font-semibold text-teal-700 mb-4">Sala de Terapia Grupal</h3>
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify">
                 Espacio amplio y versátil para sesiones grupales, talleres y actividades de mindfulness, diseñado para fomentar la interacción y el aprendizaje compartido. Equipado con todo lo necesario para diversas dinámicas terapéuticas y formativas en un ambiente cálido y profesional.
               </p>
             </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="w-full md:w-1/2 md:pr-8 opacity-90 hover:opacity-100 transition-opacity duration-500" data-aos="fade-right">
               <h3 class="text-2xl font-semibold text-teal-700 mb-4">Exterior</h3>
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify">
                 La fachada y entrada a nuestra clínica, con acceso adaptado y un diseño que refleja la calidez y profesionalidad que encontrarás en nuestro interior. Nuestra ubicación ofrece comodidad y accesibilidad para todos nuestros visitantes.
               </p>
             </div>

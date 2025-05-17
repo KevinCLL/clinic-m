@@ -12,10 +12,10 @@
         <div class="max-w-4xl mx-auto mb-16">
           <h2 class="text-3xl font-bold text-teal-800 mb-8 text-center">SOBRE NOSOTRAS</h2>
           <div class="bg-white rounded-xl shadow-soft p-8">
-            <p class="text-gray-700 mb-6 leading-relaxed">
+            <p class="text-gray-700 mb-6 leading-relaxed text-justify">
               En nuestra Clínica de Salud Mental, somos un equipo interdisciplinar de especialistas en salud mental (psiquiatras y psicólogas clínicas) que ofrecemos un acompañamiento en todas las etapas de la vida desde un enfoque integrador que contemple la complejidad que somos como seres humanos, atendiendo a la diversidad y las circunstancias de cada persona.
             </p>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed text-justify">
               Aunque cada profesional se ha especializado en una o varias corrientes psicoterapéuticas, el abordaje que hacemos es integrador, incorporando elementos de diferentes enfoques para poder adaptar la terapia a las necesidades individuales de cada persona a la que acompañamos.
             </p>
           </div>
@@ -25,7 +25,7 @@
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-teal-800 mb-8 text-center">NUESTRO ENFOQUE</h2>
           <div class="bg-white rounded-xl shadow-soft p-8">
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed text-justify">
               Consideramos que la salud mental no es solo la ausencia de enfermedad mental si no el estado de bienestar que permite a la persona desarrollar todas sus potencialidades, por lo que no solo apostamos por el tratamiento de los problemas de salud mental (cuando aparecen), sino que buscamos promover la salud mental a través de actividades y espacios de encuentro que pongan el foco en cultivar la conciencia, la reflexión y el bienestar.
             </p>
           </div>
@@ -44,7 +44,7 @@
             <div class="h-3 bg-teal-600"></div>
             <div class="p-8">
               <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">VÍNCULO TERAPÉUTICO</h3>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Independientemente de la corriente desde la que trabajemos, ponemos en el centro la atención a la persona que tenemos delante, considerando que lo más importante es el vínculo, es decir, la relación de confianza, empatía y respeto mutuo que establecemos entre terapeuta y paciente.
               </p>
             </div>
@@ -55,7 +55,7 @@
             <div class="h-3 bg-teal-600"></div>
             <div class="p-8">
               <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">EQUIPO</h3>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Contamos con un equipo de profesionales altamente cualificados (psiquiatría y psicología clínica) que trabajan de manera interdisciplinar para conseguir la recuperación de la persona y comparten los valores del proyecto (aceptación, honestidad, compromiso, apertura y respeto). Trabajamos de forma conjunta, seguimos en formación permanente y nos supervisamos para aprender las unas de las otras y ampliar nuestra comprensión de las personas a las que acompañamos.
               </p>
             </div>
@@ -66,7 +66,7 @@
             <div class="h-3 bg-teal-600"></div>
             <div class="p-8">
               <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">ESPACIO SEGURO</h3>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Creemos en la importancia de crear un espacio de encuentro en el que cualquier persona pueda sentirse segura, aceptada y acompañada, contemplando la diversidad de cada persona (sexual, de género, raza, etnia, creencias religiosas, modelos relacionales, diversidad funcional, estilo de vida…) y sus vivencias subjetivas.
               </p>
             </div>
@@ -93,7 +93,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-teal-800 mb-1">Dra. María García</h3>
               <p class="text-teal-600 font-medium mb-3">Psiquiatra</p>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Especialista en trastornos del estado de ánimo y ansiedad, con más de 15 años de experiencia en el campo de la psiquiatría.
               </p>
             </div>
@@ -107,7 +107,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-teal-800 mb-1">Dr. Carlos Martínez</h3>
               <p class="text-teal-600 font-medium mb-3">Psicólogo Clínico</p>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Especializado en terapia cognitivo-conductual y EMDR para el tratamiento del trauma y trastornos de ansiedad.
               </p>
             </div>
@@ -121,7 +121,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-teal-800 mb-1">Dra. Laura Sánchez</h3>
               <p class="text-teal-600 font-medium mb-3">Neuropsicóloga</p>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Especialista en evaluación y rehabilitación neuropsicológica, con formación específica en deterioro cognitivo y daño cerebral.
               </p>
             </div>
@@ -138,7 +138,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-teal-800 mb-1">Dr. Javier López</h3>
               <p class="text-teal-600 font-medium mb-3">Psiquiatra Infantojuvenil</p>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Especializado en trastornos del neurodesarrollo y problemas emocionales en niños y adolescentes.
               </p>
             </div>
@@ -152,7 +152,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-teal-800 mb-1">Dra. Ana Rodríguez</h3>
               <p class="text-teal-600 font-medium mb-3">Psicóloga Clínica</p>
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-justify">
                 Especialista en trastornos de personalidad y terapia dialéctico-conductual, con amplia experiencia en terapia grupal.
               </p>
             </div>
