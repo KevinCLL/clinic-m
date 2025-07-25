@@ -24,10 +24,6 @@ body {
   line-height: 1.6;
 }
 
-p {
-  margin-bottom: 1.2rem;
-}
-
 
 h1, .h1 {
   font-size: 2.2rem;

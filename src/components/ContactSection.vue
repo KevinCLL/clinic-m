@@ -1,13 +1,17 @@
 <template>
-  <section class="py-12 md:py-20 bg-white relative overflow-hidden">
+  <section class="py-8 md:py-12 bg-white relative overflow-hidden">
     <div class="absolute -right-32 top-1/4 w-96 h-96 rounded-full bg-teal-50 opacity-70"></div>
     <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-70"></div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <h2 v-if="showTitle" class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">{{ title }}</h2>
-      <p v-if="showSubtitle" class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">{{ subtitle }}</p>
+      <h2 v-if="showTitle" class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-3">{{ title }}</h2>
+      <p v-if="showSubtitle" class="text-center text-gray-600 mb-6 max-w-2xl mx-auto">{{ subtitle }}</p>
 
-      <div class="max-w-6xl mx-auto">
+      <p class="text-gray-700 mb-6 max-w-3xl mx-auto px-8 md:px-16 text-sm leading-relaxed">
+        El apartado de contacto de la página de inicio, algo más parecido a esto: más integrado, con menos espacio, con sangría. Algo así como lo que pongo a continuación.
+      </p>
+
+      <div class="max-w-5xl mx-auto">
         <ContactForm
           :title="formTitle"
           :messageRows="isMobile ? 3 : 14"

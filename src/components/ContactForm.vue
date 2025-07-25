@@ -4,7 +4,7 @@
     <div class="lg:w-1/3 flex flex-col">
 
       <div class="rounded-t-xl overflow-hidden shadow-md">
-        <div class="relative overflow-hidden shadow-inner" style="height: 195px;">
+        <div class="relative overflow-hidden shadow-inner" style="height: 330px;">
           <iframe
             width="100%"
             height="100%"
@@ -45,36 +45,23 @@
       </div>
 
 
-      <div class="bg-teal-700 text-white p-6 flex-grow rounded-b-xl">
+      <div class="bg-teal-700 text-white p-4 lg:p-6 flex-grow rounded-b-xl">
         <h2 class="text-xl font-bold mb-4">Contacto</h2>
 
-        <div class="mb-6 space-y-4">
-          <div class="flex items-start">
-            <div class="flex-shrink-0 h-5 w-5 text-teal-200 mr-3">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <p class="mb-1">C/Péris y Valero 178, bajo</p>
-              <p>46006 Valencia</p>
-            </div>
+        <div class="mb-4 space-y-2 text-sm">
+          <div class="flex items-center">
+            <i class="fas fa-map-marker-alt mr-3 text-teal-200 w-4"></i>
+            <p>C/Peris y Valero 178, bajo 46006 Valencia</p>
           </div>
 
-          <div class="flex items-start">
-            <div class="flex-shrink-0 h-5 w-5 text-teal-200 mr-3">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div>
-              <p>688764073</p>
-            </div>
+          <div class="flex items-center">
+            <i class="fas fa-phone mr-3 text-teal-200 w-4"></i>
+            <p>688764073</p>
           </div>
 
-          <div class="flex items-start">
-            <div class="flex-shrink-0 h-5 w-5 text-teal-200 mr-3">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <p>info@clinicasati.es</p>
-            </div>
+          <div class="flex items-center">
+            <i class="fas fa-envelope mr-3 text-teal-200 w-4"></i>
+            <p>info@clinicasati.es</p>
           </div>
         </div>
 
@@ -84,13 +71,8 @@
             <span>Lunes a Viernes</span>
             <span>9:00 - 20:00</span>
           </div>
-          <div class="flex justify-between text-sm">
-            <span>Sábados</span>
-            <span>10:00 - 14:00</span>
-          </div>
         </div>
 
-        <h3 class="text-lg font-bold mb-2">Síguenos</h3>
         <div class="flex space-x-3">
           <a href="#" class="bg-white text-teal-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-teal-100 transition-all duration-300">
             <i class="fab fa-facebook-f"></i>
@@ -106,7 +88,7 @@
     </div>
 
 
-    <div class="bg-white p-6 lg:w-2/3">
+    <div class="bg-white p-4 lg:p-6 lg:w-2/3">
       <h2 class="text-xl font-bold text-teal-800 mb-5">{{ title || 'Envíanos un mensaje' }}</h2>
 
       <form @submit.prevent="submitForm" class="space-y-4">
