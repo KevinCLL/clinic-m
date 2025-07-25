@@ -1,25 +1,47 @@
 <template>
   <div class="overflow-hidden">
+    
+    <section class="relative py-8 md:py-10 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
+      <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-500 rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <h1 class="text-3xl md:text-4xl font-semibold text-gray-800">Quiénes somos</h1>
+      </div>
+    </section>
+
+    <section class="relative py-16 md:py-24 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="@/assets/images/quienes_somos.jpg" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/20"></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="sobre-nosotras-content max-w-5xl mx-auto bg-white/40 backdrop-blur-sm rounded-3xl p-10 md:p-12 shadow-2xl">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">SOBRE NOSOTRAS</h2>
+          
+          <div class="space-y-4 text-gray-700 text-base md:text-lg">
+            <p class="text-justify">
+              En nuestra Clínica de Salud Mental somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicologías clínicas). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
+            </p>
+            
+            <p class="text-justify">
+              Entendemos la salud mental no solo como la ausencia de enfermedad, sino como un <strong>estado de bienestar</strong> que permite a la persona desarrollar sus capacidades, relacionarse, trabajar, aprender y disfrutar de su vida. Por eso, además del <strong>tratamiento</strong> de los problemas de salud mental, también <strong>apostamos por la promoción activa del bienestar y la prevención</strong>, a través de actividades grupales, talleres y propuestas que fomenten la conciencia, la reflexión y el autocuidado.
+            </p>
+            
+            <p class="text-justify">
+              Creemos en la importancia de crear un <strong>espacio de encuentro</strong> en el que <strong>cualquier persona pueda sentirse segura, aceptada y acompañada</strong>, contemplando la diversidad de cada persona (sexual, de género, raza, etnia, creencias religiosas, modelos relacionales, diversidad funcional, estilo de vida...) y sus vivencias subjetivas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="relative py-16 md:py-24 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
       <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
       <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center text-teal-800 mb-10">Quiénes Somos</h1>
-
-
-        <div class="max-w-4xl mx-auto mb-16">
-          <h2 class="text-3xl font-bold text-teal-800 mb-8 text-center">SOBRE NOSOTRAS</h2>
-          <div class="bg-white rounded-xl shadow-soft p-8">
-            <p class="text-gray-700 mb-6 leading-relaxed text-justify">
-              En nuestra Clínica de Salud Mental, somos un equipo interdisciplinar de especialistas en salud mental (psiquiatras y psicólogas clínicas) que ofrecemos un acompañamiento en todas las etapas de la vida desde un enfoque integrador que contemple la complejidad que somos como seres humanos, atendiendo a la diversidad y las circunstancias de cada persona.
-            </p>
-            <p class="text-gray-700 leading-relaxed text-justify">
-              Aunque cada profesional se ha especializado en una o varias corrientes psicoterapéuticas, el abordaje que hacemos es integrador, incorporando elementos de diferentes enfoques para poder adaptar la terapia a las necesidades individuales de cada persona a la que acompañamos.
-            </p>
-          </div>
-        </div>
 
 
         <div class="max-w-4xl mx-auto">
@@ -195,5 +217,22 @@
 }
 .hover\:shadow-teal-lg:hover {
   box-shadow: 0 10px 20px -5px rgba(0, 155, 143, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sobre-nosotras-content {
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 </style>

@@ -1,15 +1,39 @@
 <template>
   <div class="overflow-hidden">
+    
+    <section class="relative py-8 md:py-10 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
+      <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-500 rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <h1 class="text-3xl md:text-4xl font-semibold text-gray-800">Nuestro espacio</h1>
+      </div>
+    </section>
 
-    <section class="relative py-16 md:py-24 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="relative py-16 md:py-24 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="@/assets/images/nuestro_espacio.jpg" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/20"></div>
+      </div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center text-teal-800 mb-6">Nuestro Espacio</h1>
-        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed text-justify">
-          En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan. Por eso, hemos diseñado cada espacio con sumo cuidado para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés. Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
-        </p>
+        <div class="nuestro-espacio-content max-w-5xl mx-auto bg-white/40 backdrop-blur-sm rounded-3xl p-10 md:p-12 shadow-2xl">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">NUESTRO ESPACIO</h2>
+          
+          <div class="space-y-4 text-gray-700 text-base md:text-lg">
+            <p class="text-justify">
+              En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan.
+            </p>
+            
+            <p class="text-justify">
+              Por eso, hemos diseñado cada espacio para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés.
+            </p>
+            
+            <p class="text-justify">
+              Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -165,5 +189,22 @@
 }
 .shadow-teal-sm {
   box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nuestro-espacio-content {
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 </style>
