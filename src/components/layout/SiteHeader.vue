@@ -22,8 +22,12 @@
       </div>
 
       <div class="flex justify-center" ref="logoContainer">
-        <router-link to="/" class="block">
-          <img src="@/assets/images/logo.png" alt="Clínica Asati" class="w-auto" />
+        <router-link to="/" class="flex items-center space-x-4">
+          <img src="@/assets/images/logo.png" alt="Clínica Asati" class="h-20 w-auto" />
+          <div class="flex flex-col items-center">
+            <span class="asati-text text-5xl font-semibold text-teal-700">ASATI</span>
+            <span class="text-lg text-teal-600 tracking-wider">Clínica de Salud Mental</span>
+          </div>
         </router-link>
       </div>
     </div>
@@ -170,5 +174,11 @@ const menuItems = [
 }
 .bg-teal-500 {
   background-color: #009B8F;
+}
+
+.asati-text {
+  transform: scaleX(1.4);
+  transform-origin: center;
+  letter-spacing: 0.0em;
 }
 </style>
