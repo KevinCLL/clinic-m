@@ -35,7 +35,7 @@
       <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-teal-100 opacity-70"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">Nuestros Servicios</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4">Nuestros Servicios</h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Descubre nuestro enfoque integral para acompañarte en tu proceso terapéutico</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
@@ -43,7 +43,7 @@
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
             <div class="h-60 overflow-hidden">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicoterapia' }}">
-                <img src="@/assets/images/psychotherapy.png" alt="Psicoterapia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/psychotherapy.jpg" alt="Psicoterapia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
             </div>
             <div class="p-8 border-t border-teal-50">
@@ -59,7 +59,7 @@
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
             <div class="h-60 overflow-hidden">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}">
-                <img src="@/assets/images/psychiatry.png" alt="Psiquiatría" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/psychiatry.jpg" alt="Psiquiatría" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
             </div>
             <div class="p-8 border-t border-teal-50">
@@ -75,7 +75,7 @@
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
             <div class="h-60 overflow-hidden">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'mindfulness' }}">
-                <img src="@/assets/images/mindfulness.png" alt="Mindfulness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="@/assets/images/mindfulness.jpg" alt="Mindfulness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
             </div>
             <div class="p-8 border-t border-teal-50">
@@ -108,16 +108,15 @@
       </div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-4">Te acompañamos en todas las etapas de la vida</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4">Te acompañamos en todas las etapas de la vida</h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Nuestro equipo de especialistas te ofrece apoyo profesional adaptado a cada momento vital</p>
 
         <!-- Versión móvil (hasta sm) -->
-        <div class="flex flex-wrap justify-center gap-6 sm:hidden max-w-5xl mx-auto">
-          <div v-for="(stage, index) in lifeStages" :key="`mobile-${index}`" class="w-36 flex flex-col items-center transition-transform duration-300 hover:scale-105">
+        <div class="flex flex-wrap justify-center gap-3 sm:hidden max-w-5xl mx-auto">
+          <div v-for="(stage, index) in lifeStages" :key="`mobile-${index}`" class="w-40 flex flex-col items-center">
             <router-link :to="stage.route" class="block group flex flex-col items-center">
-              <div class="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-soft-lg relative">
-                <div class="absolute inset-0 bg-teal-500 opacity-0 transition-opacity group-hover:opacity-20"></div>
-                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" />
+              <div class="w-40 h-40 rounded-full overflow-hidden mb-4 relative transition-transform duration-700 group-hover:scale-110">
+                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 50%, transparent 60%); mask-image: radial-gradient(black 50%, transparent 60%);" />
               </div>
               <h3 class="font-semibold text-base text-teal-700 group-hover:text-teal-600 transition-colors text-center">{{ stage.title }}</h3>
             </router-link>
@@ -125,12 +124,11 @@
         </div>
 
         <!-- Versión tablet/desktop (sm y superior) -->
-        <div class="hidden sm:grid sm:grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 max-w-5xl mx-auto">
-          <div v-for="(stage, index) in lifeStages" :key="`desktop-${index}`" class="text-center flex flex-col items-center transition-transform duration-300 hover:scale-105">
+        <div class="hidden sm:grid sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 max-w-5xl mx-auto">
+          <div v-for="(stage, index) in lifeStages" :key="`desktop-${index}`" class="text-center flex flex-col items-center">
             <router-link :to="stage.route" class="block group flex flex-col items-center">
-              <div class="w-40 h-40 rounded-full overflow-hidden mb-5 shadow-soft-lg relative">
-                <div class="absolute inset-0 bg-teal-500 opacity-0 transition-opacity group-hover:opacity-20"></div>
-                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" />
+              <div class="w-48 h-48 rounded-full overflow-hidden mb-5 relative transition-transform duration-700 group-hover:scale-110">
+                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 50%, transparent 60%); mask-image: radial-gradient(black 50%, transparent 60%);" />
               </div>
               <h3 class="font-semibold text-lg text-teal-700 group-hover:text-teal-600 transition-colors">{{ stage.title }}</h3>
             </router-link>
@@ -156,11 +154,11 @@ import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
 
 // Importación de imágenes
-import imgChild from '@/assets/images/child.png';
-import imgTeen from '@/assets/images/teen.png';
-import imgAdult from '@/assets/images/adult.png';
-import imgPerinatal from '@/assets/images/perinatal.png';
-import imgThirdAge from '@/assets/images/third_age.png';
+import imgChild from '@/assets/images/child.jpg';
+import imgTeen from '@/assets/images/teen.jpg';
+import imgAdult from '@/assets/images/adult.jpg';
+import imgPerinatal from '@/assets/images/perinatal.jpg';
+import imgThirdAge from '@/assets/images/third_age.jpg';
 
 const lifeStages = [
   {
@@ -288,5 +286,20 @@ const handleHomeFormSubmit = (formData) => {
   animation: fadeInUp 1.2s ease-out forwards;
   animation-delay: 0.3s;
   opacity: 0;
+}
+
+.life-stage-image {
+  position: relative;
+  box-shadow: 
+    0 0 0 3px rgba(255, 255, 255, 0.9),
+    0 0 0 6px rgba(255, 255, 255, 0.7),
+    0 0 0 9px rgba(255, 255, 255, 0.5),
+    0 0 0 12px rgba(255, 255, 255, 0.3),
+    0 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.life-stage-image img {
+  border-radius: 50%;
+  display: block;
 }
 </style>
