@@ -45,10 +45,10 @@
 
 
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-teal-800 mb-8 text-center">NUESTRO ENFOQUE</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Una mirada integral que pone en el centro a la persona</h2>
           <div class="bg-white rounded-xl shadow-soft p-8">
             <p class="text-gray-700 leading-relaxed text-justify">
-              Consideramos que la salud mental no es solo la ausencia de enfermedad mental si no el estado de bienestar que permite a la persona desarrollar todas sus potencialidades, por lo que no solo apostamos por el tratamiento de los problemas de salud mental (cuando aparecen), sino que buscamos promover la salud mental a través de actividades y espacios de encuentro que pongan el foco en cultivar la conciencia, la reflexión y el bienestar.
+              Atendemos a las personas desde una mirada integral, considerando a cada una en todas sus dimensiones: biológica, psicológica, social, relacional y espiritual. Atender la salud mental desde una perspectiva integral significa tener en cuenta no solo los síntomas o diagnósticos, sino también el contexto de vida, la historia personal, las relaciones, los recursos internos y externos de cada persona y su forma única de experimentar el malestar o el bienestar.
             </p>
           </div>
         </div>
@@ -56,40 +56,47 @@
     </section>
 
 
-    <section class="py-16 md:py-20 bg-white">
+    <section class="py-16 md:py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-teal-800 text-center mb-10">PILARES DEL PROYECTO</h2>
+        <h2 class="text-3xl font-bold text-teal-700 text-center mb-10">PILARES DEL PROYECTO</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-          <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1">
-            <div class="h-3 bg-teal-600"></div>
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden">
+            <div class="h-2 bg-teal-600"></div>
             <div class="p-8">
               <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">VÍNCULO TERAPÉUTICO</h3>
-              <p class="text-gray-700 text-justify">
-                Independientemente de la corriente desde la que trabajemos, ponemos en el centro la atención a la persona que tenemos delante, considerando que lo más importante es el vínculo, es decir, la relación de confianza, empatía y respeto mutuo que establecemos entre terapeuta y paciente.
+              <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                Ponemos en el centro la atención a la persona, considerando que lo más importante es el <strong>vínculo</strong>, es decir, la <strong>relación de confianza, empatía y respeto</strong> mutuo que establecemos entre terapeuta y paciente.
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Acompañamos cada proceso desde el respeto, la empatía y la colaboración, concibiendo a la persona que tenemos delante como un todo, reconociendo su complejidad y unicidad y atendiendo a sus preferencias, prioridades y necesidades.
               </p>
             </div>
           </div>
 
-
-          <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1">
-            <div class="h-3 bg-teal-600"></div>
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden">
+            <div class="h-2 bg-teal-600"></div>
             <div class="p-8">
               <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">EQUIPO</h3>
-              <p class="text-gray-700 text-justify">
-                Contamos con un equipo de profesionales altamente cualificados (psiquiatría y psicología clínica) que trabajan de manera interdisciplinar para conseguir la recuperación de la persona y comparten los valores del proyecto (aceptación, honestidad, compromiso, apertura y respeto). Trabajamos de forma conjunta, seguimos en formación permanente y nos supervisamos para aprender las unas de las otras y ampliar nuestra comprensión de las personas a las que acompañamos.
+              <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                Nuestro abordaje clínico es integrativo. Aunque cada profesional del equipo se ha formado en una o varias corrientes psicoterapéutica, compartimos una forma de trabajar que combina herramientas de distintos modelos terapéuticos, siempre desde una mirada amplia, flexible y basada en la evidencia científica que nos permite adaptar la intervención a las necesidades de cada persona.
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Seguimos en formación continua y nos supervisamos para aprender las unas de las otras y ampliar nuestra comprensión de las personas a las que acompañamos.
               </p>
             </div>
           </div>
 
-
-          <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1">
-            <div class="h-3 bg-teal-600"></div>
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden">
+            <div class="h-2 bg-teal-600"></div>
             <div class="p-8">
-              <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">ESPACIO SEGURO</h3>
-              <p class="text-gray-700 text-justify">
-                Creemos en la importancia de crear un espacio de encuentro en el que cualquier persona pueda sentirse segura, aceptada y acompañada, contemplando la diversidad de cada persona (sexual, de género, raza, etnia, creencias religiosas, modelos relacionales, diversidad funcional, estilo de vida…) y sus vivencias subjetivas.
+              <h3 class="text-xl font-semibold text-teal-700 mb-4 text-center">PERSPECTIVA INTEGRADORA</h3>
+              <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                Desde una perspectiva integradora, apostamos por una atención coordinada y continua, que ponga en diálogo a los distintos profesionales implicados en el cuidado de la salud mental y también que incluya y acompañe a las familias.
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Trabajamos en red para evitar la fragmentación del cuidado y facilitar el acceso a diferentes niveles de atención, asegurando que las personas se sientan acompañadas de forma coherente y sostenida en su proceso.
               </p>
             </div>
           </div>
