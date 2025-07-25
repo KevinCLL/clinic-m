@@ -1,31 +1,35 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-20 md:py-28 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="relative py-16 md:py-24 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="@/assets/images/main_background.jpg" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/20"></div>
+      </div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-6 leading-tight">Atención Integral a la <span class="text-teal-600">Salud Mental</span></h1>
-          <p class="text-gray-700 mb-8 leading-relaxed text-lg text-justify">
-            La salud mental es un estado de bienestar mental que permite a las personas hacer frente a los momentos de estrés de la vida,
-            desarrollar todas sus habilidades, poder aprender y trabajar adecuadamente y contribuir a la mejora de su comunidad.
-            Es parte fundamental de la salud y el bienestar que sustenta nuestras capacidades individuales y colectivas para tomar decisiones,
-            establecer relaciones y dar forma al mundo en el que vivimos.
-          </p>
-          <p class="text-gray-700 mb-8 leading-relaxed text-lg text-justify">
-            La salud mental es, además, un derecho humano fundamental y un elemento esencial para el desarrollo personal, comunitario y socioeconómico.
-            Es más que la mera ausencia de trastornos mentales. Se da en un proceso complejo, que cada persona experimenta de una manera diferente,
-            con diversos grados de dificultad y angustia y resultados sociales y clínicos que pueden ser muy diferentes.
-          </p>
-          <Button :to="{ name: 'que-ofrecemos' }" text="Ver Servicios" variant="teal" class="text-lg px-8 py-3 shadow-teal transform transition-all duration-300 hover:scale-105" />
+        <div class="hero-content max-w-5xl mx-auto bg-white/40 backdrop-blur-sm rounded-3xl p-10 md:p-12 shadow-2xl">
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">Atención integral a la Salud Mental</h1>
+          
+          <div class="space-y-4 text-gray-700 text-base md:text-lg">
+            <p class="text-justify">
+              La salud mental es un estado de bienestar que permite a las personas afrontar el estrés cotidiano, desarrollar sus capacidades, aprender, trabajar y participar activamente en la comunidad. Va más allá de la simple ausencia de trastornos mentales, ya que constituye un derecho humano fundamental y un pilar clave para el desarrollo personal, social y económico. Se trata de un proceso complejo, que cada persona vive de forma única, con distintos niveles de dificultad y angustia, y con desenlaces sociales y clínicos diversos.
+            </p>
+            
+            <p class="text-justify">
+              Nuestra forma de entender la salud mental es <strong>integral</strong>, contemplando a la persona en todas sus dimensiones: <strong>biológica, psicológica, social, emocional, espiritual y cultural</strong>.
+            </p>
+            
+            <p class="text-justify">
+              Así pues, nuestro enfoque no está puesto solo en el tratamiento de síntomas, sino en buscar el <strong>bienestar completo y equilibrado</strong> de la persona. El <strong>acompañamiento</strong> es lo que vertebra la atención que damos, incluyendo en el proceso la <strong>prevención</strong>, la <strong>promoción de la salud</strong>, el <strong>tratamiento</strong> y la <strong>rehabilitación</strong>.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
 
-    <section class="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section class="py-12 md:py-16 bg-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-teal-200 to-transparent"></div>
       <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-teal-100 opacity-70"></div>
       <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-teal-100 opacity-70"></div>
@@ -91,7 +95,7 @@
     </section>
 
 
-    <section class="py-20 md:py-28 bg-gradient-to-br from-teal-50 via-white to-teal-50 relative">
+    <section class="py-12 md:py-16 bg-gradient-to-br from-teal-50 via-white to-teal-50 relative">
       <div class="absolute top-0 right-0 w-full h-full">
         <div class="w-full h-full opacity-5">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -267,5 +271,22 @@ const handleHomeFormSubmit = (formData) => {
 }
 .hover\:shadow-teal-sm:hover {
   box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 </style>
