@@ -1,14 +1,5 @@
 <template>
   <div class="overflow-hidden">
-    
-    <section class="relative py-8 md:py-10 overflow-hidden bg-gradient-to-br from-primary-50 to-white">
-      <div class="absolute top-0 right-0 hero-decoration hero-decoration-1"></div>
-      <div class="absolute bottom-0 left-0 hero-decoration hero-decoration-2"></div>
-      
-      <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-semibold text-black">Quiénes somos</h1>
-      </div>
-    </section>
 
     <section class="relative py-16 md:py-20 overflow-hidden">
       <div class="absolute inset-0 z-0">
@@ -16,11 +7,11 @@
         <div class="absolute inset-0 bg-black/20"></div>
       </div>
 
-      <div class="container mx-auto px-4 relative z-10">
-        <div class="sobre-nosotras-content max-w-5xl mx-auto bg-white/40 backdrop-blur-sm rounded-xl p-8 md:p-12 shadow-xl">
+      <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
+        <div class="sobre-nosotras-content max-w-full md:max-w-4xl lg:max-w-3xl mx-auto bg-white/40 backdrop-blur-sm rounded-xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl">
           <h2 class="text-2xl md:text-3xl font-bold text-black text-center mb-6">SOBRE NOSOTRAS</h2>
           
-          <div class="flex flex-col gap-4 text-gray-700 text-lg">
+          <div class="flex flex-col gap-4 text-black text-lg">
             <p class="text-justify">
               En nuestra Clínica de Salud Mental somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicologías clínicas). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
             </p>

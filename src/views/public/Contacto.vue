@@ -1,15 +1,6 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative hero-section overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 hero-decoration rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
-      <div class="absolute bottom-0 left-0 w-48 h-48 hero-decoration rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
-
-      <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-semibold text-black">Contacto</h1>
-      </div>
-    </section>
-
     <section class="relative content-section overflow-hidden">
       <div class="absolute top-0 right-0 w-96 h-96 content-decoration rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
       <div class="absolute bottom-0 left-0 w-64 h-64 content-decoration rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>

@@ -7,11 +7,11 @@
         <div class="absolute inset-0 bg-black/20"></div>
       </div>
 
-      <div class="container mx-auto px-4 relative z-10">
-        <div class="hero-content max-w-5xl mx-auto bg-white/40 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl">
+      <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
+        <div class="hero-content max-w-full md:max-w-4xl lg:max-w-3xl mx-auto bg-white/40 backdrop-blur-sm rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl">
           <h1 class="text-3xl md:text-4xl font-bold text-black text-center mb-6">Atención integral a la Salud Mental</h1>
 
-          <div class="text-base md:text-lg leading-relaxed text-gray-700 flex flex-col gap-4">
+          <div class="text-base md:text-lg leading-relaxed text-black flex flex-col gap-4">
             <p class="text-justify">
               La salud mental es un estado de bienestar que permite a las personas afrontar el estrés cotidiano, desarrollar sus capacidades, aprender, trabajar y participar activamente en la comunidad. Va más allá de la simple ausencia de trastornos mentales, ya que constituye un derecho humano fundamental y un pilar clave para el desarrollo personal, social y económico. Se trata de un proceso complejo, que cada persona vive de forma única, con distintos niveles de dificultad y angustia, y con desenlaces sociales y clínicos diversos.
             </p>

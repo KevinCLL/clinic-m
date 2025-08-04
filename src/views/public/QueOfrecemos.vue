@@ -1,21 +1,12 @@
 <template>
   <div class="overflow-hidden">
-    
-    <section class="relative py-8 md:py-10 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
-      <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary-500 rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
-      
-      <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-semibold text-black">Qué ofrecemos</h1>
-      </div>
-    </section>
 
     <section class="relative py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
       <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
       <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <p class="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed text-justify">
+        <p class="text-black max-w-3xl mx-auto text-lg leading-relaxed text-justify">
           Independientemente de la especialidad de la que partimos (medicina, psicología…) y de si intervenimos a nivel farmacológico, psicoterapéutico o ambas, siempre hacemos un acompañamiento terapéutico y adaptamos el proceso a las necesidades individuales de cada persona. Intentamos acompañar siempre desde la horizontalidad, teniendo en cuenta nuestro criterio profesional y nuestra experiencia, pero respetando los tiempos, las inquietudes y las preferencias de la persona.
         </p>
       </div>

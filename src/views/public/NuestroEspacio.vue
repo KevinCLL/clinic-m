@@ -1,14 +1,5 @@
 <template>
   <div class="overflow-hidden">
-    
-    <section class="relative hero-section overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
-      <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
-      
-      <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-semibold text-black">Nuestro espacio</h1>
-      </div>
-    </section>
 
     <section class="relative content-section overflow-hidden">
       <div class="absolute inset-0 z-0">
@@ -16,11 +7,11 @@
         <div class="absolute inset-0 bg-black/20"></div>
       </div>
 
-      <div class="container mx-auto px-4 relative z-10">
-        <div class="nuestro-espacio-content max-w-5xl mx-auto bg-white/40 backdrop-blur-sm content-card shadow-2xl">
+      <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
+        <div class="nuestro-espacio-content max-w-full md:max-w-4xl lg:max-w-3xl mx-auto bg-white/40 backdrop-blur-sm content-card shadow-2xl">
           <h2 class="text-2xl md:text-3xl font-bold text-black text-center mb-6">NUESTRO ESPACIO</h2>
           
-          <div class="text-base md:text-lg leading-relaxed text-gray-700 flex flex-col gap-4">
+          <div class="text-base md:text-lg leading-relaxed text-black flex flex-col gap-4">
             <p class="text-justify">
               En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan.
             </p>

@@ -106,8 +106,8 @@ onUnmounted(() => {
 const menuItems = [
   { name: 'Inicio', path: '/' },
   { name: 'Quiénes somos', path: '/quienes-somos' },
-  { name: 'Nuestro espacio', path: '/nuestro-espacio' },
   { name: 'Qué ofrecemos', path: '/que-ofrecemos' },
+  { name: 'Nuestro espacio', path: '/nuestro-espacio' },
   { name: 'Contacto', path: '/contacto' }
 ];
 </script>
