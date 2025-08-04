@@ -10,13 +10,10 @@
 
         <div class="hidden md:flex space-x-3 ml-auto">
           <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
             <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
       </div>

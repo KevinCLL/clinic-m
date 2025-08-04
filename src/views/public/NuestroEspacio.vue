@@ -1,32 +1,19 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative content-section overflow-hidden">
-      <div class="absolute inset-0 z-0">
-        <img src="@/assets/images/nuestro_espacio.jpg" alt="Background" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-black/20"></div>
-      </div>
-
-      <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
-        <div class="nuestro-espacio-content max-w-full md:max-w-4xl lg:max-w-3xl mx-auto bg-white/40 backdrop-blur-sm content-card shadow-2xl">
-          <h2 class="text-2xl md:text-3xl font-bold text-black text-center mb-6">NUESTRO ESPACIO</h2>
-          
-          <div class="text-base md:text-lg leading-relaxed text-black flex flex-col gap-4">
-            <p class="text-justify">
-              En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan.
-            </p>
-            
-            <p class="text-justify">
-              Por eso, hemos diseñado cada espacio para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés.
-            </p>
-            
-            <p class="text-justify">
-              Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <SectionHeader title="NUESTRO ESPACIO" :backgroundImage="nuestroEspacioImg">
+      <p class="text-justify">
+        En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan.
+      </p>
+      
+      <p class="text-justify">
+        Por eso, hemos diseñado cada espacio para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés.
+      </p>
+      
+      <p class="text-justify">
+        Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
+      </p>
+    </SectionHeader>
 
 
     <section class="facilities-section bg-white relative">
@@ -143,7 +130,8 @@
 </template>
 
 <script setup>
-
+import SectionHeader from '@/components/SectionHeader.vue';
+import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
 </script>
 
 <style scoped>
@@ -180,16 +168,6 @@
   }
 }
 
-.content-card {
-  border-radius: var(--border-radius-xl);
-  padding: 2rem;
-}
-
-@media (min-width: 768px) {
-  .content-card {
-    padding: 3rem;
-  }
-}
 
 
 
@@ -324,21 +302,4 @@
   box-shadow: 0 10px 20px -5px rgba(0, 121, 113, 0.3);
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.nuestro-espacio-content {
-  animation: fadeInUp 1.2s ease-out forwards;
-  animation-delay: 0.3s;
-  opacity: 0;
-}
 </style>

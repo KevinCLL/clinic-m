@@ -1,16 +1,11 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
-
-      <div class="container mx-auto px-4 relative z-10">
-        <p class="text-black max-w-3xl mx-auto text-lg leading-relaxed text-justify">
-          Independientemente de la especialidad de la que partimos (medicina, psicología…) y de si intervenimos a nivel farmacológico, psicoterapéutico o ambas, siempre hacemos un acompañamiento terapéutico y adaptamos el proceso a las necesidades individuales de cada persona. Intentamos acompañar siempre desde la horizontalidad, teniendo en cuenta nuestro criterio profesional y nuestra experiencia, pero respetando los tiempos, las inquietudes y las preferencias de la persona.
-        </p>
-      </div>
-    </section>
+    <SectionHeader title="Qué Ofrecemos" :backgroundImage="mainBackgroundImg">
+      <p class="text-justify">
+        Independientemente de la especialidad de la que partimos (medicina, psicología…) y de si intervenimos a nivel farmacológico, psicoterapéutico o ambas, siempre hacemos un acompañamiento terapéutico y adaptamos el proceso a las necesidades individuales de cada persona. Intentamos acompañar siempre desde la horizontalidad, teniendo en cuenta nuestro criterio profesional y nuestra experiencia, pero respetando los tiempos, las inquietudes y las preferencias de la persona.
+      </p>
+    </SectionHeader>
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
@@ -283,6 +278,8 @@
 
 <script setup>
 import InfoComponent from '@/components/InfoComponent.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
+import mainBackgroundImg from '@/assets/images/main_background.jpg';
 
 
 defineOptions({

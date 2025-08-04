@@ -25,13 +25,10 @@
 
           <div class="flex space-x-3">
             <a href="#" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
               <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>

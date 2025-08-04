@@ -75,13 +75,10 @@
 
         <div class="flex space-x-3">
           <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
       </div>

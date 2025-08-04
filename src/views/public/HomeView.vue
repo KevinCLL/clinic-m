@@ -1,32 +1,19 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-16 md:py-20 overflow-hidden">
-      <div class="absolute inset-0 z-0">
-        <img src="@/assets/images/main_background.jpg" alt="Background" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-black/20"></div>
-      </div>
+    <SectionHeader title="Atención integral a la Salud Mental" :backgroundImage="mainBackgroundImg">
+      <p class="text-justify">
+        La salud mental es un estado de bienestar que permite a las personas afrontar el estrés cotidiano, desarrollar sus capacidades, aprender, trabajar y participar activamente en la comunidad. Va más allá de la simple ausencia de trastornos mentales, ya que constituye un derecho humano fundamental y un pilar clave para el desarrollo personal, social y económico. Se trata de un proceso complejo, que cada persona vive de forma única, con distintos niveles de dificultad y angustia, y con desenlaces sociales y clínicos diversos.
+      </p>
 
-      <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
-        <div class="hero-content max-w-full md:max-w-4xl lg:max-w-3xl mx-auto bg-white/40 backdrop-blur-sm rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl">
-          <h1 class="text-3xl md:text-4xl font-bold text-black text-center mb-6">Atención integral a la Salud Mental</h1>
+      <p class="text-justify">
+        Nuestra forma de entender la salud mental es <strong>integral</strong>, contemplando a la persona en todas sus dimensiones: <strong>biológica, psicológica, social, emocional, espiritual y cultural</strong>.
+      </p>
 
-          <div class="text-base md:text-lg leading-relaxed text-black flex flex-col gap-4">
-            <p class="text-justify">
-              La salud mental es un estado de bienestar que permite a las personas afrontar el estrés cotidiano, desarrollar sus capacidades, aprender, trabajar y participar activamente en la comunidad. Va más allá de la simple ausencia de trastornos mentales, ya que constituye un derecho humano fundamental y un pilar clave para el desarrollo personal, social y económico. Se trata de un proceso complejo, que cada persona vive de forma única, con distintos niveles de dificultad y angustia, y con desenlaces sociales y clínicos diversos.
-            </p>
-
-            <p class="text-justify">
-              Nuestra forma de entender la salud mental es <strong>integral</strong>, contemplando a la persona en todas sus dimensiones: <strong>biológica, psicológica, social, emocional, espiritual y cultural</strong>.
-            </p>
-
-            <p class="text-justify">
-              Así pues, nuestro enfoque no está puesto solo en el tratamiento de síntomas, sino en buscar el <strong>bienestar completo y equilibrado</strong> de la persona. El <strong>acompañamiento</strong> es lo que vertebra la atención que damos, incluyendo en el proceso la <strong>prevención</strong>, la <strong>promoción de la salud</strong>, el <strong>tratamiento</strong> y la <strong>rehabilitación</strong>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <p class="text-justify">
+        Así pues, nuestro enfoque no está puesto solo en el tratamiento de síntomas, sino en buscar el <strong>bienestar completo y equilibrado</strong> de la persona. El <strong>acompañamiento</strong> es lo que vertebra la atención que damos, incluyendo en el proceso la <strong>prevención</strong>, la <strong>promoción de la salud</strong>, el <strong>tratamiento</strong> y la <strong>rehabilitación</strong>.
+      </p>
+    </SectionHeader>
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
@@ -152,6 +139,8 @@
 <script setup>
 import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
+import mainBackgroundImg from '@/assets/images/main_background.jpg';
 
 
 import imgChild from '@/assets/images/child.jpg';
@@ -331,22 +320,6 @@ const handleHomeFormSubmit = (formData) => {
   box-shadow: 0 4px 8px -1px rgba(0, 121, 113, 0.25);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero-content {
-  animation: fadeInUp 1.2s ease-out forwards;
-  animation-delay: 0.3s;
-  opacity: 0;
-}
 
 .life-stage-image {
   position: relative;
