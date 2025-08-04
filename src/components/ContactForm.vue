@@ -45,7 +45,7 @@
       </div>
 
 
-      <div class="bg-primary-700 text-white p-4 lg:p-6 flex-grow rounded-b-xl">
+      <div class="bg-primary-600 text-white p-4 lg:p-6 flex-grow rounded-b-xl">
         <h2 class="text-xl font-bold mb-4">Contacto</h2>
 
         <div class="mb-4 space-y-2 text-sm">
@@ -74,13 +74,13 @@
         </div>
 
         <div class="flex space-x-3">
-          <a href="#" class="bg-white text-primary-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
+          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="bg-white text-primary-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
+          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="bg-white text-primary-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
+          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -229,9 +229,6 @@ const submitForm = () => {
 }
 .bg-primary-600 {
   background-color: var(--primary-600);
-}
-.bg-primary-700 {
-  background-color: var(--primary-700);
 }
 .hover\:bg-primary-100:hover {
   background-color: var(--primary-100);

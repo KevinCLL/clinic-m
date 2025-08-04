@@ -330,7 +330,7 @@
 }
 
 .shadow-teal-lg {
-  box-shadow: 0 10px 20px -5px rgba(0, 155, 143, 0.3);
+  box-shadow: 0 10px 20px -5px rgba(0, 121, 113, 0.3);
 }
 
 /* Animations */

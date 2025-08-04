@@ -316,19 +316,19 @@ const handleHomeFormSubmit = (formData) => {
   box-shadow: var(--shadow-xl);
 }
 .shadow-primary {
-  box-shadow: 0 4px 14px -2px rgba(0, 155, 143, 0.35);
+  box-shadow: 0 4px 14px -2px rgba(0, 121, 113, 0.35);
 }
 .shadow-primary-sm {
-  box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
+  box-shadow: 0 4px 8px -1px rgba(0, 121, 113, 0.25);
 }
 .shadow-primary-lg {
-  box-shadow: 0 10px 20px -5px rgba(0, 155, 143, 0.3);
+  box-shadow: 0 10px 20px -5px rgba(0, 121, 113, 0.3);
 }
 .hover\:shadow-primary-lg:hover {
-  box-shadow: 0 10px 20px -5px rgba(0, 155, 143, 0.3);
+  box-shadow: 0 10px 20px -5px rgba(0, 121, 113, 0.3);
 }
 .hover\:shadow-primary-sm:hover {
-  box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
+  box-shadow: 0 4px 8px -1px rgba(0, 121, 113, 0.25);
 }
 
 @keyframes fadeInUp {

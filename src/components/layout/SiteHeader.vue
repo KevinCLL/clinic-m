@@ -35,7 +35,7 @@
             v-for="item in menuItems"
             :key="item.path"
             :to="item.path"
-            class="px-5 py-4 text-primary-800 hover:text-primary-600 transition-all duration-300 relative group text-lg font-normal"
+            class="px-5 py-4 text-primary-600 hover:text-primary-700 transition-all duration-300 relative group text-lg font-normal"
             :class="{ 'font-medium': $route.path === item.path }"
           >
             {{ item.name }}
@@ -46,11 +46,11 @@
         <div class="md:hidden">
           <div class="flex items-center justify-between">
             <transition name="fade-slide">
-              <div v-if="isSticky" class="text-primary-800 font-semibold py-4 pl-4 transition-all duration-300 text-base">
+              <div v-if="isSticky" class="text-primary-600 font-semibold py-4 pl-4 transition-all duration-300 text-base">
                 CODA - SALUD MENTAL INTEGRAL
               </div>
             </transition>
-            <button @click="toggleMobileMenu" class="p-4 text-primary-800 ml-auto">
+            <button @click="toggleMobileMenu" class="p-4 text-primary-600 ml-auto">
               <i class="fas text-lg" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
             </button>
           </div>
@@ -61,7 +61,7 @@
                 v-for="item in menuItems"
                 :key="item.path"
                 :to="item.path"
-                class="block px-4 py-3 text-primary-800 hover:bg-primary-50 transition-all duration-300 text-lg"
+                class="block px-4 py-3 text-primary-600 hover:bg-primary-50 transition-all duration-300 text-lg"
                 :class="{ 'bg-primary-50 text-primary-700 font-medium': $route.path === item.path }"
                 @click="mobileMenuOpen = false"
               >
