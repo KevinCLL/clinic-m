@@ -5,7 +5,7 @@
         <div class="hidden md:block">
           <a href="tel:688764073" class="text-primary-700 mr-2 hover:text-primary-600 transition-colors duration-300 text-lg">688764073</a>
           <span class="text-gray-400 mx-1">|</span>
-          <a href="mailto:info@clinicasati.com" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg">info@clinicasati.com</a>
+          <a href="mailto:info@codasaludmental.es" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg">info@codasaludmental.es</a>
         </div>
 
         <div class="hidden md:flex space-x-3 ml-auto">
@@ -23,7 +23,7 @@
 
       <div class="flex justify-center" ref="logoContainer">
         <router-link to="/" class="flex items-center space-x-4">
-          <img src="@/assets/images/logo.png" alt="Clínica Asati" class="h-20 w-auto" />
+          <img src="@/assets/images/logo.png" alt="CODA - Salud mental integral" class="h-20 w-auto" />
         </router-link>
       </div>
     </div>
@@ -47,7 +47,7 @@
           <div class="flex items-center justify-between">
             <transition name="fade-slide">
               <div v-if="isSticky" class="text-primary-800 font-semibold py-4 pl-4 transition-all duration-300 text-base">
-                ASATI - CLÍNICA DE SALUD MENTAL
+                CODA - SALUD MENTAL INTEGRAL
               </div>
             </transition>
             <button @click="toggleMobileMenu" class="p-4 text-primary-800 ml-auto">
@@ -175,7 +175,7 @@ const menuItems = [
   background-color: var(--primary-600);
 }
 
-.asati-text {
+.coda-text {
   transform: scaleX(1.4);
   transform-origin: center;
   letter-spacing: 0.0em;

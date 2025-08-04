@@ -56,12 +56,12 @@
 
           <div class="flex items-center">
             <i class="fas fa-phone mr-3 text-primary-200 w-4"></i>
-            <p>688764073</p>
+            <a href="tel:688764073" class="hover:text-white transition-colors">688764073</a>
           </div>
 
           <div class="flex items-center">
             <i class="fas fa-envelope mr-3 text-primary-200 w-4"></i>
-            <p>info@clinicasati.es</p>
+            <a href="mailto:info@codasaludmental.es" class="hover:text-white transition-colors">info@codasaludmental.es</a>
           </div>
         </div>
 

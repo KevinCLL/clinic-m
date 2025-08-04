@@ -180,7 +180,7 @@ const actividades = {
     ],
     fechas: 'Del 5 de septiembre al 24 de octubre de 2023',
     horario: 'Martes de 18:00 a 19:30',
-    ubicacion: 'Centro ASATI (Sala de grupos)',
+    ubicacion: 'Centro CODA (Sala de grupos)',
     plazas: 'Máximo 12 participantes',
     precio: '220€ (posibilidad de pago fraccionado)',
     facilitadores: [
@@ -233,7 +233,7 @@ const actividadActual = computed(() => {
     ],
     fechas: 'Consultar próximas fechas',
     horario: 'Por determinar',
-    ubicacion: 'Centro ASATI',
+    ubicacion: 'Centro CODA',
     plazas: 'Grupos reducidos (8-12 personas)',
     precio: 'Consultar',
     facilitadores: [

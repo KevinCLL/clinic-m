@@ -19,7 +19,7 @@
             
             <div class="flex items-center">
               <i class="fas fa-envelope mr-3 text-white/80"></i>
-              <a href="mailto:info@clinicasati.es" class="hover:text-white/80 transition">info@clinicasati.es</a>
+              <a href="mailto:info@codasaludmental.es" class="hover:text-white/80 transition">info@codasaludmental.es</a>
             </div>
           </div>
 
