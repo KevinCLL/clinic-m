@@ -58,31 +58,15 @@
         </div>
 
 
+
         <div class="max-w-6xl mx-auto facility-item">
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/sala_espera.png" alt="Sala de espera" class="facility-image">
-              </div>
-            </div>
-            <div class="facility-content" data-aos="fade-left">
-              <h3 class="facility-title text-primary">Sala de Espera</h3>
-              <p class="text-gray-700 facility-description text-justify">
-                Un espacio tranquilo con asientos cómodos donde podrás relajarte antes de tu cita. Disponemos de agua, revistas y una pequeña biblioteca con material sobre bienestar emocional. Hemos cuidado cada detalle para que incluso el tiempo de espera sea una experiencia agradable y relajante.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="max-w-6xl mx-auto facility-item">
-          <div class="flex flex-col md:flex-row-reverse items-center">
-            <div class="facility-image-wrapper group md:pl-8">
-              <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/espacio_infantil.png" alt="Sala infantil" class="facility-image">
               </div>
             </div>
-            <div class="facility-content md:pr-8" data-aos="fade-right">
+            <div class="facility-content" data-aos="fade-left">
               <h3 class="facility-title text-primary">Espacio Infantil</h3>
               <p class="text-gray-700 facility-description text-justify">
                 Un ambiente colorido y adaptado para los más pequeños, con materiales y juegos terapéuticos que facilitan la expresión y el desarrollo de habilidades socio-emocionales. Este espacio está especialmente diseñado para que niños y adolescentes se sientan cómodos y puedan trabajar a través del juego.
@@ -93,16 +77,33 @@
 
 
         <div class="max-w-6xl mx-auto facility-item">
-          <div class="flex flex-col md:flex-row items-center">
-            <div class="facility-image-wrapper group">
+          <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/terapia_grupal.png" alt="Sala de terapia grupal" class="facility-image">
               </div>
             </div>
-            <div class="facility-content" data-aos="fade-left">
-              <h3 class="facility-title text-primary">Sala de Terapia Grupal</h3>
+            <div class="facility-content md:pr-8" data-aos="fade-right">
+              <h3 class="facility-title text-primary">Sala grupal</h3>
               <p class="text-gray-700 facility-description text-justify">
                 Espacio amplio y versátil para sesiones grupales, talleres y actividades de mindfulness, diseñado para fomentar la interacción y el aprendizaje compartido. Equipado con todo lo necesario para diversas dinámicas terapéuticas y formativas en un ambiente cálido y profesional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="max-w-6xl mx-auto facility-item">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="facility-image-wrapper group">
+              <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
+                <img src="@/assets/images/placeholder.jpg" alt="Terraza" class="facility-image">
+              </div>
+            </div>
+            <div class="facility-content" data-aos="fade-left">
+              <h3 class="facility-title text-primary">Terraza</h3>
+              <p class="text-gray-700 facility-description text-justify">
+                Un espacio al aire libre donde disfrutar de momentos de tranquilidad y conexión con la naturaleza. Nuestra terraza ofrece un ambiente relajante ideal para sesiones terapéuticas al aire libre o simplemente para tomar un respiro entre sesiones.
               </p>
             </div>
           </div>
