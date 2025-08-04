@@ -16,7 +16,7 @@
             type="text"
             id="titulo"
             v-model="formData.titulo"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
             required
           />
         </div>
@@ -28,7 +28,7 @@
             id="contenido"
             v-model="formData.contenido"
             rows="8"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
             required
           ></textarea>
         </div>
@@ -39,7 +39,7 @@
             id="publicado"
             type="checkbox"
             v-model="formData.publicado"
-            class="w-4 h-4 text-teal-600 bg-gray-100 border-gray-300 rounded focus:ring-teal-500"
+            class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500"
           />
           <label for="publicado" class="ml-2 text-sm font-medium text-gray-900">Publicado</label>
         </div>
@@ -65,7 +65,7 @@
           <button
             type="submit"
             :disabled="guardando"
-            class="py-2 px-4 text-sm font-medium text-white bg-teal-600 rounded-lg border border-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300"
+            class="py-2 px-4 text-sm font-medium text-white bg-primary-600 rounded-lg border border-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300"
           >
             <span v-if="guardando">Guardando...</span>
             <span v-else>Guardar cambios</span>
@@ -117,7 +117,7 @@ onMounted(async () => {
 
 
     const response = await clinicInfoService.getAllSections(true);
-    console.log('Respuesta secciones:', response);
+
 
     if (response && response.data) {
 
@@ -131,7 +131,7 @@ onMounted(async () => {
         };
       });
 
-      console.log('Secciones cargadas:', secciones.value);
+
     }
 
     reiniciarForm();
@@ -151,14 +151,14 @@ const reiniciarForm = () => {
       contenido: seccionData.value.contenido,
       publicado: seccionData.value.publicado
     };
-    console.log('Formulario reiniciado con:', formData.value);
+
   } else {
     formData.value = {
       titulo: '',
       contenido: '',
       publicado: true
     };
-    console.log('Formulario reiniciado con valores vacíos');
+
   }
   mensajeExito.value = '';
   mensajeError.value = '';
@@ -171,8 +171,8 @@ const guardarCambios = async () => {
   mensajeError.value = '';
 
   try {
-    console.log('Enviando actualización para sección:', seccion.value);
-    console.log('Datos a enviar:', formData.value);
+
+
 
 
     const sectionData = {
@@ -181,11 +181,11 @@ const guardarCambios = async () => {
       published: formData.value.publicado
     };
 
-    console.log('Datos formateados para API:', sectionData);
+
 
 
     const response = await clinicInfoService.updateSection(seccion.value, sectionData);
-    console.log('Respuesta del servidor:', response);
+
 
 
     if (secciones.value[seccion.value]) {

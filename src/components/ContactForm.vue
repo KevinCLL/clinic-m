@@ -20,23 +20,23 @@
       </div>
 
 
-      <div class="bg-teal-50 p-3 text-sm text-teal-800">
-        <h4 class="font-bold mb-1 text-teal-800">Cómo llegar:</h4>
+      <div class="bg-primary-50 p-4 text-sm text-primary-800">
+        <h4 class="font-bold mb-1 text-primary-800">Cómo llegar:</h4>
         <ul class="space-y-1">
           <li class="flex items-start">
-            <div class="flex-shrink-0 h-4 w-4 text-teal-600 mr-1 mt-0.5">
+            <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
               <i class="fas fa-subway"></i>
             </div>
             <span>Metro: Líneas 3 y 5 (Estación Bailén)</span>
           </li>
           <li class="flex items-start">
-            <div class="flex-shrink-0 h-4 w-4 text-teal-600 mr-1 mt-0.5">
+            <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
               <i class="fas fa-bus"></i>
             </div>
             <span>Bus: Líneas 2, 3, 41, 99 (Parada Pérez Galdós)</span>
           </li>
           <li class="flex items-start">
-            <div class="flex-shrink-0 h-4 w-4 text-teal-600 mr-1 mt-0.5">
+            <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
               <i class="fas fa-car"></i>
             </div>
             <span>Parking público a 200m (Mercado Ruzafa)</span>
@@ -45,22 +45,22 @@
       </div>
 
 
-      <div class="bg-teal-700 text-white p-4 lg:p-6 flex-grow rounded-b-xl">
+      <div class="bg-primary-700 text-white p-4 lg:p-6 flex-grow rounded-b-xl">
         <h2 class="text-xl font-bold mb-4">Contacto</h2>
 
         <div class="mb-4 space-y-2 text-sm">
           <div class="flex items-center">
-            <i class="fas fa-map-marker-alt mr-3 text-teal-200 w-4"></i>
+            <i class="fas fa-map-marker-alt mr-3 text-primary-200 w-4"></i>
             <p>C/Peris y Valero 178, bajo 46006 Valencia</p>
           </div>
 
           <div class="flex items-center">
-            <i class="fas fa-phone mr-3 text-teal-200 w-4"></i>
+            <i class="fas fa-phone mr-3 text-primary-200 w-4"></i>
             <p>688764073</p>
           </div>
 
           <div class="flex items-center">
-            <i class="fas fa-envelope mr-3 text-teal-200 w-4"></i>
+            <i class="fas fa-envelope mr-3 text-primary-200 w-4"></i>
             <p>info@clinicasati.es</p>
           </div>
         </div>
@@ -74,13 +74,13 @@
         </div>
 
         <div class="flex space-x-3">
-          <a href="#" class="bg-white text-teal-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-teal-100 transition-all duration-300">
+          <a href="#" class="bg-white text-primary-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="bg-white text-teal-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-teal-100 transition-all duration-300">
+          <a href="#" class="bg-white text-primary-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="bg-white text-teal-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-teal-100 transition-all duration-300">
+          <a href="#" class="bg-white text-primary-700 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -88,8 +88,8 @@
     </div>
 
 
-    <div class="bg-white p-4 lg:p-6 lg:w-2/3">
-      <h2 class="text-xl font-bold text-teal-800 mb-5">{{ title || 'Envíanos un mensaje' }}</h2>
+    <div class="bg-white p-6 lg:p-8 lg:w-2/3">
+      <h2 class="text-xl font-bold text-primary-800 mb-6">{{ title || 'Envíanos un mensaje' }}</h2>
 
       <form @submit.prevent="submitForm" class="space-y-4">
 
@@ -100,7 +100,7 @@
               type="text"
               id="nombre"
               v-model="form.nombre"
-              class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
+              class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
             >
           </div>
           <div>
@@ -109,7 +109,7 @@
               type="text"
               id="apellidos"
               v-model="form.apellidos"
-              class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
+              class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
             >
           </div>
         </div>
@@ -122,7 +122,7 @@
             id="email"
             v-model="form.email"
             required
-            class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
+            class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
           >
         </div>
 
@@ -133,7 +133,7 @@
             id="mensaje"
             v-model="form.mensaje"
             :rows="messageRows || 8"
-            class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal-200 focus:border-teal-400 transition-all outline-none"
+            class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
             style="width: 100%; box-sizing: border-box; resize: vertical;"
           ></textarea>
         </div>
@@ -141,7 +141,7 @@
 
         <button
           type="submit"
-          class="w-full py-2 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-500 transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 cursor-pointer"
+          class="w-full py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 cursor-pointer"
         >
           Enviar
           <i v-if="showIcon" class="fas fa-paper-plane ml-2"></i>
@@ -206,47 +206,49 @@ const submitForm = () => {
 </script>
 
 <style scoped>
-
-.text-teal-200 {
-  color: #9FE7E0;
+.text-primary-200 {
+  color: var(--primary-200);
 }
-.text-teal-600 {
-  color: #009B8F;
+.text-primary-600 {
+  color: var(--primary-600);
 }
-.text-teal-700 {
-  color: #00877C;
+.text-primary-700 {
+  color: var(--primary-700);
 }
-.text-teal-800 {
-  color: #007267;
+.text-primary-800 {
+  color: var(--primary-800);
 }
-.bg-teal-100 {
-  background-color: #CCF0EC;
+.bg-primary-50 {
+  background-color: var(--primary-50);
 }
-.bg-teal-500 {
-  background-color: #00ADA0;
+.bg-primary-100 {
+  background-color: var(--primary-100);
 }
-.bg-teal-600 {
-  background-color: #009B8F;
+.bg-primary-500 {
+  background-color: var(--primary-500);
 }
-.bg-teal-700 {
-  background-color: #007267;
+.bg-primary-600 {
+  background-color: var(--primary-600);
 }
-.hover\:bg-teal-100:hover {
-  background-color: #CCF0EC;
+.bg-primary-700 {
+  background-color: var(--primary-700);
 }
-.hover\:bg-teal-500:hover {
-  background-color: #00ADA0;
+.hover\:bg-primary-100:hover {
+  background-color: var(--primary-100);
 }
-.focus\:ring-teal-200:focus {
-  --tw-ring-color: #9FE7E0;
+.hover\:bg-primary-700:hover {
+  background-color: var(--primary-700);
 }
-.focus\:ring-teal-500:focus {
-  --tw-ring-color: #00ADA0;
+.focus\:ring-primary-200:focus {
+  --tw-ring-color: var(--primary-200);
 }
-.focus\:border-teal-400:focus {
-  border-color: #39D4C7;
+.focus\:ring-primary-500:focus {
+  --tw-ring-color: var(--primary-500);
+}
+.focus\:border-primary-400:focus {
+  border-color: var(--primary-400);
 }
 .shadow-soft {
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow-lg);
 }
 </style>

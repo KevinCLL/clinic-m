@@ -2,7 +2,7 @@
   <div>
 
     <div v-if="loading" class="flex justify-center items-center py-12">
-      <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-teal-500"></div>
+      <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary-500"></div>
     </div>
 
 
@@ -27,7 +27,7 @@
           <h2 class="text-lg font-semibold mb-2 text-gray-700">Contenido del Sitio</h2>
           <p class="text-gray-600 mb-4">Editar el contenido de las páginas del sitio web.</p>
           <div class="mt-auto">
-            <router-link to="/admin/editar/inicio" class="text-teal-600 hover:text-teal-800 font-medium">
+            <router-link to="/admin/editar/inicio" class="text-primary-600 hover:text-primary-700 font-medium">
               Gestionar contenido →
             </router-link>
           </div>
@@ -76,7 +76,7 @@
                   {{ seccion.ultimaActualizacion }}
                 </td>
                 <td class="px-6 py-4">
-                  <router-link :to="`/admin/editar/${seccion.id}`" class="font-medium text-teal-600 hover:underline mr-3">
+                  <router-link :to="`/admin/editar/${seccion.id}`" class="font-medium text-primary-600 hover:underline mr-3">
                     Editar
                   </router-link>
                 </td>

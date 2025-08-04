@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-teal-700 text-white py-12">
+  <footer class="bg-primary-800 text-white py-12">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
@@ -24,13 +24,13 @@
           </div>
 
           <div class="flex space-x-3">
-            <a href="#" class="bg-white text-teal-700 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
+            <a href="#" class="bg-white text-primary-800 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="bg-white text-teal-700 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
+            <a href="#" class="bg-white text-primary-800 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="bg-white text-teal-700 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
+            <a href="#" class="bg-white text-primary-800 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -52,10 +52,10 @@
 </template>
 
 <style scoped>
-.bg-teal-700 {
-  background-color: #00877C;
+.bg-primary-800 {
+  background-color: var(--primary-800);
 }
-.text-teal-700 {
-  color: #00877C;
+.text-primary-800 {
+  color: var(--primary-800);
 }
 </style>

@@ -22,7 +22,7 @@ const props = defineProps({
   },
   variant: {
     type: String,
-    default: 'teal'
+    default: 'primary'
   }
 });
 
@@ -33,30 +33,33 @@ const isRouterLink = computed(() => props.to && !isLink.value);
 
 const buttonClasses = computed(() => {
   const classes = [
-    'inline-block px-6 py-2 rounded-lg font-medium transition-all duration-300 text-center'
+    'inline-block px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center'
   ];
 
   switch (props.variant) {
-    case 'teal':
-      classes.push('bg-teal-600 text-white hover:bg-teal-700 hover:shadow-teal-sm');
+    case 'primary':
+      classes.push('bg-primary-600 text-white hover:bg-primary-700 hover:shadow-primary-sm');
       break;
     case 'secondary':
-      classes.push('bg-blue-800 text-white hover:bg-blue-700 hover:shadow-blue-sm');
+      classes.push('bg-secondary-600 text-white hover:bg-secondary-700 hover:shadow-secondary-sm');
       break;
-    case 'outline-teal':
-      classes.push('border border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 hover:border-teal-700');
+    case 'outline-primary':
+      classes.push('border border-primary-600 text-primary-600 hover:bg-primary-50 hover:text-primary-700 hover:border-primary-700');
       break;
     case 'outline-secondary':
-      classes.push('border border-blue-800 text-blue-800 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-700');
+      classes.push('border border-secondary-600 text-secondary-600 hover:bg-secondary-50 hover:text-secondary-700 hover:border-secondary-700');
       break;
-    case 'primary':
-      classes.push('bg-teal-600 text-white hover:bg-teal-700 hover:shadow-teal-sm');
+    case 'teal':
+      classes.push('bg-primary-600 text-white hover:bg-primary-700 hover:shadow-primary-sm');
+      break;
+    case 'outline-teal':
+      classes.push('border border-primary-600 text-primary-600 hover:bg-primary-50 hover:text-primary-700 hover:border-primary-700');
       break;
     case 'outline':
-      classes.push('border border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 hover:border-teal-700');
+      classes.push('border border-primary-600 text-primary-600 hover:bg-primary-50 hover:text-primary-700 hover:border-primary-700');
       break;
     default:
-      classes.push('bg-teal-600 text-white hover:bg-teal-700 hover:shadow-teal-sm');
+      classes.push('bg-primary-600 text-white hover:bg-primary-700 hover:shadow-primary-sm');
   }
 
   return classes.join(' ');
@@ -64,44 +67,76 @@ const buttonClasses = computed(() => {
 </script>
 
 <style scoped>
-
-.text-teal-600 {
-  color: #009B8F;
+.text-primary-600 {
+  color: var(--primary-600);
 }
-.text-teal-700 {
-  color: #00877C;
+.text-primary-700 {
+  color: var(--primary-700);
 }
-.border-teal-600 {
-  border-color: #009B8F;
+.text-secondary-600 {
+  color: var(--secondary-600);
 }
-.border-teal-700 {
-  border-color: #00877C;
+.text-secondary-700 {
+  color: var(--secondary-700);
 }
-.bg-teal-50 {
-  background-color: #E6F7F5;
+.border-primary-600 {
+  border-color: var(--primary-600);
 }
-.bg-teal-600 {
-  background-color: #009B8F;
+.border-primary-700 {
+  border-color: var(--primary-700);
 }
-.bg-teal-700 {
-  background-color: #00877C;
+.border-secondary-600 {
+  border-color: var(--secondary-600);
 }
-.hover\:bg-teal-50:hover {
-  background-color: #E6F7F5;
+.border-secondary-700 {
+  border-color: var(--secondary-700);
 }
-.hover\:bg-teal-700:hover {
-  background-color: #00877C;
+.bg-primary-50 {
+  background-color: var(--primary-50);
 }
-.hover\:text-teal-700:hover {
-  color: #00877C;
+.bg-primary-600 {
+  background-color: var(--primary-600);
 }
-.hover\:border-teal-700:hover {
-  border-color: #00877C;
+.bg-primary-700 {
+  background-color: var(--primary-700);
 }
-.hover\:shadow-teal-sm:hover {
-  box-shadow: 0 4px 8px -1px rgba(0, 155, 143, 0.25);
+.bg-secondary-50 {
+  background-color: var(--secondary-50);
 }
-.hover\:shadow-blue-sm:hover {
-  box-shadow: 0 4px 8px -1px rgba(30, 64, 175, 0.25);
+.bg-secondary-600 {
+  background-color: var(--secondary-600);
+}
+.bg-secondary-700 {
+  background-color: var(--secondary-700);
+}
+.hover\:bg-primary-50:hover {
+  background-color: var(--primary-50);
+}
+.hover\:bg-primary-700:hover {
+  background-color: var(--primary-700);
+}
+.hover\:bg-secondary-50:hover {
+  background-color: var(--secondary-50);
+}
+.hover\:bg-secondary-700:hover {
+  background-color: var(--secondary-700);
+}
+.hover\:text-primary-700:hover {
+  color: var(--primary-700);
+}
+.hover\:text-secondary-700:hover {
+  color: var(--secondary-700);
+}
+.hover\:border-primary-700:hover {
+  border-color: var(--primary-700);
+}
+.hover\:border-secondary-700:hover {
+  border-color: var(--secondary-700);
+}
+.hover\:shadow-primary-sm:hover {
+  box-shadow: var(--shadow-md);
+}
+.hover\:shadow-secondary-sm:hover {
+  box-shadow: var(--shadow-md);
 }
 </style>

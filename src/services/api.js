@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 const baseURL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
-console.log('[API] Usando URL base:', baseURL);
+
 
 
 const api = axios.create({
@@ -17,15 +17,15 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
-    console.log('[API Interceptor] Enviando solicitud a:', config.url);
-    console.log('[API Interceptor] Método:', config.method.toUpperCase());
-    console.log('[API Interceptor] Token disponible:', !!token);
+
+
+
 
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`;
     }
 
-    console.log('[API Interceptor] Datos enviados:', config.data);
+
     return config;
   },
   (error) => {
@@ -37,9 +37,9 @@ api.interceptors.request.use(
 
 api.interceptors.response.use(
   (response) => {
-    console.log('[API Interceptor] Respuesta recibida de:', response.config.url);
-    console.log('[API Interceptor] Código de estado:', response.status);
-    console.log('[API Interceptor] Datos recibidos:', response.data);
+
+
+
     return response;
   },
   (error) => {

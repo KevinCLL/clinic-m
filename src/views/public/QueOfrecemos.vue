@@ -1,18 +1,18 @@
 <template>
   <div class="overflow-hidden">
     
-    <section class="relative py-8 md:py-10 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
-      <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-500 rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
+    <section class="relative py-8 md:py-10 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform translate-x-20 -translate-y-20"></div>
+      <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary-500 rounded-full opacity-5 transform -translate-x-16 translate-y-16"></div>
       
       <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-semibold text-gray-800">Qué ofrecemos</h1>
+        <h1 class="text-3xl md:text-4xl font-semibold text-black">Qué ofrecemos</h1>
       </div>
     </section>
 
-    <section class="relative py-12 md:py-16 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="relative py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
 
       <div class="container mx-auto px-4 relative z-10">
         <p class="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed text-justify">
@@ -22,93 +22,93 @@
     </section>
 
 
-    <section class="py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-teal-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-30"></div>
+    <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-50 opacity-30"></div>
+      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-30"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">Nuestros Servicios</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestros Servicios</h2>
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-hands-helping text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-hands-helping text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Acompañamiento terapéutico</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Acompañamiento terapéutico</h3>
               </div>
               <p class="text-gray-600">Ofrecemos un acompañamiento personalizado durante todo el proceso, adaptándonos a las necesidades individuales.</p>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-brain text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-brain text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Psicoterapia</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Psicoterapia</h3>
               </div>
               <p class="text-gray-600">Intervenciones psicológicas basadas en la evidencia, para el tratamiento de diversos trastornos y dificultades.</p>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-pills text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-pills text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Tratamiento psicofarmacológico</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Tratamiento psicofarmacológico</h3>
               </div>
               <p class="text-gray-600">Evaluación y prescripción de medicación cuando sea necesario, con seguimiento personalizado.</p>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-clipboard-check text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-clipboard-check text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Evaluación y diagnóstico</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Evaluación y diagnóstico</h3>
               </div>
               <p class="text-gray-600">Valoraciones clínicas exhaustivas para detectar dificultades y desarrollar planes de tratamiento adecuados.</p>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-users text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-users text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Orientación familiar</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Orientación familiar</h3>
               </div>
               <p class="text-gray-600">Apoyo y asesoramiento para familias que necesitan herramientas para gestionar situaciones difíciles.</p>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-comment-dots text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-comment-dots text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Terapia grupal</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Terapia grupal</h3>
               </div>
               <p class="text-gray-600">Intervenciones terapéuticas en grupo, facilitando el aprendizaje compartido y el apoyo entre iguales.</p>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft p-6 hover:shadow-teal-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-heart text-xl"></i>
+                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-heart text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-teal-700">Actividades de promoción de la salud mental</h3>
+                <h3 class="text-xl font-semibold text-primary-700">Actividades de promoción de la salud mental</h3>
               </div>
               <p class="text-gray-600 mb-4">
                 Complementamos nuestros servicios terapéuticos con actividades que promueven el bienestar integral.
               </p>
-              <router-link to="/actividades" class="inline-block px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition-colors duration-300 mt-2 shadow-md">
+              <router-link to="/actividades" class="btn-primary inline-block">
                 Descubrir actividades <i class="fas fa-arrow-right ml-2"></i>
               </router-link>
             </div>
@@ -118,100 +118,88 @@
     </section>
 
 
-    <section class="py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-teal-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-30"></div>
+    <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-50 opacity-30"></div>
+      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-30"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">Nuestras Especialidades</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestras Especialidades</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
-              <router-link to="/servicios/psiquiatria" class="block">
-                <div class="h-20 bg-gradient-to-r from-teal-600 to-teal-500 flex items-center justify-center p-4">
-                  <h3 class="text-xl font-bold text-white text-center">PSIQUIATRÍA</h3>
-                </div>
-              </router-link>
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-center">PSIQUIATRÍA</h3>
+              </div>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">Evaluación, diagnóstico y tratamiento de trastornos mentales con un enfoque integral.</p>
-                <router-link to="/servicios/psiquiatria" class="text-teal-600 hover:text-teal-500 font-medium inline-flex items-center transition-colors">
+                <router-link to="/servicios/psiquiatria" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
-              <router-link to="/servicios/psicologia-clinica" class="block">
-                <div class="h-20 bg-gradient-to-r from-teal-600 to-teal-500 flex items-center justify-center p-4">
-                  <h3 class="text-xl font-bold text-white text-center">PSICOLOGÍA CLÍNICA</h3>
-                </div>
-              </router-link>
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-center">PSICOLOGÍA CLÍNICA</h3>
+              </div>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">Abordaje terapéutico de problemas emocionales y dificultades psicológicas.</p>
-                <router-link to="/servicios/psicologia-clinica" class="text-teal-600 hover:text-teal-500 font-medium inline-flex items-center transition-colors">
+                <router-link to="/servicios/psicologia-clinica" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
-              <router-link to="/servicios/infancia-adolescencia" class="block">
-                <div class="h-20 bg-gradient-to-r from-teal-600 to-teal-500 flex items-center justify-center p-4">
-                  <h3 class="text-xl font-bold text-white text-center">INFANCIA Y ADOLESCENCIA</h3>
-                </div>
-              </router-link>
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-center">INFANCIA Y ADOLESCENCIA</h3>
+              </div>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">Atención especializada para niños y adolescentes con diferentes dificultades.</p>
-                <router-link to="/servicios/infancia-adolescencia" class="text-teal-600 hover:text-teal-500 font-medium inline-flex items-center transition-colors">
+                <router-link to="/servicios/infancia-adolescencia" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
-              <router-link to="/servicios/terapia-emdr" class="block">
-                <div class="h-20 bg-gradient-to-r from-teal-600 to-teal-500 flex items-center justify-center p-4">
-                  <h3 class="text-xl font-bold text-white text-center">TERAPIA EMDR</h3>
-                </div>
-              </router-link>
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-center">TERAPIA EMDR</h3>
+              </div>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">Método terapéutico eficaz para el tratamiento del trauma y otras dificultades.</p>
-                <router-link to="/servicios/terapia-emdr" class="text-teal-600 hover:text-teal-500 font-medium inline-flex items-center transition-colors">
+                <router-link to="/servicios/terapia-emdr" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
-              <router-link to="/servicios/mindfulness" class="block">
-                <div class="h-20 bg-gradient-to-r from-teal-600 to-teal-500 flex items-center justify-center p-4">
-                  <h3 class="text-xl font-bold text-white text-center">MINDFULNESS</h3>
-                </div>
-              </router-link>
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-center">MINDFULNESS</h3>
+              </div>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">Prácticas de atención plena para reducir el estrés y mejorar la salud mental.</p>
-                <router-link to="/servicios/mindfulness" class="text-teal-600 hover:text-teal-500 font-medium inline-flex items-center transition-colors">
+                <router-link to="/servicios/mindfulness" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1 group">
-              <router-link to="/servicios/perinatal" class="block">
-                <div class="h-20 bg-gradient-to-r from-teal-600 to-teal-500 flex items-center justify-center p-4">
-                  <h3 class="text-xl font-bold text-white text-center">PERINATAL</h3>
-                </div>
-              </router-link>
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-center">PERINATAL</h3>
+              </div>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">Acompañamiento especializado durante embarazo, parto y posparto.</p>
-                <router-link to="/servicios/perinatal" class="text-teal-600 hover:text-teal-500 font-medium inline-flex items-center transition-colors">
+                <router-link to="/servicios/perinatal" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
@@ -222,22 +210,22 @@
     </section>
 
 
-    <section class="py-16 bg-gradient-to-br from-teal-50 to-white relative overflow-hidden">
-      <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-teal-200 to-transparent"></div>
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-teal-100 opacity-70"></div>
-      <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-teal-100 opacity-70"></div>
+    <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
+      <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
+      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-primary-100 opacity-70"></div>
+      <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-primary-100 opacity-70"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center text-teal-700 mb-12">Áreas de Intervención</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-700 mb-12">Áreas de Intervención</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row gap-10">
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1">
-              <div class="bg-teal-600 text-white py-3 px-4 rounded-lg mb-6">
+            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA PARA ADULTOS</h3>
               </div>
-              <ul class="space-y-3 text-gray-700 list-disc pl-5">
+              <ul class="space-y-2 text-gray-700 list-disc pl-5">
                 <li>Síntomas ansioso-depresivos y trastornos adaptativos</li>
                 <li>Trastornos relacionados con la ansiedad (T. Pánico, T. Ansiedad generalizada, Agorafobia, fobias…)</li>
                 <li>Trastornos del estado de ánimo (Depresión, Distimia, T. bipolar, Ciclotimia…)</li>
@@ -255,11 +243,11 @@
             </div>
 
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1">
-              <div class="bg-teal-600 text-white py-3 px-4 rounded-lg mb-6">
+            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA INFANTO-JUVENIL</h3>
               </div>
-              <ul class="space-y-3 text-gray-700 list-disc pl-5">
+              <ul class="space-y-2 text-gray-700 list-disc pl-5">
                 <li>Trastornos del neurodesarrollo (TEA, TDAH)</li>
                 <li>Ansiedad y fobias</li>
                 <li>Depresión</li>
@@ -273,11 +261,11 @@
             </div>
 
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-teal-lg hover:-translate-y-1">
-              <div class="bg-teal-600 text-white py-3 px-4 rounded-lg mb-6">
+            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA DE PERINATAL</h3>
               </div>
-              <ul class="space-y-3 text-gray-700 list-disc pl-5">
+              <ul class="space-y-2 text-gray-700 list-disc pl-5">
                 <li>Depresión pre y post parto</li>
                 <li>Ansiedad perinatal</li>
                 <li>Trauma relacionado con el parto</li>
@@ -296,7 +284,7 @@
 
 
     <InfoComponent
-      colorTheme="teal"
+      colorTheme="primary"
       message="Contacta con nosotros para resolver tus dudas o concertar una cita"
     />
   </div>
@@ -312,50 +300,167 @@ defineOptions({
 </script>
 
 <style scoped>
+/* Import theme variables */
+@import '@/styles/theme.css';
 
-.text-teal-600 {
-  color: #009B8F;
+/* Typography Classes */
+
+
+
+
+.text-icon {
+  font-size: var(--font-size-xl);
 }
-.text-teal-700 {
-  color: #00877C;
+
+/* Spacing Classes */
+
+.p-spacing-sm {
+  padding: var(--spacing-sm);
 }
-.text-teal-800 {
-  color: #007267;
+
+.p-4 {
+  padding: var(--spacing-md);
 }
-.bg-teal-50 {
-  background-color: #E6F7F5;
+
+.p-6 {
+  padding: var(--spacing-lg);
 }
-.bg-teal-100 {
-  background-color: #CCF0EC;
+
+.px-4 {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
 }
-.bg-teal-200 {
-  background-color: #99E1D9;
+
+.py-2 {
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
 }
-.bg-teal-500 {
-  background-color: #00ADA0;
+
+.pl-5 {
+  padding-left: calc(var(--spacing-md) * 1.25);
 }
-.bg-teal-600 {
-  background-color: #009B8F;
+
+.mb-4 {
+  margin-bottom: var(--spacing-md);
 }
-.bg-teal-700 {
-  background-color: #007267;
+
+.mb-6 {
+  margin-bottom: var(--spacing-lg);
 }
-.bg-teal-800 {
-  background-color: #005F58;
+
+.mb-spacing-2xl {
+  margin-bottom: var(--spacing-2xl);
 }
-.hover\:bg-teal-500:hover {
-  background-color: #00ADA0;
+
+.mr-4 {
+  margin-right: var(--spacing-md);
 }
-.border-teal-100 {
-  border-color: #CCF0EC;
+
+.ml-2 {
+  margin-left: var(--spacing-sm);
 }
-.hover\:text-teal-500:hover {
-  color: #00ADA0;
+
+.space-y-2 > * + * {
+  margin-top: var(--spacing-sm);
 }
+
+/* Color Classes */
+.bg-primary-50 {
+  background-color: var(--primary-50);
+}
+
+.bg-primary-100 {
+  background-color: var(--primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
+
+.bg-primary-500 {
+  background-color: var(--primary-500);
+}
+
+.bg-primary-600 {
+  background-color: var(--primary-600);
+}
+
+.text-primary-500 {
+  color: var(--primary-500);
+}
+
+.text-primary-600 {
+  color: var(--primary-600);
+}
+
+.text-primary-700 {
+  color: var(--primary-700);
+}
+
+.text-primary-800 {
+  color: var(--primary-800);
+}
+
+.hover\:text-primary-500:hover {
+  color: var(--primary-500);
+}
+
+.hover\:bg-primary-500:hover {
+  background-color: var(--primary-500);
+}
+
+.border-primary-100 {
+  border-color: var(--primary-100);
+}
+
+.from-primary-50 {
+  --tw-gradient-from: var(--primary-50);
+}
+
+.from-primary-600 {
+  --tw-gradient-from: var(--primary-600);
+}
+
+.to-primary-500 {
+  --tw-gradient-to: var(--primary-500);
+}
+
+.via-primary-200 {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--primary-200), var(--tw-gradient-to);
+}
+
+/* Shadow Classes */
 .shadow-soft {
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow-md);
 }
-.hover\:shadow-teal-lg:hover {
-  box-shadow: 0 10px 20px -5px rgba(0, 155, 143, 0.3);
+
+.shadow-primary-lg:hover,
+.hover\:shadow-primary-lg:hover {
+  box-shadow: 0 10px 20px -5px rgba(0, 173, 160, 0.3);
+}
+
+/* Button Classes */
+.btn-primary {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--primary-600);
+  color: white;
+  border-radius: var(--border-radius-md);
+  transition: background-color var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--spacing-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-500);
+}
+
+/* Service and Specialty Card Specific Styles */
+.service-card,
+.specialty-card {
+  transition: all var(--transition-normal);
+}
+
+.specialty-header {
+  transition: all var(--transition-normal);
 }
 </style>

@@ -5,7 +5,7 @@
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6" :class="titleColorClass">¿Necesitas más información?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6" :class="titleColorClass">¿Necesitas más información?</h2>
         <p class="text-xl text-gray-700 mb-8 text-center">
           {{ message }}
         </p>
@@ -29,8 +29,8 @@ import { computed } from 'vue';
 const props = defineProps({
   colorTheme: {
     type: String,
-    default: 'teal',
-    validator: (value) => ['teal', 'purple'].includes(value)
+    default: 'primary',
+    validator: (value) => ['primary', 'secondary', 'teal', 'purple'].includes(value)
   },
   message: {
     type: String,
@@ -40,50 +40,63 @@ const props = defineProps({
 
 
 const colorClasses = computed(() => {
-  return props.colorTheme === 'teal'
-    ? 'bg-gradient-to-br from-teal-50 to-white'
-    : 'bg-gradient-to-br from-purple-50 to-white';
+  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
+    return 'bg-gradient-to-br from-primary-50 to-white';
+  }
+  return 'bg-gradient-to-br from-secondary-50 to-white';
 });
 
 const bgColorClass = computed(() => {
-  return props.colorTheme === 'teal' ? 'bg-teal-50' : 'bg-purple-50';
+  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
+    return 'bg-primary-50';
+  }
+  return 'bg-secondary-50';
 });
 
 const titleColorClass = computed(() => {
-  return props.colorTheme === 'teal' ? 'text-teal-800' : 'text-purple-800';
+  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
+    return 'text-primary-800';
+  }
+  return 'text-secondary-800';
 });
 
 const buttonColorClass = computed(() => {
-  return props.colorTheme === 'teal' ? 'bg-teal-600 hover:bg-teal-700' : 'bg-purple-600 hover:bg-purple-700';
+  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
+    return 'bg-primary-600 hover:bg-primary-700';
+  }
+  return 'bg-secondary-600 hover:bg-secondary-700';
 });
 </script>
 
 <style scoped>
-
-.text-teal-800 {
-  color: #007267;
+.text-primary-800 {
+  color: var(--primary-800);
 }
-.bg-teal-50 {
-  background-color: #E6F7F5;
+.bg-primary-50 {
+  background-color: var(--primary-50);
 }
-.bg-teal-600 {
-  background-color: #009B8F;
+.bg-primary-600 {
+  background-color: var(--primary-600);
 }
-.hover\:bg-teal-700:hover {
-  background-color: #007267;
+.hover\:bg-primary-700:hover {
+  background-color: var(--primary-700);
 }
-
-
-.text-purple-800 {
-  color: #523D86;
+.text-secondary-800 {
+  color: var(--secondary-800);
 }
-.bg-purple-50 {
-  background-color: #F5F0FA;
+.bg-secondary-50 {
+  background-color: var(--secondary-50);
 }
-.bg-purple-600 {
-  background-color: #7857A0;
+.bg-secondary-600 {
+  background-color: var(--secondary-600);
 }
-.hover\:bg-purple-700:hover {
-  background-color: #654A94;
+.hover\:bg-secondary-700:hover {
+  background-color: var(--secondary-700);
+}
+.from-primary-50 {
+  --tw-gradient-from: var(--primary-50);
+}
+.from-secondary-50 {
+  --tw-gradient-from: var(--secondary-50);
 }
 </style>

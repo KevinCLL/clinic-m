@@ -60,11 +60,11 @@
     <!-- Script para manejar redirecciones desde 404.html -->
     <script>
       (function() {
-        // Verificar si hay una redirección almacenada
+
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         
-        // Si hay una redirección, redirigir a la ruta correcta
+
         if (redirect && redirect !== location.pathname) {
           history.replaceState(null, null, redirect);
         }

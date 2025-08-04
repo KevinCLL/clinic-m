@@ -1,15 +1,11 @@
 <template>
-  <section class="py-8 md:py-12 bg-white relative overflow-hidden">
-    <div class="absolute -right-32 top-1/4 w-96 h-96 rounded-full bg-teal-50 opacity-70"></div>
-    <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-70"></div>
+  <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+    <div class="absolute -right-32 top-1/4 w-96 h-96 rounded-full bg-primary-50 opacity-70"></div>
+    <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-70"></div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <h2 v-if="showTitle" class="text-3xl md:text-4xl font-bold text-teal-800 text-center mb-3">{{ title }}</h2>
+      <h2 v-if="showTitle" class="text-2xl md:text-3xl font-bold text-primary-800 text-center mb-6">{{ title }}</h2>
       <p v-if="showSubtitle" class="text-center text-gray-600 mb-6 max-w-2xl mx-auto">{{ subtitle }}</p>
-
-      <p class="text-gray-700 mb-6 max-w-3xl mx-auto px-8 md:px-16 text-sm leading-relaxed">
-        El apartado de contacto de la página de inicio, algo más parecido a esto: más integrado, con menos espacio, con sangría. Algo así como lo que pongo a continuación.
-      </p>
 
       <div class="max-w-5xl mx-auto">
         <ContactForm
@@ -73,16 +69,10 @@ const handleFormSubmit = (formData) => {
 </script>
 
 <style scoped>
-.text-teal-600 {
-  color: #009B8F;
+.text-primary-800 {
+  color: var(--primary-800);
 }
-.text-teal-700 {
-  color: #00877C;
-}
-.text-teal-800 {
-  color: #007267;
-}
-.bg-teal-50 {
-  background-color: #E6F7F5;
+.bg-primary-50 {
+  background-color: var(--primary-50);
 }
 </style>

@@ -7,7 +7,8 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Faculty Glyphic', sans-serif;
   color: #333;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -26,26 +27,36 @@ body {
 
 
 h1, .h1 {
+  font-family: 'Overlock SC', serif;
   font-size: 2.2rem;
   line-height: 1.3;
 }
 
 h2, .h2 {
+  font-family: 'Overlock SC', serif;
   font-size: 1.8rem;
   line-height: 1.35;
 }
 
 h3, .h3 {
+  font-family: 'Overlock SC', serif;
   font-size: 1.5rem;
   line-height: 1.4;
 }
 
 h4, .h4 {
+  font-family: 'Overlock SC', serif;
   font-size: 1.3rem;
 }
 
 h5, .h5 {
+  font-family: 'Overlock SC', serif;
   font-size: 1.15rem;
+}
+
+h6, .h6 {
+  font-family: 'Overlock SC', serif;
+  font-size: 1rem;
 }
 
 

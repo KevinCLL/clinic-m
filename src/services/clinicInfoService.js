@@ -11,10 +11,10 @@ const clinicInfoService = {
    * @returns {Promise} - Lista de secciones
    */
   async getAllSections(all = false) {
-    console.log(`[clinicInfoService] Obteniendo secciones. all=${all}`);
+
     try {
       const response = await api.get('/clinic-info', { params: { all } });
-      console.log('[clinicInfoService] Secciones obtenidas:', response.data);
+
       return response.data;
     } catch (error) {
       console.error('[clinicInfoService] Error obteniendo secciones:', error);
@@ -28,10 +28,10 @@ const clinicInfoService = {
    * @returns {Promise} - Datos de la sección
    */
   async getSectionById(sectionId) {
-    console.log(`[clinicInfoService] Obteniendo sección: ${sectionId}`);
+
     try {
       const response = await api.get(`/clinic-info/${sectionId}`);
-      console.log('[clinicInfoService] Sección obtenida:', response.data);
+
       return response.data;
     } catch (error) {
       console.error(`[clinicInfoService] Error obteniendo sección ${sectionId}:`, error);
@@ -45,10 +45,10 @@ const clinicInfoService = {
    * @returns {Promise} - Sección creada
    */
   async createSection(sectionData) {
-    console.log('[clinicInfoService] Creando sección:', sectionData);
+
     try {
       const response = await api.post('/clinic-info', sectionData);
-      console.log('[clinicInfoService] Sección creada:', response.data);
+
       return response.data;
     } catch (error) {
       console.error('[clinicInfoService] Error creando sección:', error);
@@ -63,15 +63,15 @@ const clinicInfoService = {
    * @returns {Promise} - Sección actualizada
    */
   async updateSection(sectionId, sectionData) {
-    console.log(`[clinicInfoService] Actualizando sección ${sectionId}:`, sectionData);
-    console.log(`[clinicInfoService] URL: /clinic-info/${sectionId}`);
+
+
     try {
 
       const token = localStorage.getItem('token');
-      console.log('[clinicInfoService] Token disponible:', !!token);
+
 
       const response = await api.put(`/clinic-info/${sectionId}`, sectionData);
-      console.log('[clinicInfoService] Sección actualizada:', response.data);
+
       return response.data;
     } catch (error) {
       console.error(`[clinicInfoService] Error actualizando sección ${sectionId}:`, error);
@@ -96,10 +96,10 @@ const clinicInfoService = {
    * @returns {Promise} - Respuesta del servidor
    */
   async deleteSection(sectionId) {
-    console.log(`[clinicInfoService] Eliminando sección: ${sectionId}`);
+
     try {
       const response = await api.delete(`/clinic-info/${sectionId}`);
-      console.log('[clinicInfoService] Sección eliminada:', response.data);
+
       return response.data;
     } catch (error) {
       console.error(`[clinicInfoService] Error eliminando sección ${sectionId}:`, error);
@@ -112,10 +112,10 @@ const clinicInfoService = {
    * @returns {Promise} - Respuesta del servidor
    */
   async initializeDefaultSections() {
-    console.log('[clinicInfoService] Inicializando secciones predeterminadas');
+
     try {
       const response = await api.post('/clinic-info/initialize');
-      console.log('[clinicInfoService] Secciones inicializadas:', response.data);
+
       return response.data;
     } catch (error) {
       console.error('[clinicInfoService] Error inicializando secciones:', error);

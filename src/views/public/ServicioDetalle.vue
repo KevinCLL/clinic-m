@@ -1,12 +1,12 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-12 md:py-16 bg-gradient-to-br from-teal-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="relative py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center text-teal-800 mb-6">{{ servicioActual.titulo }}</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-primary-800 mb-6">{{ servicioActual.titulo }}</h1>
         <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
           {{ servicioActual.descripcionCorta }}
         </p>
@@ -15,8 +15,8 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-teal-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-teal-50 opacity-30"></div>
+      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-50 opacity-30"></div>
+      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-30"></div>
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
@@ -24,7 +24,7 @@
 
             <div class="md:w-2/3">
               <div class="bg-white rounded-xl shadow-soft p-8 mb-8">
-                <h2 class="text-2xl font-bold text-teal-700 mb-6">{{ servicioActual.subtitulo }}</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-primary-700 mb-6">{{ servicioActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
                   <p v-for="(parrafo, index) in servicioActual.contenido" :key="index" class="mb-4 text-justify">
@@ -35,11 +35,11 @@
 
 
               <div class="bg-white rounded-xl shadow-soft p-8">
-                <h2 class="text-2xl font-bold text-teal-700 mb-6">Características</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Características</h2>
 
                 <ul class="space-y-4">
                   <li v-for="(caracteristica, index) in servicioActual.caracteristicas" :key="index" class="flex items-start">
-                    <div class="flex-shrink-0 h-6 w-6 text-teal-500 mr-2">
+                    <div class="flex-shrink-0 h-6 w-6 text-primary-500 mr-2">
                       <i class="fas fa-check-circle"></i>
                     </div>
                     <span class="text-gray-700">{{ caracteristica }}</span>
@@ -52,14 +52,14 @@
             <div class="md:w-1/3">
 
               <div class="bg-white rounded-xl shadow-soft p-6 mb-6">
-                <h3 class="text-xl font-bold text-teal-700 mb-4">Profesionales</h3>
+                <h3 class="text-xl font-bold text-primary-700 mb-4">Profesionales</h3>
                 <ul class="space-y-3">
                   <li v-for="profesional in servicioActual.profesionales" :key="profesional.nombre" class="flex items-center">
-                    <div class="flex-shrink-0 h-5 w-5 text-teal-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-primary-500 mr-2">
                       <i class="fas fa-user-md"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">{{ profesional.nombre }}</p>
+                      <p class="font-medium text-black">{{ profesional.nombre }}</p>
                       <p class="text-sm text-gray-500">{{ profesional.especialidad }}</p>
                     </div>
                   </li>
@@ -68,11 +68,11 @@
 
 
               <div class="bg-white rounded-xl shadow-soft p-6">
-                <h3 class="text-xl font-bold text-teal-700 mb-4">Preguntas frecuentes</h3>
+                <h3 class="text-xl font-bold text-primary-700 mb-4">Preguntas frecuentes</h3>
 
                 <div class="space-y-4">
                   <div v-for="(pregunta, index) in servicioActual.preguntas" :key="index">
-                    <h4 class="font-medium text-teal-600 mb-1">{{ pregunta.pregunta }}</h4>
+                    <h4 class="font-medium text-primary-600 mb-1">{{ pregunta.pregunta }}</h4>
                     <p class="text-gray-600 text-sm text-justify">{{ pregunta.respuesta }}</p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@
             <AreaIntervencion
               :areaType="servicioId === 'infancia-adolescencia' ? 'infanto-juvenil' :
                          servicioId === 'perinatal' ? 'perinatal' : 'adultos'"
-              colorTheme="teal"
+              colorTheme="primary"
               :multicolumn="true"
             />
           </div>
@@ -213,47 +213,28 @@ const servicioActual = computed(() => {
 </script>
 
 <style scoped>
-
-.text-teal-500 {
-  color: #00ADA0;
+.text-primary-500 {
+  color: var(--primary-500);
 }
-.text-teal-600 {
-  color: #009B8F;
+.text-primary-600 {
+  color: var(--primary-600);
 }
-.text-teal-700 {
-  color: #00877C;
+.text-primary-700 {
+  color: var(--primary-700);
 }
-.text-teal-800 {
-  color: #007267;
+.text-primary-800 {
+  color: var(--primary-800);
 }
-.bg-teal-50 {
-  background-color: #E6F7F5;
+.bg-primary-50 {
+  background-color: var(--primary-50);
 }
-.bg-teal-500 {
-  background-color: #00ADA0;
+.bg-primary-500 {
+  background-color: var(--primary-500);
 }
-.bg-teal-600 {
-  background-color: #009B8F;
-}
-.bg-teal-700 {
-  background-color: #007267;
-}
-.hover\:bg-teal-50:hover {
-  background-color: #E6F7F5;
-}
-.hover\:bg-teal-500:hover {
-  background-color: #00ADA0;
-}
-.from-teal-50 {
-  --tw-gradient-from: #E6F7F5;
-}
-.from-teal-700 {
-  --tw-gradient-from: #007267;
-}
-.to-teal-600 {
-  --tw-gradient-to: #009B8F;
+.from-primary-50 {
+  --tw-gradient-from: var(--primary-50);
 }
 .shadow-soft {
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow-lg);
 }
 </style>

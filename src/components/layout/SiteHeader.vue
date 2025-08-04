@@ -3,19 +3,19 @@
     <div class="container mx-auto px-4 py-4">
       <div class="flex justify-between items-center mb-4">
         <div class="hidden md:block">
-          <a href="tel:688764073" class="text-teal-700 mr-2 hover:text-teal-600 transition-colors duration-300 text-lg">688764073</a>
+          <a href="tel:688764073" class="text-primary-700 mr-2 hover:text-primary-600 transition-colors duration-300 text-lg">688764073</a>
           <span class="text-gray-400 mx-1">|</span>
-          <a href="mailto:info@clinicasati.com" class="text-teal-700 hover:text-teal-600 transition-colors duration-300 text-lg">info@clinicasati.com</a>
+          <a href="mailto:info@clinicasati.com" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg">info@clinicasati.com</a>
         </div>
 
         <div class="hidden md:flex space-x-3 ml-auto">
-          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300 text-xl">
+          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300 text-xl">
+          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="text-teal-600 hover:text-teal-700 transition-colors duration-300 text-xl">
+          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -24,10 +24,6 @@
       <div class="flex justify-center" ref="logoContainer">
         <router-link to="/" class="flex items-center space-x-4">
           <img src="@/assets/images/logo.png" alt="Clínica Asati" class="h-20 w-auto" />
-          <div class="flex flex-col items-center">
-            <span class="asati-text text-5xl font-semibold text-teal-700">ASATI</span>
-            <span class="text-lg text-teal-600 tracking-wider">Clínica de Salud Mental</span>
-          </div>
         </router-link>
       </div>
     </div>
@@ -39,22 +35,22 @@
             v-for="item in menuItems"
             :key="item.path"
             :to="item.path"
-            class="px-5 py-4 text-teal-800 hover:text-teal-600 transition-all duration-300 relative group text-lg font-normal"
+            class="px-5 py-4 text-primary-800 hover:text-primary-600 transition-all duration-300 relative group text-lg font-normal"
             :class="{ 'font-medium': $route.path === item.path }"
           >
             {{ item.name }}
-            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-teal-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" :class="{ 'scale-x-100': $route.path === item.path }"></span>
+            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" :class="{ 'scale-x-100': $route.path === item.path }"></span>
           </router-link>
         </div>
 
         <div class="md:hidden">
           <div class="flex items-center justify-between">
             <transition name="fade-slide">
-              <div v-if="isSticky" class="text-teal-800 font-semibold py-4 pl-4 transition-all duration-300 text-base">
+              <div v-if="isSticky" class="text-primary-800 font-semibold py-4 pl-4 transition-all duration-300 text-base">
                 ASATI - CLÍNICA DE SALUD MENTAL
               </div>
             </transition>
-            <button @click="toggleMobileMenu" class="p-4 text-teal-800 ml-auto">
+            <button @click="toggleMobileMenu" class="p-4 text-primary-800 ml-auto">
               <i class="fas text-lg" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
             </button>
           </div>
@@ -65,8 +61,8 @@
                 v-for="item in menuItems"
                 :key="item.path"
                 :to="item.path"
-                class="block px-4 py-3 text-teal-800 hover:bg-teal-50 transition-all duration-300 text-lg"
-                :class="{ 'bg-teal-50 text-teal-700 font-medium': $route.path === item.path }"
+                class="block px-4 py-3 text-primary-800 hover:bg-primary-50 transition-all duration-300 text-lg"
+                :class="{ 'bg-primary-50 text-primary-700 font-medium': $route.path === item.path }"
                 @click="mobileMenuOpen = false"
               >
                 {{ item.name }}
@@ -118,8 +114,8 @@ const menuItems = [
 
 <style scoped>
 .router-link-active {
-  color: #009B8F;
-  font-weight: 500;
+  color: var(--primary-600);
+  font-weight: var(--font-weight-medium);
 }
 
 .mobile-menu-enter-active,
@@ -154,26 +150,29 @@ const menuItems = [
   transition: all 0.3s ease;
 }
 
-.text-teal-600 {
-  color: #009B8F;
+.text-primary-600 {
+  color: var(--primary-600);
 }
-.text-teal-700 {
-  color: #00877C;
+.text-primary-700 {
+  color: var(--primary-700);
 }
-.text-teal-800 {
-  color: #007267;
+.text-primary-800 {
+  color: var(--primary-800);
 }
-.hover\:text-teal-600:hover {
-  color: #009B8F;
+.hover\:text-primary-600:hover {
+  color: var(--primary-600);
 }
-.hover\:text-teal-700:hover {
-  color: #00877C;
+.hover\:text-primary-700:hover {
+  color: var(--primary-700);
 }
-.bg-teal-50 {
-  background-color: #E6F7F5;
+.hover\:bg-primary-50:hover {
+  background-color: var(--primary-50);
 }
-.bg-teal-500 {
-  background-color: #009B8F;
+.bg-primary-50 {
+  background-color: var(--primary-50);
+}
+.bg-primary-600 {
+  background-color: var(--primary-600);
 }
 
 .asati-text {

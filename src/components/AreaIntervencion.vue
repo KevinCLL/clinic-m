@@ -23,8 +23,8 @@ const props = defineProps({
   },
   colorTheme: {
     type: String,
-    default: 'teal',
-    validator: (value) => ['teal', 'purple'].includes(value)
+    default: 'primary',
+    validator: (value) => ['primary', 'secondary', 'teal', 'purple'].includes(value)
   },
   multicolumn: {
     type: Boolean,
@@ -89,26 +89,31 @@ const areaTitle = computed(() => areaTitles[props.areaType] || '');
 const areaItems = computed(() => areaItemsMap[props.areaType] || []);
 
 const titleColorClass = computed(() => {
-  return props.colorTheme === 'teal' ? 'text-teal-700' : 'text-purple-700';
+  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
+    return 'text-primary-700';
+  }
+  return 'text-secondary-700';
 });
 
 const iconColorClass = computed(() => {
-  return props.colorTheme === 'teal' ? 'text-teal-500' : 'text-purple-500';
+  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
+    return 'text-primary-500';
+  }
+  return 'text-secondary-500';
 });
 </script>
 
 <style scoped>
-
-.text-teal-500 {
-  color: #00ADA0;
+.text-primary-500 {
+  color: var(--primary-500);
 }
-.text-teal-700 {
-  color: #00877C;
+.text-primary-700 {
+  color: var(--primary-700);
 }
-.text-purple-500 {
-  color: #8A64A3;
+.text-secondary-500 {
+  color: var(--secondary-500);
 }
-.text-purple-700 {
-  color: #654A94;
+.text-secondary-700 {
+  color: var(--secondary-700);
 }
 </style>

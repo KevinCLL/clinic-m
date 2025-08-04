@@ -1,12 +1,12 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-12 md:py-16 bg-gradient-to-br from-purple-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="relative py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center text-purple-800 mb-6">{{ actividadActual.titulo }}</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-secondary-800 mb-6">{{ actividadActual.titulo }}</h1>
         <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
           {{ actividadActual.descripcionCorta }}
         </p>
@@ -15,8 +15,8 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-purple-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-purple-50 opacity-30"></div>
+      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-secondary-50 opacity-30"></div>
+      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-secondary-50 opacity-30"></div>
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
@@ -24,7 +24,7 @@
 
             <div class="md:w-2/3">
               <div class="bg-white rounded-xl shadow-soft p-8 mb-8">
-                <h2 class="text-2xl font-bold text-purple-700 mb-6">{{ actividadActual.subtitulo }}</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-secondary-700 mb-6">{{ actividadActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
                   <p v-for="(parrafo, index) in actividadActual.contenido" :key="index" class="mb-4 text-justify">
@@ -35,11 +35,11 @@
 
 
               <div class="bg-white rounded-xl shadow-soft p-8">
-                <h2 class="text-2xl font-bold text-purple-700 mb-6">Objetivos</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-secondary-700 mb-6">Objetivos</h2>
 
                 <ul class="space-y-4">
                   <li v-for="(objetivo, index) in actividadActual.objetivos" :key="index" class="flex items-start">
-                    <div class="flex-shrink-0 h-6 w-6 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-6 w-6 text-secondary-500 mr-2">
                       <i class="fas fa-bullseye"></i>
                     </div>
                     <span class="text-gray-700">{{ objetivo }}</span>
@@ -52,50 +52,50 @@
             <div class="md:w-1/3">
 
               <div class="bg-white rounded-xl shadow-soft p-6 mb-6">
-                <h3 class="text-xl font-bold text-purple-700 mb-4">Detalles prácticos</h3>
+                <h3 class="text-xl font-bold text-secondary-700 mb-4">Detalles prácticos</h3>
                 <ul class="space-y-3">
                   <li class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-secondary-500 mr-2">
                       <i class="fas fa-calendar-alt"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">Fechas</p>
+                      <p class="font-medium text-black">Fechas</p>
                       <p class="text-sm text-gray-500">{{ actividadActual.fechas }}</p>
                     </div>
                   </li>
                   <li class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-secondary-500 mr-2">
                       <i class="fas fa-clock"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">Horario</p>
+                      <p class="font-medium text-black">Horario</p>
                       <p class="text-sm text-gray-500">{{ actividadActual.horario }}</p>
                     </div>
                   </li>
                   <li class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-secondary-500 mr-2">
                       <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">Ubicación</p>
+                      <p class="font-medium text-black">Ubicación</p>
                       <p class="text-sm text-gray-500">{{ actividadActual.ubicacion }}</p>
                     </div>
                   </li>
                   <li class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-secondary-500 mr-2">
                       <i class="fas fa-users"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">Plazas</p>
+                      <p class="font-medium text-black">Plazas</p>
                       <p class="text-sm text-gray-500">{{ actividadActual.plazas }}</p>
                     </div>
                   </li>
                   <li v-if="actividadActual.precio" class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-secondary-500 mr-2">
                       <i class="fas fa-tag"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">Precio</p>
+                      <p class="font-medium text-black">Precio</p>
                       <p class="text-sm text-gray-500">{{ actividadActual.precio }}</p>
                     </div>
                   </li>
@@ -104,14 +104,14 @@
 
 
               <div class="bg-white rounded-xl shadow-soft p-6 mb-6">
-                <h3 class="text-xl font-bold text-purple-700 mb-4">Facilitadores</h3>
+                <h3 class="text-xl font-bold text-secondary-700 mb-4">Facilitadores</h3>
                 <ul class="space-y-3">
                   <li v-for="facilitador in actividadActual.facilitadores" :key="facilitador.nombre" class="flex items-center">
-                    <div class="flex-shrink-0 h-5 w-5 text-purple-500 mr-2">
+                    <div class="flex-shrink-0 h-5 w-5 text-secondary-500 mr-2">
                       <i class="fas fa-user"></i>
                     </div>
                     <div>
-                      <p class="font-medium text-gray-800">{{ facilitador.nombre }}</p>
+                      <p class="font-medium text-black">{{ facilitador.nombre }}</p>
                       <p class="text-sm text-gray-500">{{ facilitador.rol }}</p>
                     </div>
                   </li>
@@ -120,13 +120,13 @@
 
 
               <div class="bg-white rounded-xl shadow-soft p-6">
-                <h3 class="text-xl font-bold text-purple-700 mb-4">¿A quién va dirigido?</h3>
+                <h3 class="text-xl font-bold text-secondary-700 mb-4">¿A quién va dirigido?</h3>
                 <p class="text-gray-700 mb-4 text-justify">{{ actividadActual.destinatarios }}</p>
 
                 <div class="space-y-3 mt-6">
-                  <h4 class="font-medium text-purple-600">¿Quieres participar?</h4>
+                  <h4 class="font-medium text-secondary-600">¿Quieres participar?</h4>
                   <p class="text-gray-600 text-sm mb-4">Reserva tu plaza o solicita más información</p>
-                  <router-link to="/contacto" class="inline-block w-full py-2 bg-purple-600 text-white font-medium rounded-lg text-center hover:bg-purple-700 transition-colors duration-300">
+                  <router-link to="/contacto" class="inline-block w-full py-2 bg-secondary-600 text-white font-medium rounded-lg text-center hover:bg-secondary-700 transition-colors duration-300">
                     Contactar ahora
                   </router-link>
                 </div>
@@ -139,7 +139,7 @@
 
 
     <InfoComponent
-      colorTheme="purple"
+      colorTheme="secondary"
       message="Descubre todas nuestras actividades para mejorar tu bienestar"
     />
   </div>
@@ -246,38 +246,37 @@ const actividadActual = computed(() => {
 </script>
 
 <style scoped>
-
-.text-purple-500 {
-  color: #8A64A3;
+.text-secondary-500 {
+  color: var(--secondary-500);
 }
-.text-purple-600 {
-  color: #7857A0;
+.text-secondary-600 {
+  color: var(--secondary-600);
 }
-.text-purple-700 {
-  color: #654A94;
+.text-secondary-700 {
+  color: var(--secondary-700);
 }
-.text-purple-800 {
-  color: #523D86;
+.text-secondary-800 {
+  color: var(--secondary-800);
 }
-.bg-purple-50 {
-  background-color: #F5F0FA;
+.bg-secondary-50 {
+  background-color: var(--secondary-50);
 }
-.bg-purple-500 {
-  background-color: #8A64A3;
+.bg-secondary-500 {
+  background-color: var(--secondary-500);
 }
-.bg-purple-600 {
-  background-color: #7857A0;
+.bg-secondary-600 {
+  background-color: var(--secondary-600);
 }
-.bg-purple-700 {
-  background-color: #654A94;
+.bg-secondary-700 {
+  background-color: var(--secondary-700);
 }
-.hover\:bg-purple-700:hover {
-  background-color: #654A94;
+.hover\:bg-secondary-700:hover {
+  background-color: var(--secondary-700);
 }
-.from-purple-50 {
-  --tw-gradient-from: #F5F0FA;
+.from-secondary-50 {
+  --tw-gradient-from: var(--secondary-50);
 }
 .shadow-soft {
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow-lg);
 }
 </style>
