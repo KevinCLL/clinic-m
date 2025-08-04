@@ -52,6 +52,14 @@
   --secondary-800: var(--purple-800);
   --secondary-900: var(--purple-900);
   
+  /* Forest Core Colors - Colores de especialidades */
+  --specialty-psiquiatria: #5a5d48;        /* Darkened olive gray */
+  --specialty-psicologia-clinica: #7a7a5f; /* Darkened sage green */
+  --specialty-infancia-adolescencia: #d4bc7e; /* Darkened light sand */
+  --specialty-emdr: #e6a94f;               /* Darkened golden yellow */
+  --specialty-mindfulness: #b56f46;        /* Darkened terra cotta */
+  --specialty-perinatal: #7a6352;          /* Darkened warm taupe */
+  
   /* =================================
      TIPOGRAFÍA
      ================================= */

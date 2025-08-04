@@ -1,13 +1,13 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="relative py-12 md:py-16 overflow-hidden" :style="{ backgroundColor: specialtyColor }">
+      <div class="absolute top-0 right-0 w-96 h-96 rounded-full opacity-20 transform translate-x-24 -translate-y-24" style="background-color: rgba(255, 255, 255, 0.1)"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full opacity-20 transform -translate-x-20 translate-y-20" style="background-color: rgba(255, 255, 255, 0.1)"></div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-bold text-center text-primary-800 mb-6">{{ servicioActual.titulo }}</h1>
-        <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-white mb-6">{{ servicioActual.titulo }}</h1>
+        <p class="text-center text-white/90 max-w-3xl mx-auto text-lg leading-relaxed">
           {{ servicioActual.descripcionCorta }}
         </p>
       </div>
@@ -89,8 +89,8 @@
         <div class="max-w-5xl mx-auto">
           <div class="bg-white rounded-xl shadow-soft p-8">
             <AreaIntervencion
-              :areaType="servicioId === 'infancia-adolescencia' ? 'infanto-juvenil' :
-                         servicioId === 'perinatal' ? 'perinatal' : 'adultos'"
+              :areaType="servicioId.value === 'infancia-adolescencia' ? 'infanto-juvenil' :
+                         servicioId.value === 'perinatal' ? 'perinatal' : 'adultos'"
               colorTheme="primary"
               :multicolumn="true"
             />
@@ -100,18 +100,35 @@
     </section>
 
 
-    <InfoComponent
-      colorTheme="teal"
-      message="Contacta con nosotros para resolver tus dudas o concertar una cita"
-    />
+    <section class="py-12 md:py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Otras especialidades</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <button
+            v-for="(specialty, index) in allSpecialties"
+            :key="index"
+            @click="isCurrentSpecialty(specialty.id) ? null : navigateToSpecialty(specialty.id)"
+            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300"
+            :class="{
+              'text-white transform hover:scale-105 hover:shadow-lg cursor-pointer': !isCurrentSpecialty(specialty.id),
+              'text-gray-500 bg-gray-200 opacity-60': isCurrentSpecialty(specialty.id)
+            }"
+            :style="!isCurrentSpecialty(specialty.id) ? { backgroundColor: specialty.color } : {}"
+            :disabled="isCurrentSpecialty(specialty.id)"
+          >
+            {{ specialty.name }}
+          </button>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import InfoComponent from '@/components/InfoComponent.vue';
+import { computed, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import AreaIntervencion from '@/components/AreaIntervencion.vue';
+
 
 
 defineOptions({
@@ -119,7 +136,13 @@ defineOptions({
 });
 
 const route = useRoute();
-const servicioId = route.params.id;
+const router = useRouter();
+const servicioId = computed(() => route.params.id);
+
+const specialtyColor = computed(() => {
+  const mappedId = servicioId.value === 'terapia-emdr' ? 'emdr' : servicioId.value;
+  return getComputedStyle(document.documentElement).getPropertyValue(`--specialty-${mappedId}`) || '#007971';
+});
 
 
 const servicios = {
@@ -165,15 +188,46 @@ const servicios = {
 };
 
 
+// Available specialties
+const allSpecialties = [
+  { id: 'psiquiatria', name: 'PSIQUIATRÍA' },
+  { id: 'psicologia-clinica', name: 'PSICOLOGÍA CLÍNICA' },
+  { id: 'infancia-adolescencia', name: 'INFANCIA Y ADOLESCENCIA' },
+  { id: 'terapia-emdr', name: 'TERAPIA EMDR' },
+  { id: 'mindfulness', name: 'MINDFULNESS' },
+  { id: 'perinatal', name: 'PERINATAL' }
+];
+
+// Get color for each specialty
+allSpecialties.forEach(specialty => {
+  const mappedId = specialty.id === 'terapia-emdr' ? 'emdr' : specialty.id;
+  specialty.color = getComputedStyle(document.documentElement).getPropertyValue(`--specialty-${mappedId}`);
+});
+
+const isCurrentSpecialty = (specialtyId) => {
+  return specialtyId === servicioId.value || 
+         (specialtyId === 'terapia-emdr' && servicioId.value === 'emdr') ||
+         (specialtyId === 'emdr' && servicioId.value === 'terapia-emdr');
+};
+
+const navigateToSpecialty = (id) => {
+  router.push({ name: 'servicio-detalle', params: { id } });
+};
+
+// Watch for route changes to scroll to top
+watch(() => route.params.id, () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 const servicioActual = computed(() => {
 
-  if (servicios[servicioId]) {
-    return servicios[servicioId];
+  if (servicios[servicioId.value]) {
+    return servicios[servicioId.value];
   }
 
 
   return {
-    titulo: 'Servicio de ' + servicioId.charAt(0).toUpperCase() + servicioId.slice(1),
+    titulo: 'Servicio de ' + servicioId.value.charAt(0).toUpperCase() + servicioId.value.slice(1),
     descripcionCorta: 'Información detallada sobre nuestro servicio especializado.',
     subtitulo: '¿Qué ofrecemos en este servicio?',
     contenido: [

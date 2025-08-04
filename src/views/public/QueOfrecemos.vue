@@ -114,78 +114,78 @@
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
-              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+              <router-link to="/servicios/psiquiatria" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="psiquiatria">
                 <h3 class="text-xl font-bold text-center">PSIQUIATRÍA</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Evaluación, diagnóstico y tratamiento de trastornos mentales con un enfoque integral.</p>
-                <router-link to="/servicios/psiquiatria" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
+              </router-link>
+              <div class="p-6 flex-grow flex flex-col">
+                <p class="text-gray-600 mb-4 flex-grow">Evaluación, diagnóstico y tratamiento de trastornos mentales con un enfoque integral.</p>
+                <router-link to="/servicios/psiquiatria" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="psiquiatria">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
-              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+              <router-link to="/servicios/psicologia-clinica" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="psicologia-clinica">
                 <h3 class="text-xl font-bold text-center">PSICOLOGÍA CLÍNICA</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Abordaje terapéutico de problemas emocionales y dificultades psicológicas.</p>
-                <router-link to="/servicios/psicologia-clinica" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
+              </router-link>
+              <div class="p-6 flex-grow flex flex-col">
+                <p class="text-gray-600 mb-4 flex-grow">Abordaje terapéutico de problemas emocionales y dificultades psicológicas.</p>
+                <router-link to="/servicios/psicologia-clinica" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="psicologia-clinica">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
-              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+              <router-link to="/servicios/infancia-adolescencia" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="infancia-adolescencia">
                 <h3 class="text-xl font-bold text-center">INFANCIA Y ADOLESCENCIA</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Atención especializada para niños y adolescentes con diferentes dificultades.</p>
-                <router-link to="/servicios/infancia-adolescencia" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
+              </router-link>
+              <div class="p-6 flex-grow flex flex-col">
+                <p class="text-gray-600 mb-4 flex-grow">Atención especializada para niños y adolescentes con diferentes dificultades.</p>
+                <router-link to="/servicios/infancia-adolescencia" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="infancia-adolescencia">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
-              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+              <router-link to="/servicios/terapia-emdr" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="emdr">
                 <h3 class="text-xl font-bold text-center">TERAPIA EMDR</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Método terapéutico eficaz para el tratamiento del trauma y otras dificultades.</p>
-                <router-link to="/servicios/terapia-emdr" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
+              </router-link>
+              <div class="p-6 flex-grow flex flex-col">
+                <p class="text-gray-600 mb-4 flex-grow">Método terapéutico eficaz para el tratamiento del trauma y otras dificultades.</p>
+                <router-link to="/servicios/terapia-emdr" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="emdr">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
-              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+              <router-link to="/servicios/mindfulness" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="mindfulness">
                 <h3 class="text-xl font-bold text-center">MINDFULNESS</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Prácticas de atención plena para reducir el estrés y mejorar la salud mental.</p>
-                <router-link to="/servicios/mindfulness" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
+              </router-link>
+              <div class="p-6 flex-grow flex flex-col">
+                <p class="text-gray-600 mb-4 flex-grow">Prácticas de atención plena para reducir el estrés y mejorar la salud mental.</p>
+                <router-link to="/servicios/mindfulness" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="mindfulness">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group">
-              <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+              <router-link to="/servicios/perinatal" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="perinatal">
                 <h3 class="text-xl font-bold text-center">PERINATAL</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Acompañamiento especializado durante embarazo, parto y posparto.</p>
-                <router-link to="/servicios/perinatal" class="text-primary-600 hover:text-primary-500 font-medium inline-flex items-center transition-colors">
+              </router-link>
+              <div class="p-6 flex-grow flex flex-col">
+                <p class="text-gray-600 mb-4 flex-grow">Acompañamiento especializado durante embarazo, parto y posparto.</p>
+                <router-link to="/servicios/perinatal" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="perinatal">
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
@@ -267,20 +267,12 @@
         </div>
       </div>
     </section>
-
-
-    <InfoComponent
-      colorTheme="primary"
-      message="Contacta con nosotros para resolver tus dudas o concertar una cita"
-    />
   </div>
 </template>
 
 <script setup>
-import InfoComponent from '@/components/InfoComponent.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import mainBackgroundImg from '@/assets/images/main_background.jpg';
-
 
 defineOptions({
   name: 'QueOfrecemosView'
@@ -298,6 +290,49 @@ defineOptions({
 
 .text-icon {
   font-size: var(--font-size-xl);
+}
+
+/* Specialty Colors */
+.specialty-card-title[data-specialty="psiquiatria"] {
+  background-color: var(--specialty-psiquiatria);
+}
+.specialty-card-title[data-specialty="psicologia-clinica"] {
+  background-color: var(--specialty-psicologia-clinica);
+}
+.specialty-card-title[data-specialty="infancia-adolescencia"] {
+  background-color: var(--specialty-infancia-adolescencia);
+}
+.specialty-card-title[data-specialty="emdr"] {
+  background-color: var(--specialty-emdr);
+}
+.specialty-card-title[data-specialty="mindfulness"] {
+  background-color: var(--specialty-mindfulness);
+}
+.specialty-card-title[data-specialty="perinatal"] {
+  background-color: var(--specialty-perinatal);
+}
+
+.specialty-link[data-specialty="psiquiatria"] {
+  color: var(--specialty-psiquiatria);
+}
+.specialty-link[data-specialty="psicologia-clinica"] {
+  color: var(--specialty-psicologia-clinica);
+}
+.specialty-link[data-specialty="infancia-adolescencia"] {
+  color: var(--specialty-infancia-adolescencia);
+}
+.specialty-link[data-specialty="emdr"] {
+  color: var(--specialty-emdr);
+}
+.specialty-link[data-specialty="mindfulness"] {
+  color: var(--specialty-mindfulness);
+}
+.specialty-link[data-specialty="perinatal"] {
+  color: var(--specialty-perinatal);
+}
+
+.specialty-link:hover {
+  opacity: 0.8;
 }
 
 /* Spacing Classes */
