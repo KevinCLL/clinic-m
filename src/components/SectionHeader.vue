@@ -58,8 +58,8 @@ defineProps({
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 110%;
-  animation: subtle-zoom 30s ease-out forwards;
+  background-size: 115%;
+  animation: subtle-zoom 25s ease-out forwards;
   animation-fill-mode: both;
   will-change: background-size;
 }
@@ -67,7 +67,7 @@ defineProps({
 /* Subtle zoom that happens once on load - starts from current size to prevent jump */
 @keyframes subtle-zoom {
   0% {
-    background-size: 110%;
+    background-size: 115%;
   }
   100% {
     background-size: 105%;
