@@ -15,8 +15,11 @@
       </p>
     </SectionHeader>
 
-    <section class="py-8 md:py-12 bg-gray-50">
-      <div class="container mx-auto px-4">
+    <section class="py-8 md:py-12 bg-gray-50 relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
+      
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-primary-700 text-center mb-6">PILARES DEL PROYECTO</h2>
         
         <div class="max-w-4xl mx-auto mb-8">
@@ -412,4 +415,30 @@ const teamMembers = [
   background-color: #f9fafb;
 }
 
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 12s ease-in-out infinite;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 12s ease-in-out infinite;
+  animation-delay: 3s;
+}
 </style>

@@ -16,9 +16,8 @@
     </SectionHeader>
 
 
-    <section class="facilities-section bg-white relative">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-light opacity-50"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-light opacity-50"></div>
+    <section class="facilities-section bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-subtitle text-center text-primary-dark">Nuestras Instalaciones</h2>
@@ -41,8 +40,10 @@
         </div>
 
 
-        <div class="max-w-6xl mx-auto facility-item">
-          <div class="flex flex-col md:flex-row-reverse items-center">
+        <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" />
+        
+        <div class="max-w-6xl mx-auto facility-item relative">
+          <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/sala_terapia.png" alt="Sala de terapia" class="facility-image">
@@ -76,8 +77,10 @@
         </div>
 
 
-        <div class="max-w-6xl mx-auto facility-item">
-          <div class="flex flex-col md:flex-row-reverse items-center">
+        <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" />
+        
+        <div class="max-w-6xl mx-auto facility-item relative">
+          <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/terapia_grupal.png" alt="Sala de terapia grupal" class="facility-image">
@@ -110,8 +113,10 @@
         </div>
 
 
-        <div class="max-w-6xl mx-auto facility-item">
-          <div class="flex flex-col md:flex-row-reverse items-center">
+        <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" />
+        
+        <div class="max-w-6xl mx-auto facility-item relative">
+          <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/exterior.png" alt="Exterior" class="facility-image">
@@ -275,6 +280,59 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
 
 .facility-content:hover {
   opacity: 1;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+@keyframes sway-subtle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+@keyframes sway-subtle-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-0.5deg);
+  }
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-sway-subtle {
+  animation: sway-subtle 15s ease-in-out infinite;
+}
+
+.animate-sway-subtle-reverse {
+  animation: sway-subtle-reverse 15s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+.animate-float-subtle {
+  animation: float-subtle 12s ease-in-out infinite;
 }
 
 /* Colors */

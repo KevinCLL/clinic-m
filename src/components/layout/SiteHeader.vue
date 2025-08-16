@@ -1,6 +1,9 @@
 <template>
-  <header>
-    <div class="container mx-auto px-4 py-4">
+  <header class="relative overflow-hidden">
+    <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-gentle" />
+    <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-gentle-reverse" />
+    
+    <div class="container mx-auto px-4 py-4 relative z-10">
       <div class="flex justify-between items-center mb-4">
         <div class="hidden md:block">
           <a href="tel:688764073" class="text-primary-700 mr-2 hover:text-primary-600 transition-colors duration-300 text-lg">688764073</a>
@@ -176,5 +179,38 @@ const menuItems = [
   transform: scaleX(1.4);
   transform-origin: center;
   letter-spacing: 0.0em;
+}
+
+@keyframes sway-gentle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-0.5deg);
+  }
+}
+
+@keyframes sway-gentle-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(3px) rotate(0.5deg);
+  }
+}
+
+.animate-sway-gentle {
+  animation: sway-gentle 10s ease-in-out infinite;
+}
+
+.animate-sway-gentle-reverse {
+  animation: sway-gentle-reverse 10s ease-in-out infinite;
+  animation-delay: 2s;
 }
 </style>

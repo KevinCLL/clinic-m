@@ -82,17 +82,9 @@
     </section>
 
 
-    <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative">
-      <div class="absolute top-0 right-0 w-full h-full">
-        <div class="w-full h-full opacity-5">
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path d="M0,0 L1000,0 L1000,1000 L0,1000 Z" fill="none" stroke="var(--primary-600)" stroke-width="1" stroke-dasharray="6,6" />
-            <circle cx="500" cy="500" r="350" fill="none" stroke="var(--primary-600)" stroke-width="1" />
-            <circle cx="500" cy="500" r="250" fill="none" stroke="var(--primary-600)" stroke-width="1" />
-            <circle cx="500" cy="500" r="150" fill="none" stroke="var(--primary-600)" stroke-width="1" />
-          </svg>
-        </div>
-      </div>
+    <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-black text-center mb-6">Te acompañamos en todas las etapas de la vida</h2>
@@ -318,6 +310,53 @@ const handleHomeFormSubmit = (formData) => {
 }
 .hover\:shadow-primary-sm:hover {
   box-shadow: 0 4px 8px -1px rgba(0, 121, 113, 0.25);
+}
+
+@keyframes gentle-sway {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes gentle-sway-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}
+
+.animate-gentle-sway {
+  animation: gentle-sway 8s ease-in-out infinite;
+}
+
+.animate-gentle-sway-reverse {
+  animation: gentle-sway-reverse 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 6s ease-in-out infinite;
+}
+
+.animate-pulse-gentle-delayed {
+  animation: pulse-gentle 6s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
 

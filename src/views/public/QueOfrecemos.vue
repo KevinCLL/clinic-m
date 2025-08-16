@@ -9,8 +9,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-30"></div>
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-pulse-gentle" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-pulse-gentle-delayed" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestros Servicios</h2>
@@ -198,8 +198,8 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-primary-100 opacity-70"></div>
-      <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-primary-100 opacity-70"></div>
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-left" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-700 mb-12">Áreas de Intervención</h2>
@@ -485,5 +485,52 @@ defineOptions({
 
 .specialty-header {
   transition: all var(--transition-normal);
+}
+
+@keyframes float-left {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(10px) translateY(-5px);
+  }
+}
+
+@keyframes float-right {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-5px);
+  }
+}
+
+.animate-float-left {
+  animation: float-left 7s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float-right 7s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 6s ease-in-out infinite;
+}
+
+.animate-pulse-gentle-delayed {
+  animation: pulse-gentle 6s ease-in-out infinite;
+  animation-delay: 3s;
 }
 </style>

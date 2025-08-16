@@ -1,6 +1,9 @@
 <template>
-  <footer class="bg-primary-600 text-white py-12">
-    <div class="container mx-auto px-4">
+  <footer class="bg-primary-600 text-white py-12 relative overflow-hidden">
+    <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-footer" />
+    <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-footer-reverse" />
+    
+    <div class="container mx-auto px-4 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
         <div>
@@ -54,5 +57,32 @@
 }
 .text-primary-600 {
   color: var(--primary-600);
+}
+
+@keyframes sway-footer {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0.5deg);
+  }
+}
+
+@keyframes sway-footer-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(-0.5deg);
+  }
+}
+
+.animate-sway-footer {
+  animation: sway-footer 20s ease-in-out infinite;
+}
+
+.animate-sway-footer-reverse {
+  animation: sway-footer-reverse 20s ease-in-out infinite;
+  animation-delay: 4s;
 }
 </style>
