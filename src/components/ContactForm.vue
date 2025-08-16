@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row gap-6 shadow-soft rounded-xl overflow-hidden">
+  <div class="flex flex-col lg:flex-row gap-6 shadow-soft rounded-xl overflow-hidden bg-white">
 
     <div class="lg:w-1/3 flex flex-col">
 

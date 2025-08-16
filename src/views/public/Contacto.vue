@@ -1,30 +1,50 @@
 <template>
   <div class="overflow-hidden">
-
-    <section class="relative content-section overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 content-decoration rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 content-decoration rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+    <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
+      <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute left-10 top-1/3 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-left transform scale-x-[-1]" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute right-10 top-1/2 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right transform scale-y-[-1]" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <p class="text-center text-gray-700 max-w-3xl mx-auto content-text">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-6">Contacto</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
           Estamos aquí para ayudarte. No dudes en contactarnos para solicitar información o concertar una cita.
         </p>
+
+        <div class="max-w-5xl mx-auto">
+          <ContactForm
+            title="Envíanos un mensaje"
+            :messageRows="isMobile ? 3 : 14"
+            :showIcon="true"
+            :showPrivacidad="false"
+            @form-submitted="handleFormSubmit"
+          />
+        </div>
       </div>
     </section>
-
-    <ContactSection
-      :showTitle="false"
-      :showSubtitle="false"
-      @form-submitted="handleFormSubmit"
-    />
   </div>
 </template>
 
 <script setup>
-import ContactSection from '@/components/ContactSection.vue';
+import ContactForm from '@/components/ContactForm.vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 defineOptions({
   name: 'ContactoView'
+});
+
+const isMobile = ref(window.innerWidth < 768);
+
+const checkMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', checkMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile);
 });
 
 const handleFormSubmit = (formData) => {
@@ -33,49 +53,46 @@ const handleFormSubmit = (formData) => {
 </script>
 
 <style scoped>
-.hero-section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background: linear-gradient(to bottom right, var(--primary-50), white);
+.text-primary-700 {
+  color: var(--primary-700);
+}
+.text-primary-800 {
+  color: var(--primary-800);
+}
+.bg-primary-50 {
+  background-color: var(--primary-50);
+}
+.from-primary-50 {
+  --tw-gradient-from: var(--primary-50);
+}
+.via-primary-200 {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--primary-200), var(--tw-gradient-to);
 }
 
-@media (min-width: 768px) {
-  .hero-section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+@keyframes float-left {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(10px) translateY(-5px);
   }
 }
 
-.hero-decoration {
-  background-color: var(--primary-500);
-}
-
-.hero-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-
-.content-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background: linear-gradient(to bottom right, var(--primary-50), white);
-}
-
-@media (min-width: 768px) {
-  .content-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+@keyframes float-right {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-5px);
   }
 }
 
-.content-decoration {
-  background-color: var(--primary-500);
+.animate-float-left {
+  animation: float-left 7s ease-in-out infinite;
 }
 
-.content-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.animate-float-right {
+  animation: float-right 7s ease-in-out infinite;
+  animation-delay: 1.5s;
 }
-
 </style>

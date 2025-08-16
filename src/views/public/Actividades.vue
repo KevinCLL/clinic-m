@@ -15,9 +15,6 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-secondary-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-secondary-50 opacity-30"></div>
-
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -84,17 +84,17 @@
             </div>
 
 
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3">
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
+                <div class="w-12 h-12 min-w-[50px] bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center mr-4">
                   <i class="fas fa-heart text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-primary-700">Actividades de promoción de la salud mental</h3>
+                <h3 class="text-xl font-semibold text-secondary-700">Actividades de promoción de la salud mental</h3>
               </div>
               <p class="text-gray-600 mb-4">
                 Complementamos nuestros servicios terapéuticos con actividades que promueven el bienestar integral.
               </p>
-              <router-link to="/actividades" class="btn-primary inline-block">
+              <router-link to="/actividades" class="btn-secondary inline-block">
                 Descubrir actividades <i class="fas fa-arrow-right ml-2"></i>
               </router-link>
             </div>
@@ -105,16 +105,13 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-30"></div>
-
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestras Especialidades</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-psiquiatria hover:-translate-y-1 group flex flex-col h-full">
               <router-link to="/servicios/psiquiatria" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="psiquiatria">
                 <h3 class="text-xl font-bold text-center">PSIQUIATRÍA</h3>
               </router-link>
@@ -127,7 +124,7 @@
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-psicologia-clinica hover:-translate-y-1 group flex flex-col h-full">
               <router-link to="/servicios/psicologia-clinica" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="psicologia-clinica">
                 <h3 class="text-xl font-bold text-center">PSICOLOGÍA CLÍNICA</h3>
               </router-link>
@@ -140,7 +137,7 @@
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-infancia-adolescencia hover:-translate-y-1 group flex flex-col h-full">
               <router-link to="/servicios/infancia-adolescencia" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="infancia-adolescencia">
                 <h3 class="text-xl font-bold text-center">INFANCIA Y ADOLESCENCIA</h3>
               </router-link>
@@ -153,7 +150,7 @@
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-emdr hover:-translate-y-1 group flex flex-col h-full">
               <router-link to="/servicios/terapia-emdr" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="emdr">
                 <h3 class="text-xl font-bold text-center">TERAPIA EMDR</h3>
               </router-link>
@@ -166,7 +163,7 @@
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-mindfulness hover:-translate-y-1 group flex flex-col h-full">
               <router-link to="/servicios/mindfulness" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="mindfulness">
                 <h3 class="text-xl font-bold text-center">MINDFULNESS</h3>
               </router-link>
@@ -179,7 +176,7 @@
             </div>
 
 
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group flex flex-col h-full">
+            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-perinatal hover:-translate-y-1 group flex flex-col h-full">
               <router-link to="/servicios/perinatal" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="perinatal">
                 <h3 class="text-xl font-bold text-center">PERINATAL</h3>
               </router-link>
@@ -335,6 +332,31 @@ defineOptions({
   opacity: 0.8;
 }
 
+/* Specialty shadow colors using theme variables */
+.hover\:shadow-specialty-psiquiatria:hover {
+  box-shadow: 0 10px 20px -5px rgba(49, 112, 90, 0.4); /* #31705a */
+}
+
+.hover\:shadow-specialty-psicologia-clinica:hover {
+  box-shadow: 0 10px 20px -5px rgba(139, 191, 172, 0.4); /* #8bbfac */
+}
+
+.hover\:shadow-specialty-infancia-adolescencia:hover {
+  box-shadow: 0 10px 20px -5px rgba(97, 152, 133, 0.4); /* #619885 */
+}
+
+.hover\:shadow-specialty-emdr:hover {
+  box-shadow: 0 10px 20px -5px rgba(0, 130, 122, 0.4); /* #00827a */
+}
+
+.hover\:shadow-specialty-mindfulness:hover {
+  box-shadow: 0 10px 20px -5px rgba(155, 196, 194, 0.4); /* #9bc4c2 */
+}
+
+.hover\:shadow-specialty-perinatal:hover {
+  box-shadow: 0 10px 20px -5px rgba(78, 168, 163, 0.4); /* #4ea8a3 */
+}
+
 /* Spacing Classes */
 
 .p-spacing-sm {
@@ -475,6 +497,37 @@ defineOptions({
 
 .btn-primary:hover {
   background-color: var(--primary-500);
+}
+
+.btn-secondary {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--secondary-600);
+  color: white;
+  border-radius: var(--border-radius-md);
+  transition: background-color var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--spacing-sm);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-500);
+}
+
+.bg-secondary-100 {
+  background-color: var(--secondary-100);
+}
+
+.text-secondary-600 {
+  color: var(--secondary-600);
+}
+
+.text-secondary-700 {
+  color: var(--secondary-700);
+}
+
+.shadow-secondary-lg:hover,
+.hover\:shadow-secondary-lg:hover {
+  box-shadow: 0 10px 20px -5px rgba(244, 114, 182, 0.3);
 }
 
 /* Service and Specialty Card Specific Styles */

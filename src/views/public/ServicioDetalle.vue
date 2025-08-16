@@ -2,9 +2,6 @@
   <div class="overflow-hidden">
 
     <section class="relative py-12 md:py-16 overflow-hidden" :style="{ backgroundColor: specialtyColor }">
-      <div class="absolute top-0 right-0 w-96 h-96 rounded-full opacity-20 transform translate-x-24 -translate-y-24" style="background-color: rgba(255, 255, 255, 0.1)"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full opacity-20 transform -translate-x-20 translate-y-20" style="background-color: rgba(255, 255, 255, 0.1)"></div>
-
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-white mb-6">{{ servicioActual.titulo }}</h1>
         <p class="text-center text-white/90 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -15,9 +12,6 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full bg-primary-50 opacity-30"></div>
-      <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full bg-primary-50 opacity-30"></div>
-
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
           <div class="flex flex-col md:flex-row gap-8">
