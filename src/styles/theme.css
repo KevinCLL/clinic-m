@@ -53,12 +53,12 @@
   --secondary-900: var(--purple-900);
   
   /* Forest Core Colors - Colores de especialidades */
-  --specialty-psiquiatria: #5a5d48;        /* Darkened olive gray */
-  --specialty-psicologia-clinica: #7a7a5f; /* Darkened sage green */
-  --specialty-infancia-adolescencia: #d4bc7e; /* Darkened light sand */
-  --specialty-emdr: #e6a94f;               /* Darkened golden yellow */
-  --specialty-mindfulness: #b56f46;        /* Darkened terra cotta */
-  --specialty-perinatal: #7a6352;          /* Darkened warm taupe */
+  --specialty-psiquiatria: #31705a;        /* Verde oscuro */
+  --specialty-psicologia-clinica: #8bbfac; /* Verde claro */
+  --specialty-infancia-adolescencia: #619885; /* Verde medio */
+  --specialty-emdr: #00827a;               /* Verde azulado */
+  --specialty-mindfulness: #9bc4c2;        /* Verde agua */
+  --specialty-perinatal: #4ea8a3;          /* Verde turquesa */
   
   /* =================================
      TIPOGRAFÍA
