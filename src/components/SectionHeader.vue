@@ -36,40 +36,38 @@ defineProps({
   align-items: center;
 }
 
-.section-content {
-  animation: fadeInUp 1.2s ease-out forwards;
-  animation-delay: 0.3s;
-  opacity: 0;
+/* Mobile styles - simplified without animations */
+@media (max-width: 767px) {
+  .section-header {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  .background-container {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .section-content {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
+/* Desktop styles */
+@media (min-width: 768px) {
+  .section-content {
     opacity: 1;
-    transform: translateY(0);
   }
-}
-
-/* Background container with fixed attachment for window effect */
-.background-container {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 115%;
-  animation: subtle-zoom 25s ease-out forwards;
-  animation-fill-mode: both;
-  will-change: background-size;
-}
-
-/* Subtle zoom that happens once on load - starts from current size to prevent jump */
-@keyframes subtle-zoom {
-  0% {
-    background-size: 115%;
-  }
-  100% {
+  
+  /* Background container with fixed attachment for window effect */
+  .background-container {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: 105%;
   }
 }

@@ -102,7 +102,7 @@
             v-for="(specialty, index) in allSpecialties"
             :key="index"
             @click="isCurrentSpecialty(specialty.id) ? null : navigateToSpecialty(specialty.id)"
-            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300"
+            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300 specialty-button"
             :class="{
               'text-white transform hover:scale-105 hover:shadow-lg cursor-pointer': !isCurrentSpecialty(specialty.id),
               'text-gray-500 bg-gray-200 opacity-60': isCurrentSpecialty(specialty.id)
@@ -261,6 +261,17 @@ const servicioActual = computed(() => {
 </script>
 
 <style scoped>
+/* Mobile styles for specialty buttons */
+@media (max-width: 767px) {
+  .specialty-button {
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+  }
+}
+
 .text-primary-500 {
   color: var(--primary-500);
 }
