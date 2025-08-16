@@ -91,11 +91,11 @@
         <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Nuestro equipo de especialistas te ofrece apoyo profesional adaptado a cada momento vital</p>
 
         <!-- Versión móvil (hasta sm) -->
-        <div class="flex flex-wrap justify-center gap-4 sm:hidden">
-          <div v-for="(stage, index) in lifeStages" :key="`mobile-${index}`" class="flex flex-col items-center w-[calc(50%-0.5rem)]">
+        <div class="flex flex-wrap justify-center gap-3 sm:hidden">
+          <div v-for="(stage, index) in lifeStages" :key="`mobile-${index}`" class="flex flex-col items-center w-[calc(50%-0.375rem)]">
             <router-link :to="stage.route" class="block group flex flex-col items-center w-full">
-              <div class="w-full aspect-square rounded-full overflow-hidden mb-4 relative transition-transform duration-700 group-hover:scale-110">
-                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 50%, transparent 60%); mask-image: radial-gradient(black 50%, transparent 60%);" />
+              <div class="w-full aspect-square rounded-full overflow-hidden mb-3 relative transition-transform duration-700 group-hover:scale-110">
+                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 65%, transparent 70%); mask-image: radial-gradient(black 65%, transparent 70%);" />
               </div>
               <h3 class="text-base font-semibold text-primary-700 group-hover:text-primary-600 transition-colors text-center">{{ stage.title }}</h3>
             </router-link>
@@ -103,11 +103,11 @@
         </div>
 
         <!-- Versión tablet/desktop (sm y superior) -->
-        <div class="hidden sm:flex sm:flex-wrap sm:justify-center gap-6 lg:gap-8 max-w-7xl mx-auto">
-          <div v-for="(stage, index) in lifeStages" :key="`desktop-${index}`" class="flex flex-col items-center w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.5rem)] max-w-[240px]">
+        <div class="hidden sm:flex sm:flex-wrap sm:justify-center gap-4 lg:gap-6 max-w-7xl mx-auto">
+          <div v-for="(stage, index) in lifeStages" :key="`desktop-${index}`" class="flex flex-col items-center w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-1.2rem)] max-w-[280px]">
             <router-link :to="stage.route" class="block group flex flex-col items-center w-full">
-              <div class="w-full aspect-square rounded-full overflow-hidden mb-4 relative transition-transform duration-700 group-hover:scale-110">
-                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 50%, transparent 60%); mask-image: radial-gradient(black 50%, transparent 60%);" />
+              <div class="w-full aspect-square rounded-full overflow-hidden mb-3 relative transition-transform duration-700 group-hover:scale-110">
+                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 65%, transparent 70%); mask-image: radial-gradient(black 65%, transparent 70%);" />
               </div>
               <h3 class="text-lg font-semibold text-primary-700 group-hover:text-primary-600 transition-colors text-center">{{ stage.title }}</h3>
             </router-link>
