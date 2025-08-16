@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
 
-    <SectionHeader title="SOBRE NOSOTRAS" :backgroundImage="quienesSomosImg">
+    <SectionHeader title="Sobre Nosotras" :backgroundImage="quienesSomosImg">
       <p class="text-justify">
         En nuestra Clínica de Salud Mental somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicologías clínicas). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
       </p>

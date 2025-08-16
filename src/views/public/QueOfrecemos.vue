@@ -3,7 +3,7 @@
 
     <SectionHeader title="Qué Ofrecemos" :backgroundImage="mainBackgroundImg">
       <p class="text-justify">
-        Independientemente de la especialidad de la que partimos (medicina, psicología…) y de si intervenimos a nivel farmacológico, psicoterapéutico o ambas, siempre hacemos un acompañamiento terapéutico y adaptamos el proceso a las necesidades individuales de cada persona. Intentamos acompañar siempre desde la horizontalidad, teniendo en cuenta nuestro criterio profesional y nuestra experiencia, pero respetando los tiempos, las inquietudes y las preferencias de la persona.
+        Independientemente de la especialidad de la que partimos (medicina, psicología…) y de si intervenimos a nivel farmacológico, psicoterapéutico o ambas, siempre hacemos un <strong>acompañamiento terapéutico</strong> y adaptamos el proceso a las <strong>necesidades individuales</strong> de cada persona. Intentamos acompañar siempre desde la <strong>horizontalidad</strong>, teniendo en cuenta nuestro criterio profesional y nuestra experiencia, pero <strong>respetando los tiempos, las inquietudes y las preferencias</strong> de la persona.
       </p>
     </SectionHeader>
 

@@ -1,17 +1,17 @@
 <template>
   <div class="overflow-hidden">
 
-    <SectionHeader title="NUESTRO ESPACIO" :backgroundImage="nuestroEspacioImg">
+    <SectionHeader title="Nuestro Espacio" :backgroundImage="nuestroEspacioImg">
       <p class="text-justify">
-        En nuestra clínica, entendemos que el entorno juega un papel crucial en el bienestar emocional de las personas que nos consultan.
+        En nuestra clínica, entendemos que el <strong>entorno</strong> juega un <strong>papel crucial en el bienestar emocional</strong> de las personas que nos consultan.
       </p>
       
       <p class="text-justify">
-        Por eso, hemos diseñado cada espacio para crear un ambiente de seguridad y calidez que promueva la relajación y reduzca el estrés.
+        Por eso, hemos diseñado cada espacio para crear un <strong>ambiente de seguridad y calidez</strong> que promueva la <strong>relajación</strong> y reduzca el <strong>estrés</strong>.
       </p>
       
       <p class="text-justify">
-        Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
+        Utilizamos <strong>colores suaves y naturales</strong>, <strong>iluminación adecuada</strong>, <strong>materiales orgánicos</strong> y elementos naturales como plantas para generar una sensación de <strong>tranquilidad y conexión</strong>.
       </p>
     </SectionHeader>
 
