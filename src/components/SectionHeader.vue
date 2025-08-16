@@ -1,8 +1,7 @@
 <template>
   <section class="section-header relative py-16 md:py-20 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <img :src="backgroundImage" alt="Background" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black/20"></div>
+    <div class="background-container absolute inset-0 z-0" :style="{ backgroundImage: `url(${backgroundImage})` }">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/25"></div>
     </div>
 
     <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
@@ -32,7 +31,9 @@ defineProps({
 
 <style scoped>
 .section-header {
-  min-height: 400px;
+  min-height: 850px;
+  display: flex;
+  align-items: center;
 }
 
 .section-content {
@@ -52,6 +53,27 @@ defineProps({
   }
 }
 
+/* Background container with fixed attachment for window effect */
+.background-container {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  animation: subtle-zoom 30s ease-out forwards;
+  animation-fill-mode: both;
+  will-change: background-size;
+}
+
+/* Subtle zoom that happens once on load - starts from current size to prevent jump */
+@keyframes subtle-zoom {
+  0% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+
 /* Ensure consistent typography */
 .section-title {
   font-family: var(--font-family-heading);
@@ -65,5 +87,6 @@ defineProps({
 /* Ensure rounded corners consistency */
 .section-content {
   border-radius: 1rem;
+  position: relative;
 }
 </style>
