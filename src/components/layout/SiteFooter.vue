@@ -12,25 +12,25 @@
           <div class="space-y-3 mb-6">
             <div class="flex items-center">
               <i class="fas fa-map-marker-alt mr-3 text-white/80"></i>
-              <p class="whitespace-nowrap m-0">C/Peris y Valero 178, bajo 46006 Valencia</p>
+              <p class="whitespace-nowrap m-0">{{ contactInfo.address.fullAddress }}</p>
             </div>
             
             <div class="flex items-center">
               <i class="fas fa-phone mr-3 text-white/80"></i>
-              <a href="tel:688764073" class="hover:text-white/80 transition">688764073</a>
+              <a :href="`tel:${contactInfo.phone}`" class="hover:text-white/80 transition">{{ contactInfo.phone }}</a>
             </div>
             
             <div class="flex items-center">
               <i class="fas fa-envelope mr-3 text-white/80"></i>
-              <a href="mailto:info@codasaludmental.es" class="hover:text-white/80 transition">info@codasaludmental.es</a>
+              <a :href="`mailto:${contactInfo.email}`" class="hover:text-white/80 transition">{{ contactInfo.email }}</a>
             </div>
           </div>
 
           <div class="flex space-x-3">
-            <a href="#" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
+            <a :href="contactInfo.social.instagram" target="_blank" rel="noopener noreferrer" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
+            <a :href="contactInfo.social.linkedin" target="_blank" rel="noopener noreferrer" class="bg-white text-primary-600 h-9 w-9 rounded-full flex items-center justify-center transition-all hover:scale-110 hover:bg-white/90">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
@@ -50,6 +50,10 @@
     </div>
   </footer>
 </template>
+
+<script setup>
+import { contactInfo } from '@/data/contactInfo.js';
+</script>
 
 <style scoped>
 .bg-primary-600 {

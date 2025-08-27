@@ -18,71 +18,19 @@
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group">
-              <router-link to="/actividades/mindfulness" class="h-48 overflow-hidden block">
-                <img src="@/assets/images/grupos_mindfulness.png" alt="Grupos de mindfulness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div 
+              v-for="activity in activities" 
+              :key="activity.id"
+              class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group"
+              :class="{ 'md:col-span-2': activity.id === 'otras' }"
+            >
+              <router-link :to="`/actividades/${activity.id}`" class="h-48 overflow-hidden block">
+                <img :src="activity.image" :alt="activity.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
               <div class="p-6">
-                <h3 class="text-xl font-semibold text-secondary-700 mb-4">Grupos de mindfulness</h3>
-                <p class="text-gray-600 text-base mb-4">Aprende técnicas de atención plena para reducir el estrés y mejorar tu bienestar emocional. Nuestros grupos están pensados para personas que buscan herramientas efectivas para gestionar la ansiedad y el malestar emocional.</p>
-                <router-link to="/actividades/mindfulness" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
-                  Saber más <i class="fas fa-chevron-right icon-margin text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group">
-              <router-link to="/actividades/yoga" class="h-48 overflow-hidden block">
-                <img src="@/assets/images/yoga.png" alt="Yoga general" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              </router-link>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-secondary-700 mb-4">Yoga general</h3>
-                <p class="text-gray-600 text-base mb-4">Sesiones de yoga adaptadas a todos los niveles para mejorar la conexión mente-cuerpo. Enfocado en la reducción del estrés y la mejora de la conciencia corporal como vía para el bienestar psicológico.</p>
-                <router-link to="/actividades/yoga" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
-                  Saber más <i class="fas fa-chevron-right icon-margin text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group">
-              <router-link to="/actividades/yoga-trauma" class="h-48 overflow-hidden block">
-                <img src="@/assets/images/yoga_sensible.png" alt="Yoga sensible al trauma" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              </router-link>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-secondary-700 mb-4">Yoga sensible al trauma</h3>
-                <p class="text-gray-600 text-base mb-4">Un enfoque especializado del yoga para personas que han experimentado situaciones traumáticas. Creamos un espacio seguro para reconectar con el cuerpo y las sensaciones de forma gradual y respetuosa.</p>
-                <router-link to="/actividades/yoga-trauma" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
-                  Saber más <i class="fas fa-chevron-right icon-margin text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group">
-              <router-link to="/actividades/retiros" class="h-48 overflow-hidden block">
-                <img src="@/assets/images/retiros.png" alt="Retiros de meditación" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              </router-link>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-secondary-700 mb-4">Retiros de meditación</h3>
-                <p class="text-gray-600 text-base mb-4">Experiencias inmersivas para profundizar en la práctica meditativa y el autoconocimiento. Estas jornadas ofrecen un espacio de desconexión y encuentro con uno mismo en entornos naturales.</p>
-                <router-link to="/actividades/retiros" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
-                  Saber más <i class="fas fa-chevron-right icon-margin text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group md:col-span-2">
-              <router-link to="/actividades/otras" class="h-48 overflow-hidden block">
-                <img src="@/assets/images/otras_actividades.png" alt="Otras actividades" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              </router-link>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-secondary-700 mb-4">Otras actividades</h3>
-                <p class="text-gray-600 text-base mb-4">Descubre talleres, charlas y eventos especiales orientados a diferentes aspectos del bienestar emocional. Ofrecemos actividades puntuales sobre temas variados relacionados con la salud mental y el crecimiento personal.</p>
-                <router-link to="/actividades/otras" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
+                <h3 class="text-xl font-semibold text-secondary-700 mb-4">{{ activity.title }}</h3>
+                <p class="text-gray-600 text-base mb-4">{{ activity.shortDescription }}</p>
+                <router-link :to="`/actividades/${activity.id}`" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right icon-margin text-sm"></i>
                 </router-link>
               </div>
@@ -183,7 +131,7 @@
 
 <script setup>
 import InfoComponent from '@/components/InfoComponent.vue';
-
+import { activities } from '@/data/activities.js';
 
 defineOptions({
   name: 'ActividadesView'

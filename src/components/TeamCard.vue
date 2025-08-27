@@ -5,8 +5,18 @@
     </div>
     <div class="p-6">
       <h3 class="text-xl font-bold text-primary-800 mb-1">{{ name }}</h3>
-      <p class="text-primary-600 font-medium mb-4">{{ role }}</p>
-      <p class="text-gray-700 text-base text-justify">{{ description }}</p>
+      <p class="text-primary-600 font-medium mb-3">{{ role }}</p>
+      <div v-if="specialties && specialties.length > 0" class="flex flex-wrap gap-2">
+        <router-link 
+          v-for="specialty in specialties" 
+          :key="specialty.id"
+          :to="specialty.link"
+          class="inline-block px-3 py-1 rounded-full text-xs font-medium specialty-badge transition-all hover:opacity-90"
+          :data-specialty="specialty.id"
+        >
+          {{ specialty.name }}
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -21,9 +31,9 @@ defineProps({
     type: String,
     required: true
   },
-  description: {
-    type: String,
-    required: true
+  specialties: {
+    type: Array,
+    default: () => []
   },
   image: {
     type: String,
@@ -38,5 +48,35 @@ defineProps({
 }
 .text-primary-800 {
   color: var(--primary-800);
+}
+
+.specialty-badge[data-specialty="psiquiatria"] {
+  background-color: var(--specialty-psiquiatria);
+  color: white;
+}
+
+.specialty-badge[data-specialty="psicologia-clinica"] {
+  background-color: var(--specialty-psicologia-clinica);
+  color: white;
+}
+
+.specialty-badge[data-specialty="infancia-adolescencia"] {
+  background-color: var(--specialty-infancia-adolescencia);
+  color: white;
+}
+
+.specialty-badge[data-specialty="perinatal"] {
+  background-color: var(--specialty-perinatal);
+  color: white;
+}
+
+.specialty-badge[data-specialty="terapia-emdr"] {
+  background-color: var(--specialty-emdr);
+  color: white;
+}
+
+.specialty-badge[data-specialty="mindfulness"] {
+  background-color: var(--specialty-mindfulness);
+  color: white;
 }
 </style>

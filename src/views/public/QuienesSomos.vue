@@ -3,7 +3,7 @@
 
     <SectionHeader title="Sobre Nosotras" :backgroundImage="quienesSomosImg">
       <p class="text-justify">
-        En nuestra Clínica de Salud Mental somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicologías clínicas). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
+        En CODA somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicología clínica). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
       </p>
       
       <p class="text-justify">
@@ -86,13 +86,13 @@
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">CONOCE A NUESTRO EQUIPO</h2>
 
-        <div class="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto justify-items-center">
           <TeamCard
-            v-for="(member, index) in teamMembers"
-            :key="index"
+            v-for="member in teamMembers"
+            :key="member.id"
             :name="member.name"
             :role="member.role"
-            :description="member.description"
+            :specialties="member.specialties"
             :image="member.image"
           />
         </div>
@@ -104,41 +104,8 @@
 <script setup>
 import TeamCard from '@/components/TeamCard.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
-import unknownImg from '@/assets/images/unknown.jpg';
 import quienesSomosImg from '@/assets/images/quienes_somos.jpg';
-
-const teamMembers = [
-  {
-    name: 'Dra. María García',
-    role: 'Psiquiatra',
-    description: 'Especialista en trastornos del estado de ánimo y ansiedad, con más de 15 años de experiencia en el campo de la psiquiatría.',
-    image: unknownImg
-  },
-  {
-    name: 'Dr. Carlos Martínez',
-    role: 'Psicólogo Clínico',
-    description: 'Especializado en terapia cognitivo-conductual y EMDR para el tratamiento del trauma y trastornos de ansiedad.',
-    image: unknownImg
-  },
-  {
-    name: 'Dra. Laura Sánchez',
-    role: 'Neuropsicóloga',
-    description: 'Especialista en evaluación y rehabilitación neuropsicológica, con formación específica en deterioro cognitivo y daño cerebral.',
-    image: unknownImg
-  },
-  {
-    name: 'Dr. Javier López',
-    role: 'Psiquiatra Infantojuvenil',
-    description: 'Especializado en trastornos del neurodesarrollo y problemas emocionales en niños y adolescentes.',
-    image: unknownImg
-  },
-  {
-    name: 'Dra. Ana Rodríguez',
-    role: 'Psicóloga Clínica',
-    description: 'Especialista en trastornos de personalidad y terapia dialéctico-conductual, con amplia experiencia en terapia grupal.',
-    image: unknownImg
-  }
-];
+import { teamMembers } from '@/data/team.js';
 </script>
 
 <style scoped>

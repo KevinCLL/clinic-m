@@ -12,7 +12,7 @@
             scrolling="no"
             marginheight="0"
             marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.37523627281189%2C39.45782276238325%2C-0.37280082702638%2C39.45936023947621&amp;layer=mapnik&amp;marker=39.45859151155501%2C-0.3740185499191284"
+            :src="contactInfo.map.embedUrl"
             style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
             class="filter brightness-105 contrast-95">
           </iframe>
@@ -51,33 +51,33 @@
         <div class="mb-4 space-y-2 text-sm">
           <div class="flex items-center">
             <i class="fas fa-map-marker-alt mr-3 text-primary-200 w-4"></i>
-            <p>C/Peris y Valero 178, bajo 46006 Valencia</p>
+            <p>{{ contactInfo.address.fullAddress }}</p>
           </div>
 
           <div class="flex items-center">
             <i class="fas fa-phone mr-3 text-primary-200 w-4"></i>
-            <a href="tel:688764073" class="hover:text-white transition-colors">688764073</a>
+            <a :href="`tel:${contactInfo.phone}`" class="hover:text-white transition-colors">{{ contactInfo.phone }}</a>
           </div>
 
           <div class="flex items-center">
             <i class="fas fa-envelope mr-3 text-primary-200 w-4"></i>
-            <a href="mailto:info@codasaludmental.es" class="hover:text-white transition-colors">info@codasaludmental.es</a>
+            <a :href="`mailto:${contactInfo.email}`" class="hover:text-white transition-colors">{{ contactInfo.email }}</a>
           </div>
         </div>
 
         <h3 class="text-lg font-bold mb-2">Horario</h3>
         <div class="mb-6 space-y-1">
           <div class="flex justify-between text-sm">
-            <span>Lunes a Viernes</span>
-            <span>9:00 - 20:00</span>
+            <span>{{ contactInfo.schedule.weekdays }}</span>
+            <span>{{ contactInfo.schedule.hours }}</span>
           </div>
         </div>
 
         <div class="flex space-x-3">
-          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
+          <a :href="contactInfo.social.instagram" target="_blank" rel="noopener noreferrer" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
+          <a :href="contactInfo.social.linkedin" target="_blank" rel="noopener noreferrer" class="bg-white text-primary-600 h-8 w-8 rounded-full flex items-center justify-center hover:bg-primary-100 transition-all duration-300">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
@@ -150,6 +150,7 @@
 
 <script setup>
 import { ref, defineProps, defineEmits } from 'vue';
+import { contactInfo } from '@/data/contactInfo.js';
 
 
 defineProps({

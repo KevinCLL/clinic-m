@@ -29,16 +29,16 @@
 
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
             <div class="h-60 overflow-hidden">
-              <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicoterapia' }}">
+              <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}">
                 <img src="@/assets/images/psychotherapy.jpg" alt="Psicoterapia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
             </div>
             <div class="p-6 border-t border-primary-50">
-              <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicoterapia' }}">
+              <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}">
                 <h3 class="text-xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psicoterapia</h3>
               </router-link>
               <p class="text-base text-gray-700 mb-4">Acompañamiento terapéutico personalizado para desarrollar herramientas de afrontamiento.</p>
-              <Button :to="{ name: 'servicio-detalle', params: { id: 'psicoterapia' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105" />
+              <Button :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105" />
             </div>
           </div>
 

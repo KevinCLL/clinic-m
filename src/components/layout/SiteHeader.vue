@@ -6,16 +6,16 @@
     <div class="container mx-auto px-4 py-4 relative z-10">
       <div class="flex justify-between items-center mb-4">
         <div class="hidden md:block">
-          <a href="tel:688764073" class="text-primary-700 mr-2 hover:text-primary-600 transition-colors duration-300 text-lg">688764073</a>
+          <a :href="`tel:${contactInfo.phone}`" class="text-primary-700 mr-2 hover:text-primary-600 transition-colors duration-300 text-lg">{{ contactInfo.phone }}</a>
           <span class="text-gray-400 mx-1">|</span>
-          <a href="mailto:info@codasaludmental.es" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg">info@codasaludmental.es</a>
+          <a :href="`mailto:${contactInfo.email}`" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg">{{ contactInfo.email }}</a>
         </div>
 
         <div class="hidden md:flex space-x-3 ml-auto">
-          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
+          <a :href="contactInfo.social.instagram" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
+          <a :href="contactInfo.social.linkedin" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors duration-300 text-xl">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
@@ -23,7 +23,7 @@
 
       <div class="flex justify-center" ref="logoContainer">
         <router-link to="/" class="flex items-center space-x-4">
-          <img src="@/assets/images/logo.png" alt="CODA - Salud mental integral" class="h-20 w-auto" />
+          <img src="@/assets/images/logo.png" :alt="contactInfo.clinicName" class="h-20 w-auto" />
         </router-link>
       </div>
     </div>
@@ -77,6 +77,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+import { contactInfo } from '@/data/contactInfo.js';
 
 const mobileMenuOpen = ref(false);
 const navBar = ref(null);

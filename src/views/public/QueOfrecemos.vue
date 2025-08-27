@@ -17,70 +17,18 @@
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div 
+              v-for="card in serviceCards" 
+              :key="card.title"
+              class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-hands-helping text-icon"></i>
+                  <i :class="`fas ${card.icon} text-icon`"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-primary-700">Acompañamiento terapéutico</h3>
+                <h3 class="text-xl font-semibold text-primary-700">{{ card.title }}</h3>
               </div>
-              <p class="text-gray-600">Ofrecemos un acompañamiento personalizado durante todo el proceso, adaptándonos a las necesidades individuales.</p>
-            </div>
-
-
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-brain text-icon"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-primary-700">Psicoterapia</h3>
-              </div>
-              <p class="text-gray-600">Intervenciones psicológicas basadas en la evidencia, para el tratamiento de diversos trastornos y dificultades.</p>
-            </div>
-
-
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-pills text-icon"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-primary-700">Tratamiento psicofarmacológico</h3>
-              </div>
-              <p class="text-gray-600">Evaluación y prescripción de medicación cuando sea necesario, con seguimiento personalizado.</p>
-            </div>
-
-
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-clipboard-check text-icon"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-primary-700">Evaluación y diagnóstico</h3>
-              </div>
-              <p class="text-gray-600">Valoraciones clínicas exhaustivas para detectar dificultades y desarrollar planes de tratamiento adecuados.</p>
-            </div>
-
-
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-users text-icon"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-primary-700">Orientación familiar</h3>
-              </div>
-              <p class="text-gray-600">Apoyo y asesoramiento para familias que necesitan herramientas para gestionar situaciones difíciles.</p>
-            </div>
-
-
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center mb-4">
-                <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <i class="fas fa-comment-dots text-icon"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-primary-700">Terapia grupal</h3>
-              </div>
-              <p class="text-gray-600">Intervenciones terapéuticas en grupo, facilitando el aprendizaje compartido y el apoyo entre iguales.</p>
+              <p class="text-gray-600">{{ card.description }}</p>
             </div>
 
 
@@ -110,79 +58,25 @@
 
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-psiquiatria hover:-translate-y-1 group flex flex-col h-full">
-              <router-link to="/servicios/psiquiatria" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="psiquiatria">
-                <h3 class="text-xl font-bold text-center">PSIQUIATRÍA</h3>
+            <div 
+              v-for="service in services" 
+              :key="service.id"
+              :class="`specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-${service.id} hover:-translate-y-1 group flex flex-col h-full`"
+            >
+              <router-link 
+                :to="`/servicios/${service.id}`" 
+                class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" 
+                :data-specialty="service.id"
+              >
+                <h3 class="text-xl font-bold text-center">{{ specialties.find(s => s.id === service.id)?.name || service.title.toUpperCase() }}</h3>
               </router-link>
               <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">Evaluación, diagnóstico y tratamiento de trastornos mentales con un enfoque integral.</p>
-                <router-link to="/servicios/psiquiatria" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="psiquiatria">
-                  Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-psicologia-clinica hover:-translate-y-1 group flex flex-col h-full">
-              <router-link to="/servicios/psicologia-clinica" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="psicologia-clinica">
-                <h3 class="text-xl font-bold text-center">PSICOLOGÍA CLÍNICA</h3>
-              </router-link>
-              <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">Abordaje terapéutico de problemas emocionales y dificultades psicológicas.</p>
-                <router-link to="/servicios/psicologia-clinica" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="psicologia-clinica">
-                  Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-infancia-adolescencia hover:-translate-y-1 group flex flex-col h-full">
-              <router-link to="/servicios/infancia-adolescencia" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="infancia-adolescencia">
-                <h3 class="text-xl font-bold text-center">INFANCIA Y ADOLESCENCIA</h3>
-              </router-link>
-              <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">Atención especializada para niños y adolescentes con diferentes dificultades.</p>
-                <router-link to="/servicios/infancia-adolescencia" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="infancia-adolescencia">
-                  Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-emdr hover:-translate-y-1 group flex flex-col h-full">
-              <router-link to="/servicios/terapia-emdr" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="emdr">
-                <h3 class="text-xl font-bold text-center">TERAPIA EMDR</h3>
-              </router-link>
-              <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">Método terapéutico eficaz para el tratamiento del trauma y otras dificultades.</p>
-                <router-link to="/servicios/terapia-emdr" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="emdr">
-                  Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-mindfulness hover:-translate-y-1 group flex flex-col h-full">
-              <router-link to="/servicios/mindfulness" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="mindfulness">
-                <h3 class="text-xl font-bold text-center">MINDFULNESS</h3>
-              </router-link>
-              <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">Prácticas de atención plena para reducir el estrés y mejorar la salud mental.</p>
-                <router-link to="/servicios/mindfulness" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="mindfulness">
-                  Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
-                </router-link>
-              </div>
-            </div>
-
-
-            <div class="specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-perinatal hover:-translate-y-1 group flex flex-col h-full">
-              <router-link to="/servicios/perinatal" class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" data-specialty="perinatal">
-                <h3 class="text-xl font-bold text-center">PERINATAL</h3>
-              </router-link>
-              <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">Acompañamiento especializado durante embarazo, parto y posparto.</p>
-                <router-link to="/servicios/perinatal" class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" data-specialty="perinatal">
+                <p class="text-gray-600 mb-4 flex-grow">{{ service.description }}</p>
+                <router-link 
+                  :to="`/servicios/${service.id}`" 
+                  class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" 
+                  :data-specialty="service.id"
+                >
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
                 </router-link>
               </div>
@@ -270,6 +164,7 @@
 <script setup>
 import SectionHeader from '@/components/SectionHeader.vue';
 import mainBackgroundImg from '@/assets/images/que_ofrecemos.jpg';
+import { services, serviceCards, specialties } from '@/data/services.js';
 
 defineOptions({
   name: 'QueOfrecemosView'
@@ -299,7 +194,7 @@ defineOptions({
 .specialty-card-title[data-specialty="infancia-adolescencia"] {
   background-color: var(--specialty-infancia-adolescencia);
 }
-.specialty-card-title[data-specialty="emdr"] {
+.specialty-card-title[data-specialty="terapia-emdr"] {
   background-color: var(--specialty-emdr);
 }
 .specialty-card-title[data-specialty="mindfulness"] {
@@ -318,7 +213,7 @@ defineOptions({
 .specialty-link[data-specialty="infancia-adolescencia"] {
   color: var(--specialty-infancia-adolescencia);
 }
-.specialty-link[data-specialty="emdr"] {
+.specialty-link[data-specialty="terapia-emdr"] {
   color: var(--specialty-emdr);
 }
 .specialty-link[data-specialty="mindfulness"] {
@@ -345,7 +240,7 @@ defineOptions({
   box-shadow: 0 10px 20px -5px rgba(97, 152, 133, 0.4); /* #619885 */
 }
 
-.hover\:shadow-specialty-emdr:hover {
+.hover\:shadow-specialty-terapia-emdr:hover {
   box-shadow: 0 10px 20px -5px rgba(0, 130, 122, 0.4); /* #00827a */
 }
 

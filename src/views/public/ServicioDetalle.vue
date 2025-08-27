@@ -21,9 +21,7 @@
                 <h2 class="text-2xl md:text-3xl font-bold text-primary-700 mb-6">{{ servicioActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
-                  <p v-for="(parrafo, index) in servicioActual.contenido" :key="index" class="mb-4 text-justify">
-                    {{ parrafo }}
-                  </p>
+                  <p v-for="(parrafo, index) in servicioActual.contenido" :key="index" class="mb-4 text-justify" v-html="parrafo"></p>
                 </div>
               </div>
 
@@ -67,7 +65,7 @@
                 <div class="space-y-4">
                   <div v-for="(pregunta, index) in servicioActual.preguntas" :key="index">
                     <h4 class="font-medium text-primary-600 mb-1">{{ pregunta.pregunta }}</h4>
-                    <p class="text-gray-600 text-sm text-justify">{{ pregunta.respuesta }}</p>
+                    <p class="text-gray-600 text-sm text-justify" v-html="pregunta.respuesta"></p>
                   </div>
                 </div>
               </div>
@@ -99,8 +97,8 @@
         <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Otras especialidades</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           <button
-            v-for="(specialty, index) in allSpecialties"
-            :key="index"
+            v-for="specialty in allSpecialties"
+            :key="specialty.id"
             @click="isCurrentSpecialty(specialty.id) ? null : navigateToSpecialty(specialty.id)"
             class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300 specialty-button"
             :class="{
@@ -122,8 +120,7 @@
 import { computed, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import AreaIntervencion from '@/components/AreaIntervencion.vue';
-
-
+import { getServiceWithProfessionals, specialties } from '@/data/services.js';
 
 defineOptions({
   name: 'ServicioDetalleView'
@@ -134,68 +131,29 @@ const router = useRouter();
 const servicioId = computed(() => route.params.id);
 
 const specialtyColor = computed(() => {
-  const mappedId = servicioId.value === 'terapia-emdr' ? 'emdr' : servicioId.value;
-  return getComputedStyle(document.documentElement).getPropertyValue(`--specialty-${mappedId}`) || '#007971';
+  const specialty = specialties.find(s => s.id === servicioId.value);
+  if (specialty) {
+    const cssVar = specialty.color;
+    if (cssVar.startsWith('var(')) {
+      const varName = cssVar.slice(4, -1); // Remove 'var(' and ')'
+      return getComputedStyle(document.documentElement).getPropertyValue(varName) || '#007971';
+    }
+    return cssVar;
+  }
+  return '#007971';
 });
 
 
-const servicios = {
-  'psiquiatria': {
-    titulo: 'Psiquiatría',
-    descripcionCorta: 'Valoración, diagnóstico y tratamiento de trastornos mentales desde una perspectiva integral.',
-    subtitulo: '¿Qué ofrecemos en nuestro servicio de Psiquiatría?',
-    contenido: [
-      'Nuestro enfoque en psiquiatría se centra en la persona y no solo en los síntomas, combinando la precisión diagnóstica con un trato humano y cercano. Entendemos que cada persona es única y que requiere un abordaje personalizado.',
-      'Realizamos una evaluación exhaustiva para determinar tanto factores biológicos como psicológicos y sociales que puedan estar influyendo en el malestar, para poder ofrecer el tratamiento más adecuado en cada caso.',
-      'Además de la intervención farmacológica cuando sea necesaria, ofrecemos un seguimiento regular y cuidadoso, ajustando el tratamiento según la evolución y en estrecha colaboración con los demás profesionales implicados en el cuidado (psicólogos, médicos de familia, etc.).',
-      'Nuestro objetivo es que la persona comprenda su problemática, sea partícipe de las decisiones sobre su tratamiento y disponga de herramientas para mantener su bienestar a largo plazo.'
-    ],
-    caracteristicas: [
-      'Valoración clínica inicial completa',
-      'Diagnóstico diferencial',
-      'Tratamiento farmacológico personalizado',
-      'Seguimiento regular de la evolución',
-      'Psicoeducación sobre el trastorno y el tratamiento',
-      'Coordinación con otros profesionales sanitarios',
-      'Atención integrada con psicoterapia cuando sea necesario'
-    ],
-    profesionales: [
-      { nombre: 'Dra. María García', especialidad: 'Psiquiatra' },
-      { nombre: 'Dr. Carlos Rodríguez', especialidad: 'Psiquiatra' }
-    ],
-    preguntas: [
-      {
-        pregunta: '¿Cuándo debo acudir al psiquiatra?',
-        respuesta: 'Es recomendable consultar cuando experimentas síntomas que afectan significativamente tu funcionamiento diario, como cambios de humor persistentes, ansiedad intensa, pensamientos perturbadores, problemas de sueño graves o cuando otras intervenciones no han sido suficientes.'
-      },
-      {
-        pregunta: '¿La medicación psiquiátrica crea adicción?',
-        respuesta: 'La mayoría de los fármacos utilizados en psiquiatría no generan adicción cuando se utilizan correctamente y bajo supervisión médica. Siempre se valoran cuidadosamente los beneficios y posibles efectos secundarios.'
-      },
-      {
-        pregunta: '¿Puedo combinar psicoterapia con medicación?',
-        respuesta: 'Sí, de hecho, en muchos casos la combinación de ambos abordajes resulta más efectiva que cualquiera de ellos por separado. En nuestra clínica fomentamos este enfoque integrado.'
-      }
-    ]
-  },
-
-};
 
 
-// Available specialties
-const allSpecialties = [
-  { id: 'psiquiatria', name: 'PSIQUIATRÍA' },
-  { id: 'psicologia-clinica', name: 'PSICOLOGÍA CLÍNICA' },
-  { id: 'infancia-adolescencia', name: 'INFANCIA Y ADOLESCENCIA' },
-  { id: 'terapia-emdr', name: 'TERAPIA EMDR' },
-  { id: 'mindfulness', name: 'MINDFULNESS' },
-  { id: 'perinatal', name: 'PERINATAL' }
-];
-
-// Get color for each specialty
-allSpecialties.forEach(specialty => {
-  const mappedId = specialty.id === 'terapia-emdr' ? 'emdr' : specialty.id;
-  specialty.color = getComputedStyle(document.documentElement).getPropertyValue(`--specialty-${mappedId}`);
+// Get specialties with colors
+const allSpecialties = computed(() => {
+  return specialties.map(specialty => ({
+    ...specialty,
+    color: specialty.color.startsWith('var(') 
+      ? getComputedStyle(document.documentElement).getPropertyValue(specialty.color.slice(4, -1))
+      : specialty.color
+  }));
 });
 
 const isCurrentSpecialty = (specialtyId) => {
@@ -214,48 +172,34 @@ watch(() => route.params.id, () => {
 });
 
 const servicioActual = computed(() => {
-
-  if (servicios[servicioId.value]) {
-    return servicios[servicioId.value];
+  const serviceData = getServiceWithProfessionals(servicioId.value);
+  
+  if (!serviceData) {
+    return {
+      titulo: 'Servicio no encontrado',
+      descripcionCorta: 'El servicio solicitado no está disponible.',
+      subtitulo: 'Servicio no disponible',
+      contenido: ['Lo sentimos, el servicio solicitado no está disponible actualmente.'],
+      caracteristicas: [],
+      profesionales: [],
+      preguntas: []
+    };
   }
 
-
   return {
-    titulo: 'Servicio de ' + servicioId.value.charAt(0).toUpperCase() + servicioId.value.slice(1),
-    descripcionCorta: 'Información detallada sobre nuestro servicio especializado.',
-    subtitulo: '¿Qué ofrecemos en este servicio?',
-    contenido: [
-      'Este es un contenido de ejemplo para mostrar cómo se visualizaría la información detallada del servicio seleccionado.',
-      'Aquí se describe en profundidad en qué consiste el servicio, sus beneficios y nuestro enfoque particular.',
-      'También se incluye información sobre la metodología utilizada y los resultados que se pueden esperar.',
-      'Cada servicio está adaptado a las necesidades individuales de cada persona, con un enfoque personalizado y basado en la evidencia científica.'
-    ],
-    caracteristicas: [
-      'Evaluación inicial completa',
-      'Plan de tratamiento personalizado',
-      'Seguimiento regular',
-      'Enfoque basado en la evidencia científica',
-      'Atención individualizada',
-      'Coordinación con otros profesionales'
-    ],
-    profesionales: [
-      { nombre: 'Dr. José Martínez', especialidad: 'Especialista' },
-      { nombre: 'Dra. Ana López', especialidad: 'Especialista' }
-    ],
-    preguntas: [
-      {
-        pregunta: '¿Cuánto dura el tratamiento?',
-        respuesta: 'La duración del tratamiento varía según las necesidades individuales de cada persona y la naturaleza de las dificultades.'
-      },
-      {
-        pregunta: '¿Es necesaria cita previa?',
-        respuesta: 'Sí, es necesario concertar una cita previa para poder atenderle adecuadamente.'
-      },
-      {
-        pregunta: '¿Cómo puedo saber si este servicio es adecuado para mí?',
-        respuesta: 'En la primera consulta realizamos una valoración para determinar si este servicio es el más adecuado para su situación.'
-      }
-    ]
+    titulo: serviceData.title,
+    descripcionCorta: serviceData.description,
+    subtitulo: serviceData.content?.subtitle || '¿Qué ofrecemos en este servicio?',
+    contenido: serviceData.content?.description || [],
+    caracteristicas: serviceData.characteristics || [],
+    profesionales: serviceData.professionals ? serviceData.professionals.map(prof => ({
+      nombre: prof.name,
+      especialidad: prof.role
+    })) : [],
+    preguntas: serviceData.faqs ? serviceData.faqs.map(faq => ({
+      pregunta: faq.pregunta,
+      respuesta: faq.respuesta
+    })) : []
   };
 });
 </script>
