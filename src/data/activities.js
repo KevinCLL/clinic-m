@@ -5,7 +5,7 @@ export const activities = [
     id: 'mindfulness',
     title: 'Grupos de mindfulness',
     category: 'bienestar',
-    image: '/src/assets/images/grupos_mindfulness.png',
+    image: '/src/assets/images/grupos_mindfulness.jpg',
     shortDescription: 'Aprende técnicas de atención plena para reducir el estrés y mejorar tu bienestar emocional. Nuestros grupos están pensados para personas que buscan herramientas efectivas para gestionar la ansiedad y el malestar emocional.',
     fullDescription: 'Aprende técnicas de atención plena y meditación para gestionar el estrés y mejorar tu bienestar emocional.',
     subtitle: '¿Qué es Mindfulness y qué aprenderás en este taller?',
@@ -38,7 +38,7 @@ export const activities = [
     id: 'yoga',
     title: 'Yoga general',
     category: 'corporal',
-    image: '/src/assets/images/yoga.png',
+    image: '/src/assets/images/yoga.jpg',
     shortDescription: 'Sesiones de yoga adaptadas a todos los niveles para mejorar la conexión mente-cuerpo. Enfocado en la reducción del estrés y la mejora de la conciencia corporal como vía para el bienestar psicológico.',
     fullDescription: 'Práctica de yoga adaptada para mejorar el bienestar físico y mental.',
     subtitle: 'Yoga para el bienestar integral',
@@ -71,7 +71,7 @@ export const activities = [
     id: 'yoga-trauma',
     title: 'Yoga sensible al trauma',
     category: 'terapeutico',
-    image: '/src/assets/images/yoga_sensible.png',
+    image: '/src/assets/images/yoga_sensible.jpg',
     shortDescription: 'Un enfoque especializado del yoga para personas que han experimentado situaciones traumáticas. Creamos un espacio seguro para reconectar con el cuerpo y las sensaciones de forma gradual y respetuosa.',
     fullDescription: 'Práctica de yoga adaptada específicamente para personas con historia de trauma.',
     subtitle: 'Un espacio seguro para la reconexión corporal',
@@ -104,7 +104,7 @@ export const activities = [
     id: 'retiros',
     title: 'Retiros de meditación',
     category: 'intensivos',
-    image: '/src/assets/images/retiros.png',
+    image: '/src/assets/images/retiros.jpg',
     shortDescription: 'Experiencias inmersivas para profundizar en la práctica meditativa y el autoconocimiento. Estas jornadas ofrecen un espacio de desconexión y encuentro con uno mismo en entornos naturales.',
     fullDescription: 'Jornadas intensivas de práctica meditativa en entornos naturales.',
     subtitle: 'Un tiempo para el silencio y la introspección',
@@ -132,39 +132,6 @@ export const activities = [
     },
     facilitatorIds: ['ana-martin'],
     status: 'upcoming'
-  },
-  {
-    id: 'otras',
-    title: 'Otras actividades',
-    category: 'variadas',
-    image: '/src/assets/images/otras_actividades.png',
-    shortDescription: 'Descubre talleres, charlas y eventos especiales orientados a diferentes aspectos del bienestar emocional. Ofrecemos actividades puntuales sobre temas variados relacionados con la salud mental y el crecimiento personal.',
-    fullDescription: 'Talleres, charlas y eventos especiales sobre salud mental y bienestar.',
-    subtitle: 'Actividades complementarias para tu bienestar',
-    content: [
-      'Además de nuestras actividades regulares, organizamos eventos especiales, talleres temáticos y charlas informativas sobre diversos aspectos de la salud mental y el bienestar emocional.',
-      'Estas actividades pueden incluir talleres de gestión emocional, charlas sobre psicoeducación, grupos de apoyo temáticos, talleres de escritura terapéutica, arteterapia, y más.',
-      'Cada actividad está diseñada para abordar aspectos específicos del bienestar mental, ofreciendo herramientas prácticas y conocimientos que los participantes pueden aplicar en su vida diaria.',
-      'Mantente informado sobre nuestras próximas actividades a través de nuestra web y redes sociales.'
-    ],
-    objectives: [
-      'Ofrecer herramientas variadas para el bienestar',
-      'Crear espacios de aprendizaje y crecimiento',
-      'Fomentar la comunidad y el apoyo mutuo',
-      'Abordar temas específicos de salud mental',
-      'Promover la psicoeducación',
-      'Complementar procesos terapéuticos'
-    ],
-    details: {
-      dates: 'Consultar programación',
-      schedule: 'Variable según actividad',
-      location: 'CODA - Salud Mental Integral',
-      capacity: 'Variable según actividad',
-      price: 'Variable según actividad',
-      targetAudience: 'Abierto al público general. Cada actividad especificará si hay requisitos particulares.'
-    },
-    facilitatorIds: [],
-    status: 'variable'
   }
 ];
 
@@ -172,8 +139,7 @@ export const activityCategories = [
   { id: 'bienestar', name: 'Bienestar', color: 'var(--color-mindfulness)' },
   { id: 'corporal', name: 'Trabajo Corporal', color: 'var(--color-yoga)' },
   { id: 'terapeutico', name: 'Terapéutico', color: 'var(--color-trauma)' },
-  { id: 'intensivos', name: 'Intensivos', color: 'var(--color-retiros)' },
-  { id: 'variadas', name: 'Variadas', color: 'var(--color-otras)' }
+  { id: 'intensivos', name: 'Intensivos', color: 'var(--color-retiros)' }
 ];
 
 export function getActivityById(id) {

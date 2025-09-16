@@ -2,7 +2,7 @@ export const teamMembers = [
   {
     id: 'mara-descalzo',
     name: 'Mara Descalzo',
-    role: 'Médica Psiquiatra',
+    role: 'Psiquiatra Infantojuvenil',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       { 
@@ -15,7 +15,7 @@ export const teamMembers = [
   {
     id: 'marta-sanchez',
     name: 'Dra. Marta Sánchez Llorens',
-    role: 'Médica Psiquiatra',
+    role: 'Psiquiatra de adultos y perinatal',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       { 
@@ -33,7 +33,7 @@ export const teamMembers = [
   {
     id: 'elvira-garcia',
     name: 'Elvira García',
-    role: 'Psicóloga Clínica',
+    role: 'Psicóloga clínica',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       { 
@@ -46,13 +46,26 @@ export const teamMembers = [
   {
     id: 'irene-saiz',
     name: 'Irene Saiz',
-    role: 'Psicóloga Clínica',
+    role: 'Psicóloga clínica',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       { 
         id: 'psicologia-clinica',
         name: 'Psicología Clínica',
         link: '/servicios/psicologia-clinica'
+      }
+    ]
+  },
+  {
+    id: 'amparo-perez',
+    name: 'Amparo Pérez Das',
+    role: 'Psicóloga clínica',
+    image: '/src/assets/images/unknown.jpg',
+    specialties: [
+      { 
+        id: 'mindfulness',
+        name: 'Mindfulness',
+        link: '/servicios/mindfulness'
       }
     ]
   }

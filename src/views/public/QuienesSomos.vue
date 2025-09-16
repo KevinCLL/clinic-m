@@ -3,15 +3,15 @@
 
     <SectionHeader title="Sobre Nosotras" :backgroundImage="quienesSomosImg">
       <p class="text-justify">
-        En CODA somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicología clínica). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
+        En nuestra Clínica de Salud Mental somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicologías clínicas). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
       </p>
       
       <p class="text-justify">
-        Entendemos la salud mental no solo como la ausencia de enfermedad, sino como un <strong>estado de bienestar</strong> que permite a la persona desarrollar sus capacidades, relacionarse, trabajar, aprender y disfrutar de su vida. Por eso, además del <strong>tratamiento</strong> de los problemas de salud mental, también <strong>apostamos por la promoción activa del bienestar y la prevención</strong>, a través de actividades grupales, talleres y propuestas que fomenten la conciencia, la reflexión y el autocuidado.
+        <strong>Entendemos la salud mental no solo como la ausencia de enfermedad</strong>, sino como un estado de bienestar que permite a la persona desarrollar sus capacidades, relacionarse, trabajar, aprender y disfrutar de su vida. Por eso, además del <strong>tratamiento</strong> de los problemas de salud mental, también <strong>apostamos por la promoción activa del bienestar y la prevención</strong>, a través de actividades grupales, talleres y propuestas que fomenten la conciencia, la reflexión y el autocuidado.
       </p>
       
       <p class="text-justify">
-        Creemos en la importancia de crear un <strong>espacio de encuentro</strong> en el que <strong>cualquier persona pueda sentirse segura, aceptada y acompañada</strong>, contemplando la diversidad de cada persona (sexual, de género, raza, etnia, creencias religiosas, modelos relacionales, diversidad funcional, estilo de vida...) y sus vivencias subjetivas.
+        Creemos en la importancia de crear un <strong>espacio de encuentro en el que cualquier persona pueda sentirse segura, aceptada y acompañada</strong>, contemplando la diversidad de cada persona (sexual, de género, raza, etnia, creencias religiosas, modelos relacionales, diversidad funcional, estilo de vida...) y sus vivencias subjetivas.
       </p>
     </SectionHeader>
 
@@ -42,7 +42,7 @@
                 Ponemos en el centro la atención a la persona, considerando que lo más importante es el <strong>vínculo</strong>, es decir, la <strong>relación de confianza, empatía y respeto</strong> mutuo que establecemos entre terapeuta y paciente.
               </p>
               <p class="text-gray-700 text-base leading-relaxed text-justify">
-                Acompañamos cada proceso desde el respeto, la empatía y la colaboración, concibiendo a la persona que tenemos delante como un todo, reconociendo su complejidad y unicidad y atendiendo a sus preferencias, prioridades y necesidades.
+                <strong>Acompañamos cada proceso desde el respeto, la empatía y la colaboración</strong>, concibiendo a la persona que tenemos delante como un todo, reconociendo su complejidad y unicidad y atendiendo a sus preferencias, prioridades y necesidades.
               </p>
             </div>
           </div>
@@ -53,10 +53,10 @@
             </div>
             <div class="px-6 pb-6">
               <p class="text-gray-700 text-base leading-relaxed mb-4 text-justify">
-                Nuestro abordaje clínico es integrativo. Aunque cada profesional del equipo se ha formado en una o varias corrientes psicoterapéutica, compartimos una forma de trabajar que combina herramientas de distintos modelos terapéuticos, siempre desde una mirada amplia, flexible y basada en la evidencia científica que nos permite adaptar la intervención a las necesidades de cada persona.
+                Nuestro <strong>abordaje clínico es integrativo</strong>. Aunque cada profesional del equipo se ha formado en una o varias corrientes psicoterapéuticas, compartimos una forma de trabajar que <strong>combina herramientas de distintos modelos terapéuticos</strong>, siempre desde una <strong>mirada amplia, flexible y basada en la evidencia científica</strong> que nos permite adaptar la intervención a las necesidades de cada persona.
               </p>
               <p class="text-gray-700 text-base leading-relaxed text-justify">
-                Seguimos en formación continua y nos supervisamos para aprender las unas de las otras y ampliar nuestra comprensión de las personas a las que acompañamos.
+                <strong>Trabajamos en equipo</strong>, seguimos en formación continua y nos supervisamos para profundizar y ampliar nuestra comprensión de las personas a las que acompañamos.
               </p>
             </div>
           </div>
@@ -67,10 +67,10 @@
             </div>
             <div class="px-6 pb-6">
               <p class="text-gray-700 text-base leading-relaxed mb-4 text-justify">
-                Desde una perspectiva integradora, apostamos por una atención coordinada y continua, que ponga en diálogo a los distintos profesionales implicados en el cuidado de la salud mental y también que incluya y acompañe a las familias.
+                Desde una perspectiva integradora, apostamos por una <strong>atención coordinada y continua</strong>, que ponga en diálogo a los <strong>distintos profesionales</strong> implicados en el cuidado de la salud mental y también que incluya y acompañe a las <strong>familias</strong>.
               </p>
               <p class="text-gray-700 text-base leading-relaxed text-justify">
-                Trabajamos en red para evitar la fragmentación del cuidado y facilitar el acceso a diferentes niveles de atención, asegurando que las personas se sientan acompañadas de forma coherente y sostenida en su proceso.
+                <strong>Trabajamos en red</strong> para evitar la fragmentación del cuidado y facilitar el acceso a diferentes niveles de atención, asegurando que las personas se sientan acompañadas de forma coherente y sostenida en su proceso.
               </p>
             </div>
           </div>

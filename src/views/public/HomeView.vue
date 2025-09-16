@@ -132,7 +132,7 @@
 import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
-import mainBackgroundImg from '@/assets/images/main_background.jpg';
+import mainBackgroundImg from '@/assets/images/inicio.jpg';
 
 
 import imgChild from '@/assets/images/child.jpg';

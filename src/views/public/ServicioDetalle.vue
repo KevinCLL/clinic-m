@@ -96,20 +96,20 @@
       <div class="container mx-auto px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Otras especialidades</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          <button
+          <router-link
             v-for="specialty in allSpecialties"
             :key="specialty.id"
-            @click="isCurrentSpecialty(specialty.id) ? null : navigateToSpecialty(specialty.id)"
-            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300 specialty-button"
+            :to="isCurrentSpecialty(specialty.id) ? '' : { name: 'servicio-detalle', params: { id: specialty.id } }"
+            @click.prevent="!isCurrentSpecialty(specialty.id) && navigateToSpecialty(specialty.id)"
+            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300 specialty-button text-center"
             :class="{
               'text-white transform hover:scale-105 hover:shadow-lg cursor-pointer': !isCurrentSpecialty(specialty.id),
-              'text-gray-500 bg-gray-200 opacity-60': isCurrentSpecialty(specialty.id)
+              'text-gray-500 bg-gray-200 opacity-60 pointer-events-none': isCurrentSpecialty(specialty.id)
             }"
             :style="!isCurrentSpecialty(specialty.id) ? { backgroundColor: specialty.color } : {}"
-            :disabled="isCurrentSpecialty(specialty.id)"
           >
             {{ specialty.name }}
-          </button>
+          </router-link>
         </div>
       </div>
     </section>

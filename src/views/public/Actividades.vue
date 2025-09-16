@@ -1,28 +1,24 @@
 <template>
   <div class="overflow-hidden">
 
-    <section class="relative py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
-
-      <div class="container mx-auto px-4 relative z-10">
-        <h1 class="text-3xl md:text-4xl font-bold text-center text-secondary-800 mb-6">Actividades de promoción de la salud mental</h1>
-        <p class="text-gray-700 max-w-3xl mx-auto text-lg text-justify">
-          Complementamos nuestros servicios terapéuticos con actividades que promueven el bienestar integral. Nuestro enfoque va más allá de la terapia tradicional, ofreciendo herramientas para el autocuidado y el desarrollo personal.
-        </p>
-      </div>
-    </section>
+    <SectionHeader title="Actividades de promoción de la salud mental" :backgroundImage="actividadesBackgroundImg">
+      <p class="text-justify">
+        Complementamos nuestros servicios terapéuticos con actividades que promueven el bienestar integral. Nuestro enfoque va más allá de la terapia tradicional, ofreciendo herramientas para el autocuidado y el desarrollo personal.
+      </p>
+    </SectionHeader>
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
+      
       <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-6xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             <div 
               v-for="activity in activities" 
               :key="activity.id"
-              class="bg-white card-rounded shadow-soft overflow-hidden transition-all hover-transition hover:shadow-secondary-lg hover:-translate-y-1 group"
-              :class="{ 'md:col-span-2': activity.id === 'otras' }"
+              class="bg-white card-rounded shadow-soft overflow-hidden transition-all duration-500 ease-in-out hover:shadow-secondary-lg hover:-translate-y-1 group"
             >
               <router-link :to="`/actividades/${activity.id}`" class="h-48 overflow-hidden block">
                 <img :src="activity.image" :alt="activity.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -45,6 +41,8 @@
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-200 to-transparent"></div>
       <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-secondary-100 opacity-70"></div>
       <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-secondary-100 opacity-70"></div>
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-secondary-800 mb-12">Beneficios de nuestras actividades</h2>
@@ -52,7 +50,7 @@
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all hover-transition transform hover:-translate-y-1">
+            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-brain icon-size"></i>
@@ -63,7 +61,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all hover-transition transform hover:-translate-y-1">
+            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-heart icon-size"></i>
@@ -74,7 +72,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all hover-transition transform hover:-translate-y-1">
+            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-users icon-size"></i>
@@ -85,7 +83,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all hover-transition transform hover:-translate-y-1">
+            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-lightbulb icon-size"></i>
@@ -96,7 +94,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all hover-transition transform hover:-translate-y-1">
+            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-balance-scale icon-size"></i>
@@ -107,7 +105,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all hover-transition transform hover:-translate-y-1">
+            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-tools icon-size"></i>
@@ -131,7 +129,9 @@
 
 <script setup>
 import InfoComponent from '@/components/InfoComponent.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
 import { activities } from '@/data/activities.js';
+import actividadesBackgroundImg from '@/assets/images/actividades.jpg';
 
 defineOptions({
   name: 'ActividadesView'
@@ -238,5 +238,32 @@ defineOptions({
 }
 .hover\:shadow-secondary-lg:hover {
   box-shadow: 0 10px 20px -5px rgba(138, 100, 163, 0.3);
+}
+
+@keyframes gentle-sway {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes gentle-sway-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}
+
+.animate-gentle-sway {
+  animation: gentle-sway 8s ease-in-out infinite;
+}
+
+.animate-gentle-sway-reverse {
+  animation: gentle-sway-reverse 8s ease-in-out infinite;
+  animation-delay: 2s;
 }
 </style>

@@ -3,15 +3,8 @@
 
     <SectionHeader title="Nuestro Espacio" :backgroundImage="nuestroEspacioImg">
       <p class="text-justify">
-        En nuestra clínica, entendemos que el <strong>entorno</strong> juega un <strong>papel crucial en el bienestar emocional</strong> de las personas que nos consultan.
-      </p>
-      
-      <p class="text-justify">
-        Por eso, hemos diseñado cada espacio para crear un <strong>ambiente de seguridad y calidez</strong> que promueva la <strong>relajación</strong> y reduzca el <strong>estrés</strong>.
-      </p>
-      
-      <p class="text-justify">
-        Utilizamos <strong>colores suaves y naturales</strong>, <strong>iluminación adecuada</strong>, <strong>materiales orgánicos</strong> y elementos naturales como plantas para generar una sensación de <strong>tranquilidad y conexión</strong>.
+        En nuestra clínica, entendemos que <strong>el entorno juega un papel crucial en el bienestar emocional</strong> de las personas que nos consultan.
+        Por eso, hemos diseñado cada espacio para crear un <strong>ambiente de seguridad y calidez</strong> que promueva la relajación y <strong>reduzca el estrés</strong>. Utilizamos colores suaves y naturales, iluminación adecuada, materiales orgánicos y elementos naturales como plantas para generar una sensación de tranquilidad y conexión.
       </p>
     </SectionHeader>
 
@@ -68,9 +61,9 @@
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
-              <h3 class="facility-title text-primary">Espacio Infantil</h3>
+              <h3 class="facility-title text-primary">Espacio Infantojuvenil</h3>
               <p class="text-gray-700 facility-description text-justify">
-                Un ambiente colorido y adaptado para los más pequeños, con materiales y juegos terapéuticos que facilitan la expresión y el desarrollo de habilidades socio-emocionales. Este espacio está especialmente diseñado para que niños y adolescentes se sientan cómodos y puedan trabajar a través del juego.
+                Un ambiente colorido y adaptado para los más pequeños, con materiales y juegos terapéuticos que facilitan la expresión y el desarrollo de habilidades socioemocionales. El espacio está especialmente diseñado para que niños y adolescentes se sientan cómodos y tengan juegos, materiales y recursos adaptados a su momento evolutivo.
               </p>
             </div>
           </div>
@@ -89,7 +82,7 @@
             <div class="facility-content md:pr-8" data-aos="fade-right">
               <h3 class="facility-title text-primary">Sala grupal</h3>
               <p class="text-gray-700 facility-description text-justify">
-                Espacio amplio y versátil para sesiones grupales, talleres y actividades de mindfulness, diseñado para fomentar la interacción y el aprendizaje compartido. Equipado con todo lo necesario para diversas dinámicas terapéuticas y formativas en un ambiente cálido y profesional.
+                Espacio amplio y versátil para sesiones grupales, talleres de mindfulness, práctica de yoga… diseñado para fomentar la interacción y el aprendizaje compartido. Equipado con todo lo necesario para diversas dinámicas terapéuticas y formativas.
               </p>
             </div>
           </div>

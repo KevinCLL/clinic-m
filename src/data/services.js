@@ -21,7 +21,7 @@ export const services = [
       'Coordinación con otros profesionales sanitarios',
       'Atención integrada con psicoterapia cuando sea necesario'
     ],
-    professionalIds: ['marta-sanchez'],
+    professionalIds: ['mara-descalzo', 'marta-sanchez'],
     faqs: [
       {
         pregunta: '¿Cuándo debo acudir al psiquiatra?',
@@ -44,34 +44,32 @@ export const services = [
     content: {
       subtitle: '¿Qué ofrecemos en nuestro servicio de Psicología Clínica?',
       description: [
-        'Ofrecemos un espacio seguro y confidencial donde poder explorar y comprender las dificultades emocionales, relacionales y conductuales que puedan estar afectando a tu bienestar.',
-        'Nuestro enfoque terapéutico es integrativo, combinando diferentes técnicas y herramientas según las necesidades específicas de cada persona. Trabajamos desde la evidencia científica, pero siempre adaptándonos a tu ritmo y características personales.',
-        'El proceso terapéutico es colaborativo: juntos identificaremos los objetivos a trabajar y diseñaremos el plan de intervención más adecuado para ti.',
-        'Creemos en la capacidad de cambio y crecimiento personal, y te acompañaremos en este proceso de autoconocimiento y transformación.'
+        'En nuestro servicio de trabajamos desde un enfoque integrador, que se nutre de diferentes modelos psicoterapéuticos basados en la evidencia (como la terapia cognitivo-conductual, terapias contextuales, humanistas, EMDR, terapia sistémica entre otros), y que pone el foco en la persona en su totalidad, no solo en el síntoma.',
+        'Sabemos que cada persona es única y merece una intervención adaptada a sus características, historia, contexto vital y objetivos personales. Por eso diseñamos un plan terapéutico personalizado que acompañe desde el respeto, la calidez y la profesionalidad cada proceso de cambio.',
+        'Realizamos una evaluación psicológica detallada que nos permite comprender en profundidad los factores predisponentes, precipitantes y mantenedores del malestar emocional, y establecer así la intervención que mejor se adapte a las características de cada persona.'
       ]
     },
     characteristics: [
-      'Evaluación psicológica completa',
-      'Terapia individual adaptada a cada persona',
-      'Enfoque integrativo basado en evidencia',
-      'Trabajo con objetivos consensuados',
-      'Desarrollo de estrategias de afrontamiento',
-      'Fortalecimiento de recursos personales',
-      'Seguimiento continuo del proceso'
+      'Psicólogas especializadas en psicología clínica',
+      'Evaluación psicológica individualizada',
+      'Psicoterapia basada en la evidencia científica',
+      'Entrenamiento en estrategias de afrontamiento y regulación emocional',
+      'Trabajo en equipo y coordinación con otros profesionales',
+      'Seguimiento cercano y ajustado a la evolución'
     ],
     professionalIds: ['elvira-garcia', 'irene-saiz'],
     faqs: [
       {
+        pregunta: '¿Qué quiere decir "especialista en psicología clínica"?',
+        respuesta: 'La especialidad en psicología clínica vía PIR implica que, tras el grado de psicología y las pertinentes formaciones de postgrado, las profesionales de nuestra clínica han realizado una formación sanitaria especializada. Esta formación consiste en 4 años de residencia en un departamento del sistema de salud público, en el que se realizan formación y trabajo supervisado en diversos dispositivos especializados (salud mental de adultos, salud mental infanto-juvenil, adicciones, salud sexual y reproductiva, psicología de la salud, trastornos alimentarios, trastornos de personalidad…). Además de esto, cada profesional profundiza en uno o más ámbitos de su interés, pudiendo complementar la clínica con la investigación o la formación en el extranjero. Todo esto garantiza una formación altamente especializada, diversa e integral que permite abordar y acompañar la complejidad de los diferentes problemas de salud mental.'
+      },
+      {
+        pregunta: '¿Cómo sé si necesito acudir a un psicólogo?',
+        respuesta: 'Si estás atravesando un momento de malestar emocional, dificultades en tus relaciones, cambios importantes en tu vida, sientes que no estás pudiendo gestionar tus emociones o tu malestar interfiere en tu vida cotidiana, es un buen momento para pedir ayuda. No hace falta "tocar fondo" para comenzar un proceso terapéutico.'
+      },
+      {
         pregunta: '¿Cuánto dura una terapia psicológica?',
-        respuesta: 'La duración varía según cada caso. Algunas personas necesitan pocas sesiones para resolver una situación específica, mientras que otras requieren un proceso más largo. Lo evaluaremos juntos según tus objetivos y evolución.'
-      },
-      {
-        pregunta: '¿Con qué frecuencia son las sesiones?',
-        respuesta: 'Generalmente comenzamos con sesiones semanales o quincenales. A medida que avanza el proceso, podemos espaciar las sesiones según tu evolución y necesidades.'
-      },
-      {
-        pregunta: '¿Qué diferencia hay entre psicología y psiquiatría?',
-        respuesta: 'La psicología se centra en la terapia verbal y técnicas psicológicas para abordar los problemas. La psiquiatría, siendo una especialidad médica, puede prescribir medicación. Ambos enfoques son complementarios y a menudo trabajamos de forma coordinada.'
+        respuesta: 'La duración varía mucho según el motivo de consulta, los objetivos terapéuticos y el ritmo de cada persona. A lo largo del seguimiento, la profesional que te acompañe podrá orientarte al respecto. Lo importante es que te sientas acompañado/a y respetado/a en tu proceso.'
       }
     ]
   },
@@ -118,36 +116,36 @@ export const services = [
     title: 'Terapia EMDR',
     description: 'Método terapéutico eficaz para el tratamiento del trauma y otras dificultades.',
     content: {
-      subtitle: '¿Qué es la terapia EMDR?',
+      subtitle: '¿Qué ofrecemos desde el EMDR?',
       description: [
-        'EMDR (Desensibilización y Reprocesamiento por Movimientos Oculares) es una terapia psicológica reconocida por la OMS como tratamiento de elección para el trauma. Permite procesar recuerdos traumáticos que han quedado "bloqueados" en nuestro sistema nervioso.',
-        'A través de la estimulación bilateral (movimientos oculares, sonidos o toques alternos), facilitamos que el cerebro procese de forma adaptativa las experiencias difíciles, reduciendo su carga emocional y los síntomas asociados.',
-        'Es una terapia estructurada pero flexible, que se adapta a cada persona. No es necesario hablar en detalle sobre el trauma, lo que la hace especialmente útil cuando resulta muy doloroso verbalizarlo.',
-        'Aunque inicialmente se desarrolló para el trauma, actualmente se aplica con éxito en ansiedad, depresión, fobias, duelo complicado, dolor crónico y muchas otras dificultades.'
+        'La Terapia EMDR (Desensibilización y Reprocesamiento por Movimientos Oculares) es un abordaje psicoterapéutico para tratar experiencias traumáticas o emocionalmente perturbadoras, que ha sido avalado por numerosas instituciones científicas y clínicas a nivel internacional.',
+        'EMDR se basa en la idea de que muchos de nuestros síntomas emocionales (como ansiedad, bloqueos, miedos intensos, reacciones desproporcionadas, etc.) tienen su origen en experiencias pasadas que no han sido correctamente procesadas por el sistema nervioso. Estas experiencias quedan "atascadas" en la memoria con la misma carga emocional con la que fueron vividas, y se reactivan una y otra vez ante situaciones actuales.',
+        'La terapia EMDR es conocida a veces por la fase de reprocesamiento (en la que se hacen movimientos oculares), pero es un modelo psicoterapéutico mucho más complejo. Desde un enfoque integrador, combina elementos teórico-clínicos de diferentes orientaciones y trabaja con la historia temprana de la persona, el apego y las experiencias adversas a lo largo de la vida.',
+        'En nuestra clínica, los profesionales que aplican EMDR están formados y acreditados por organismos oficiales, y aplican esta técnica dentro de un marco seguro, empático y profesional.'
       ]
     },
     characteristics: [
-      'Protocolo estructurado y validado científicamente',
-      'Resultados más rápidos que terapias tradicionales',
-      'No requiere exposición verbal detallada al trauma',
-      'Procesamiento integral: emocional, cognitivo y corporal',
-      'Aplicable a adultos y niños',
-      'Efectiva para traumas simples y complejos',
-      'Compatible con otros abordajes terapéuticos'
+      'Evaluación clínica previa específica para EMDR',
+      'Reprocesamiento de experiencias traumáticas o bloqueadas',
+      'Reducción significativa de síntomas asociados al trauma (ansiedad, flashbacks, insomnio, etc.)',
+      'Técnica segura, eficaz y avalada científicamente',
+      'Aplicación en adultos, adolescentes y población infantil',
+      'Compatible con otros enfoques terapéuticos',
+      'Enfoque centrado en la seguridad, el ritmo y la regulación emocional de la persona'
     ],
-    professionalIds: [],
+    professionalIds: ['marta-sanchez', 'elvira-garcia', 'irene-saiz'],
     faqs: [
       {
-        pregunta: '¿Es EMDR una técnica de hipnosis?',
-        respuesta: 'No, EMDR no es hipnosis. Durante la sesión permaneces completamente consciente y en control. La estimulación bilateral facilita el procesamiento natural del cerebro, similar a lo que ocurre durante la fase REM del sueño.'
+        pregunta: '¿Qué tipo de problemas se pueden tratar con EMDR?',
+        respuesta: 'Aunque tradicionalmente se ha empleado para tratar las consecuencias de experiencias traumáticas graves (violencia, abusos, catástrofes, accidentes…), el concepto de trauma se ha ido ampliando a lo largo del tiempo. Actualmente sabemos que, muchas veces, lo que genera malestar no es un trauma evidente, sino experiencias acumulativas de rechazo, crítica, inseguridad o vivencias de abandono. Si bien el foco suele estar puesto en el tratamiento de trastornos relacionados con el trauma (estrés agudo, estrés postraumático, trastornos disociativos…), es un enfoque versátil que se puede emplear en muchos otros problemas de salud mental (ansiedad, bajo estado de ánimo, problemas relacionales…).'
       },
       {
-        pregunta: '¿Cuántas sesiones son necesarias?',
-        respuesta: 'Depende de la complejidad del caso. Para traumas únicos pueden ser suficientes 3-6 sesiones. Para traumas complejos o múltiples, el proceso puede ser más largo. Siempre realizamos una evaluación inicial para estimar la duración.'
+        pregunta: '¿Qué significa reprocesar un recuerdo?',
+        respuesta: 'Durante las sesiones, el terapeuta guía a la persona en el reprocesamiento de estos recuerdos, ayudando a integrar la experiencia de forma adaptativa. Esto se logra mediante la estimulación bilateral del cerebro (habitualmente a través del movimiento ocular), permitiendo que el sistema nervioso "archive" adecuadamente la información, liberando así el malestar emocional.'
       },
       {
-        pregunta: '¿Puede empeorar los síntomas?',
-        respuesta: 'Durante el procesamiento pueden emerger emociones intensas, pero es parte del proceso de sanación. Trabajamos siempre dentro de tu ventana de tolerancia y te enseñamos técnicas de regulación emocional para manejar cualquier malestar que pueda surgir.'
+        pregunta: '¿En qué consiste el proceso de la terapia EMDR?',
+        respuesta: 'La terapia comienza con una fase de evaluación y preparación. Antes de iniciar el reprocesamiento de recuerdos dolorosos, trabajamos la estabilización emocional, asegurándonos de que la persona se encuentra en un momento adecuado para iniciar este proceso y dispone de herramientas suficientes de regulación emocional y contención interna. Una vez establecida esta base de seguridad, se identifican experiencias que siguen generando malestar y se trabaja sobre ellas mediante estimulación bilateral. Todo el proceso es progresivo, respetuoso y guiado por el terapeuta, adaptándose al ritmo y necesidades de cada persona.'
       }
     ]
   },
@@ -156,36 +154,34 @@ export const services = [
     title: 'Mindfulness',
     description: 'Prácticas de atención plena para reducir el estrés y mejorar la salud mental.',
     content: {
-      subtitle: '¿Qué es Mindfulness y cómo puede ayudarte?',
+      subtitle: '¿Qué ofrecemos en nuestro servicio de Mindfulness?',
       description: [
-        'Mindfulness o Atención Plena es la capacidad de estar presentes en el momento actual, observando nuestros pensamientos, emociones y sensaciones sin juzgarlos. Es una práctica milenaria respaldada por numerosos estudios científicos.',
-        'A través de ejercicios de meditación, respiración y conciencia corporal, aprendemos a relacionarnos de forma diferente con nuestras experiencias internas y externas, reduciendo el sufrimiento que genera la lucha contra lo que sentimos.',
-        'El programa MBSR (Reducción del Estrés Basada en Mindfulness) de 8 semanas ha demostrado ser eficaz para reducir el estrés, la ansiedad, el dolor crónico y prevenir recaídas en depresión.',
-        'Mindfulness no es solo una técnica, es una forma de vida que nos ayuda a vivir con mayor plenitud, aceptación y compasión hacia nosotros mismos y los demás.'
+        'Ofrecemos programas de entrenamiento en mindfulness (atención plena) dirigidos a personas que deseen mejorar su bienestar emocional, reducir el estrés y cultivar una mayor conexión consigo mismas.',
+        'Mindfulness es una práctica avalada científicamente que ayuda a desarrollar la capacidad de vivir en el presente, con una actitud de aceptación y sin juicio. Está especialmente indicado para problemas como ansiedad, estrés crónico, dolor persistente, insomnio, y también como complemento en procesos psicoterapéuticos.',
+        'Nuestros programas se adaptan a diferentes niveles de experiencia y pueden realizarse individualmente o en grupo. Además de poder integrarlo en la psicoterapia individual, también ofrecemos grupos de iniciación y trabajamos con protocolos estructurados (como MBCT o MSC).'
       ]
     },
     characteristics: [
-      'Programa MBSR de 8 semanas',
-      'Grupos reducidos (máximo 12 personas)',
-      'Prácticas guiadas de meditación',
-      'Ejercicios de conciencia corporal',
-      'Material de apoyo y audios para práctica en casa',
-      'Sesiones individuales disponibles',
-      'Retiros y talleres intensivos'
+      'Entrenamiento progresivo en atención plena',
+      'Reducción de estrés y mejora del bienestar',
+      'Prácticas formales e informales adaptadas a la vida cotidiana',
+      'Integración con procesos psicoterapéuticos o médicos',
+      'Modalidades individuales o grupales',
+      'Seguimiento para integrar la práctica a largo plazo'
     ],
-    professionalIds: [],
+    professionalIds: ['marta-sanchez', 'amparo-perez'],
     faqs: [
       {
-        pregunta: '¿Necesito experiencia previa en meditación?',
-        respuesta: 'No es necesaria ninguna experiencia previa. El programa está diseñado para principiantes, aunque también es útil para personas con experiencia que quieran profundizar en su práctica.'
+        pregunta: '¿Qué es exactamente el mindfulness y para qué sirve?',
+        respuesta: 'Mindfulness es la capacidad de prestar atención plena al momento presente, con aceptación y sin juicio. Se ha demostrado eficaz para reducir el estrés, mejorar la regulación emocional y aumentar el bienestar general.'
       },
       {
-        pregunta: '¿Tengo que cambiar mis creencias o religión?',
-        respuesta: 'No. Mindfulness es una práctica secular, compatible con cualquier creencia religiosa o filosófica. Se centra en desarrollar habilidades de atención y conciencia, no en adoptar ningún sistema de creencias.'
+        pregunta: '¿Necesito tener experiencia previa para participar en los programas?',
+        respuesta: 'No, no es necesario. Ofrecemos programas adaptados tanto para principiantes como para personas con experiencia en meditación. Se empieza con prácticas muy sencillas que se integran progresivamente en la vida diaria.'
       },
       {
-        pregunta: '¿Cuánto tiempo debo practicar al día?',
-        respuesta: 'Durante el programa recomendamos 45 minutos diarios. Después, puedes adaptar la práctica a tu vida. Incluso 10-15 minutos diarios pueden generar beneficios significativos. Lo importante es la constancia.'
+        pregunta: '¿El mindfulness sustituye a una terapia psicológica o médica?',
+        respuesta: 'No necesariamente. El mindfulness puede ser un excelente complemento a una psicoterapia o tratamiento médico, pero no sustituye un abordaje clínico cuando este es necesario. Evaluamos cada caso para asegurar la intervención más adecuada.'
       }
     ]
   },
@@ -194,37 +190,33 @@ export const services = [
     title: 'Salud Mental Perinatal',
     description: 'Acompañamiento especializado durante embarazo, parto y posparto.',
     content: {
-      subtitle: '¿Qué es la Salud Mental Perinatal?',
+      subtitle: '¿Qué ofrecemos en nuestro servicio de Salud Mental Perinatal?',
       description: [
-        'La salud mental perinatal abarca el cuidado emocional desde la búsqueda del embarazo hasta el primer año después del parto. Es una etapa de grandes cambios que puede generar vulnerabilidad emocional tanto en madres como en padres.',
-        'Ofrecemos un espacio seguro y libre de juicios donde poder expresar las dificultades de esta etapa: miedos, ambivalencia, culpa, tristeza o ansiedad. Normalizamos estas emociones y trabajamos para que puedas vivirlas sin que interfieran en tu bienestar o en el vínculo con tu bebé.',
-        'Trabajamos de forma preventiva, preparándote emocionalmente para los cambios, y también de forma terapéutica cuando aparecen dificultades como depresión perinatal, ansiedad, trauma obstétrico o problemas de vinculación.',
-        'Incluimos a las parejas en el proceso, entendiendo que la salud mental perinatal afecta a todo el sistema familiar. Ofrecemos grupos de apoyo donde compartir experiencias con otras familias en situaciones similares.'
+        'Acompañamos emocionalmente a las mujeres (y a sus parejas) antes, durante y después del embarazo. Sabemos que la etapa perinatal puede ser especialmente vulnerable, y por ello ofrecemos un espacio seguro y especializado donde abordar los cambios físicos, psicoemocionales y relacionales (pareja/familia) que surgen en esta etapa.',
+        'También realizamos un seguimiento estrecho, para prevenir, acompañar y tratar (si lo requieren) diferentes problemas de salud mental como ansiedad en el embarazo, depresión postparto, duelo gestacional o perinatal, dificultades de vínculo, cambios en los roles… Nuestro enfoque es sensible al momento vital y promueve el cuidado integral de la díada (madre-bebé) y del entorno.',
+        'Trabajamos de forma coordinada con otros profesionales (ginecología, pediatría, matronas) para ofrecer un acompañamiento completo.'
       ]
     },
     characteristics: [
-      'Preparación emocional al parto',
-      'Prevención de depresión posparto',
-      'Tratamiento de ansiedad perinatal',
-      'Procesamiento de partos traumáticos',
-      'Apoyo en duelo perinatal',
-      'Fortalecimiento del vínculo madre/padre-bebé',
-      'Grupos de apoyo y crianza',
-      'Asesoramiento en lactancia desde perspectiva emocional'
+      'Atención psicológica especializada a las mujeres en embarazo y posparto',
+      'Prevención y tratamiento del malestar emocional perinatal',
+      'Intervención ante experiencias traumáticas o pérdidas',
+      'Espacios de escucha, validación y acompañamiento',
+      'Coordinación con profesionales sanitarios del ámbito materno-infantil'
     ],
     professionalIds: ['marta-sanchez'],
     faqs: [
       {
-        pregunta: '¿Es normal sentir tristeza después del parto?',
-        respuesta: 'Sí, hasta el 80% de las madres experimentan "baby blues" las primeras semanas. Si la tristeza persiste más de 2 semanas o es muy intensa, es importante buscar ayuda profesional para descartar una depresión posparto.'
+        pregunta: '¿Es normal sentir malestar emocional durante el embarazo o después del parto?',
+        respuesta: 'Sí, muchas mujeres experimentan ansiedad, tristeza o cambios emocionales intensos en el embarazo o el posparto. No estás sola. Si sientes que el malestar te desborda o se mantiene, es importante pedir ayuda especializada.'
       },
       {
-        pregunta: '¿Los padres también pueden tener depresión posparto?',
-        respuesta: 'Sí, aproximadamente 1 de cada 10 padres experimenta depresión posparto. Los cambios, la responsabilidad y la falta de sueño les afectan también. Es importante atender su salud mental para el bienestar de toda la familia.'
+        pregunta: '¿Puedo acudir aunque no tenga un diagnóstico o trastorno?',
+        respuesta: 'Por supuesto. Atendemos a mujeres (y parejas) que simplemente necesitan un espacio de acompañamiento emocional en este momento vital. La prevención también es parte fundamental de la salud mental perinatal.'
       },
       {
-        pregunta: '¿Puedo tomar medicación si estoy dando el pecho?',
-        respuesta: 'Existen medicamentos compatibles con la lactancia. Siempre valoramos riesgo-beneficio y priorizamos opciones seguras. A veces, cuidar tu salud mental es lo mejor que puedes hacer por tu bebé.'
+        pregunta: '¿Qué ocurre si estoy recibiendo también atención médica?',
+        respuesta: 'Trabajamos en coordinación con otros profesionales (ginecología, pediatría, matronas, etc.) cuando es necesario, para ofrecer una atención integral. Siempre con tu consentimiento y respetando la confidencialidad.'
       }
     ]
   }
@@ -239,7 +231,7 @@ export const serviceCards = [
   {
     icon: 'fa-brain',
     title: 'Psicoterapia',
-    description: 'Intervenciones psicológicas basadas en la evidencia, para el tratamiento de diversos trastornos y dificultades.'
+    description: 'Intervenciones psicológicas basadas en la evidencia, para el tratamiento de los distintos problemas de salud mental.'
   },
   {
     icon: 'fa-pills',

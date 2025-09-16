@@ -1,5 +1,5 @@
 <template>
-  <section class="section-header relative py-12 md:py-16 overflow-hidden">
+  <section class="section-header relative overflow-hidden">
     <div class="background-container absolute inset-0 z-0" :style="{ backgroundImage: `url(${backgroundImage})` }">
       <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/25"></div>
     </div>
@@ -31,7 +31,7 @@ defineProps({
 
 <style scoped>
 .section-header {
-  min-height: 650px;
+  padding: 70px 0;
   display: flex;
   align-items: center;
 }
@@ -39,8 +39,7 @@ defineProps({
 /* Mobile styles - simplified without animations */
 @media (max-width: 767px) {
   .section-header {
-    min-height: auto;
-    padding: 2rem 0;
+    padding: 50px 0;
   }
   
   .background-container {
