@@ -30,6 +30,8 @@ defineProps({
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 .section-header {
   padding: 70px 0;
   display: flex;
@@ -94,7 +96,8 @@ defineProps({
 
 /* Ensure consistent typography */
 .section-title {
-  font-family: var(--font-family-heading);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   line-height: 1.2;
 }
 
