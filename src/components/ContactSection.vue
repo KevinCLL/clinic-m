@@ -1,5 +1,14 @@
 <template>
-  <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+  <section class="py-12 md:py-16 relative overflow-hidden" style="background-color: #e6f7f5;">
+    <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt=""
+         class="plant-decoration left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 animate-plant-sway-gentle"
+         style="transform-origin: top left;" />
+    <img src="@/assets/images/ramas_fondo_abajo.png" alt=""
+         class="plant-decoration left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 animate-plant-sway-gentle transform rotate-45"
+         style="transform-origin: bottom left;" />
+    <img src="@/assets/images/ramas_fondo_abajo_2.png" alt=""
+         class="plant-decoration right-0 bottom-5 w-40 md:w-52 lg:w-68 h-auto opacity-8 animate-plant-float transform -rotate-45"
+         style="transform-origin: bottom right;" />
     <div class="container mx-auto px-4 relative z-10">
       <h2 v-if="showTitle" class="text-2xl md:text-3xl font-bold text-primary-800 text-center mb-6">{{ title }}</h2>
       <p v-if="showSubtitle" class="text-center text-gray-600 mb-6 max-w-2xl mx-auto">{{ subtitle }}</p>

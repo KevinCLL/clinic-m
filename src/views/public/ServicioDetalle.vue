@@ -2,6 +2,8 @@
   <div class="overflow-hidden">
 
     <section class="relative py-12 md:py-16 overflow-hidden" :style="{ backgroundColor: specialtyColor }">
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-white mb-6">{{ servicioActual.titulo }}</h1>
         <p class="text-center text-white/90 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -11,13 +13,23 @@
     </section>
 
 
-    <section class="py-16 bg-white relative overflow-hidden">
+    <section class="py-16 relative overflow-hidden" style="background-color: #e6f7f5;">
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
+      
       <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-5xl mx-auto relative">
+          <!-- Plantas dentro de la sección principal -->
+          <img src="@/assets/images/ramas_fondo_abajo.png" alt="" 
+               class="plant-decoration right-6 top-6 w-16 md:w-20 lg:w-24 h-auto opacity-6 animate-plant-sway-gentle plant-rotate-25 plant-flip-xy" 
+               style="transform-origin: top right;" />
+          <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+               class="plant-decoration left-8 bottom-10 w-18 md:w-22 lg:w-26 h-auto opacity-8 animate-plant-float plant-rotate-neg-15" 
+               style="transform-origin: bottom center;" />
           <div class="flex flex-col md:flex-row gap-8">
 
             <div class="md:w-2/3">
-              <div class="bg-white rounded-xl shadow-soft p-8 mb-8">
+              <div class="rounded-xl shadow-soft p-8 mb-8" style="background-color: white;">
                 <h2 class="text-2xl md:text-3xl font-bold text-primary-700 mb-6">{{ servicioActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
@@ -26,7 +38,7 @@
               </div>
 
 
-              <div class="bg-white rounded-xl shadow-soft p-8">
+              <div class="rounded-xl shadow-soft p-8" style="background-color: white;">
                 <h2 class="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Características</h2>
 
                 <ul class="space-y-4">
@@ -43,7 +55,7 @@
 
             <div class="md:w-1/3">
 
-              <div class="bg-white rounded-xl shadow-soft p-6 mb-6">
+              <div class="rounded-xl shadow-soft p-6 mb-6" style="background-color: white;">
                 <h3 class="text-xl font-bold text-primary-700 mb-4">Profesionales</h3>
                 <ul class="space-y-3">
                   <li v-for="profesional in servicioActual.profesionales" :key="profesional.nombre" class="flex items-center">
@@ -59,7 +71,7 @@
               </div>
 
 
-              <div class="bg-white rounded-xl shadow-soft p-6">
+              <div class="rounded-xl shadow-soft p-6" style="background-color: white;">
                 <h3 class="text-xl font-bold text-primary-700 mb-4">Preguntas frecuentes</h3>
 
                 <div class="space-y-4">
@@ -76,10 +88,20 @@
     </section>
 
 
-    <section class="py-6 bg-white relative overflow-hidden">
+    <section class="py-6 relative overflow-hidden" style="background-color: #e6f7f5;">
+      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
+      
       <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-5xl mx-auto">
-          <div class="bg-white rounded-xl shadow-soft p-8">
+        <div class="max-w-5xl mx-auto relative">
+          <!-- Plantas dentro de la sección de área de intervención -->
+          <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" 
+               class="plant-decoration right-4 top-4 w-14 md:w-18 lg:w-22 h-auto opacity-5 animate-plant-pendulum plant-rotate-30 plant-flip-y" 
+               style="transform-origin: top left;" />
+          <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+               class="plant-decoration left-2 bottom-6 w-16 md:w-20 lg:w-24 h-auto opacity-7 animate-plant-sway-wide plant-rotate-neg-25 plant-flip-x" 
+               style="transform-origin: bottom right;" />
+          <div class="rounded-xl shadow-soft p-8" style="background-color: white;">
             <AreaIntervencion
               :areaType="servicioId.value === 'infancia-adolescencia' ? 'infanto-juvenil' :
                          servicioId.value === 'perinatal' ? 'perinatal' : 'adultos'"
@@ -92,9 +114,12 @@
     </section>
 
 
-    <section class="py-12 md:py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Otras especialidades</h2>
+    <section class="py-12 md:py-16 relative overflow-hidden" style="background-color: #e6f7f5;">
+      <img src="@/assets/images/ramas_fondo_abajo.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway transform rotate-45" />
+      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse transform -rotate-45" />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-8">Otras especialidades</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           <router-link
             v-for="specialty in allSpecialties"

@@ -8,9 +8,13 @@
     </SectionHeader>
 
 
-    <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-pulse-gentle" />
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-pulse-gentle-delayed" />
+    <section class="py-12 md:py-16 relative overflow-hidden" style="background-color: #e6f7f5;">
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+           class="plant-decoration left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 animate-plant-sway-gentle plant-rotate-20 plant-flip-xy" 
+           style="transform-origin: top right;" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" 
+           class="plant-decoration right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 animate-plant-float animation-delay-2 plant-flip-x plant-rotate-neg-15" 
+           style="transform-origin: bottom left;" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestros Servicios</h2>
@@ -20,7 +24,7 @@
             <div 
               v-for="card in serviceCards" 
               :key="card.title"
-              class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1"
+              class="service-card rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1" style="background-color: white;"
             >
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
@@ -32,7 +36,7 @@
             </div>
 
 
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3">
+            <div class="service-card rounded-xl shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3" style="background-color: white;">
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 min-w-[50px] bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center mr-4">
                   <i class="fas fa-heart text-icon"></i>
@@ -52,7 +56,15 @@
     </section>
 
 
-    <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+    <section class="py-12 md:py-16 relative overflow-hidden" style="background-color: #e6f7f5;">
+      <!-- Plantas decorativas para especialidades -->
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" 
+           class="plant-decoration right-10 top-5 w-60 md:w-80 lg:w-96 h-auto opacity-7 animate-plant-pendulum plant-rotate-neg-15 plant-flip-y" 
+           style="transform-origin: top center;" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+           class="plant-decoration left-12 bottom-12 w-40 md:w-56 lg:w-72 h-auto opacity-10 animate-plant-sway-wide plant-rotate-10 plant-flip-x" 
+           style="transform-origin: bottom right;" />
+      
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestras Especialidades</h2>
 
@@ -61,7 +73,7 @@
             <div 
               v-for="service in services" 
               :key="service.id"
-              :class="`specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-${service.id} hover:-translate-y-1 group flex flex-col h-full`"
+:class="`specialty-card rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-${service.id} hover:-translate-y-1 group flex flex-col h-full`" style="background-color: white;"
             >
               <router-link 
                 :to="`/servicios/${service.id}`" 
@@ -88,7 +100,6 @@
 
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
-      <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-left" />
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right" />
 
@@ -98,7 +109,7 @@
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row gap-10">
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+            <div class="md:w-1/3 p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1" style="background-color: white;">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA PARA ADULTOS</h3>
               </div>
@@ -120,7 +131,7 @@
             </div>
 
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+            <div class="md:w-1/3 p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1" style="background-color: white;">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA INFANTO-JUVENIL</h3>
               </div>
@@ -138,7 +149,7 @@
             </div>
 
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+            <div class="md:w-1/3 p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1" style="background-color: white;">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA DE PERINATAL</h3>
               </div>

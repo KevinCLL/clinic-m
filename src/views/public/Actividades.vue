@@ -8,17 +8,25 @@
     </SectionHeader>
 
 
-    <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
+    <section class="py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_abajo.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
       
       <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-5xl mx-auto relative">
+          <!-- Plantas dentro de la sección de actividades -->
+          <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" 
+               class="plant-decoration right-6 top-6 w-16 md:w-20 lg:w-24 h-auto opacity-6 animate-plant-sway-gentle plant-rotate-25 plant-flip-xy" 
+               style="transform-origin: top right;" />
+          <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+               class="plant-decoration left-8 bottom-10 w-18 md:w-22 lg:w-26 h-auto opacity-8 animate-plant-float plant-rotate-neg-15" 
+               style="transform-origin: bottom center;" />
+          
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             <div 
               v-for="activity in activities" 
               :key="activity.id"
-              class="bg-white card-rounded shadow-soft overflow-hidden transition-all duration-500 ease-in-out hover:shadow-secondary-lg hover:-translate-y-1 group"
+              class="card-rounded shadow-soft overflow-hidden transition-all duration-500 ease-in-out hover:shadow-secondary-lg hover:-translate-y-1 group" style="background-color: white;"
             >
               <router-link :to="`/actividades/${activity.id}`" class="h-48 overflow-hidden block">
                 <img :src="activity.image" :alt="activity.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -39,18 +47,24 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-200 to-transparent"></div>
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-secondary-100 opacity-70"></div>
-      <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-secondary-100 opacity-70"></div>
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-secondary-800 mb-12">Beneficios de nuestras actividades</h2>
 
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-5xl mx-auto relative">
+          <!-- Plantas dentro de beneficios de actividades -->
+          <img src="@/assets/images/ramas_fondo_derecha.png" alt="" 
+               class="plant-decoration right-4 top-4 w-14 md:w-18 lg:w-22 h-auto opacity-5 animate-plant-pendulum plant-rotate-30 plant-flip-y" 
+               style="transform-origin: top left;" />
+          <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+               class="plant-decoration left-2 bottom-6 w-16 md:w-20 lg:w-24 h-auto opacity-7 animate-plant-sway-wide plant-rotate-neg-25 plant-flip-x" 
+               style="transform-origin: bottom right;" />
+          
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
+            <div class="card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1" style="background-color: white;">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-brain icon-size"></i>
@@ -61,7 +75,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
+            <div class="card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1" style="background-color: white;">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-heart icon-size"></i>
@@ -72,7 +86,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
+            <div class="card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1" style="background-color: white;">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-users icon-size"></i>
@@ -83,7 +97,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
+            <div class="card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1" style="background-color: white;">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-lightbulb icon-size"></i>
@@ -94,7 +108,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
+            <div class="card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1" style="background-color: white;">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-balance-scale icon-size"></i>
@@ -105,7 +119,7 @@
             </div>
 
 
-            <div class="bg-white card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1">
+            <div class="card-rounded shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-500 ease-in-out transform hover:-translate-y-1" style="background-color: white;">
               <div class="flex items-center benefit-header">
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-tools icon-size"></i>

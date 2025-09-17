@@ -61,15 +61,18 @@ defineProps({
 /* Desktop styles */
 @media (min-width: 768px) {
   .section-content {
+    opacity: 1;
+    transform: translateY(0);
     animation: fadeInUp 1.2s ease-out forwards;
+    animation-fill-mode: both;
   }
   
   @keyframes fadeInUp {
-    from {
+    0% {
       opacity: 0.7;
       transform: translateY(15px);
     }
-    to {
+    100% {
       opacity: 1;
       transform: translateY(0);
     }
@@ -80,16 +83,17 @@ defineProps({
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 110%;
-    animation: subtle-zoom 20s ease-out forwards;
+    background-size: 105%;
+    animation: subtle-zoom 20s ease-in-out infinite;
+    animation-fill-mode: both;
   }
   
   @keyframes subtle-zoom {
-    0% {
-      background-size: 110%;
-    }
-    100% {
+    0%, 100% {
       background-size: 105%;
+    }
+    50% {
+      background-size: 108%;
     }
   }
 }

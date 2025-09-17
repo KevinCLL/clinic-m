@@ -2,9 +2,8 @@
   <div class="overflow-hidden">
 
     <section class="relative py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
-
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-secondary-800 mb-6">{{ actividadActual.titulo }}</h1>
         <p class="text-center text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -14,13 +13,22 @@
     </section>
 
 
-    <section class="py-16 bg-white relative overflow-hidden">
+    <section class="py-16 bg-gradient-to-br from-secondary-50 to-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_abajo.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
       <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-5xl mx-auto relative">
+          <!-- Plantas decorativas dentro de la sección principal -->
+          <img src="@/assets/images/ramas_fondo_derecha.png" alt="" 
+               class="plant-decoration right-6 top-6 w-16 md:w-20 lg:w-24 h-auto opacity-6 animate-plant-sway-gentle plant-rotate-25 plant-flip-xy" 
+               style="transform-origin: top right;" />
+          <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" 
+               class="plant-decoration left-8 bottom-10 w-18 md:w-22 lg:w-26 h-auto opacity-8 animate-plant-float plant-rotate-neg-15" 
+               style="transform-origin: bottom center;" />
           <div class="flex flex-col md:flex-row gap-8">
 
             <div class="md:w-2/3">
-              <div class="bg-white rounded-xl shadow-soft p-8 mb-8">
+              <div class="rounded-xl shadow-soft p-8 mb-8" style="background-color: white;">
                 <h2 class="text-2xl md:text-3xl font-bold text-secondary-700 mb-6">{{ actividadActual.subtitulo }}</h2>
 
                 <div class="prose prose-lg max-w-none text-gray-700">
@@ -31,7 +39,7 @@
               </div>
 
 
-              <div class="bg-white rounded-xl shadow-soft p-8">
+              <div class="rounded-xl shadow-soft p-8" style="background-color: white;">
                 <h2 class="text-2xl md:text-3xl font-bold text-secondary-700 mb-6">Objetivos</h2>
 
                 <ul class="space-y-4">
@@ -48,7 +56,7 @@
 
             <div class="md:w-1/3">
 
-              <div class="bg-white rounded-xl shadow-soft p-6 mb-6">
+              <div class="rounded-xl shadow-soft p-6 mb-6" style="background-color: white;">
                 <h3 class="text-xl font-bold text-secondary-700 mb-4">Detalles prácticos</h3>
                 <ul class="space-y-3">
                   <li class="flex items-start">
@@ -100,7 +108,7 @@
               </div>
 
 
-              <div class="bg-white rounded-xl shadow-soft p-6 mb-6">
+              <div class="rounded-xl shadow-soft p-6 mb-6" style="background-color: white;">
                 <h3 class="text-xl font-bold text-secondary-700 mb-4">Facilitadores</h3>
                 <ul class="space-y-3">
                   <li v-for="facilitador in actividadActual.facilitadores" :key="facilitador.nombre" class="flex items-center">
@@ -116,7 +124,7 @@
               </div>
 
 
-              <div class="bg-white rounded-xl shadow-soft p-6">
+              <div class="rounded-xl shadow-soft p-6" style="background-color: white;">
                 <h3 class="text-xl font-bold text-secondary-700 mb-4">¿A quién va dirigido?</h3>
                 <p class="text-gray-700 mb-4 text-justify">{{ actividadActual.destinatarios }}</p>
 
