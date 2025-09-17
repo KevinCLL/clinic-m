@@ -15,22 +15,15 @@
       </p>
     </SectionHeader>
 
-    <section class="py-8 md:py-12 relative overflow-hidden" style="background-color: #e6f7f5;">
-      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt=""
-           class="plant-decoration right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 animate-plant-sway-gentle plant-rotate-15 plant-flip-xy"
-           style="transform-origin: top center;" />
-      <img src="@/assets/images/ramas_fondo_abajo.png" alt=""
-           class="plant-decoration left-8 bottom-5 w-40 md:w-52 lg:w-68 h-auto opacity-10 animate-plant-float plant-rotate-neg-20 transform rotate-180"
-           style="transform-origin: bottom left;" />
-      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt=""
-           class="plant-decoration right-12 top-[40%] w-32 md:w-40 lg:w-52 h-auto opacity-7 animate-plant-pendulum plant-rotate-90 transform rotate-135"
-           style="transform-origin: center center;" />
+    <section class="py-8 md:py-12 bg-gray-50 relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
       
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-primary-700 text-center mb-6">PILARES DEL PROYECTO</h2>
         
         <div class="max-w-4xl mx-auto mb-8">
-          <div class="rounded-xl shadow-soft overflow-hidden p-6" style="background-color: white;">
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
             <h3 class="text-xl font-bold text-center text-black uppercase mb-4">UNA MIRADA INTEGRAL QUE PONE EN EL CENTRO A LA PERSONA</h3>
             <p class="text-gray-700 text-justify">
               Atendemos a las personas desde una mirada integral, considerando a cada una en todas sus dimensiones: biológica, psicológica, social, relacional y espiritual. Atender la salud mental desde una perspectiva integral significa tener en cuenta no solo los síntomas o diagnósticos, sino también el contexto de vida, la historia personal, las relaciones, los recursos internos y externos de cada persona y su forma única de experimentar el malestar o el bienestar.
@@ -40,7 +33,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-          <div class="rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1" style="background-color: white;">
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
               <h3 class="text-lg font-bold text-center uppercase">VÍNCULO TERAPÉUTICO</h3>
             </div>
@@ -54,7 +47,7 @@
             </div>
           </div>
 
-          <div class="rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1" style="background-color: white;">
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
               <h3 class="text-lg font-bold text-center uppercase">EQUIPO</h3>
             </div>
@@ -68,7 +61,7 @@
             </div>
           </div>
 
-          <div class="rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1" style="background-color: white;">
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
               <h3 class="text-lg font-bold text-center uppercase">PERSPECTIVA INTEGRADORA</h3>
             </div>
@@ -86,43 +79,22 @@
     </section>
 
 
-    <section class="py-12 md:py-16 relative overflow-hidden" style="background-color: #e6f7f5;">
-      
-      <!-- Plantas decorativas para sección equipo -->
-      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" 
-           class="plant-decoration right-5 bottom-20 w-44 md:w-56 lg:w-72 h-auto opacity-12 animate-plant-pendulum plant-rotate-neg-10 plant-flip-x" 
-           style="transform-origin: bottom right;" />
-      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" 
-           class="plant-decoration left-2 top-16 w-36 md:w-48 lg:w-60 h-auto opacity-8 animate-plant-sway-wide plant-flip-y plant-rotate-10" 
-           style="transform-origin: top left;" />
+    <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative">
+      <div class="absolute -right-32 top-1/4 team-decoration team-decoration-1"></div>
+      <div class="absolute -left-20 bottom-1/3 team-decoration team-decoration-2"></div>
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">CONOCE A NUESTRO EQUIPO</h2>
 
-        <div class="max-w-6xl mx-auto">
-          <!-- Primera fila: 3 elementos -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center mb-8">
-            <TeamCard
-              v-for="(member, index) in teamMembers.slice(0, 3)"
-              :key="member.id"
-              :name="member.name"
-              :role="member.role"
-              :specialties="member.specialties"
-              :image="member.image"
-            />
-          </div>
-          
-          <!-- Segunda fila: 2 elementos centrados -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center max-w-2xl mx-auto">
-            <TeamCard
-              v-for="(member, index) in teamMembers.slice(3, 5)"
-              :key="member.id"
-              :name="member.name"
-              :role="member.role"
-              :specialties="member.specialties"
-              :image="member.image"
-            />
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto justify-items-center">
+          <TeamCard
+            v-for="member in teamMembers"
+            :key="member.id"
+            :name="member.name"
+            :role="member.role"
+            :specialties="member.specialties"
+            :image="member.image"
+          />
         </div>
       </div>
     </section>

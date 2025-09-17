@@ -14,7 +14,7 @@ export const teamMembers = [
   },
   {
     id: 'marta-sanchez',
-    name: 'Marta Sánchez Llorens',
+    name: 'Dra. Marta Sánchez Llorens',
     role: 'Psiquiatra de adultos y perinatal',
     image: '/src/assets/images/unknown.jpg',
     specialties: [

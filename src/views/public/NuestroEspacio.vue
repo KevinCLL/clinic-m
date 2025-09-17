@@ -9,16 +9,8 @@
     </SectionHeader>
 
 
-    <section class="facilities-section relative overflow-hidden" style="background-color: #e6f7f5;">
-      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt=""
-           class="plant-decoration right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 animate-plant-sway-gentle animation-delay-1 plant-flip-xy plant-rotate-15"
-           style="transform-origin: top left;" />
-      <img src="@/assets/images/ramas_fondo_abajo.png" alt=""
-           class="plant-decoration left-0 bottom-20 w-44 md:w-56 lg:w-72 h-auto opacity-8 animate-plant-pendulum plant-rotate-180 transform rotate-45"
-           style="transform-origin: bottom left;" />
-      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt=""
-           class="plant-decoration right-5 bottom-32 w-36 md:w-48 lg:w-60 h-auto opacity-6 animate-plant-float plant-rotate-neg-135 transform -rotate-45"
-           style="transform-origin: top right;" />
+    <section class="facilities-section bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-subtitle text-center text-primary-dark">Nuestras Instalaciones</h2>
@@ -41,9 +33,7 @@
         </div>
 
 
-        <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" 
-             class="plant-decoration -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 animate-plant-float plant-rotate-10 plant-flip-x z-0" 
-             style="transform-origin: center center;" />
+        <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" />
         
         <div class="max-w-6xl mx-auto facility-item relative">
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
@@ -80,9 +70,7 @@
         </div>
 
 
-        <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" 
-             class="plant-decoration -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 animate-plant-pendulum plant-flip-x animation-delay-3 plant-rotate-neg-20 z-0" 
-             style="transform-origin: bottom center;" />
+        <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" />
         
         <div class="max-w-6xl mx-auto facility-item relative">
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
@@ -101,10 +89,6 @@
         </div>
 
 
-        <!-- Plantas adicionales para terraza -->
-        <img src="@/assets/images/ramas_fondo_derecha.png" alt="" 
-             class="plant-decoration right-20 bottom-[400px] w-36 md:w-48 lg:w-64 h-auto opacity-5 animate-plant-breathe plant-rotate-5 animation-delay-2 z-0" />
-        
         <div class="max-w-6xl mx-auto facility-item">
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
@@ -122,9 +106,7 @@
         </div>
 
 
-        <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" 
-             class="plant-decoration -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 animate-plant-sway-wide plant-rotate-neg-20 animation-delay-5 plant-flip-y z-0" 
-             style="transform-origin: bottom right;" />
+        <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" />
         
         <div class="max-w-6xl mx-auto facility-item relative">
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
