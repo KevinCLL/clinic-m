@@ -332,11 +332,11 @@ const handleHomeFormSubmit = (formData) => {
   }
 }
 
-.animate-gentle-sway {
+.animate-gentle-breeze {
   animation: gentle-sway 8s ease-in-out infinite;
 }
 
-.animate-gentle-sway-reverse {
+.animate-gentle-breeze-reverse {
   animation: gentle-sway-reverse 8s ease-in-out infinite;
   animation-delay: 2s;
 }
@@ -352,11 +352,11 @@ const handleHomeFormSubmit = (formData) => {
   }
 }
 
-.animate-pulse-gentle {
+.animate-gentle-breeze {
   animation: pulse-gentle 6s ease-in-out infinite;
 }
 
-.animate-pulse-gentle-delayed {
+.animate-gentle-breeze-reverse {
   animation: pulse-gentle 6s ease-in-out infinite;
   animation-delay: 3s;
 }

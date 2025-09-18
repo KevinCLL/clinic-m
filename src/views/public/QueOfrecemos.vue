@@ -9,8 +9,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-pulse-gentle" />
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-pulse-gentle-delayed" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestros Servicios</h2>
@@ -53,8 +53,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
-      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestras Especialidades</h2>
@@ -92,8 +92,8 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-left" />
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right" />
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-700 mb-12">Áreas de Intervención</h2>
@@ -456,11 +456,11 @@ defineOptions({
   }
 }
 
-.animate-float-left {
+.animate-soft-wind {
   animation: float-left 7s ease-in-out infinite;
 }
 
-.animate-float-right {
+.animate-soft-wind-reverse {
   animation: float-right 7s ease-in-out infinite;
   animation-delay: 1.5s;
 }
@@ -476,11 +476,11 @@ defineOptions({
   }
 }
 
-.animate-pulse-gentle {
+.animate-gentle-breeze {
   animation: pulse-gentle 6s ease-in-out infinite;
 }
 
-.animate-pulse-gentle-delayed {
+.animate-gentle-breeze-reverse {
   animation: pulse-gentle 6s ease-in-out infinite;
   animation-delay: 3s;
 }

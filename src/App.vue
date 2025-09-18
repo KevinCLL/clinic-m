@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import '@/styles/plant-animations.css';
 
 
 html {

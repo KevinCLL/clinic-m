@@ -1,0 +1,121 @@
+/* Wind-like animations for plant branches */
+/* Gentle breeze effects - subtle movement like plants swaying in wind */
+
+@keyframes gentle-breeze {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(2px, -1px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(1px, 1px) rotate(-0.3deg);
+  }
+  75% {
+    transform: translate(-1px, 0px) rotate(0.2deg);
+  }
+}
+
+@keyframes gentle-breeze-reverse {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-2px, 1px) rotate(-0.5deg);
+  }
+  50% {
+    transform: translate(-1px, -1px) rotate(0.3deg);
+  }
+  75% {
+    transform: translate(1px, 0px) rotate(-0.2deg);
+  }
+}
+
+@keyframes gentle-sway {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(1px, -2px) rotate(0.3deg);
+  }
+  66% {
+    transform: translate(-1px, 1px) rotate(-0.4deg);
+  }
+}
+
+@keyframes gentle-sway-delayed {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(-1px, 1px) rotate(-0.3deg);
+  }
+  70% {
+    transform: translate(2px, -1px) rotate(0.4deg);
+  }
+}
+
+/* Animation classes */
+.animate-gentle-breeze {
+  animation: gentle-breeze 8s ease-in-out infinite;
+}
+
+.animate-gentle-breeze-reverse {
+  animation: gentle-breeze-reverse 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-gentle-sway {
+  animation: gentle-sway 10s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-gentle-sway-delayed {
+  animation: gentle-sway-delayed 12s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-gentle-sway-reverse {
+  animation: gentle-sway 9s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Variants for different wind intensities */
+@keyframes soft-wind {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(3px, -2px) rotate(0.8deg);
+  }
+  50% {
+    transform: translate(-2px, 2px) rotate(-0.6deg);
+  }
+  75% {
+    transform: translate(1px, -1px) rotate(0.4deg);
+  }
+}
+
+@keyframes soft-wind-reverse {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-3px, 2px) rotate(-0.8deg);
+  }
+  50% {
+    transform: translate(2px, -2px) rotate(0.6deg);
+  }
+  75% {
+    transform: translate(-1px, 1px) rotate(-0.4deg);
+  }
+}
+
+.animate-soft-wind {
+  animation: soft-wind 6s ease-in-out infinite;
+}
+
+.animate-soft-wind-reverse {
+  animation: soft-wind-reverse 7s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
