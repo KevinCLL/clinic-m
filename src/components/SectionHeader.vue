@@ -43,18 +43,19 @@ defineProps({
   .section-header {
     padding: 50px 0;
   }
-  
+
   .background-container {
-    background-attachment: scroll !important;
-    background-size: cover !important;
+    background-attachment: scroll;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    animation: none;
   }
-  
+
   .section-content {
-    opacity: 1 !important;
-    transform: none !important;
-    animation: none !important;
+    opacity: 1;
+    transform: none;
+    animation: none;
   }
 }
 
@@ -63,7 +64,7 @@ defineProps({
   .section-content {
     animation: fadeInUp 1.2s ease-out forwards;
   }
-  
+
   @keyframes fadeInUp {
     from {
       opacity: 0.7;
@@ -74,22 +75,22 @@ defineProps({
       transform: translateY(0);
     }
   }
-  
-  /* Background container with fixed attachment for window effect */
+
+  /* Static background container with centered image and one-time zoom */
   .background-container {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 110%;
-    animation: subtle-zoom 20s ease-out forwards;
+    background-size: cover;
+    animation: dramatic-zoom 20s ease-out forwards;
   }
-  
-  @keyframes subtle-zoom {
+
+  @keyframes dramatic-zoom {
     0% {
-      background-size: 110%;
+      transform: scale(1.08);
     }
     100% {
-      background-size: 105%;
+      transform: scale(1);
     }
   }
 }
