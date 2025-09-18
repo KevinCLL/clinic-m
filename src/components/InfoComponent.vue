@@ -1,7 +1,7 @@
 <template>
   <section class="py-12 md:py-16 relative overflow-hidden" :class="colorClasses">
-    <div class="absolute -right-32 top-1/4 w-96 h-96 rounded-full opacity-30" :class="bgColorClass"></div>
-    <div class="absolute -left-20 bottom-1/3 w-64 h-64 rounded-full opacity-30" :class="bgColorClass"></div>
+    <img src="@/assets/images/ramas_fondo_abajo.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+    <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-5xl mx-auto text-center">

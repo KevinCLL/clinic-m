@@ -2,8 +2,8 @@
   <div class="overflow-hidden">
 
     <section class="relative py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-secondary-500 rounded-full opacity-5 transform translate-x-24 -translate-y-24"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-500 rounded-full opacity-5 transform -translate-x-20 translate-y-20"></div>
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-secondary-800 mb-6">{{ actividadActual.titulo }}</h1>
@@ -15,6 +15,9 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
           <div class="flex flex-col md:flex-row gap-8">

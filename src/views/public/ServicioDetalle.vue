@@ -2,6 +2,9 @@
   <div class="overflow-hidden">
 
     <section class="relative py-12 md:py-16 overflow-hidden" :style="{ backgroundColor: specialtyColor }">
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
+
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-3xl md:text-4xl font-bold text-center text-white mb-6">{{ servicioActual.titulo }}</h1>
         <p class="text-center text-white/90 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -12,6 +15,9 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
           <div class="flex flex-col md:flex-row gap-8">
@@ -77,6 +83,8 @@
 
 
     <section class="py-6 bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_abajo.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
           <div class="bg-white rounded-xl shadow-soft p-8">
@@ -92,8 +100,10 @@
     </section>
 
 
-    <section class="py-12 md:py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
+    <section class="py-12 md:py-16 bg-gray-50 relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Otras especialidades</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           <router-link

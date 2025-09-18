@@ -53,6 +53,9 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow" />
+      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-slow-reverse" />
+
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestras Especialidades</h2>
 
