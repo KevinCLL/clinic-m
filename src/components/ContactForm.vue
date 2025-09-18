@@ -33,13 +33,13 @@
             <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
               <i class="fas fa-bus"></i>
             </div>
-            <span>Bus: Líneas 2, 3, 41, 99 (Parada Pérez Galdós)</span>
+            <span>Bus: Líneas 6, C3, 25, 40 (Parada Peris y Valero-Zapadores)</span>
           </li>
           <li class="flex items-start">
             <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
               <i class="fas fa-car"></i>
             </div>
-            <span>Parking público a 200m (Mercado Ruzafa)</span>
+            <span>Parking: Mercado Ruzafa, Parking AZA Ruzafa</span>
           </li>
         </ul>
       </div>

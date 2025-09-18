@@ -86,15 +86,29 @@
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">CONOCE A NUESTRO EQUIPO</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto justify-items-center">
-          <TeamCard
-            v-for="member in teamMembers"
-            :key="member.id"
-            :name="member.name"
-            :role="member.role"
-            :specialties="member.specialties"
-            :image="member.image"
-          />
+        <div class="max-w-6xl mx-auto">
+          <!-- Primera fila: 3 personas -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 justify-items-center">
+            <TeamCard
+              v-for="member in teamMembers.slice(0, 3)"
+              :key="member.id"
+              :name="member.name"
+              :role="member.role"
+              :specialties="member.specialties"
+              :image="member.image"
+            />
+          </div>
+          <!-- Segunda fila: 3 personas -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            <TeamCard
+              v-for="member in teamMembers.slice(3, 6)"
+              :key="member.id"
+              :name="member.name"
+              :role="member.role"
+              :specialties="member.specialties"
+              :image="member.image"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -105,7 +119,9 @@
 import TeamCard from '@/components/TeamCard.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import quienesSomosImg from '@/assets/images/quienes_somos.jpg';
-import { teamMembers } from '@/data/team.js';
+import { getTeamMembersWithSpecialtyColors } from '@/data/team.js';
+
+const teamMembers = getTeamMembersWithSpecialtyColors();
 </script>
 
 <style scoped>

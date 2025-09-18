@@ -2,10 +2,10 @@ export const contactInfo = {
   phone: '688764073',
   email: 'info@codasaludmental.es',
   address: {
-    street: 'C/Peris y Valero 178, bajo',
+    street: 'Avinguda Peris i Valero 178',
     postalCode: '46006',
     city: 'Valencia',
-    fullAddress: 'C/Peris y Valero 178, bajo 46006 Valencia'
+    fullAddress: 'Avinguda Peris i Valero 178, 46006 Valencia'
   },
   schedule: {
     weekdays: 'Lunes a Viernes',
@@ -17,10 +17,10 @@ export const contactInfo = {
     linkedin: 'https://linkedin.com/company/codasaludmental'
   },
   map: {
-    embedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=-0.37523627281189%2C39.45782276238325%2C-0.37280082702638%2C39.45936023947621&amp;layer=mapnik&amp;marker=39.45859151155501%2C-0.3740185499191284',
+    embedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=-0.3760%2C39.4575%2C-0.3720%2C39.4595&amp;layer=mapnik&amp;marker=39.4585%2C-0.3740',
     coordinates: {
-      lat: 39.45859151155501,
-      lng: -0.3740185499191284
+      lat: 39.4585,
+      lng: -0.3740
     }
   },
   clinicName: 'CODA - Salud Mental Integral',

@@ -79,4 +79,9 @@ defineProps({
   background-color: var(--specialty-mindfulness);
   color: white;
 }
+
+.specialty-badge[data-specialty="actividades"] {
+  background-color: var(--secondary-600);
+  color: white;
+}
 </style>

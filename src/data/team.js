@@ -1,45 +1,29 @@
 export const teamMembers = [
   {
-    id: 'mara-descalzo',
-    name: 'Mara Descalzo',
-    role: 'Psiquiatra Infantojuvenil',
-    image: '/src/assets/images/unknown.jpg',
-    specialties: [
-      { 
-        id: 'infancia-adolescencia',
-        name: 'Infanto-Juvenil',
-        link: '/servicios/infancia-adolescencia'
-      }
-    ]
-  },
-  {
     id: 'marta-sanchez',
-    name: 'Dra. Marta Sánchez Llorens',
+    name: 'Marta Sánchez Llorens',
     role: 'Psiquiatra de adultos y perinatal',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
-      { 
+      {
         id: 'psiquiatria',
         name: 'Adultos',
         link: '/servicios/psiquiatria'
       },
-      { 
+      {
         id: 'perinatal',
         name: 'Perinatal',
         link: '/servicios/perinatal'
-      }
-    ]
-  },
-  {
-    id: 'elvira-garcia',
-    name: 'Elvira García',
-    role: 'Psicóloga clínica',
-    image: '/src/assets/images/unknown.jpg',
-    specialties: [
-      { 
-        id: 'psicologia-clinica',
-        name: 'Psicología Clínica',
-        link: '/servicios/psicologia-clinica'
+      },
+      {
+        id: 'mindfulness',
+        name: 'Mindfulness',
+        link: '/servicios/mindfulness'
+      },
+      {
+        id: 'terapia-emdr',
+        name: 'EMDR',
+        link: '/servicios/emdr'
       }
     ]
   },
@@ -49,10 +33,38 @@ export const teamMembers = [
     role: 'Psicóloga clínica',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
-      { 
+      {
         id: 'psicologia-clinica',
         name: 'Psicología Clínica',
         link: '/servicios/psicologia-clinica'
+      },
+      {
+        id: 'terapia-emdr',
+        name: 'EMDR',
+        link: '/servicios/emdr'
+      },
+      {
+        id: 'infancia-adolescencia',
+        name: 'Infanto-Juvenil',
+        link: '/servicios/infancia-adolescencia'
+      }
+    ]
+  },
+  {
+    id: 'elvira-garcia',
+    name: 'Elvira García',
+    role: 'Psicóloga clínica',
+    image: '/src/assets/images/unknown.jpg',
+    specialties: [
+      {
+        id: 'psicologia-clinica',
+        name: 'Psicología Clínica',
+        link: '/servicios/psicologia-clinica'
+      },
+      {
+        id: 'terapia-emdr',
+        name: 'EMDR',
+        link: '/servicios/emdr'
       }
     ]
   },
@@ -62,10 +74,36 @@ export const teamMembers = [
     role: 'Psicóloga clínica',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
-      { 
+      {
         id: 'mindfulness',
         name: 'Mindfulness',
         link: '/servicios/mindfulness'
+      }
+    ]
+  },
+  {
+    id: 'mara-descalzo',
+    name: 'Mara Descalzo',
+    role: 'Psiquiatra infantojuvenil',
+    image: '/src/assets/images/unknown.jpg',
+    specialties: [
+      {
+        id: 'infancia-adolescencia',
+        name: 'Infanto-Juvenil',
+        link: '/servicios/infancia-adolescencia'
+      }
+    ]
+  },
+  {
+    id: 'responsable-actividades',
+    name: 'Responsable actividades',
+    role: 'Coordinación de actividades',
+    image: '/src/assets/images/unknown.jpg',
+    specialties: [
+      {
+        id: 'actividades',
+        name: 'Actividades',
+        link: '/actividades'
       }
     ]
   }
@@ -87,7 +125,8 @@ export function getTeamMembersWithSpecialtyColors() {
     'infancia-adolescencia': 'var(--specialty-infancia-adolescencia)',
     'perinatal': 'var(--specialty-perinatal)',
     'terapia-emdr': 'var(--specialty-emdr)',
-    'mindfulness': 'var(--specialty-mindfulness)'
+    'mindfulness': 'var(--specialty-mindfulness)',
+    'actividades': 'var(--secondary-600)'
   };
 
   return teamMembers.map(member => ({
