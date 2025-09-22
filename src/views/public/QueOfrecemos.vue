@@ -13,7 +13,7 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestros Servicios</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTROS SERVICIOS</h2>
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,7 +57,7 @@
       <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-12">Nuestras Especialidades</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTRAS ESPECIALIDADES</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -96,7 +96,7 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-700 mb-12">Áreas de Intervención</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">ÁREAS DE INTERVENCIÓN</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row gap-10">

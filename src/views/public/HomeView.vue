@@ -24,7 +24,7 @@
       <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-black text-center mb-6">Nuestros Servicios</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">NUESTROS SERVICIOS</h2>
         <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Descubre nuestro enfoque integral para acompañarte en tu proceso terapéutico</p>
 
         <div class="flex flex-wrap justify-center gap-8 lg:gap-10">
@@ -89,7 +89,7 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-black text-center mb-6">Te acompañamos en todas las etapas de la vida</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">TE ACOMPAÑAMOS EN TODAS LAS ETAPAS DE LA VIDA</h2>
         <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Nuestro equipo de especialistas te ofrece apoyo profesional adaptado a cada momento vital</p>
 
         <!-- Versión móvil (hasta sm) -->

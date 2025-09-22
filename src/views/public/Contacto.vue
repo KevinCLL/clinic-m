@@ -6,7 +6,7 @@
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute right-10 top-1/2 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right transform scale-y-[-1]" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-primary-800 mb-6">Contacto</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">CONTACTO</h2>
         <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
           Estamos aquí para ayudarte. No dudes en contactarnos para solicitar información o concertar una cita.
         </p>

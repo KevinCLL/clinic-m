@@ -6,7 +6,7 @@
     <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute right-0 bottom-5 w-40 md:w-52 lg:w-68 h-auto opacity-8 pointer-events-none transform -rotate-45" />
 
     <div class="container mx-auto px-4 relative z-10">
-      <h2 v-if="showTitle" class="text-2xl md:text-3xl font-bold text-primary-800 text-center mb-6">{{ title }}</h2>
+      <h2 v-if="showTitle" class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">{{ title.toUpperCase() }}</h2>
       <p v-if="showSubtitle" class="text-center text-gray-600 mb-6 max-w-2xl mx-auto">{{ subtitle }}</p>
 
       <div class="max-w-5xl mx-auto">

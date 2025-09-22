@@ -13,7 +13,7 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-subtitle text-center text-primary-dark">Nuestras Instalaciones</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTRAS INSTALACIONES</h2>
 
 
         <div class="max-w-6xl mx-auto facility-item">
@@ -185,6 +185,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .facility-item {

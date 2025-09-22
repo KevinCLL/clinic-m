@@ -9,6 +9,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import '@/styles/plant-animations.css';
 
@@ -58,6 +59,18 @@ h5, .h5 {
 h6, .h6 {
   font-family: 'Overlock SC', serif;
   font-size: 1rem;
+}
+
+h1.section-title-primary,
+h2.section-title-primary,
+h3.section-title-primary,
+h4.section-title-primary,
+h5.section-title-primary,
+h6.section-title-primary {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000 !important;
 }
 
 
