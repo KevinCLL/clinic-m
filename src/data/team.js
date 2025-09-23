@@ -1,38 +1,15 @@
 export const teamMembers = [
   {
     id: 'marta-sanchez',
-    name: 'Marta Sánchez Llorens',
-    role: 'Psiquiatra de adultos y perinatal',
+    name: 'Marta Sánchez',
+    role: 'Directora de CODA. Médica Psiquiatra y psicoterapeuta',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       {
         id: 'psiquiatria',
-        name: 'Adultos',
+        name: 'Psiquiatría',
         link: '/servicios/psiquiatria'
       },
-      {
-        id: 'perinatal',
-        name: 'Perinatal',
-        link: '/servicios/perinatal'
-      },
-      {
-        id: 'mindfulness',
-        name: 'Mindfulness',
-        link: '/servicios/mindfulness'
-      },
-      {
-        id: 'terapia-emdr',
-        name: 'EMDR',
-        link: '/servicios/emdr'
-      }
-    ]
-  },
-  {
-    id: 'irene-saiz',
-    name: 'Irene Saiz',
-    role: 'Psicóloga clínica',
-    image: '/src/assets/images/unknown.jpg',
-    specialties: [
       {
         id: 'psicologia-clinica',
         name: 'Psicología Clínica',
@@ -40,12 +17,35 @@ export const teamMembers = [
       },
       {
         id: 'terapia-emdr',
-        name: 'EMDR',
-        link: '/servicios/emdr'
+        name: 'Terapia EMDR',
+        link: '/servicios/terapia-emdr'
+      },
+      {
+        id: 'mindfulness',
+        name: 'Mindfulness',
+        link: '/servicios/mindfulness'
+      },
+      {
+        id: 'perinatal',
+        name: 'Perinatal',
+        link: '/servicios/perinatal'
+      }
+    ]
+  },
+  {
+    id: 'mara-descalzo',
+    name: 'Mara Descalzo',
+    role: 'Médica Psiquiatra',
+    image: '/src/assets/images/unknown.jpg',
+    specialties: [
+      {
+        id: 'psiquiatria',
+        name: 'Psiquiatría',
+        link: '/servicios/psiquiatria'
       },
       {
         id: 'infancia-adolescencia',
-        name: 'Infanto-Juvenil',
+        name: 'Infancia y Adolescencia',
         link: '/servicios/infancia-adolescencia'
       }
     ]
@@ -63,8 +63,31 @@ export const teamMembers = [
       },
       {
         id: 'terapia-emdr',
-        name: 'EMDR',
-        link: '/servicios/emdr'
+        name: 'Terapia EMDR',
+        link: '/servicios/terapia-emdr'
+      }
+    ]
+  },
+  {
+    id: 'irene-saiz',
+    name: 'Irene Saiz',
+    role: 'Psicóloga clínica',
+    image: '/src/assets/images/unknown.jpg',
+    specialties: [
+      {
+        id: 'psicologia-clinica',
+        name: 'Psicología Clínica',
+        link: '/servicios/psicologia-clinica'
+      },
+      {
+        id: 'infancia-adolescencia',
+        name: 'Infancia y Adolescencia',
+        link: '/servicios/infancia-adolescencia'
+      },
+      {
+        id: 'terapia-emdr',
+        name: 'Terapia EMDR',
+        link: '/servicios/terapia-emdr'
       }
     ]
   },
@@ -75,6 +98,11 @@ export const teamMembers = [
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       {
+        id: 'psicologia-clinica',
+        name: 'Psicología Clínica',
+        link: '/servicios/psicologia-clinica'
+      },
+      {
         id: 'mindfulness',
         name: 'Mindfulness',
         link: '/servicios/mindfulness'
@@ -82,22 +110,9 @@ export const teamMembers = [
     ]
   },
   {
-    id: 'mara-descalzo',
-    name: 'Mara Descalzo',
-    role: 'Psiquiatra infantojuvenil',
-    image: '/src/assets/images/unknown.jpg',
-    specialties: [
-      {
-        id: 'infancia-adolescencia',
-        name: 'Infanto-Juvenil',
-        link: '/servicios/infancia-adolescencia'
-      }
-    ]
-  },
-  {
     id: 'responsable-actividades',
-    name: 'Responsable actividades',
-    role: 'Coordinación de actividades',
+    name: 'Ana González',
+    role: 'Profesora de yoga',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       {
@@ -123,9 +138,9 @@ export function getTeamMembersWithSpecialtyColors() {
     'psiquiatria': 'var(--specialty-psiquiatria)',
     'psicologia-clinica': 'var(--specialty-psicologia-clinica)',
     'infancia-adolescencia': 'var(--specialty-infancia-adolescencia)',
-    'perinatal': 'var(--specialty-perinatal)',
     'terapia-emdr': 'var(--specialty-emdr)',
     'mindfulness': 'var(--specialty-mindfulness)',
+    'perinatal': 'var(--specialty-perinatal)',
     'actividades': 'var(--secondary-600)'
   };
 

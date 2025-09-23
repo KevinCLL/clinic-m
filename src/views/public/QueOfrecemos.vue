@@ -17,8 +17,8 @@
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div 
-              v-for="card in serviceCards" 
+            <div
+              v-for="card in serviceCards"
               :key="card.title"
               class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1"
             >
@@ -61,23 +61,23 @@
 
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div 
-              v-for="service in services" 
+            <div
+              v-for="service in services"
               :key="service.id"
               :class="`specialty-card bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-specialty-${service.id} hover:-translate-y-1 group flex flex-col h-full`"
             >
-              <router-link 
-                :to="`/servicios/${service.id}`" 
-                class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90" 
+              <router-link
+                :to="`/servicios/${service.id}`"
+                class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90"
                 :data-specialty="service.id"
               >
                 <h3 class="text-xl font-bold text-center">{{ specialties.find(s => s.id === service.id)?.name || service.title.toUpperCase() }}</h3>
               </router-link>
               <div class="p-6 flex-grow flex flex-col">
                 <p class="text-gray-600 mb-4 flex-grow">{{ service.description }}</p>
-                <router-link 
-                  :to="`/servicios/${service.id}`" 
-                  class="specialty-link font-medium inline-flex items-center transition-colors mt-auto" 
+                <router-link
+                  :to="`/servicios/${service.id}`"
+                  class="specialty-link font-medium inline-flex items-center transition-colors mt-auto"
                   :data-specialty="service.id"
                 >
                   Saber más <i class="fas fa-chevron-right ml-1 text-sm"></i>
@@ -106,55 +106,75 @@
                 <h3 class="text-xl font-bold text-center">ÁREA PARA ADULTOS</h3>
               </div>
               <ul class="space-y-2 text-gray-700 list-disc pl-5">
-                <li>Síntomas ansioso-depresivos y trastornos adaptativos</li>
-                <li>Trastornos relacionados con la ansiedad (T. Pánico, T. Ansiedad generalizada, Agorafobia, fobias…)</li>
-                <li>Trastornos del estado de ánimo (Depresión, Distimia, T. bipolar, Ciclotimia…)</li>
-                <li>Trastornos del espectro obsesivo compulsivo (TOC, tricotilomanía, hipocondría, t. dismórfico corporal…)</li>
-                <li>Trastornos alimentarios y problemas relacionados</li>
-                <li>Trastornos de personalidad</li>
-                <li>Trastornos del espectro psicótico (Esquizofrenia, T. esquizoafectivo, T. delirante…)</li>
-                <li>Trastornos relacionados con el trauma (T. estrés agudo, T. estrés postraumático, Trauma complejo…)</li>
-                <li>Trastornos disociativos</li>
-                <li>Trastornos somáticos</li>
-                <li>Conductas adictivas</li>
-                <li>Insomnio y problemas de sueño</li>
-                <li>Acompañamiento al duelo, crisis y transiciones vitales, problemas relacionales y de pareja, estrés, acoso laboral…</li>
+                <li><strong>Síntomas ansioso-depresivos y trastornos adaptativos:</strong> reacciones emocionales a situaciones estresantes o cambios vitales significativos</li>
+                <li><strong>Trastornos relacionados con la ansiedad:</strong> trastorno de pánico, trastorno de ansiedad generalizada, agorafobia, fobias específicas</li>
+                <li><strong>Trastornos del estado de ánimo:</strong> depresión mayor, distimia, trastorno bipolar, ciclotimia</li>
+                <li><strong>Estrés y acoso laboral</strong></li>
+                <li><strong>Trastornos relacionados con el trauma:</strong> trastorno de estrés agudo, trastorno de estrés postraumático, trauma complejo</li>
+                <li><strong>Problemas relacionales y de pareja</strong></li>
+                <li><strong>Trastornos del espectro obsesivo compulsivo:</strong> trastorno obsesivo-compulsivo (TOC), tricotilomanía, hipocondría, trastorno dismórfico corporal</li>
+                <li><strong>Acompañamiento durante el duelo</strong></li>
+                <li><strong>Trastornos alimentarios y problemas relacionados:</strong> anorexia, bulimia, trastorno por atracón, trastorno evitativo/restrictivo</li>
+                <li><strong>Trastornos del sueño</strong></li>
+                <li><strong>Conductas adictivas:</strong> dependencia de sustancias o comportamientos que interfieren en la vida diaria</li>
+                <li><strong>Trastornos de personalidad:</strong> patrones persistentes de pensamiento, emoción y comportamiento que causan malestar significativo</li>
+                <li><strong>Trastornos del espectro psicótico:</strong> esquizofrenia, trastorno esquizoafectivo, trastorno delirante</li>
+                <li><strong>Trastornos disociativos:</strong> alteraciones en la conciencia, identidad, memoria y percepción del entorno</li>
+                <li><strong>Trastornos somáticos</strong></li>
+                <li><strong>Crisis y transiciones vitales</strong></li>
               </ul>
             </div>
 
 
             <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
-                <h3 class="text-xl font-bold text-center">ÁREA INFANTO-JUVENIL</h3>
+                <h3 class="text-xl font-bold text-center">ÁREA INFANTOJUVENIL</h3>
               </div>
-              <ul class="space-y-2 text-gray-700 list-disc pl-5">
-                <li>Trastornos del neurodesarrollo (TEA, TDAH)</li>
-                <li>Ansiedad y fobias</li>
-                <li>Depresión</li>
-                <li>Problemas de control de impulsos y alteraciones de conductas</li>
-                <li>Desregulación emocional y autolesiones</li>
-                <li>Problemas de apego y trauma</li>
-                <li>Problemas alimentarios</li>
-                <li>Problemas de sueño</li>
-                <li>Bullying</li>
+              <ul class="space-y-3 text-gray-700 list-disc pl-5">
+                <li><strong>Problemas emocionales:</strong>
+                  <ul class="list-disc pl-6 mt-1 space-y-1">
+                    <li>Ansiedad (generalizada, de separación, fobias, pánico)</li>
+                    <li>Depresión infantil y adolescente</li>
+                    <li>Trastorno obsesivo–compulsivo (TOC)</li>
+                    <li>Trastorno de estrés postraumático (TEPT)</li>
+                    <li>Trastorno de adaptación a cambios vitales o familiares</li>
+                    <li>Duelo complicado</li>
+                  </ul>
+                </li>
+                <li><strong>Trastornos del neurodesarrollo:</strong> TDAH, TEA</li>
+                <li><strong>Problemas de conducta y regulación:</strong> trastorno de conducta, trastorno negativista desafiante, problemas de control de impulsos, conductas de riesgo en la adolescencia (consumo, conductas sexuales de riesgo…)</li>
+                <li><strong>Problemas vinculares y relacionales:</strong> dificultades en el apego, problemas en la relación padres–hijos, acoso escolar, problemas de socialización, aislamiento o rechazo entre iguales</li>
+                <li><strong>Problemas relacionados con la imagen corporal y la autoestima o trastornos alimentarios:</strong> anorexia, bulimia, atracón, evitación/restricción</li>
+                <li><strong>Trastornos del sueño</strong></li>
+                <li><strong>Somatizaciones:</strong> dolores de cabeza, estómago, etc. sin causa médica clara</li>
+                <li><strong>Problemas emergentes en la adolescencia:</strong>
+                  <ul class="list-disc pl-6 mt-1 space-y-1">
+                    <li>Conductas autolesivas no suicidas</li>
+                    <li>Ideación y riesgo suicidas</li>
+                    <li>Trastornos de personalidad incipientes</li>
+                    <li>Trastornos psicóticos de inicio temprano</li>
+                  </ul>
+                </li>
               </ul>
             </div>
 
 
             <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
-                <h3 class="text-xl font-bold text-center">ÁREA DE PERINATAL</h3>
+                <h3 class="text-xl font-bold text-center">ÁREA PERINATAL</h3>
               </div>
               <ul class="space-y-2 text-gray-700 list-disc pl-5">
-                <li>Depresión pre y post parto</li>
-                <li>Ansiedad perinatal</li>
-                <li>Trauma relacionado con el parto</li>
-                <li>Duelo perinatal</li>
-                <li>Problemas en el vínculo madre-bebé</li>
-                <li>Adaptación a la maternidad/paternidad</li>
-                <li>Acompañamiento durante el embarazo</li>
-                <li>Preparación emocional para el parto</li>
-                <li>Apoyo en decisiones relacionadas con la fertilidad y reproducción asistida</li>
+                <li><strong>Baby blues:</strong> tristeza, irritabilidad y cambios emocionales leves y transitorios tras el parto</li>
+                <li><strong>Depresión perinatal:</strong> tanto en el embarazo como en el posparto</li>
+                <li><strong>Ansiedad perinatal:</strong> preocupaciones excesivas, insomnio, ataques de pánico…</li>
+                <li><strong>Otros trastornos mentales iniciados o exacerbados en periodo perinatal:</strong> TOC, Trastorno bipolar, trastornos psicóticos…</li>
+                <li><strong>Trauma perinatal:</strong> vivencias difíciles o traumáticas durante el embarazo, el parto o postparto</li>
+                <li><strong>Duelo perinatal:</strong> procesos de pérdida gestacional o neonatal, duelos acontecidos en el periodo perinatal, duelo por enfermedad...</li>
+                <li><strong>Problemas en el vínculo madre–bebé:</strong> sensación de desconexión, rechazo o dificultad en la relación temprana</li>
+                <li><strong>Adaptación a la maternidad/paternidad:</strong> sobrecarga emocional, culpa o dificultad en el ajuste a los nuevos roles</li>
+                <li><strong>Preparación emocional para el parto:</strong> acompañamiento para afrontar miedos, expectativas y deseos en torno al nacimiento</li>
+                <li><strong>Acompañamiento durante el embarazo:</strong> apoyo en los cambios emocionales, relacionales y vitales propios de esta etapa</li>
+                <li><strong>Apoyo en decisiones relacionadas con la fertilidad y la reproducción asistida:</strong> acompañamiento en los procesos médicos, emocionales y de incertidumbre</li>
               </ul>
             </div>
           </div>

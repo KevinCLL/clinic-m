@@ -1,17 +1,17 @@
 <template>
   <div class="overflow-hidden">
 
-    <SectionHeader title="Atención integral a la Salud Mental" :backgroundImage="mainBackgroundImg">
+    <SectionHeader title="Sobre nuestro nombre" :backgroundImage="mainBackgroundImg">
       <p class="text-justify">
-        La salud mental es un estado de bienestar que permite a las personas afrontar el estrés cotidiano, desarrollar sus capacidades, aprender, trabajar y participar activamente en la comunidad. Va más allá de la simple ausencia de trastornos mentales, ya que constituye un derecho humano fundamental y un pilar clave para el desarrollo personal, social y económico. Se trata de un proceso complejo, que cada persona vive de forma única, con distintos niveles de dificultad y angustia, y con desenlaces sociales y clínicos diversos.
+        Elegimos el nombre CODA inspirándonos en el lenguaje musical. En una partitura, la coda es la sección final de una obra: un pasaje que no se limita a concluir, sino que <strong>aporta un cierre con sentido</strong>, reuniendo y transformando los motivos principales de la composición.
       </p>
 
       <p class="text-justify">
-        Nuestra forma de entender la salud mental es <strong>integral</strong>, contemplando a la persona en todas sus dimensiones: <strong>biológica, psicológica, social, emocional, espiritual y cultural</strong>.
+        Trasladado al ámbito de la salud mental, <strong>la CODA simboliza la posibilidad de dar forma y significado a la propia experiencia</strong>. En un proceso terapéutico, no se trata únicamente de "terminar algo", sino de poder recoger la propia historia y darle un nuevo significado que permita a la persona abrirse a una manera distinta de relacionarse consigo misma, con los demás y con su historia.
       </p>
 
       <p class="text-justify">
-        Así pues, nuestro enfoque no está puesto solo en el tratamiento de síntomas, sino en buscar el <strong>bienestar completo y equilibrado</strong> de la persona. El <strong>acompañamiento</strong> es lo que vertebra la atención que damos, incluyendo en el proceso la <strong>prevención</strong>, la <strong>promoción de la salud</strong>, el <strong>tratamiento</strong> y la <strong>rehabilitación</strong>.
+        Así, la coda simboliza el acompañamiento que ofrecemos, <strong>un espacio donde todo lo que se ha escuchado antes encuentra integración, armonía y dirección</strong>. Al igual que en la música, este cierre no es el fin, sino que permite abrir la puerta a una nueva cadencia vital, más armónica, consciente y plena.
       </p>
     </SectionHeader>
 
