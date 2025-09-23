@@ -112,7 +112,7 @@ export const teamMembers = [
   {
     id: 'responsable-actividades',
     name: 'Ana González',
-    role: 'Profesora de yoga',
+    role: 'Profesora de yoga y meditación',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       {

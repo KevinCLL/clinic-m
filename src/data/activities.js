@@ -2,135 +2,86 @@ import { getTeamMembersByIds } from './team.js';
 
 export const activities = [
   {
-    id: 'mindfulness',
-    title: 'Grupos de mindfulness',
-    category: 'bienestar',
-    image: '/src/assets/images/grupos_mindfulness.jpg',
-    shortDescription: 'Aprende técnicas de atención plena para reducir el estrés y mejorar tu bienestar emocional. Nuestros grupos están pensados para personas que buscan herramientas efectivas para gestionar la ansiedad y el malestar emocional.',
-    fullDescription: 'Aprende técnicas de atención plena y meditación para gestionar el estrés y mejorar tu bienestar emocional.',
-    subtitle: '¿Qué es Mindfulness y qué aprenderás en este taller?',
-    content: [
-      'El Mindfulness o Atención Plena es una práctica que nos enseña a prestar atención al momento presente, con aceptación y sin juzgar. Nos permite tomar conciencia de nuestros pensamientos, emociones y sensaciones corporales, aprendiendo a relacionarnos con ellos de manera más saludable.',
-      'En este taller aprenderás diversas prácticas formales e informales de mindfulness que podrás incorporar en tu día a día. Combinaremos explicaciones teóricas sobre los mecanismos y beneficios del mindfulness con ejercicios prácticos de meditación guiada, exploración corporal (body scan), atención a la respiración y movimientos conscientes.',
-      'También abordaremos cómo aplicar el mindfulness para gestionar situaciones de estrés, ansiedad o malestar emocional, y desarrollaremos estrategias para cultivar estados mentales positivos como la autocompasión, la gratitud y la amabilidad.',
-      'El taller está diseñado tanto para principiantes como para personas que ya tengan alguna experiencia previa con la meditación, adaptándose a las necesidades del grupo.'
-    ],
-    objectives: [
-      'Aprender técnicas básicas de meditación y atención plena',
-      'Reducir los niveles de estrés y ansiedad',
-      'Aumentar la capacidad de concentración y claridad mental',
-      'Desarrollar mayor autoconciencia emocional',
-      'Mejorar la capacidad de autorregulación ante situaciones difíciles',
-      'Cultivar una actitud de amabilidad hacia uno mismo y los demás'
-    ],
-    details: {
-      dates: 'Programa continuo - Consultar próximas fechas',
-      schedule: 'Martes de 18:00 a 19:30',
-      location: 'CODA - Salud Mental Integral',
-      capacity: 'Máximo 12 participantes',
-      price: '220€ (8 sesiones)',
-      targetAudience: 'Este taller está dirigido a cualquier persona interesada en aprender técnicas de mindfulness, ya sea para mejorar su bienestar general, gestionar situaciones de estrés o ansiedad, o complementar un proceso terapéutico. No se requiere experiencia previa.'
-    },
-    facilitatorIds: ['ana-martin'],
-    status: 'active'
-  },
-  {
     id: 'yoga',
-    title: 'Yoga general',
+    title: 'YOGA',
     category: 'corporal',
     image: '/src/assets/images/yoga.jpg',
-    shortDescription: 'Sesiones de yoga adaptadas a todos los niveles para mejorar la conexión mente-cuerpo. Enfocado en la reducción del estrés y la mejora de la conciencia corporal como vía para el bienestar psicológico.',
-    fullDescription: 'Práctica de yoga adaptada para mejorar el bienestar físico y mental.',
-    subtitle: 'Yoga para el bienestar integral',
+    shortDescription: 'Una herramienta complementaria que combina posturas, respiración y meditación para trabajar conjuntamente el cuerpo, la mente y las emociones. Ofrecemos diferentes modalidades adaptadas a cada persona.',
+    fullDescription: 'Herramienta complementaria que combina posturas corporales, técnicas de respiración, relajación y meditación.',
+    subtitle: 'YOGA',
     content: [
-      'Nuestras sesiones de yoga están diseñadas para promover el equilibrio entre cuerpo y mente, adaptándose a las necesidades y capacidades de cada participante.',
-      'A través de posturas suaves, ejercicios de respiración y técnicas de relajación, trabajaremos para liberar tensiones físicas y emocionales, mejorar la flexibilidad y fortalecer el cuerpo de manera consciente.',
-      'El enfoque terapéutico del yoga que practicamos pone especial énfasis en la escucha del propio cuerpo, respetando los límites individuales y fomentando una práctica segura y beneficiosa.',
-      'Cada sesión incluye una combinación de asanas (posturas), pranayama (respiración) y relajación final, creando una experiencia completa de bienestar.'
+      'Desde un enfoque integrador, la práctica de Yoga puede potenciar los resultados positivos de diferentes intervenciones médicas o psicológicas, abordando aspectos como la conexión cuerpo-mente, la gestión del estrés y el bienestar general. Se consolida como una herramienta complementaria que combina posturas corporales, técnicas de respiración, relajación y meditación, que permiten trabajar conjuntamente el cuerpo, la mente, las emociones, la escucha, el autoconocimiento y el autocuidado.',
+      'El yoga es para todas las personas que deseen experimentar volver a su centro. En este espacio, te ofrecemos la oportunidad de apreciar desde tu autenticidad un proceso único, partiendo de tus necesidades y posibilidades; un camino en el que irás transitando la evolución que te permitas, respetando siempre tus tiempos.',
+      'Partiendo de este propósito, las sesiones serán inclusivas, adaptadas, respetuosas, amables y sensibles. Serán un lugar de encuentro, de introspección, de calma, con la intención de generar un bonito compartir, en el que todos y todas seremos aprendices y maestras.',
+      'Con este espíritu, ofrecemos diferentes grupos que responden a las distintas etapas, realidades y necesidades de cada persona:',
+      '• <strong>Yoga adaptado</strong>, orientado a quienes requieren prácticas más accesibles y personalizadas, respetando la movilidad, el ritmo y las condiciones particulares de cada cuerpo.',
+      '• <strong>Yoga sensible al trauma</strong>, un espacio cuidado y respetuoso que favorece la autorregulación, el autocuidado y la conexión con el presente, con prácticas suaves y seguras que acompañan procesos de recuperación emocional.',
+      '• <strong>Yoga para niños</strong>, en el que, mediante el juego y la creatividad, los más pequeños aprenden a reconocer y gestionar sus emociones, desarrollar la concentración y disfrutar del movimiento con alegría.',
+      '• <strong>Yoga general</strong>, abierto a todas las personas que deseen profundizar en la práctica, equilibrando cuerpo y mente, liberando tensiones y fortaleciendo el bienestar en la vida cotidiana.'
     ],
-    objectives: [
-      'Mejorar la flexibilidad y fuerza corporal',
-      'Reducir tensiones musculares y dolores crónicos',
-      'Desarrollar técnicas de respiración consciente',
-      'Aumentar la conciencia corporal',
-      'Promover estados de relajación profunda',
-      'Mejorar la calidad del sueño'
-    ],
-    details: {
-      dates: 'Clases continuas - Incorporación en cualquier momento',
-      schedule: 'Miércoles y viernes de 17:30 a 18:45',
-      location: 'CODA - Salud Mental Integral',
-      capacity: 'Máximo 10 participantes',
-      price: '60€/mes (2 clases semanales) o 15€ clase suelta',
-      targetAudience: 'Abierto a todas las personas, independientemente de su nivel de experiencia o condición física. Las clases se adaptan a las necesidades individuales.'
-    },
-    facilitatorIds: [],
+    targetAudience: 'Dirigido a todas las personas que deseen experimentar volver a su centro, independientemente de su nivel de experiencia o condición física. Las sesiones se adaptan a las necesidades individuales, respetando los tiempos y posibilidades de cada participante.',
+    responsableIds: ['responsable-actividades'],
     status: 'active'
   },
   {
     id: 'yoga-trauma',
-    title: 'Yoga sensible al trauma',
+    title: 'YOGA SENSIBLE AL TRAUMA',
     category: 'terapeutico',
     image: '/src/assets/images/yoga_sensible.jpg',
-    shortDescription: 'Un enfoque especializado del yoga para personas que han experimentado situaciones traumáticas. Creamos un espacio seguro para reconectar con el cuerpo y las sensaciones de forma gradual y respetuosa.',
-    fullDescription: 'Práctica de yoga adaptada específicamente para personas con historia de trauma.',
-    subtitle: 'Un espacio seguro para la reconexión corporal',
+    shortDescription: 'Un espacio seguro y respetuoso donde lo central es la posibilidad de elegir, escuchar y sentir el propio cuerpo en el momento presente.',
+    fullDescription: 'Un espacio terapéutico y compasivo donde el yoga se convierte en una herramienta de acompañamiento.',
+    subtitle: 'YOGA SENSIBLE AL TRAUMA',
     content: [
-      'El yoga sensible al trauma es una práctica especializada que reconoce el impacto del trauma en el cuerpo y la mente, ofreciendo un enfoque seguro y empoderador para la sanación.',
-      'En estas sesiones, priorizamos la creación de un ambiente de seguridad y control, donde cada participante tiene opciones y puede elegir qué movimientos realizar. No hay ajustes físicos y se respeta completamente el espacio personal.',
-      'Trabajamos con movimientos suaves y conscientes, siempre invitando en lugar de instruir, permitiendo que cada persona explore su propio cuerpo a su ritmo. El lenguaje utilizado es cuidadosamente elegido para ser inclusivo y no activador.',
-      'Esta práctica ayuda a regular el sistema nervioso, desarrollar recursos de autorregulación y recuperar gradualmente la conexión con las sensaciones corporales de manera segura.'
+      'Es una práctica especialmente diseñada para acompañar a personas que han vivido experiencias difíciles, de estrés crónico o situaciones traumáticas. A diferencia de otras formas de yoga, aquí lo central no es la forma externa de la postura, sino la posibilidad de elegir, de escuchar y de sentir el propio cuerpo en el momento presente. En este espacio se cuidan aspectos como:',
+      'o    <strong>Seguridad y confianza</strong>: se propone un ambiente respetuoso, predecible y amable, donde cada persona puede explorar sin exigencias.',
+      'o    <strong>Elección y autonomía</strong>: cada propuesta es una invitación, no una instrucción rígida, lo que permite recuperar la sensación de control sobre el propio cuerpo y sus límites.',
+      'o    <strong>Conexión con el presente</strong>: a través de movimientos suaves, respiración consciente y prácticas de atención, se fomenta volver poco a poco al "aquí y ahora".',
+      'o    <strong>Autorregulación y autocuidado</strong>: las sesiones ayudan a reconocer las señales internas y a cultivar recursos para gestionar emociones, tensión o ansiedad.',
+      'Más que una técnica, es un espacio terapéutico y compasivo, donde el yoga se convierte en una herramienta de acompañamiento y de reencuentro con uno mismo.'
     ],
-    objectives: [
-      'Crear una relación segura con el propio cuerpo',
-      'Desarrollar herramientas de autorregulación',
-      'Aumentar la ventana de tolerancia emocional',
-      'Fortalecer la sensación de agencia y control',
-      'Procesar y liberar tensiones almacenadas',
-      'Cultivar la autocompasión y el autocuidado'
+    targetAudience: 'Dirigido a personas que han experimentado trauma y buscan reconectar con su cuerpo de forma segura. Es recomendable estar en proceso terapéutico o haber completado un proceso previo.',
+    responsableIds: ['responsable-actividades'],
+    status: 'active'
+  },
+  {
+    id: 'mindfulness',
+    title: 'GRUPOS DE MINDFULNESS',
+    category: 'bienestar',
+    image: '/src/assets/images/grupos_mindfulness.jpg',
+    shortDescription: 'Entrenar la capacidad de estar presentes con apertura y amabilidad. El acompañamiento grupal potencia los beneficios y crea un espacio de aprendizaje compartido.',
+    fullDescription: 'Práctica que entrena la capacidad de estar presentes con apertura, curiosidad y amabilidad.',
+    subtitle: 'GRUPOS DE MINDFULNESS',
+    content: [
+      'El mindfulness o atención plena es una práctica que nos invita a entrenar la capacidad de estar presentes, cultivando una actitud de apertura, curiosidad y amabilidad hacia lo que ocurre en nuestro interior y a nuestro alrededor. No se trata de "dejar la mente en blanco", sino de aprender a observar con conciencia nuestros pensamientos, emociones y sensaciones, sin juzgarlas y sin reaccionar de manera automática.',
+      'Practicar mindfulness en grupo potencia sus beneficios, ya que el acompañamiento mutuo crea un espacio de confianza, motivación y aprendizaje compartido. Cada persona transita su propio camino, pero el grupo se convierte en un lugar de sostén donde compartir la experiencia y enriquecerse de la diversidad de miradas.',
+      'Entre los beneficios más destacados de la práctica de mindfulness se encuentran:',
+      '•    Reducción del estrés y la ansiedad.',
+      '•    Mejora de la concentración y la claridad mental.',
+      '•    Mayor regulación emocional y capacidad de autocuidado.',
+      '•    Incremento de la resiliencia y la autocompasión.',
+      '•    Desarrollo de la conexión cuerpo–mente y del bienestar general.',
+      'Los grupos de mindfulness ofrecen una oportunidad para detener el ritmo, encontrar calma y entrenar recursos que luego pueden aplicarse a la vida cotidiana, mejorando la manera en que nos relacionamos con nosotros mismos, con los demás y con los desafíos del día a día.'
     ],
-    details: {
-      dates: 'Grupos cerrados - Consultar próximo inicio',
-      schedule: 'Jueves de 18:30 a 19:45',
-      location: 'CODA - Salud Mental Integral',
-      capacity: 'Máximo 8 participantes',
-      price: '280€ (8 sesiones)',
-      targetAudience: 'Dirigido a personas que han experimentado trauma y buscan reconectar con su cuerpo de forma segura. Se recomienda estar en proceso terapéutico o haberlo completado.'
-    },
-    facilitatorIds: [],
+    targetAudience: 'Dirigido a cualquier persona interesada en aprender técnicas de mindfulness, ya sea para mejorar su bienestar general, gestionar situaciones de estrés o ansiedad, o complementar un proceso terapéutico. No se requiere experiencia previa.',
+    responsableIds: ['responsable-actividades'],
     status: 'active'
   },
   {
     id: 'retiros',
-    title: 'Retiros de meditación',
+    title: 'RETIROS DE YOGA Y MEDITACIÓN',
     category: 'intensivos',
     image: '/src/assets/images/retiros.jpg',
-    shortDescription: 'Experiencias inmersivas para profundizar en la práctica meditativa y el autoconocimiento. Estas jornadas ofrecen un espacio de desconexión y encuentro con uno mismo en entornos naturales.',
-    fullDescription: 'Jornadas intensivas de práctica meditativa en entornos naturales.',
-    subtitle: 'Un tiempo para el silencio y la introspección',
+    shortDescription: 'Momentos de autocuidado consciente en entornos naturales. Una oportunidad para aprender recursos que podrás integrar en tu vida diaria.',
+    fullDescription: 'Momentos diseñados para cuidar la salud mental, descansar la mente y renovar el cuerpo.',
+    subtitle: 'RETIROS DE YOGA Y MEDITACIÓN',
     content: [
-      'Los retiros de meditación son experiencias transformadoras que nos permiten alejarnos temporalmente del ritmo acelerado de la vida cotidiana para sumergirnos en la práctica contemplativa.',
-      'Durante estos días, combinamos diferentes técnicas meditativas: meditación sentada, meditación caminando, ejercicios de movimiento consciente y períodos de silencio. Todo ello en un entorno natural que favorece la calma y la introspección.',
-      'Los retiros incluyen enseñanzas sobre la práctica meditativa, tiempo para la reflexión personal y espacios de compartir en grupo. Se alternan períodos de silencio con momentos de diálogo consciente.',
-      'Estas experiencias están diseñadas para profundizar en el autoconocimiento, desarrollar una práctica meditativa más sólida y experimentar los beneficios de la desconexión digital y el contacto con la naturaleza.'
+      'Los retiros son una invitación a detener la rutina y abrir un espacio de pausa, silencio y conexión profunda. Son momentos diseñados para cuidar la salud mental, descansar la mente y darle al cuerpo la posibilidad de moverse, soltar y renovarse.',
+      'A través de la práctica de yoga, la meditación y otras dinámicas de autoconocimiento, buscamos favorecer la integración entre mente y cuerpo, creando un ambiente seguro donde cada persona pueda escucharse, reconocer sus necesidades y atenderse con respeto y amabilidad.',
+      'Más allá de una experiencia puntual, un retiro se convierte en un tiempo de autocuidado consciente, en el que aprenderás recursos que podrás llevar contigo a tu vida diaria: prácticas de respiración, técnicas de relajación, herramientas para gestionar el estrés y formas sencillas de cultivar el bienestar en lo cotidiano.',
+      'Es un espacio para volver al centro, compartir con otros desde la autenticidad y, al mismo tiempo, regalarte la oportunidad de estar contigo mismo de una manera distinta: con calma, presencia y compasión.'
     ],
-    objectives: [
-      'Profundizar en la práctica meditativa',
-      'Experimentar los beneficios del silencio',
-      'Desconectar de la tecnología y el ruido mental',
-      'Conectar con la naturaleza',
-      'Desarrollar mayor claridad mental',
-      'Cultivar la paz interior y el equilibrio emocional'
-    ],
-    details: {
-      dates: 'Próximo retiro: Primavera 2024',
-      schedule: 'Fin de semana completo (viernes tarde a domingo mediodía)',
-      location: 'Casa rural en entorno natural',
-      capacity: 'Máximo 15 participantes',
-      price: '350€ (incluye alojamiento y comidas)',
-      targetAudience: 'Recomendado para personas con experiencia previa en meditación o que hayan participado en nuestros talleres de mindfulness.'
-    },
-    facilitatorIds: ['ana-martin'],
+    targetAudience: 'Recomendado para personas que buscan un espacio de pausa y conexión profunda. Abierto a todas las personas, tanto principiantes como quienes ya tienen experiencia en yoga o meditación.',
+    responsableIds: ['responsable-actividades'],
     status: 'upcoming'
   }
 ];
@@ -146,13 +97,13 @@ export function getActivityById(id) {
   return activities.find(activity => activity.id === id);
 }
 
-export function getActivityWithFacilitators(id) {
+export function getActivityWithResponsables(id) {
   const activity = getActivityById(id);
   if (!activity) return null;
-  
+
   return {
     ...activity,
-    facilitators: getTeamMembersByIds(activity.facilitatorIds || [])
+    responsables: getTeamMembersByIds(activity.responsableIds || [])
   };
 }
 
