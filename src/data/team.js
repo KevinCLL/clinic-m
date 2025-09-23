@@ -35,7 +35,7 @@ export const teamMembers = [
   {
     id: 'mara-descalzo',
     name: 'Mara Descalzo',
-    role: 'Médica Psiquiatra',
+    role: 'Médica Psiquiatra y psicoterapeuta',
     image: '/src/assets/images/unknown.jpg',
     specialties: [
       {
@@ -93,7 +93,7 @@ export const teamMembers = [
   },
   {
     id: 'amparo-perez',
-    name: 'Amparo Pérez Das',
+    name: 'Amparo Pérez',
     role: 'Psicóloga clínica',
     image: '/src/assets/images/unknown.jpg',
     specialties: [

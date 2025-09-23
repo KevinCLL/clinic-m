@@ -4,7 +4,7 @@ export const services = [
     title: 'Psiquiatría',
     description: 'Valoración, diagnóstico y tratamiento de trastornos mentales desde una perspectiva integral.',
     content: {
-      subtitle: '¿Qué ofrecemos en nuestro servicio de Psiquiatría?',
+      subtitle: '¿Qué ofrecemos en nuestro servicio?',
       description: [
         'Nuestro enfoque en psiquiatría se centra en <strong>la persona y no solo en los síntomas</strong>, combinando la precisión diagnóstica con un trato humano y cercano. Entendemos que cada persona es única y que requiere un abordaje personalizado.',
         'Realizamos una <strong>evaluación exhaustiva</strong> para determinar tanto factores biológicos como psicológicos y sociales que puedan estar influyendo en el malestar, para poder ofrecer el tratamiento más adecuado en cada caso.',
@@ -44,18 +44,18 @@ export const services = [
     content: {
       subtitle: '¿Qué ofrecemos en nuestro servicio de Psicología Clínica?',
       description: [
-        'En nuestro servicio de trabajamos desde un enfoque integrador, que se nutre de diferentes modelos psicoterapéuticos basados en la evidencia (como la terapia cognitivo-conductual, terapias contextuales, humanistas, EMDR, terapia sistémica entre otros), y que pone el foco en la persona en su totalidad, no solo en el síntoma.',
+        'En nuestro servicio de Psicología Clínica trabajamos desde un enfoque integrador, que se nutre de diferentes modelos psicoterapéuticos basados en la evidencia (como la terapia cognitivo-conductual, terapias contextuales, humanistas, sistémica y EMDR entre otras), y que pone el foco en la persona en su totalidad, no solo en el síntoma.',
         'Sabemos que cada persona es única y merece una intervención adaptada a sus características, historia, contexto vital y objetivos personales. Por eso diseñamos un plan terapéutico personalizado que acompañe desde el respeto, la calidez y la profesionalidad cada proceso de cambio.',
         'Realizamos una evaluación psicológica detallada que nos permite comprender en profundidad los factores predisponentes, precipitantes y mantenedores del malestar emocional, y establecer así la intervención que mejor se adapte a las características de cada persona.'
       ]
     },
     characteristics: [
-      'Psicólogas especializadas en psicología clínica',
-      'Evaluación psicológica individualizada',
-      'Psicoterapia basada en la evidencia científica',
-      'Entrenamiento en estrategias de afrontamiento y regulación emocional',
-      'Trabajo en equipo y coordinación con otros profesionales',
-      'Seguimiento cercano y ajustado a la evolución'
+      'Psicólogas especializadas en psicología clínica.',
+      'Evaluación psicológica individualizada.',
+      'Psicoterapia basada en la evidencia científica.',
+      'Entrenamiento en estrategias de afrontamiento y regulación emocional.',
+      'Trabajo en equipo y coordinación con otros profesionales.',
+      'Seguimiento cercano y ajustado a la evolución.'
     ],
     professionalIds: ['elvira-garcia', 'irene-saiz'],
     faqs: [
@@ -75,41 +75,27 @@ export const services = [
   },
   {
     id: 'infancia-adolescencia',
-    title: 'Infancia y Adolescencia',
+    title: 'Salud Mental Infantil y del Adolescente',
     description: 'Atención especializada para niños y adolescentes con diferentes dificultades.',
     content: {
-      subtitle: '¿Qué ofrecemos en nuestro servicio de Infancia y Adolescencia?',
+      subtitle: 'Salud Mental Infantil y del Adolescente',
       description: [
-        'Ofrecemos un espacio adaptado y acogedor donde niños y adolescentes puedan expresar sus emociones y dificultades de forma segura. Utilizamos técnicas específicas para cada edad, incluyendo el juego terapéutico, técnicas creativas y expresivas.',
-        'Trabajamos de forma coordinada con las familias, entendiendo que son parte fundamental del proceso. Proporcionamos orientación y pautas para manejar las situaciones difíciles en casa y mejorar la comunicación familiar.',
-        'Nuestro enfoque es integral, considerando todos los contextos del menor: familiar, escolar y social. Colaboramos con otros profesionales cuando es necesario (pediatras, profesores, etc.).',
-        'Acompañamos a los jóvenes en su proceso de crecimiento, ayudándoles a desarrollar herramientas emocionales y sociales que les servirán para toda la vida.'
+        'Contamos con un equipo especializado en la atención a la salud mental de niños, niñas y adolescentes, integrado por una psiquiatra y una psicóloga clínica. Desde este marco, se ofrece un acompañamiento que incluye <strong>evaluación, diagnóstico e intervención psicoterapéutica</strong>, atendiendo a las diferentes <strong>dificultades emocionales, conductuales y relacionales</strong> que puedan presentarse en la infancia y la adolescencia.',
+        'La finalidad es <strong>ayudar al desarrollo psicoemocional del menor</strong> tanto para prevenir patología mental, para acompañar en los procesos madurativos en las distintas etapas como para ayudar en el acompañamiento de las dificultades que pueda presentar. La psicoterapia facilita cambios profundos y duraderos en la psique del menor, ayuda a mejorar la manera en la que pensamos, sentimos y nos relacionamos con nosotros mismos y con los demás.',
+        'En este espacio se ofrece un <strong>entorno seguro, confidencial y personalizado</strong> desde la perspectiva psicodinámica. Entendemos por enfoque psicodinámico, una manera diferente de entender al menor en el que los síntomas no son únicamente manifestaciones aisladas, sino expresiones de conflictos internos, de la historia vincular y de la manera en que el niño o adolescente se ha constituido en relación con sus figuras significativas. El menor no es un ser aislado, sino que está inmerso en una sociedad y en una familia, por lo que se trata de llegar hasta él mediante un abordaje profundo y completo.',
+        'Aunque el punto de partida es psicodinámico, se pueden integrar herramientas y técnicas de otros modelos terapéuticos que enriquezcan la intervención y se adapten a las necesidades particulares de cada menor. El objetivo es siempre ofrecer un tratamiento flexible, individualizado y respetuoso con el momento vital y la singularidad de cada niño, niña o adolescente.',
+        'En este espacio, además, se tiene en cuenta a las <strong>familias</strong>, que son <strong>parte fundamental del proceso</strong> y acompañan al menor en su camino de crecimiento y transformación.'
       ]
     },
     characteristics: [
-      'Evaluación adaptada a cada edad',
-      'Técnicas lúdicas y creativas',
-      'Trabajo coordinado con familias',
-      'Intervención en contexto escolar si es necesario',
-      'Grupos terapéuticos por edades',
-      'Orientación a padres y madres',
-      'Seguimiento del desarrollo evolutivo'
+      'Evaluación, diagnóstico e intervención en salud mental infanto-juvenil.',
+      'Abordaje integral, incluyendo el contexto familiar y social en el acompañamiento del menor.',
+      'Acompañamiento en los diferentes procesos madurativos y prevención de problemas de salud mental',
+      'Integración de herramientas de otros modelos según las necesidades individuales.',
+      'Apoyo y participación activa de la familia en el proceso terapéutico.'
     ],
-    professionalIds: ['mara-descalzo'],
-    faqs: [
-      {
-        pregunta: '¿A partir de qué edad pueden acudir los niños?',
-        respuesta: 'Atendemos desde los 3 años hasta los 18 años, adaptando siempre las técnicas y el espacio a cada edad y etapa del desarrollo.'
-      },
-      {
-        pregunta: '¿Los padres participan en la terapia?',
-        respuesta: 'Sí, el trabajo con los padres es fundamental. Realizamos sesiones de orientación familiar y, según el caso, sesiones conjuntas. La implicación familiar es clave para el éxito del tratamiento.'
-      },
-      {
-        pregunta: '¿Cómo sé si mi hijo necesita ayuda psicológica?',
-        respuesta: 'Algunos signos pueden ser: cambios bruscos de comportamiento, problemas escolares persistentes, miedos excesivos, tristeza prolongada, problemas de sueño o alimentación, dificultades sociales o conductas agresivas. Ante la duda, una valoración profesional puede orientarte.'
-      }
-    ]
+    professionalIds: ['mara-descalzo', 'irene-saiz'],
+    faqs: []
   },
   {
     id: 'terapia-emdr',
@@ -125,27 +111,27 @@ export const services = [
       ]
     },
     characteristics: [
-      'Evaluación clínica previa específica para EMDR',
-      'Reprocesamiento de experiencias traumáticas o bloqueadas',
-      'Reducción significativa de síntomas asociados al trauma (ansiedad, flashbacks, insomnio, etc.)',
-      'Técnica segura, eficaz y avalada científicamente',
-      'Aplicación en adultos, adolescentes y población infantil',
-      'Compatible con otros enfoques terapéuticos',
-      'Enfoque centrado en la seguridad, el ritmo y la regulación emocional de la persona'
+      '•    Evaluación clínica previa específica para EMDR.',
+      '•    Reprocesamiento de experiencias traumáticas o bloqueadas.',
+      '•    Reducción significativa de síntomas asociados al trauma (ansiedad, flashbacks, insomnio, etc.).',
+      '•    Técnica segura, eficaz y avalada científicamente',
+      '•    Aplicación en adultos, adolescentes y población infantil.',
+      '•    Compatible con otros enfoques terapéuticos.',
+      '•    Enfoque centrado en la seguridad, el ritmo y la regulación emocional de la persona.'
     ],
     professionalIds: ['marta-sanchez', 'elvira-garcia', 'irene-saiz'],
     faqs: [
       {
         pregunta: '¿Qué tipo de problemas se pueden tratar con EMDR?',
-        respuesta: 'Aunque tradicionalmente se ha empleado para tratar las consecuencias de experiencias traumáticas graves (violencia, abusos, catástrofes, accidentes…), el concepto de trauma se ha ido ampliando a lo largo del tiempo. Actualmente sabemos que, muchas veces, lo que genera malestar no es un trauma evidente, sino experiencias acumulativas de rechazo, crítica, inseguridad o vivencias de abandono. Si bien el foco suele estar puesto en el tratamiento de trastornos relacionados con el trauma (estrés agudo, estrés postraumático, trastornos disociativos…), es un enfoque versátil que se puede emplear en muchos otros problemas de salud mental (ansiedad, bajo estado de ánimo, problemas relacionales…).'
+        respuesta: 'Aunque tradicionalmente se ha empleado para tratar las consecuencias de experiencias traumáticas graves (violencia, abusos, catástrofes, accidentes…), el concepto de trauma se ha ido ampliando a lo largo del tiempo. Actualmente sabemos que, muchas veces, lo que genera malestar no es un trauma evidente, sino experiencias acumulativas de rechazo, crítica, inseguridad o vivencias de abandono.\nSi bien el foco suele estar puesto en el tratamiento de trastornos relacionados con el trauma (estrés agudo, estrés postraumático, trastornos disociativos…), es un enfoque versátil que se puede emplear en muchos otros problemas de salud mental (ansiedad, bajo estado de ánimo, problemas relacionales…).'
       },
       {
         pregunta: '¿Qué significa reprocesar un recuerdo?',
-        respuesta: 'Durante las sesiones, el terapeuta guía a la persona en el reprocesamiento de estos recuerdos, ayudando a integrar la experiencia de forma adaptativa. Esto se logra mediante la estimulación bilateral del cerebro (habitualmente a través del movimiento ocular), permitiendo que el sistema nervioso "archive" adecuadamente la información, liberando así el malestar emocional.'
+        respuesta: 'EMDR se basa en la idea de que muchos de nuestros síntomas emocionales (como ansiedad, bloqueos, miedos intensos, reacciones desproporcionadas, etc.) tienen su origen en experiencias pasadas que no han sido correctamente procesadas por el sistema nervioso. Estas experiencias quedan "atascadas" en la memoria con la misma carga emocional con la que fueron vividas, y se reactivan una y otra vez ante situaciones actuales.\nDurante las sesiones, el terapeuta guía a la persona en el reprocesamiento de estos recuerdos, ayudando a integrar la experiencia de forma adaptativa. Esto se logra mediante la estimulación bilateral del cerebro (habitualmente a través del movimiento ocular), permitiendo que el sistema nervioso "archive" adecuadamente la información, liberando así el malestar emocional.'
       },
       {
         pregunta: '¿En qué consiste el proceso de la terapia EMDR?',
-        respuesta: 'La terapia comienza con una fase de evaluación y preparación. Antes de iniciar el reprocesamiento de recuerdos dolorosos, trabajamos la estabilización emocional, asegurándonos de que la persona se encuentra en un momento adecuado para iniciar este proceso y dispone de herramientas suficientes de regulación emocional y contención interna. Una vez establecida esta base de seguridad, se identifican experiencias que siguen generando malestar y se trabaja sobre ellas mediante estimulación bilateral. Todo el proceso es progresivo, respetuoso y guiado por el terapeuta, adaptándose al ritmo y necesidades de cada persona.'
+        respuesta: 'La terapia comienza con una fase de evaluación y preparación. Antes de iniciar el reprocesamiento de recuerdos dolorosos, se trabajamos la estabilización emocional, asegurándonos de que la persona se encuentra en un momento adecuado para iniciar este proceso y dispone de herramientas suficientes de <strong>regulación emocional</strong> y contención interna. Una vez establecida esta base de seguridad, se identifican experiencias que siguen generando malestar y se trabaja sobre ellas mediante <strong>estimulación bilateral</strong>. Todo el proceso es progresivo, respetuoso y guiado por el terapeuta, adaptándose al ritmo y necesidades de cada persona.'
       }
     ]
   },
@@ -162,12 +148,12 @@ export const services = [
       ]
     },
     characteristics: [
-      'Entrenamiento progresivo en atención plena',
-      'Reducción de estrés y mejora del bienestar',
-      'Prácticas formales e informales adaptadas a la vida cotidiana',
-      'Integración con procesos psicoterapéuticos o médicos',
-      'Modalidades individuales o grupales',
-      'Seguimiento para integrar la práctica a largo plazo'
+      'Entrenamiento progresivo en atención plena.',
+      'Reducción de estrés y mejora del bienestar.',
+      'Prácticas formales e informales adaptadas a la vida cotidiana.',
+      'Integración con procesos psicoterapéuticos o médicos.',
+      'Modalidades individuales o grupales.',
+      'Seguimiento para integrar la práctica a largo plazo.'
     ],
     professionalIds: ['marta-sanchez', 'amparo-perez'],
     faqs: [
@@ -193,16 +179,16 @@ export const services = [
       subtitle: '¿Qué ofrecemos en nuestro servicio de Salud Mental Perinatal?',
       description: [
         'Acompañamos emocionalmente a las mujeres (y a sus parejas) antes, durante y después del embarazo. Sabemos que la etapa perinatal puede ser especialmente vulnerable, y por ello ofrecemos un espacio seguro y especializado donde abordar los cambios físicos, psicoemocionales y relacionales (pareja/familia) que surgen en esta etapa.',
-        'También realizamos un seguimiento estrecho, para prevenir, acompañar y tratar (si lo requieren) diferentes problemas de salud mental como ansiedad en el embarazo, depresión postparto, duelo gestacional o perinatal, dificultades de vínculo, cambios en los roles… Nuestro enfoque es sensible al momento vital y promueve el cuidado integral de la díada (madre-bebé) y del entorno.',
+        'También realizamos un seguimiento estrecho, para prevenir, acompañar y tratar (si lo requieren) diferentes problemas de salud mental como ansiedad en el embarazo, depresión postparto, duelo gestacional o perinatal, dificultades de vínculo, cambios en los roles… Nuestro enfoque es sensible al momento vital y promueve el cuidado integral de la diada (madre-bebé) y del entorno.',
         'Trabajamos de forma coordinada con otros profesionales (ginecología, pediatría, matronas) para ofrecer un acompañamiento completo.'
       ]
     },
     characteristics: [
-      'Atención psicológica especializada a las mujeres en embarazo y posparto',
-      'Prevención y tratamiento del malestar emocional perinatal',
-      'Intervención ante experiencias traumáticas o pérdidas',
-      'Espacios de escucha, validación y acompañamiento',
-      'Coordinación con profesionales sanitarios del ámbito materno-infantil'
+      '•    Atención psicológica especializada a las mujeres en embarazo y posparto.',
+      '•    Prevención y tratamiento del malestar emocional perinatal.',
+      '•    Intervención ante experiencias traumáticas o pérdidas.',
+      '•    Espacios de escucha, validación y acompañamiento.',
+      '•    Coordinación con profesionales sanitarios del ámbito materno-infantil.'
     ],
     professionalIds: ['marta-sanchez'],
     faqs: [

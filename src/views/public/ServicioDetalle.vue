@@ -82,15 +82,16 @@
     </section>
 
 
-    <section class="py-6 bg-white relative overflow-hidden">
+    <section class="-mt-8 pb-12 bg-white relative overflow-hidden">
       <img src="@/assets/images/ramas_fondo_abajo.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
           <div class="bg-white rounded-xl shadow-soft p-8">
             <AreaIntervencion
-              :areaType="servicioId.value === 'infancia-adolescencia' ? 'infanto-juvenil' :
-                         servicioId.value === 'perinatal' ? 'perinatal' : 'adultos'"
+              :areaType="servicioId === 'infancia-adolescencia' ? 'infanto-juvenil' :
+                         servicioId === 'perinatal' ? 'perinatal' : 'adultos'"
               colorTheme="primary"
               :multicolumn="true"
             />
@@ -100,8 +101,7 @@
     </section>
 
 
-    <section class="py-12 md:py-16 bg-gray-50 relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_abajo_2.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+    <section class="py-12 md:py-16 pb-24 md:pb-32 bg-gray-50 relative overflow-hidden">
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Otras especialidades</h2>
@@ -250,4 +250,5 @@ const servicioActual = computed(() => {
 .shadow-soft {
   box-shadow: var(--shadow-lg);
 }
+
 </style>
