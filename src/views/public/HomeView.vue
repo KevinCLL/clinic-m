@@ -1,20 +1,42 @@
 <template>
   <div class="overflow-hidden">
 
-    <SectionHeader title="Sobre nuestro nombre" :backgroundImage="mainBackgroundImg">
+    <SectionHeader title="Atención integral a la Salud Mental" :backgroundImage="mainBackgroundImg">
       <p class="text-justify">
-        Elegimos el nombre CODA inspirándonos en el lenguaje musical. En una partitura, la coda es la sección final de una obra: un pasaje que no se limita a concluir, sino que <strong>aporta un cierre con sentido</strong>, reuniendo y transformando los motivos principales de la composición.
+        La salud mental es un estado de bienestar que permite a las personas afrontar el estrés cotidiano, desarrollar sus capacidades, aprender, trabajar y participar activamente en la comunidad. Va más allá de la simple ausencia de trastornos mentales, ya que constituye un derecho humano fundamental y un pilar clave para el desarrollo personal, social y económico. Se trata de un proceso complejo, que cada persona vive de forma única, con distintos niveles de dificultad y angustia, y con desenlaces sociales y clínicos diversos.
       </p>
 
       <p class="text-justify">
-        Trasladado al ámbito de la salud mental, <strong>la CODA simboliza la posibilidad de dar forma y significado a la propia experiencia</strong>. En un proceso terapéutico, no se trata únicamente de "terminar algo", sino de poder recoger la propia historia y darle un nuevo significado que permita a la persona abrirse a una manera distinta de relacionarse consigo misma, con los demás y con su historia.
+        Nuestra forma de entender la salud mental es <strong>integral</strong>, contemplando a la persona en todas sus dimensiones: <strong>biológica, psicológica, social, emocional, espiritual y cultural</strong>.
       </p>
 
       <p class="text-justify">
-        Así, la coda simboliza el acompañamiento que ofrecemos, <strong>un espacio donde todo lo que se ha escuchado antes encuentra integración, armonía y dirección</strong>. Al igual que en la música, este cierre no es el fin, sino que permite abrir la puerta a una nueva cadencia vital, más armónica, consciente y plena.
+        Así pues, nuestro enfoque no está puesto solo en el tratamiento de síntomas, sino en buscar el <strong>bienestar completo y equilibrado</strong> de la persona. El <strong>acompañamiento</strong> es lo que vertebra la atención que damos, incluyendo en el proceso la <strong>prevención</strong>, la <strong>promoción de la salud</strong>, el <strong>tratamiento</strong> y la <strong>rehabilitación</strong>.
       </p>
     </SectionHeader>
 
+    <!-- Sección "Sobre nuestro nombre" -->
+    <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
+      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-7xl mx-auto">
+          <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
+            <h3 class="text-xl font-bold text-center text-black uppercase mb-4">SOBRE NUESTRO NOMBRE</h3>
+            <p class="text-gray-700 text-justify mb-4">
+              Elegimos el nombre CODA inspirándonos en el lenguaje musical. En una partitura, la coda es la sección final de una obra: un pasaje que no se limita a concluir, sino que <strong>aporta un cierre con sentido</strong>, reuniendo y transformando los motivos principales de la composición.
+            </p>
+            <p class="text-gray-700 text-justify mb-4">
+              Trasladado al ámbito de la salud mental, <strong>la CODA simboliza la posibilidad de dar forma y significado a la propia experiencia</strong>. En un proceso terapéutico, no se trata únicamente de "terminar algo", sino de poder recoger la propia historia y darle un nuevo significado que permita a la persona abrirse a una manera distinta de relacionarse consigo misma, con los demás y con su historia.
+            </p>
+            <p class="text-gray-700 text-justify">
+              Así, la coda simboliza el acompañamiento que ofrecemos, <strong>un espacio donde todo lo que se ha escuchado antes encuentra integración, armonía y dirección</strong>. Al igual que en la música, este cierre no es el fin, sino que permite abrir la puerta a una nueva cadencia vital, más armónica, consciente y plena.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
