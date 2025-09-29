@@ -25,21 +25,21 @@
         <ul class="space-y-1">
           <li class="flex items-start">
             <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
-              <i class="fas fa-subway"></i>
+              <i class="fas fa-bus"></i>
             </div>
-            <span>Metro: Líneas 3 y 5 (Estación Bailén)</span>
+            <span>Bus: Líneas C3, 14, 18, 19 y 40</span>
           </li>
           <li class="flex items-start">
             <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
-              <i class="fas fa-bus"></i>
+              <i class="fas fa-subway"></i>
             </div>
-            <span>Bus: Líneas 6, C3, 25, 40 (Parada Peris y Valero-Zapadores)</span>
+            <span>Metro: Línea 10 (Amado Granell – Montolivet)</span>
           </li>
           <li class="flex items-start">
             <div class="flex-shrink-0 h-4 w-4 text-primary-600 mr-1 mt-0.5">
               <i class="fas fa-car"></i>
             </div>
-            <span>Parking: Mercado Ruzafa, Parking AZA Ruzafa</span>
+            <span>Aparcamiento: zona azul en Av. Peris y Valero</span>
           </li>
         </ul>
       </div>

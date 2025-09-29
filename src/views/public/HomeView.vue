@@ -61,7 +61,7 @@
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}">
                 <h3 class="text-xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psicoterapia</h3>
               </router-link>
-              <p class="text-base text-gray-700 mb-4 flex-grow">Acompañamiento terapéutico personalizado para desarrollar herramientas de afrontamiento.</p>
+              <p class="text-base text-gray-700 mb-4 flex-grow">Intervención terapéutica adaptada a cada persona, con un enfoque integrador.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105 mt-auto" />
             </div>
           </div>
@@ -77,7 +77,7 @@
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}">
                 <h3 class="text-xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psiquiatría</h3>
               </router-link>
-              <p class="text-base text-gray-700 mb-4 flex-grow">Evaluación, diagnóstico y tratamiento farmacológico de trastornos mentales con un enfoque integral y humanista.</p>
+              <p class="text-base text-gray-700 mb-4 flex-grow">Evaluación, diagnóstico y tratamiento farmacológico de trastornos mentales.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105 mt-auto" />
             </div>
           </div>
