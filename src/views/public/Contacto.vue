@@ -47,7 +47,7 @@ onUnmounted(() => {
   window.removeEventListener('resize', checkMobile);
 });
 
-const handleFormSubmit = (formData) => {
+const handleFormSubmit = () => {
 
 };
 </script>

@@ -198,7 +198,7 @@ const lifeStages = [
   }
 ];
 
-const handleHomeFormSubmit = (formData) => {
+const handleHomeFormSubmit = () => {
 
 
 
@@ -208,7 +208,7 @@ const handleHomeFormSubmit = (formData) => {
 </script>
 
 <style scoped>
-/* Layout and spacing using theme variables */
+
 .section-padding {
   padding: var(--spacing-3xl) 0;
 }
@@ -252,7 +252,7 @@ const handleHomeFormSubmit = (formData) => {
   padding-right: var(--spacing-lg);
 }
 
-/* Typography using theme variables */
+
 
 
 
@@ -263,7 +263,7 @@ const handleHomeFormSubmit = (formData) => {
 
 
 
-/* Primary color utilities */
+
 .text-primary-600 {
   color: var(--primary-600);
 }
@@ -313,7 +313,7 @@ const handleHomeFormSubmit = (formData) => {
   border-color: var(--primary-400);
 }
 
-/* Shadows using theme variables */
+
 .shadow-soft {
   box-shadow: var(--shadow-lg);
 }

@@ -145,7 +145,7 @@ const specialtyColor = computed(() => {
   if (specialty) {
     const cssVar = specialty.color;
     if (cssVar.startsWith('var(')) {
-      const varName = cssVar.slice(4, -1); // Remove 'var(' and ')'
+      const varName = cssVar.slice(4, -1);
       return getComputedStyle(document.documentElement).getPropertyValue(varName) || '#007971';
     }
     return cssVar;
@@ -156,18 +156,18 @@ const specialtyColor = computed(() => {
 
 
 
-// Get specialties with colors
+
 const allSpecialties = computed(() => {
   return specialties.map(specialty => ({
     ...specialty,
-    color: specialty.color.startsWith('var(') 
+    color: specialty.color.startsWith('var(')
       ? getComputedStyle(document.documentElement).getPropertyValue(specialty.color.slice(4, -1))
       : specialty.color
   }));
 });
 
 const isCurrentSpecialty = (specialtyId) => {
-  return specialtyId === servicioId.value || 
+  return specialtyId === servicioId.value ||
          (specialtyId === 'terapia-emdr' && servicioId.value === 'emdr') ||
          (specialtyId === 'emdr' && servicioId.value === 'terapia-emdr');
 };
@@ -176,14 +176,14 @@ const navigateToSpecialty = (id) => {
   router.push({ name: 'servicio-detalle', params: { id } });
 };
 
-// Watch for route changes to scroll to top
+
 watch(() => route.params.id, () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 const servicioActual = computed(() => {
   const serviceData = getServiceWithProfessionals(servicioId.value);
-  
+
   if (!serviceData) {
     return {
       titulo: 'Servicio no encontrado',
@@ -215,7 +215,7 @@ const servicioActual = computed(() => {
 </script>
 
 <style scoped>
-/* Mobile styles for specialty buttons */
+
 @media (max-width: 767px) {
   .specialty-button {
     min-height: 3.5rem;

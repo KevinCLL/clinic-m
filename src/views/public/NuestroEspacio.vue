@@ -34,7 +34,7 @@
 
 
         <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" />
-        
+
         <div class="max-w-6xl mx-auto facility-item relative">
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
@@ -71,7 +71,7 @@
 
 
         <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" />
-        
+
         <div class="max-w-6xl mx-auto facility-item relative">
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
@@ -107,7 +107,7 @@
 
 
         <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" />
-        
+
         <div class="max-w-6xl mx-auto facility-item relative">
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
@@ -134,16 +134,16 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
 </script>
 
 <style scoped>
-/* Import theme variables */
+
 @import '@/styles/theme.css';
 
-/* Container padding */
+
 .container-padding {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-/* Hero Section */
+
 .hero-section {
   padding: 2rem 0;
   background: linear-gradient(to bottom right, var(--primary-50), white);
@@ -156,7 +156,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
 }
 
 
-/* Content Section */
+
 .content-section {
   padding: 4rem 0;
 }
@@ -170,7 +170,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
 
 
 
-/* Facilities Section */
+
 .facilities-section {
   padding: 3rem 0;
 }
@@ -206,7 +206,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   line-height: var(--line-height-relaxed);
 }
 
-/* Facility Image and Content */
+
 .facility-image-wrapper {
   width: 100%;
   margin-bottom: var(--spacing-xl);
@@ -220,7 +220,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
     margin-bottom: 0;
     padding-right: var(--spacing-xl);
   }
-  
+
   .facility-image-wrapper.md\:pl-8 {
     padding-right: 0;
     padding-left: var(--spacing-xl);
@@ -265,7 +265,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
     width: 50%;
     padding-left: var(--spacing-xl);
   }
-  
+
   .facility-content.md\:pr-8 {
     padding-left: 0;
     padding-right: var(--spacing-xl);
@@ -329,7 +329,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   animation: float-subtle 12s ease-in-out infinite;
 }
 
-/* Colors */
+
 .bg-primary {
   background-color: var(--primary-500);
 }
@@ -346,7 +346,7 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   color: var(--primary-800);
 }
 
-/* Shadows */
+
 .shadow-soft {
   box-shadow: var(--shadow-lg);
 }

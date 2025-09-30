@@ -5,11 +5,11 @@
       <p class="text-justify">
         En nuestra Clínica de Salud Mental somos un <strong>equipo interdisciplinar</strong> compuesto por profesionales con formación especializada en salud mental (psiquiatría y psicologías clínicas). Acompañamos a personas en todas las etapas de la vida, teniendo en cuenta su individualidad, acordando los objetivos de tratamiento de forma conjunta.
       </p>
-      
+
       <p class="text-justify">
         <strong>Entendemos la salud mental no solo como la ausencia de enfermedad</strong>, sino como un estado de bienestar que permite a la persona desarrollar sus capacidades, relacionarse, trabajar, aprender y disfrutar de su vida. Por eso, además del <strong>tratamiento</strong> de los problemas de salud mental, también <strong>apostamos por la promoción activa del bienestar y la prevención</strong>, a través de actividades grupales, talleres y propuestas que fomenten la conciencia, la reflexión y el autocuidado.
       </p>
-      
+
       <p class="text-justify">
         Creemos en la importancia de crear un <strong>espacio de encuentro en el que cualquier persona pueda sentirse segura, aceptada y acompañada</strong>, contemplando la diversidad de cada persona (sexual, de género, raza, etnia, creencias religiosas, modelos relacionales, diversidad funcional, estilo de vida...) y sus vivencias subjetivas.
       </p>
@@ -18,10 +18,10 @@
     <section class="py-8 md:py-12 bg-gray-50 relative overflow-hidden">
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze" />
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
-      
+
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">PILARES DEL PROYECTO</h2>
-        
+
         <div class="max-w-4xl mx-auto mb-8">
           <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
             <h3 class="text-xl font-bold text-center text-primary-600 uppercase mb-4" style="font-family: 'Montserrat', sans-serif;">UNA MIRADA INTEGRAL QUE PONE EN EL CENTRO A LA PERSONA</h3>
@@ -125,7 +125,7 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
 </script>
 
 <style scoped>
-/* Hero Section */
+
 .hero-section {
   padding: var(--spacing-xl) 0;
   background: linear-gradient(to bottom right, var(--primary-50), white);
@@ -156,9 +156,9 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   transform: translate(-4rem, 4rem);
 }
 
-/* Page Title */
 
-/* Section Spacing */
+
+
 .section-padding {
   padding: var(--spacing-3xl) 0;
 }
@@ -169,7 +169,7 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   }
 }
 
-/* Content Card */
+
 .content-card {
   border-radius: var(--border-radius-xl);
   padding: calc(var(--spacing-xl) * 1.25);
@@ -182,23 +182,23 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   }
 }
 
-/* Section Title */
 
-/* Body Text */
 
-/* Content Spacing */
+
+
+
 .content-spacing {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
 }
 
-/* Text Line Height */
+
 .text-relaxed {
   line-height: var(--line-height-relaxed);
 }
 
-/* Section Background */
+
 .section-bg-gradient {
   background: linear-gradient(to bottom right, var(--primary-50), white);
 }
@@ -221,7 +221,7 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   transform: translate(-5rem, 5rem);
 }
 
-/* Card Styles */
+
 .card-rounded {
   border-radius: var(--border-radius-lg);
 }
@@ -249,7 +249,7 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   }
 }
 
-/* Pilares Section */
+
 .pilares-title-spacing {
   margin-bottom: calc(var(--spacing-xl) * 1.25);
 }
@@ -264,7 +264,7 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   margin-bottom: var(--spacing-md);
 }
 
-/* Team Section */
+
 .team-section-bg {
   background: linear-gradient(to bottom right, var(--primary-50), white, var(--primary-50));
 }
@@ -327,40 +327,40 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
 }
 
 
-/* Container Padding */
+
 .container-padding {
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
 
-/* Content Max Widths */
+
 .content-max-width {
-  max-width: 56rem; /* ~896px */
+  max-width: 56rem;
 }
 
 .content-max-width-lg {
-  max-width: 48rem; /* ~768px */
+  max-width: 48rem;
 }
 
 .content-max-width-xl {
-  max-width: 80rem; /* ~1280px */
+  max-width: 80rem;
 }
 
 .content-max-width-2xl {
-  max-width: 96rem; /* ~1536px */
+  max-width: 96rem;
 }
 
-/* Pilar Accent Bar */
+
 .pilar-accent-bar {
-  height: 0.125rem; /* 2px */
+  height: 0.125rem;
 }
 
-/* Team Image Container */
+
 .team-image-container {
-  height: 16rem; /* 256px */
+  height: 16rem;
 }
 
-/* Color Classes */
+
 .text-primary-600 {
   color: var(--primary-600);
 }
@@ -385,7 +385,7 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   background-color: var(--primary-600);
 }
 
-/* Gray Colors - using standard CSS colors */
+
 .text-gray-700 {
   color: #374151;
 }

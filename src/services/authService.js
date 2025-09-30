@@ -42,7 +42,7 @@ const authService = {
     try {
       await this.getProfile();
       return true;
-    } catch (error) {
+    } catch {
       return false;
     }
   }

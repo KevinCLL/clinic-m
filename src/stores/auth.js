@@ -46,7 +46,7 @@ export const useAuthStore = defineStore('auth', {
         const isValid = await authService.checkAuth()
         if (!isValid) this.logout()
         return isValid
-      } catch (error) {
+      } catch {
         this.logout()
         return false
       }

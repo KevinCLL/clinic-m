@@ -184,7 +184,7 @@ const guardarCambios = async () => {
 
 
 
-    const response = await clinicInfoService.updateSection(seccion.value, sectionData);
+    await clinicInfoService.updateSection(seccion.value, sectionData);
 
 
 

@@ -46,12 +46,6 @@ const colorClasses = computed(() => {
   return 'bg-gradient-to-br from-secondary-50 to-white';
 });
 
-const bgColorClass = computed(() => {
-  if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {
-    return 'bg-primary-50';
-  }
-  return 'bg-secondary-50';
-});
 
 const titleColorClass = computed(() => {
   if (props.colorTheme === 'primary' || props.colorTheme === 'teal') {

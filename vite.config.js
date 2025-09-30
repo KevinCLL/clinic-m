@@ -11,10 +11,10 @@ export default defineConfig(({ mode }) => {
   return {
     base: "/",
     plugins: [
-      vueDevTools(), 
-      tailwindcss(), 
+      vueDevTools(),
+      tailwindcss(),
       vue(),
-      // Plugin de optimización de imágenes - solo en build
+
       !isDev && viteImagemin({
         gifsicle: {
           optimizationLevel: 7,

@@ -195,10 +195,10 @@ defineOptions({
 </script>
 
 <style scoped>
-/* Import theme variables */
+
 @import '@/styles/theme.css';
 
-/* Typography Classes */
+
 
 
 
@@ -207,7 +207,7 @@ defineOptions({
   font-size: var(--font-size-xl);
 }
 
-/* Specialty Colors */
+
 .specialty-card-title[data-specialty="psiquiatria"] {
   background-color: var(--specialty-psiquiatria);
 }
@@ -250,32 +250,32 @@ defineOptions({
   opacity: 0.8;
 }
 
-/* Specialty shadow colors using theme variables */
+
 .hover\:shadow-specialty-psiquiatria:hover {
-  box-shadow: 0 10px 20px -5px rgba(49, 112, 90, 0.4); /* #31705a */
+  box-shadow: 0 10px 20px -5px rgba(49, 112, 90, 0.4);
 }
 
 .hover\:shadow-specialty-psicologia-clinica:hover {
-  box-shadow: 0 10px 20px -5px rgba(139, 191, 172, 0.4); /* #8bbfac */
+  box-shadow: 0 10px 20px -5px rgba(139, 191, 172, 0.4);
 }
 
 .hover\:shadow-specialty-infancia-adolescencia:hover {
-  box-shadow: 0 10px 20px -5px rgba(97, 152, 133, 0.4); /* #619885 */
+  box-shadow: 0 10px 20px -5px rgba(97, 152, 133, 0.4);
 }
 
 .hover\:shadow-specialty-terapia-emdr:hover {
-  box-shadow: 0 10px 20px -5px rgba(0, 130, 122, 0.4); /* #00827a */
+  box-shadow: 0 10px 20px -5px rgba(0, 130, 122, 0.4);
 }
 
 .hover\:shadow-specialty-mindfulness:hover {
-  box-shadow: 0 10px 20px -5px rgba(155, 196, 194, 0.4); /* #9bc4c2 */
+  box-shadow: 0 10px 20px -5px rgba(155, 196, 194, 0.4);
 }
 
 .hover\:shadow-specialty-perinatal:hover {
-  box-shadow: 0 10px 20px -5px rgba(78, 168, 163, 0.4); /* #4ea8a3 */
+  box-shadow: 0 10px 20px -5px rgba(78, 168, 163, 0.4);
 }
 
-/* Spacing Classes */
+
 
 .p-spacing-sm {
   padding: var(--spacing-sm);
@@ -327,7 +327,7 @@ defineOptions({
   margin-top: var(--spacing-sm);
 }
 
-/* Color Classes */
+
 .bg-primary-50 {
   background-color: var(--primary-50);
 }
@@ -392,7 +392,7 @@ defineOptions({
   --tw-gradient-stops: var(--tw-gradient-from), var(--primary-200), var(--tw-gradient-to);
 }
 
-/* Shadow Classes */
+
 .shadow-soft {
   box-shadow: var(--shadow-md);
 }
@@ -402,7 +402,7 @@ defineOptions({
   box-shadow: 0 10px 20px -5px rgba(0, 173, 160, 0.3);
 }
 
-/* Button Classes */
+
 .btn-primary {
   padding: var(--spacing-sm) var(--spacing-lg);
   background-color: var(--primary-600);
@@ -448,7 +448,7 @@ defineOptions({
   box-shadow: 0 10px 20px -5px rgba(244, 114, 182, 0.3);
 }
 
-/* Service and Specialty Card Specific Styles */
+
 .service-card,
 .specialty-card {
   transition: all var(--transition-normal);

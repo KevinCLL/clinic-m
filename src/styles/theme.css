@@ -1,11 +1,11 @@
-/* Sistema de Theming Centralizado */
+
 :root {
   /* =================================
      COLORES
      ================================= */
   
-  /* Paleta de colores base */
-  /* Teal/Verde */
+  
+  
   --teal-50: #e6f7f5;
   --teal-100: #CCF0EC;
   --teal-200: #9FE7E0;
@@ -17,7 +17,7 @@
   --teal-800: #01534b;
   --teal-900: #01534b;
   
-  /* Purple/Morado */
+  
   --purple-50: #F5F0FA;
   --purple-100: #E9DFEE;
   --purple-200: #D4C4DE;
@@ -29,7 +29,7 @@
   --purple-800: #523D86;
   --purple-900: #402F75;
   
-  /* Colores del tema (fácilmente intercambiables) */
+  
   --primary-50: var(--teal-50);
   --primary-100: var(--teal-100);
   --primary-200: var(--teal-200);
@@ -52,44 +52,44 @@
   --secondary-800: var(--purple-800);
   --secondary-900: var(--purple-900);
   
-  /* Forest Core Colors - Colores de especialidades */
-  --specialty-psiquiatria: #31705a;        /* Verde oscuro */
-  --specialty-psicologia-clinica: #84ab9d; /* Verde claro */
-  --specialty-infancia-adolescencia: #619885; /* Verde medio */
-  --specialty-emdr: #00827a;               /* Verde azulado */
-  --specialty-mindfulness: #83b9b6;        /* Verde agua */
-  --specialty-perinatal: #4ea8a3;          /* Verde turquesa */
+  
+  --specialty-psiquiatria: #31705a;        
+  --specialty-psicologia-clinica: #84ab9d; 
+  --specialty-infancia-adolescencia: #619885; 
+  --specialty-emdr: #00827a;               
+  --specialty-mindfulness: #83b9b6;        
+  --specialty-perinatal: #4ea8a3;          
   
   /* =================================
      TIPOGRAFÍA
      ================================= */
   
-  /* Familia de fuentes */
+  
   --font-family-base: 'Faculty Glyphic', sans-serif;
   --font-family-heading: 'Overlock SC', serif;
   --font-family-mono: 'Courier New', monospace;
   
-  /* Tamaños de fuente base */
+  
   --font-size-base: 16px;
   
-  /* Escala de tamaños de fuente */
-  --font-size-xs: calc(var(--font-size-base) * 0.75);    /* 12px */
-  --font-size-sm: calc(var(--font-size-base) * 0.875);   /* 14px */
-  --font-size-md: var(--font-size-base);                 /* 16px */
-  --font-size-lg: calc(var(--font-size-base) * 1.125);   /* 18px */
-  --font-size-xl: calc(var(--font-size-base) * 1.25);    /* 20px */
-  --font-size-2xl: calc(var(--font-size-base) * 1.5);    /* 24px */
-  --font-size-3xl: calc(var(--font-size-base) * 1.875);  /* 30px */
-  --font-size-4xl: calc(var(--font-size-base) * 2.25);   /* 36px */
-  --font-size-5xl: calc(var(--font-size-base) * 3);      /* 48px */
   
-  /* Pesos de fuente */
+  --font-size-xs: calc(var(--font-size-base) * 0.75);    
+  --font-size-sm: calc(var(--font-size-base) * 0.875);   
+  --font-size-md: var(--font-size-base);                 
+  --font-size-lg: calc(var(--font-size-base) * 1.125);   
+  --font-size-xl: calc(var(--font-size-base) * 1.25);    
+  --font-size-2xl: calc(var(--font-size-base) * 1.5);    
+  --font-size-3xl: calc(var(--font-size-base) * 1.875);  
+  --font-size-4xl: calc(var(--font-size-base) * 2.25);   
+  --font-size-5xl: calc(var(--font-size-base) * 3);      
+  
+  
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   
-  /* Altura de línea */
+  
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
@@ -98,27 +98,27 @@
      ESPACIADO
      ================================= */
   
-  /* Escala de espaciado */
-  --spacing-xs: 0.25rem;  /* 4px */
-  --spacing-sm: 0.5rem;   /* 8px */
-  --spacing-md: 1rem;     /* 16px */
-  --spacing-lg: 1.5rem;   /* 24px */
-  --spacing-xl: 2rem;     /* 32px */
-  --spacing-2xl: 3rem;    /* 48px */
-  --spacing-3xl: 4rem;    /* 64px */
+  
+  --spacing-xs: 0.25rem;  
+  --spacing-sm: 0.5rem;   
+  --spacing-md: 1rem;     
+  --spacing-lg: 1.5rem;   
+  --spacing-xl: 2rem;     
+  --spacing-2xl: 3rem;    
+  --spacing-3xl: 4rem;    
   
   /* =================================
      BORDES Y SOMBRAS
      ================================= */
   
-  /* Radio de borde */
+  
   --border-radius-sm: 0.25rem;
   --border-radius-md: 0.5rem;
   --border-radius-lg: 1rem;
   --border-radius-xl: 1.5rem;
   --border-radius-full: 9999px;
   
-  /* Sombras */
+  
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
@@ -137,14 +137,14 @@
    CLASES DE UTILIDAD GLOBALES
    ================================= */
 
-/* Aplicar la fuente base globalmente */
+
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
 }
 
-/* Headings */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
@@ -158,7 +158,7 @@ h4 { font-size: var(--font-size-2xl); }
 h5 { font-size: var(--font-size-xl); }
 h6 { font-size: var(--font-size-lg); }
 
-/* Clases de utilidad para tamaños de texto */
+
 .text-xs { font-size: var(--font-size-xs); }
 .text-sm { font-size: var(--font-size-sm); }
 .text-base { font-size: var(--font-size-md); }
@@ -169,7 +169,7 @@ h6 { font-size: var(--font-size-lg); }
 .text-4xl { font-size: var(--font-size-4xl); }
 .text-5xl { font-size: var(--font-size-5xl); }
 
-/* Tema responsive para móviles */
+
 @media (max-width: 768px) {
   :root {
     --font-size-base: 14px;

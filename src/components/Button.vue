@@ -26,7 +26,7 @@ const props = defineProps({
   }
 });
 
-const emits = defineEmits(['click']);
+defineEmits(['click']);
 
 const isLink = computed(() => typeof props.to === 'string' && props.to.includes('http'));
 const isRouterLink = computed(() => props.to && !isLink.value);

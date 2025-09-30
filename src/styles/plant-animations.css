@@ -1,5 +1,5 @@
-/* Wind-like animations for plant branches */
-/* Gentle breeze effects - subtle movement like plants swaying in wind */
+
+
 
 @keyframes gentle-breeze {
   0%, 100% {
@@ -55,7 +55,7 @@
   }
 }
 
-/* Animation classes */
+
 .animate-gentle-breeze {
   animation: gentle-breeze 8s ease-in-out infinite;
 }
@@ -80,7 +80,7 @@
   animation-delay: 2s;
 }
 
-/* Variants for different wind intensities */
+
 @keyframes soft-wind {
   0%, 100% {
     transform: translate(0, 0) rotate(0deg);

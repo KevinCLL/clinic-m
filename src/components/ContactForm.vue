@@ -199,7 +199,7 @@ defineProps({
 });
 
 
-const emit = defineEmits(['form-submitted']);
+defineEmits(['form-submitted']);
 
 const showModal = ref(false);
 const contactForm = ref(null);
@@ -212,11 +212,11 @@ const form = ref({
   privacidad: false
 });
 
-const handleSubmit = (event) => {
-  // Para FormSubmit, necesitamos permitir el envío normal del formulario
-  // pero también manejar la confirmación visual
+const handleSubmit = () => {
 
-  // Pequeño delay para mostrar modal después del envío
+
+
+
   setTimeout(() => {
     showModal.value = true;
     resetForm();
@@ -239,17 +239,17 @@ const closeModal = () => {
 
 const showModalWithAutoClose = () => {
   showModal.value = true;
-  // Cerrar automáticamente después de 2 segundos
+
   setTimeout(() => {
     showModal.value = false;
   }, 2500);
 };
 
-// Detectar si volvemos de FormSubmit con hash #gracias
+
 onMounted(() => {
   if (window.location.hash === '#gracias') {
     showModalWithAutoClose();
-    // Limpiar el hash de la URL
+
     window.history.replaceState(null, null, window.location.pathname);
   }
 });

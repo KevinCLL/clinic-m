@@ -11,12 +11,12 @@
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
-      
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-            <div 
-              v-for="activity in activities" 
+            <div
+              v-for="activity in activities"
               :key="activity.id"
               class="bg-white card-rounded shadow-soft overflow-hidden transition-all duration-500 ease-in-out hover:shadow-secondary-lg hover:-translate-y-1 group"
             >
@@ -139,10 +139,10 @@ defineOptions({
 </script>
 
 <style scoped>
-/* Import theme CSS */
+
 @import '@/styles/theme.css';
 
-/* Custom utility classes using theme variables */
+
 
 
 
@@ -184,7 +184,7 @@ defineOptions({
   margin-bottom: 1rem;
 }
 
-/* Color classes using theme variables */
+
 .text-secondary-500 {
   color: var(--secondary-500);
 }

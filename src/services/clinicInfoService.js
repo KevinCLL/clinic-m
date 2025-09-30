@@ -67,7 +67,6 @@ const clinicInfoService = {
 
     try {
 
-      const token = localStorage.getItem('token');
 
 
       const response = await api.put(`/clinic-info/${sectionId}`, sectionData);
