@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
           <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
@@ -87,26 +87,15 @@
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">CONOCE A NUESTRO EQUIPO</h2>
 
         <div class="max-w-6xl mx-auto">
-          <!-- Primera fila: 3 personas -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 justify-items-center">
+          <div class="flex flex-wrap justify-center gap-8">
             <TeamCard
-              v-for="member in teamMembers.slice(0, 3)"
+              v-for="member in teamMembers"
               :key="member.id"
               :name="member.name"
               :role="member.role"
               :specialties="member.specialties"
               :image="member.image"
-            />
-          </div>
-          <!-- Segunda fila: 2 personas -->
-          <div class="flex justify-center gap-8">
-            <TeamCard
-              v-for="member in teamMembers.slice(3, 6)"
-              :key="member.id"
-              :name="member.name"
-              :role="member.role"
-              :specialties="member.specialties"
-              :image="member.image"
+              class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm"
             />
           </div>
         </div>

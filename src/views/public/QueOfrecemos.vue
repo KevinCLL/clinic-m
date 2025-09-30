@@ -16,7 +16,7 @@
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTROS SERVICIOS</h2>
 
         <div class="max-w-5xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div
               v-for="card in serviceCards"
               :key="card.title"
@@ -32,7 +32,7 @@
             </div>
 
 
-            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-3">
+            <div class="service-card bg-white rounded-xl shadow-soft p-6 hover:shadow-secondary-lg transition-all duration-300 transform hover:-translate-y-1 lg:col-span-3">
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 min-w-[50px] bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center mr-4">
                   <i class="fas fa-heart text-icon"></i>
@@ -99,9 +99,9 @@
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">ÁREAS DE INTERVENCIÓN</h2>
 
         <div class="max-w-6xl mx-auto">
-          <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex flex-col lg:flex-row gap-10">
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+            <div class="lg:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA PARA ADULTOS</h3>
               </div>
@@ -126,7 +126,7 @@
             </div>
 
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+            <div class="lg:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA INFANTOJUVENIL</h3>
               </div>
@@ -159,7 +159,7 @@
             </div>
 
 
-            <div class="md:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
+            <div class="lg:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
                 <h3 class="text-xl font-bold text-center">ÁREA PERINATAL</h3>
               </div>

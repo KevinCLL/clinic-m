@@ -65,7 +65,7 @@
               </div>
 
 
-              <div class="bg-white rounded-xl shadow-soft p-6">
+              <div v-if="servicioActual.preguntas && servicioActual.preguntas.length > 0" class="bg-white rounded-xl shadow-soft p-6">
                 <h3 class="text-xl font-bold text-primary-700 mb-4">Preguntas frecuentes</h3>
 
                 <div class="space-y-4">
@@ -111,7 +111,7 @@
             :key="specialty.id"
             :to="isCurrentSpecialty(specialty.id) ? '' : { name: 'servicio-detalle', params: { id: specialty.id } }"
             @click.prevent="!isCurrentSpecialty(specialty.id) && navigateToSpecialty(specialty.id)"
-            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300 specialty-button text-center"
+            class="px-6 py-3 font-semibold rounded-lg shadow-md transition-all duration-300 specialty-button text-center flex items-center justify-center min-h-[4rem]"
             :class="{
               'text-white transform hover:scale-105 hover:shadow-lg cursor-pointer': !isCurrentSpecialty(specialty.id),
               'text-gray-500 bg-gray-200 opacity-60 pointer-events-none': isCurrentSpecialty(specialty.id)
@@ -216,14 +216,8 @@ const servicioActual = computed(() => {
 
 <style scoped>
 
-@media (max-width: 767px) {
-  .specialty-button {
-    min-height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.2;
-  }
+.specialty-button {
+  line-height: 1.2;
 }
 
 .text-primary-500 {
