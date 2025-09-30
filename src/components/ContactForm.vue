@@ -92,7 +92,7 @@
     <div class="bg-white p-6 lg:p-8 lg:w-2/3">
       <h2 class="text-xl font-bold text-primary-800 mb-6">{{ title || 'Envíanos un mensaje' }}</h2>
 
-      <form @submit.prevent="submitForm" class="space-y-4">
+      <form ref="contactForm" action="https://formsubmit.co/info@codasaludmental.es" method="POST" @submit="handleSubmit" class="space-y-4">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -100,6 +100,7 @@
             <input
               type="text"
               id="nombre"
+              name="nombre"
               v-model="form.nombre"
               class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
             >
@@ -109,6 +110,7 @@
             <input
               type="text"
               id="apellidos"
+              name="apellidos"
               v-model="form.apellidos"
               class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
             >
@@ -121,6 +123,7 @@
           <input
             type="email"
             id="email"
+            name="email"
             v-model="form.email"
             required
             class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
@@ -132,6 +135,7 @@
           <label for="mensaje" class="block text-sm text-gray-600 mb-1">Mensaje</label>
           <textarea
             id="mensaje"
+            name="mensaje"
             v-model="form.mensaje"
             :rows="messageRows || 8"
             class="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-400 transition-all outline-none"
@@ -139,6 +143,11 @@
           ></textarea>
         </div>
 
+        <!-- FormSubmit hidden fields -->
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de CODA">
+        <input type="hidden" name="_next" value="https://codasaludmental.es/#gracias">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
         <button
           type="submit"
@@ -149,11 +158,30 @@
         </button>
       </form>
     </div>
+
+    <!-- Modal de confirmación -->
+    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="closeModal">
+      <div class="bg-white rounded-xl p-8 mx-4 max-w-md w-full shadow-2xl" @click.stop>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-check text-green-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">¡Mensaje enviado!</h3>
+          <p class="text-gray-600 mb-6">Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>
+          <button
+            @click="closeModal"
+            class="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+          >
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits } from 'vue';
+import { ref, defineProps, defineEmits, onMounted } from 'vue';
 import { contactInfo } from '@/data/contactInfo.js';
 
 
@@ -179,6 +207,8 @@ defineProps({
 
 const emit = defineEmits(['form-submitted']);
 
+const showModal = ref(false);
+const contactForm = ref(null);
 
 const form = ref({
   nombre: '',
@@ -188,12 +218,18 @@ const form = ref({
   privacidad: false
 });
 
+const handleSubmit = (event) => {
+  // Para FormSubmit, necesitamos permitir el envío normal del formulario
+  // pero también manejar la confirmación visual
 
-const submitForm = () => {
+  // Pequeño delay para mostrar modal después del envío
+  setTimeout(() => {
+    showModal.value = true;
+    resetForm();
+  }, 100);
+};
 
-  emit('form-submitted', {...form.value});
-
-
+const resetForm = () => {
   form.value = {
     nombre: '',
     apellidos: '',
@@ -201,10 +237,20 @@ const submitForm = () => {
     mensaje: '',
     privacidad: false
   };
-
-
-  alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
 };
+
+const closeModal = () => {
+  showModal.value = false;
+};
+
+// Detectar si volvemos de FormSubmit con hash #gracias
+onMounted(() => {
+  if (window.location.hash === '#gracias') {
+    showModal.value = true;
+    // Limpiar el hash de la URL
+    window.history.replaceState(null, null, window.location.pathname);
+  }
+});
 </script>
 
 <style scoped>
