@@ -160,20 +160,14 @@
     </div>
 
     <!-- Modal de confirmación -->
-    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="closeModal">
+    <div v-if="showModal" class="fixed inset-0 flex items-center justify-center z-50" style="background-color: #5d6b6573;" @click="closeModal">
       <div class="bg-white rounded-xl p-8 mx-4 max-w-md w-full shadow-2xl" @click.stop>
         <div class="text-center">
           <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
             <i class="fas fa-check text-green-600 text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-800 mb-2">¡Mensaje enviado!</h3>
-          <p class="text-gray-600 mb-6">Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>
-          <button
-            @click="closeModal"
-            class="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
-          >
-            Cerrar
-          </button>
+          <p class="text-gray-600">Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>
         </div>
       </div>
     </div>
@@ -243,10 +237,18 @@ const closeModal = () => {
   showModal.value = false;
 };
 
+const showModalWithAutoClose = () => {
+  showModal.value = true;
+  // Cerrar automáticamente después de 5 segundos
+  setTimeout(() => {
+    showModal.value = false;
+  }, 5000);
+};
+
 // Detectar si volvemos de FormSubmit con hash #gracias
 onMounted(() => {
   if (window.location.hash === '#gracias') {
-    showModal.value = true;
+    showModalWithAutoClose();
     // Limpiar el hash de la URL
     window.history.replaceState(null, null, window.location.pathname);
   }
