@@ -1,11 +1,15 @@
 import { getTeamMembersByIds } from './team.js';
 
+const getImageUrl = (name) => {
+  return new URL(`../assets/images/${name}`, import.meta.url).href;
+};
+
 export const activities = [
   {
     id: 'yoga',
     title: 'YOGA',
     category: 'corporal',
-    image: '/src/assets/images/yoga.jpg',
+    image: getImageUrl('yoga.jpg'),
     shortDescription: 'Una herramienta complementaria que combina posturas, respiración y meditación para trabajar conjuntamente el cuerpo, la mente y las emociones. Ofrecemos diferentes modalidades adaptadas a cada persona.',
     fullDescription: 'Herramienta complementaria que combina posturas corporales, técnicas de respiración, relajación y meditación.',
     subtitle: 'YOGA',
@@ -27,7 +31,7 @@ export const activities = [
     id: 'yoga-trauma',
     title: 'YOGA SENSIBLE AL TRAUMA',
     category: 'terapeutico',
-    image: '/src/assets/images/yoga_sensible.jpg',
+    image: getImageUrl('yoga_sensible.jpg'),
     shortDescription: 'Un espacio seguro y respetuoso donde lo central es la posibilidad de elegir, escuchar y sentir el propio cuerpo en el momento presente.',
     fullDescription: 'Un espacio terapéutico y compasivo donde el yoga se convierte en una herramienta de acompañamiento.',
     subtitle: 'YOGA SENSIBLE AL TRAUMA',
@@ -47,7 +51,7 @@ export const activities = [
     id: 'mindfulness',
     title: 'GRUPOS DE MINDFULNESS',
     category: 'bienestar',
-    image: '/src/assets/images/grupos_mindfulness.jpg',
+    image: getImageUrl('grupos_mindfulness.jpg'),
     shortDescription: 'Entrenar la capacidad de estar presentes con apertura y amabilidad. El acompañamiento grupal potencia los beneficios y crea un espacio de aprendizaje compartido.',
     fullDescription: 'Práctica que entrena la capacidad de estar presentes con apertura, curiosidad y amabilidad.',
     subtitle: 'GRUPOS DE MINDFULNESS',
@@ -70,7 +74,7 @@ export const activities = [
     id: 'retiros',
     title: 'RETIROS DE YOGA Y MEDITACIÓN',
     category: 'intensivos',
-    image: '/src/assets/images/retiros.jpg',
+    image: getImageUrl('retiros.jpg'),
     shortDescription: 'Momentos de autocuidado consciente en entornos naturales. Una oportunidad para aprender recursos que podrás integrar en tu vida diaria.',
     fullDescription: 'Momentos diseñados para cuidar la salud mental, descansar la mente y renovar el cuerpo.',
     subtitle: 'RETIROS DE YOGA Y MEDITACIÓN',
