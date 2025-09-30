@@ -24,7 +24,7 @@
         
         <div class="max-w-4xl mx-auto mb-8">
           <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
-            <h3 class="text-xl font-bold text-center text-black uppercase mb-4">UNA MIRADA INTEGRAL QUE PONE EN EL CENTRO A LA PERSONA</h3>
+            <h3 class="text-xl font-bold text-center text-primary-600 uppercase mb-4" style="font-family: 'Montserrat', sans-serif;">UNA MIRADA INTEGRAL QUE PONE EN EL CENTRO A LA PERSONA</h3>
             <p class="text-gray-700 text-justify">
               Atendemos a las personas desde una mirada integral, considerando a cada una en todas sus dimensiones: biológica, psicológica, social, relacional y espiritual. Atender la salud mental desde una perspectiva integral significa tener en cuenta no solo los síntomas o diagnósticos, sino también el contexto de vida, la historia personal, las relaciones, los recursos internos y externos de cada persona y su forma única de experimentar el malestar o el bienestar.
             </p>
@@ -98,8 +98,8 @@
               :image="member.image"
             />
           </div>
-          <!-- Segunda fila: 3 personas -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <!-- Segunda fila: 2 personas -->
+          <div class="flex justify-center gap-8">
             <TeamCard
               v-for="member in teamMembers.slice(3, 6)"
               :key="member.id"

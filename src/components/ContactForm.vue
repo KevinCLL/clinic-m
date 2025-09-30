@@ -66,10 +66,14 @@
         </div>
 
         <h3 class="text-lg font-bold mb-2">Horario</h3>
-        <div class="mb-6 space-y-1">
-          <div class="flex justify-between text-sm">
-            <span>{{ contactInfo.schedule.weekdays }}</span>
-            <span>{{ contactInfo.schedule.hours }}</span>
+        <div class="mb-6 space-y-1 text-sm">
+          <div class="flex justify-between">
+            <span>Lunes a Jueves</span>
+            <span>9:00 - 20:00</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Viernes</span>
+            <span>9:00 - 14:00</span>
           </div>
         </div>
 

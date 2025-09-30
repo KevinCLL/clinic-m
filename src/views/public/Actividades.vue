@@ -20,7 +20,7 @@
               :key="activity.id"
               class="bg-white card-rounded shadow-soft overflow-hidden transition-all duration-500 ease-in-out hover:shadow-secondary-lg hover:-translate-y-1 group"
             >
-              <router-link :to="`/actividades/${activity.id}`" class="h-48 overflow-hidden block">
+              <router-link :to="`/actividades/${activity.id}`" class="h-64 overflow-hidden block">
                 <img :src="activity.image" :alt="activity.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
               <div class="p-6">

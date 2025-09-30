@@ -11,11 +11,6 @@ export const teamMembers = [
         link: '/servicios/psiquiatria'
       },
       {
-        id: 'psicologia-clinica',
-        name: 'Psicología Clínica',
-        link: '/servicios/psicologia-clinica'
-      },
-      {
         id: 'terapia-emdr',
         name: 'Terapia EMDR',
         link: '/servicios/terapia-emdr'
@@ -88,24 +83,6 @@ export const teamMembers = [
         id: 'terapia-emdr',
         name: 'Terapia EMDR',
         link: '/servicios/terapia-emdr'
-      }
-    ]
-  },
-  {
-    id: 'amparo-perez',
-    name: 'Amparo Pérez',
-    role: 'Psicóloga clínica',
-    image: '/unknown.jpg',
-    specialties: [
-      {
-        id: 'psicologia-clinica',
-        name: 'Psicología Clínica',
-        link: '/servicios/psicologia-clinica'
-      },
-      {
-        id: 'mindfulness',
-        name: 'Mindfulness',
-        link: '/servicios/mindfulness'
       }
     ]
   },

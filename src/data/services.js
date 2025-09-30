@@ -119,7 +119,7 @@ export const services = [
       '•    Compatible con otros enfoques terapéuticos.',
       '•    Enfoque centrado en la seguridad, el ritmo y la regulación emocional de la persona.'
     ],
-    professionalIds: ['marta-sanchez', 'elvira-garcia', 'irene-saiz'],
+    professionalIds: ['elvira-garcia', 'irene-saiz'],
     faqs: [
       {
         pregunta: '¿Qué tipo de problemas se pueden tratar con EMDR?',
@@ -155,7 +155,7 @@ export const services = [
       'Modalidades individuales o grupales.',
       'Seguimiento para integrar la práctica a largo plazo.'
     ],
-    professionalIds: ['marta-sanchez', 'amparo-perez'],
+    professionalIds: ['marta-sanchez'],
     faqs: [
       {
         pregunta: '¿Qué es exactamente el mindfulness y para qué sirve?',

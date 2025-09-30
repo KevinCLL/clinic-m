@@ -23,7 +23,7 @@
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-7xl mx-auto">
           <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
-            <h3 class="text-xl font-bold text-center text-black uppercase mb-4">SOBRE NUESTRO NOMBRE</h3>
+            <h3 class="text-xl font-bold text-center text-primary-600 uppercase mb-4" style="font-family: 'Montserrat', sans-serif;">SOBRE NUESTRO NOMBRE</h3>
             <p class="text-gray-700 text-justify mb-4">
               Elegimos el nombre CODA inspirándonos en el lenguaje musical. En una partitura, la coda es la sección final de una obra: un pasaje que no se limita a concluir, sino que <strong>aporta un cierre con sentido</strong>, reuniendo y transformando los motivos principales de la composición.
             </p>
