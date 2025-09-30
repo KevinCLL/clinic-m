@@ -13,7 +13,7 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTROS SERVICIOS</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">NUESTROS SERVICIOS</h2>
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -26,9 +26,9 @@
                 <div class="w-12 h-12 min-w-[50px] bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4">
                   <i :class="`fas ${card.icon} text-icon`"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-primary-700">{{ card.title }}</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-primary-700">{{ card.title }}</h3>
               </div>
-              <p class="text-gray-600">{{ card.description }}</p>
+              <p class="text-gray-600 text-base md:text-lg">{{ card.description }}</p>
             </div>
 
 
@@ -37,9 +37,9 @@
                 <div class="w-12 h-12 min-w-[50px] bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center mr-4">
                   <i class="fas fa-heart text-icon"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Actividades de promoción de la salud mental</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Actividades de promoción de la salud mental</h3>
               </div>
-              <p class="text-gray-600 mb-4">
+              <p class="text-gray-600 mb-4 text-base md:text-lg">
                 Complementamos nuestros servicios terapéuticos con actividades que promueven el bienestar integral.
               </p>
               <router-link to="/actividades" class="btn-secondary inline-block">
@@ -57,7 +57,7 @@
       <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTRAS ESPECIALIDADES</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">NUESTRAS ESPECIALIDADES</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -71,10 +71,10 @@
                 class="specialty-card-title text-white py-2 px-4 rounded-lg mb-6 cursor-pointer transition-opacity hover:opacity-90"
                 :data-specialty="service.id"
               >
-                <h3 class="text-xl font-bold text-center">{{ specialties.find(s => s.id === service.id)?.name || service.title.toUpperCase() }}</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-center">{{ specialties.find(s => s.id === service.id)?.name || service.title.toUpperCase() }}</h3>
               </router-link>
               <div class="p-6 flex-grow flex flex-col">
-                <p class="text-gray-600 mb-4 flex-grow">{{ service.description }}</p>
+                <p class="text-gray-600 mb-4 flex-grow text-base md:text-lg">{{ service.description }}</p>
                 <router-link
                   :to="`/servicios/${service.id}`"
                   class="specialty-link font-medium inline-flex items-center transition-colors mt-auto"
@@ -96,14 +96,14 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">ÁREAS DE INTERVENCIÓN</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">ÁREAS DE INTERVENCIÓN</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col lg:flex-row gap-10">
 
             <div class="lg:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
-                <h3 class="text-xl font-bold text-center">ÁREA PARA ADULTOS</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-center">ÁREA PARA ADULTOS</h3>
               </div>
               <ul class="space-y-2 text-gray-700 list-disc pl-5">
                 <li><strong>Síntomas ansioso-depresivos y trastornos adaptativos:</strong> reacciones emocionales a situaciones estresantes o cambios vitales significativos</li>
@@ -128,7 +128,7 @@
 
             <div class="lg:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
-                <h3 class="text-xl font-bold text-center">ÁREA INFANTOJUVENIL</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-center">ÁREA INFANTOJUVENIL</h3>
               </div>
               <ul class="space-y-3 text-gray-700 list-disc pl-5">
                 <li><strong>Problemas emocionales:</strong>
@@ -161,7 +161,7 @@
 
             <div class="lg:w-1/3 bg-white p-6 rounded-xl shadow-soft transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1">
               <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-6">
-                <h3 class="text-xl font-bold text-center">ÁREA PERINATAL</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-center">ÁREA PERINATAL</h3>
               </div>
               <ul class="space-y-2 text-gray-700 list-disc pl-5">
                 <li><strong>Baby blues:</strong> tristeza, irritabilidad y cambios emocionales leves y transitorios tras el parto</li>

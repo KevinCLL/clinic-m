@@ -6,7 +6,7 @@
 
     <div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
       <div class="section-content max-w-full md:max-w-4xl lg:max-w-3xl mx-auto bg-white/40 backdrop-blur-sm rounded-xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl">
-        <h2 v-if="title" class="section-title text-2xl md:text-3xl font-bold text-black text-center mb-6">{{ title }}</h2>
+        <h2 v-if="title" class="section-title text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center mb-8">{{ title }}</h2>
 
         <div class="section-body text-base md:text-lg leading-relaxed text-black flex flex-col gap-4">
           <slot></slot>

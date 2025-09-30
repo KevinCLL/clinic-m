@@ -24,8 +24,8 @@
                 <img :src="activity.image" :alt="activity.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               </router-link>
               <div class="p-6">
-                <h3 class="text-xl font-semibold text-secondary-700 mb-4">{{ activity.title }}</h3>
-                <p class="text-gray-600 text-base mb-4">{{ activity.shortDescription }}</p>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700 mb-4">{{ activity.title }}</h3>
+                <p class="text-gray-600 text-base md:text-lg mb-4">{{ activity.shortDescription }}</p>
                 <router-link :to="`/actividades/${activity.id}`" class="text-secondary-600 hover:text-secondary-500 font-medium-weight inline-flex items-center transition-colors">
                   Saber más <i class="fas fa-chevron-right icon-margin text-sm"></i>
                 </router-link>
@@ -39,13 +39,11 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-200 to-transparent"></div>
-      <div class="absolute -right-32 top-1/3 w-96 h-96 rounded-full border border-secondary-100 opacity-70"></div>
-      <div class="absolute -left-20 bottom-1/4 w-64 h-64 rounded-full border border-secondary-100 opacity-70"></div>
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-secondary-800 mb-12">Beneficios de nuestras actividades</h2>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-secondary-800 mb-12">Beneficios de nuestras actividades</h2>
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -55,7 +53,7 @@
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-brain icon-size"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Reducción del estrés</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Reducción del estrés</h3>
               </div>
               <p class="text-gray-600">Aprende técnicas efectivas para reducir los niveles de ansiedad y estrés en tu día a día.</p>
             </div>
@@ -66,7 +64,7 @@
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-heart icon-size"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Bienestar emocional</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Bienestar emocional</h3>
               </div>
               <p class="text-gray-600">Cultiva estados emocionales positivos y desarrolla una mayor estabilidad ante las dificultades.</p>
             </div>
@@ -77,7 +75,7 @@
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-users icon-size"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Conexión con otros</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Conexión con otros</h3>
               </div>
               <p class="text-gray-600">Forma parte de una comunidad que comparte intereses y objetivos similares respecto al bienestar personal.</p>
             </div>
@@ -88,7 +86,7 @@
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-lightbulb icon-size"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Autoconocimiento</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Autoconocimiento</h3>
               </div>
               <p class="text-gray-600">Explora aspectos de ti mismo/a que te permitirán tomar decisiones más alineadas con tus valores y necesidades.</p>
             </div>
@@ -99,7 +97,7 @@
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-balance-scale icon-size"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Equilibrio mente-cuerpo</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Equilibrio mente-cuerpo</h3>
               </div>
               <p class="text-gray-600">Integra la dimensión física y mental para un enfoque holístico de tu salud y bienestar.</p>
             </div>
@@ -110,7 +108,7 @@
                 <div class="icon-container bg-secondary-100 text-secondary-600">
                   <i class="fas fa-tools icon-size"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-secondary-700">Herramientas para la vida</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-secondary-700">Herramientas para la vida</h3>
               </div>
               <p class="text-gray-600">Adquiere recursos prácticos que podrás aplicar en tu día a día para gestionar situaciones difíciles.</p>
             </div>

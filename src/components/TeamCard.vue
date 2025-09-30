@@ -4,14 +4,14 @@
       <img :src="image" :alt="name" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
     </div>
     <div class="p-6">
-      <h3 class="text-xl font-bold text-primary-800 mb-1">{{ name }}</h3>
-      <p class="text-primary-600 font-medium mb-3">{{ role }}</p>
+      <h3 class="text-xl md:text-2xl font-bold text-primary-800 mb-2">{{ name }}</h3>
+      <p class="text-primary-600 font-medium mb-4 text-base md:text-lg">{{ role }}</p>
       <div v-if="specialties && specialties.length > 0" class="flex flex-wrap gap-2">
-        <router-link 
-          v-for="specialty in specialties" 
+        <router-link
+          v-for="specialty in specialties"
           :key="specialty.id"
           :to="specialty.link"
-          class="inline-block px-3 py-1 rounded-full text-xs font-medium specialty-badge transition-all hover:opacity-90"
+          class="inline-block px-3 py-1 rounded-full text-sm font-medium specialty-badge transition-all hover:opacity-90"
           :data-specialty="specialty.id"
         >
           {{ specialty.name }}

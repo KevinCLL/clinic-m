@@ -10,13 +10,13 @@
 
 
     <section class="facilities-section bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow" />
+      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow z-0" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTRAS INSTALACIONES</h2>
 
 
-        <div class="max-w-6xl mx-auto facility-item">
+        <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
@@ -35,8 +35,8 @@
 
         <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" />
 
-        <div class="max-w-6xl mx-auto facility-item relative">
-          <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
+        <div class="max-w-6xl mx-auto facility-item relative z-20">
+          <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia" class="facility-image">
@@ -53,7 +53,7 @@
 
 
 
-        <div class="max-w-6xl mx-auto facility-item">
+        <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
@@ -72,8 +72,8 @@
 
         <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" />
 
-        <div class="max-w-6xl mx-auto facility-item relative">
-          <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
+        <div class="max-w-6xl mx-auto facility-item relative z-20">
+          <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia grupal" class="facility-image">
@@ -89,7 +89,7 @@
         </div>
 
 
-        <div class="max-w-6xl mx-auto facility-item">
+        <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
@@ -108,8 +108,8 @@
 
         <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" />
 
-        <div class="max-w-6xl mx-auto facility-item relative">
-          <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
+        <div class="max-w-6xl mx-auto facility-item relative z-20">
+          <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
                 <img src="@/assets/images/placeholder.jpg" alt="Exterior" class="facility-image">

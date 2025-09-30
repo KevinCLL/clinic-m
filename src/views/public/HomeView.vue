@@ -23,14 +23,14 @@
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-7xl mx-auto">
           <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
-            <h3 class="text-xl font-bold text-center text-primary-600 uppercase mb-4" style="font-family: 'Montserrat', sans-serif;">SOBRE NUESTRO NOMBRE</h3>
-            <p class="text-gray-700 text-justify mb-4">
+            <h3 class="text-xl md:text-2xl font-bold text-center text-primary-600 uppercase mb-6" style="font-family: 'Montserrat', sans-serif;">SOBRE NUESTRO NOMBRE</h3>
+            <p class="text-gray-700 text-justify mb-4 text-base md:text-lg">
               Elegimos el nombre CODA inspirándonos en el lenguaje musical. En una partitura, la coda es la sección final de una obra: un pasaje que no se limita a concluir, sino que <strong>aporta un cierre con sentido</strong>, reuniendo y transformando los motivos principales de la composición.
             </p>
-            <p class="text-gray-700 text-justify mb-4">
+            <p class="text-gray-700 text-justify mb-4 text-base md:text-lg">
               Trasladado al ámbito de la salud mental, <strong>la CODA simboliza la posibilidad de dar forma y significado a la propia experiencia</strong>. En un proceso terapéutico, no se trata únicamente de "terminar algo", sino de poder recoger la propia historia y darle un nuevo significado que permita a la persona abrirse a una manera distinta de relacionarse consigo misma, con los demás y con su historia.
             </p>
-            <p class="text-gray-700 text-justify">
+            <p class="text-gray-700 text-justify text-base md:text-lg">
               Así, la coda simboliza el acompañamiento que ofrecemos, <strong>un espacio donde todo lo que se ha escuchado antes encuentra integración, armonía y dirección</strong>. Al igual que en la música, este cierre no es el fin, sino que permite abrir la puerta a una nueva cadencia vital, más armónica, consciente y plena.
             </p>
           </div>
@@ -46,8 +46,8 @@
       <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">NUESTROS SERVICIOS</h2>
-        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Descubre nuestro enfoque integral para acompañarte en tu proceso terapéutico</p>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">NUESTROS SERVICIOS</h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-base md:text-lg">Descubre nuestro enfoque integral para acompañarte en tu proceso terapéutico</p>
 
         <div class="flex flex-wrap justify-center gap-8 lg:gap-10">
 
@@ -59,9 +59,9 @@
             </div>
             <div class="p-6 border-t border-primary-50 flex flex-col flex-grow">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}">
-                <h3 class="text-xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psicoterapia</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psicoterapia</h3>
               </router-link>
-              <p class="text-base text-gray-700 mb-4 flex-grow">Intervención terapéutica adaptada a cada persona, con un enfoque integrador.</p>
+              <p class="text-base md:text-lg text-gray-700 mb-4 flex-grow">Intervención terapéutica adaptada a cada persona, con un enfoque integrador.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105 mt-auto" />
             </div>
           </div>
@@ -75,9 +75,9 @@
             </div>
             <div class="p-6 border-t border-primary-50 flex flex-col flex-grow">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}">
-                <h3 class="text-xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psiquiatría</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Psiquiatría</h3>
               </router-link>
-              <p class="text-base text-gray-700 mb-4 flex-grow">Evaluación, diagnóstico y tratamiento farmacológico de trastornos mentales.</p>
+              <p class="text-base md:text-lg text-gray-700 mb-4 flex-grow">Evaluación, diagnóstico y tratamiento farmacológico de trastornos mentales.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105 mt-auto" />
             </div>
           </div>
@@ -91,9 +91,9 @@
             </div>
             <div class="p-6 border-t border-primary-50 flex flex-col flex-grow">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'mindfulness' }}">
-                <h3 class="text-xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Mindfulness</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-primary-700 hover:text-primary-600 transition-colors mb-4">Mindfulness</h3>
               </router-link>
-              <p class="text-base text-gray-700 mb-4 flex-grow">Aprende técnicas de atención plena para reducir el estrés, mejorar la concentración y cultivar el bienestar emocional.</p>
+              <p class="text-base md:text-lg text-gray-700 mb-4 flex-grow">Aprende técnicas de atención plena para reducir el estrés, mejorar la concentración y cultivar el bienestar emocional.</p>
               <Button :to="{ name: 'servicio-detalle', params: { id: 'mindfulness' }}" text="Más información" variant="outline-teal" class="transform transition-all duration-300 hover:scale-105 mt-auto" />
             </div>
           </div>
@@ -111,8 +111,8 @@
       <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">TE ACOMPAÑAMOS EN TODAS LAS ETAPAS DE LA VIDA</h2>
-        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Nuestro equipo de especialistas te ofrece apoyo profesional adaptado a cada momento vital</p>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6">TE ACOMPAÑAMOS EN TODAS LAS ETAPAS DE LA VIDA</h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-base md:text-lg">Nuestro equipo de especialistas te ofrece apoyo profesional adaptado a cada momento vital</p>
 
         <!-- Versión móvil (hasta sm) -->
         <div class="flex flex-wrap justify-center gap-3 sm:hidden">

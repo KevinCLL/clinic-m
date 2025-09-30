@@ -20,12 +20,12 @@
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">PILARES DEL PROYECTO</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">PILARES DEL PROYECTO</h2>
 
         <div class="max-w-4xl mx-auto mb-8">
           <div class="bg-white rounded-xl shadow-soft overflow-hidden p-6">
-            <h3 class="text-xl font-bold text-center text-primary-600 uppercase mb-4" style="font-family: 'Montserrat', sans-serif;">UNA MIRADA INTEGRAL QUE PONE EN EL CENTRO A LA PERSONA</h3>
-            <p class="text-gray-700 text-justify">
+            <h3 class="text-xl md:text-2xl font-bold text-center text-primary-600 uppercase mb-6" style="font-family: 'Montserrat', sans-serif;">UNA MIRADA INTEGRAL QUE PONE EN EL CENTRO A LA PERSONA</h3>
+            <p class="text-gray-700 text-justify text-base md:text-lg">
               Atendemos a las personas desde una mirada integral, considerando a cada una en todas sus dimensiones: biológica, psicológica, social, relacional y espiritual. Atender la salud mental desde una perspectiva integral significa tener en cuenta no solo los síntomas o diagnósticos, sino también el contexto de vida, la historia personal, las relaciones, los recursos internos y externos de cada persona y su forma única de experimentar el malestar o el bienestar.
             </p>
           </div>
@@ -34,42 +34,42 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
           <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-            <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
-              <h3 class="text-lg font-bold text-center uppercase">VÍNCULO TERAPÉUTICO</h3>
+            <div class="bg-primary-600 text-white py-3 px-4 rounded-lg mb-4">
+              <h3 class="text-xl font-bold text-center uppercase">VÍNCULO TERAPÉUTICO</h3>
             </div>
             <div class="px-6 pb-6">
-              <p class="text-gray-700 text-base leading-relaxed mb-4 text-justify">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-4 text-justify">
                 Ponemos en el centro la atención a la persona, considerando que lo más importante es el <strong>vínculo</strong>, es decir, la <strong>relación de confianza, empatía y respeto</strong> mutuo que establecemos entre terapeuta y paciente.
               </p>
-              <p class="text-gray-700 text-base leading-relaxed text-justify">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
                 <strong>Acompañamos cada proceso desde el respeto, la empatía y la colaboración</strong>, concibiendo a la persona que tenemos delante como un todo, reconociendo su complejidad y unicidad y atendiendo a sus preferencias, prioridades y necesidades.
               </p>
             </div>
           </div>
 
           <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-            <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
-              <h3 class="text-lg font-bold text-center uppercase">EQUIPO</h3>
+            <div class="bg-primary-600 text-white py-3 px-4 rounded-lg mb-4">
+              <h3 class="text-xl font-bold text-center uppercase">EQUIPO</h3>
             </div>
             <div class="px-6 pb-6">
-              <p class="text-gray-700 text-base leading-relaxed mb-4 text-justify">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-4 text-justify">
                 Nuestro <strong>abordaje clínico es integrativo</strong>. Aunque cada profesional del equipo se ha formado en una o varias corrientes psicoterapéuticas, compartimos una forma de trabajar que <strong>combina herramientas de distintos modelos terapéuticos</strong>, siempre desde una <strong>mirada amplia, flexible y basada en la evidencia científica</strong> que nos permite adaptar la intervención a las necesidades de cada persona.
               </p>
-              <p class="text-gray-700 text-base leading-relaxed text-justify">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
                 <strong>Trabajamos en equipo</strong>, seguimos en formación continua y nos supervisamos para profundizar y ampliar nuestra comprensión de las personas a las que acompañamos.
               </p>
             </div>
           </div>
 
           <div class="bg-white rounded-xl shadow-soft overflow-hidden hover:shadow-primary-lg transition-all duration-300 transform hover:-translate-y-1">
-            <div class="bg-primary-600 text-white py-2 px-4 rounded-lg mb-4">
-              <h3 class="text-lg font-bold text-center uppercase">PERSPECTIVA INTEGRADORA</h3>
+            <div class="bg-primary-600 text-white py-3 px-4 rounded-lg mb-4">
+              <h3 class="text-xl font-bold text-center uppercase">PERSPECTIVA INTEGRADORA</h3>
             </div>
             <div class="px-6 pb-6">
               <p class="text-gray-700 text-base leading-relaxed mb-4 text-justify">
                 Desde una perspectiva integradora, apostamos por una <strong>atención coordinada y continua</strong>, que ponga en diálogo a los <strong>distintos profesionales</strong> implicados en el cuidado de la salud mental y también que incluya y acompañe a las <strong>familias</strong>.
               </p>
-              <p class="text-gray-700 text-base leading-relaxed text-justify">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
                 <strong>Trabajamos en red</strong> para evitar la fragmentación del cuidado y facilitar el acceso a diferentes niveles de atención, asegurando que las personas se sientan acompañadas de forma coherente y sostenida en su proceso.
               </p>
             </div>
@@ -84,7 +84,7 @@
       <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">CONOCE A NUESTRO EQUIPO</h2>
+        <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">CONOCE A NUESTRO EQUIPO</h2>
 
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-wrap justify-center gap-8">
