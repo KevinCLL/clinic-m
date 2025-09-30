@@ -20,7 +20,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/recepcion.png" alt="Recepción" class="facility-image">
+                <img src="@/assets/images/placeholder.jpg" alt="Recepción" class="facility-image">
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
@@ -39,7 +39,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/sala_terapia.png" alt="Sala de terapia" class="facility-image">
+                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia" class="facility-image">
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -57,7 +57,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/espacio_infantil.png" alt="Sala infantil" class="facility-image">
+                <img src="@/assets/images/placeholder.jpg" alt="Sala infantil" class="facility-image">
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
@@ -76,7 +76,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/terapia_grupal.png" alt="Sala de terapia grupal" class="facility-image">
+                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia grupal" class="facility-image">
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -112,7 +112,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center relative z-10">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/exterior.png" alt="Exterior" class="facility-image">
+                <img src="@/assets/images/placeholder.jpg" alt="Exterior" class="facility-image">
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
