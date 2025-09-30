@@ -239,10 +239,10 @@ const closeModal = () => {
 
 const showModalWithAutoClose = () => {
   showModal.value = true;
-  // Cerrar automáticamente después de 5 segundos
+  // Cerrar automáticamente después de 2 segundos
   setTimeout(() => {
     showModal.value = false;
-  }, 5000);
+  }, 2500);
 };
 
 // Detectar si volvemos de FormSubmit con hash #gracias

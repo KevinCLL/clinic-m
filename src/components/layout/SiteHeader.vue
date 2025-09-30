@@ -8,7 +8,7 @@
         <div class="hidden md:block">
           <a :href="`tel:${contactInfo.phone}`" class="text-primary-700 mr-2 hover:text-primary-600 transition-colors duration-300 text-lg">{{ contactInfo.phone }}</a>
           <span class="text-gray-400 mx-1">|</span>
-          <a :href="`mailto:${contactInfo.email}`" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg">{{ contactInfo.email }}</a>
+          <a :href="`mailto:${contactInfo.email}`" class="text-primary-700 hover:text-primary-600 transition-colors duration-300 text-lg" style="margin-left: 10px;">{{ contactInfo.email }}</a>
         </div>
 
         <div class="hidden md:flex space-x-3 ml-auto">
