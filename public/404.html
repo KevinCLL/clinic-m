@@ -4,35 +4,9 @@
   <meta charset="utf-8">
   <title>Redireccionando...</title>
   <script>
-
-    var segmentCount = 1; 
-    var location = window.location;
-    
-
-    var currentUrl = location.href;
-    
-
-    var redirectPath = currentUrl.split('/').slice(segmentCount + 2).join('/');
-    
-
-    redirectPath = location.pathname.split('/').slice(segmentCount + 1).join('/');
-    if (location.search) {
-      redirectPath += location.search;
-    }
-    if (location.hash) {
-      redirectPath += location.hash;
-    }
-    
-
-    var pathSegments = location.pathname.split('/');
-    var baseUrl = '';
-    if (pathSegments.length > 1) {
-      baseUrl = '/' + pathSegments[1] + '/';
-    }
-    
-
-    sessionStorage.redirect = redirectPath || '/';
-    location.href = baseUrl;
+    var l = window.location;
+    sessionStorage.redirect = l.pathname + l.search + l.hash;
+    l.replace('/');
   </script>
 </head>
 <body>
