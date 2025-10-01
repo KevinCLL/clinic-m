@@ -2,8 +2,8 @@
   <div class="overflow-hidden">
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute left-10 top-1/3 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-left transform scale-x-[-1]" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute right-10 top-1/2 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right transform scale-y-[-1]" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute left-10 top-1/3 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-left transform scale-x-[-1]" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute right-10 top-1/2 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-float-right transform scale-y-[-1]" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-6">CONTACTO</h2>
@@ -28,6 +28,7 @@
 <script setup>
 import ContactForm from '@/components/ContactForm.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 defineOptions({

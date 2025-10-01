@@ -2,8 +2,8 @@
   <div class="overflow-hidden">
 
     <section class="relative py-12 md:py-16 overflow-hidden" :style="{ backgroundColor: specialtyColor }">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha_2.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda2" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha2" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-8">{{ servicioActual.titulo }}</h1>
@@ -15,8 +15,8 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 top-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 bottom-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute left-0 top-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 bottom-20 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
@@ -83,8 +83,8 @@
 
 
     <section class="-mt-8 pb-12 bg-white relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_abajo.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_abajo_2.png" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoAbajo" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoAbajo2" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
@@ -131,6 +131,7 @@ import { computed, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import AreaIntervencion from '@/components/AreaIntervencion.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import { getServiceWithProfessionals, specialties } from '@/data/services.js';
 
 defineOptions({

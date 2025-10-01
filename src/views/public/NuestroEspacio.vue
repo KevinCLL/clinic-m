@@ -10,7 +10,7 @@
 
 
     <section class="facilities-section bg-white relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow z-0" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow z-0" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTRAS INSTALACIONES</h2>
@@ -33,7 +33,7 @@
         </div>
 
 
-        <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" loading="lazy" />
+        <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" loading="lazy" />
 
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row-reverse items-center relative">
@@ -70,7 +70,7 @@
         </div>
 
 
-        <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" loading="lazy" />
+        <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" loading="lazy" />
 
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row-reverse items-center relative">
@@ -106,7 +106,7 @@
         </div>
 
 
-        <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" loading="lazy" />
+        <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" loading="lazy" />
 
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row-reverse items-center relative">
@@ -131,6 +131,7 @@
 <script setup>
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
 import placeholderImg from '@/assets/images/placeholder.jpg';
 </script>

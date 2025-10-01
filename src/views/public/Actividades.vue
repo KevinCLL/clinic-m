@@ -9,8 +9,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
@@ -39,8 +39,8 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-200 to-transparent"></div>
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-secondary-800 mb-12">Beneficios de nuestras actividades</h2>
@@ -129,6 +129,7 @@
 import InfoComponent from '@/components/InfoComponent.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import { activities } from '@/data/activities.js';
 import actividadesBackgroundImg from '@/assets/images/actividades.jpg';
 

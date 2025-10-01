@@ -11,6 +11,7 @@
 
 <script setup>
 import { computed } from 'vue';
+import { getImageWithVariants } from '@/utils/imageUtils.js';
 
 const props = defineProps({
   src: {
@@ -31,30 +32,22 @@ const props = defineProps({
   }
 });
 
-const getImageVariant = (path, suffix) => {
-  if (!path) return '';
-
-  const questionMarkIndex = path.indexOf('?');
-  const pathWithoutQuery = questionMarkIndex !== -1 ? path.substring(0, questionMarkIndex) : path;
-  const queryString = questionMarkIndex !== -1 ? path.substring(questionMarkIndex) : '';
-
-  const lastDot = pathWithoutQuery.lastIndexOf('.');
-  const lastSlash = pathWithoutQuery.lastIndexOf('/');
-  const fileName = pathWithoutQuery.substring(lastSlash + 1, lastDot);
-  const ext = pathWithoutQuery.substring(lastDot);
-  const dirPath = pathWithoutQuery.substring(0, lastSlash + 1);
-
-  return `${dirPath}${fileName}${suffix}${ext}${queryString}`;
-};
-
-const mobileSrc = computed(() => getImageVariant(props.src, '-mobile'));
-const currentSrc = computed(() => props.src);
+const imageVariants = computed(() => getImageWithVariants(props.src));
+const currentSrc = computed(() => imageVariants.value.desktop);
 
 const srcset = computed(() => {
-  return `${mobileSrc.value} 768w, ${props.src} 1920w`;
+  const { desktop, mobile } = imageVariants.value;
+  if (mobile && mobile !== desktop) {
+    return `${mobile} 768w, ${desktop} 1920w`;
+  }
+  return desktop;
 });
 
 const sizes = computed(() => {
-  return '(max-width: 768px) 768px, 1920px';
+  const { desktop, mobile } = imageVariants.value;
+  if (mobile && mobile !== desktop) {
+    return '(max-width: 768px) 768px, 1920px';
+  }
+  return '100vw';
 });
 </script>

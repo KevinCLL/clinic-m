@@ -9,8 +9,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute left-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">NUESTROS SERVICIOS</h2>
@@ -53,8 +53,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha_2.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda2" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha2" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">NUESTRAS ESPECIALIDADES</h2>
@@ -92,8 +92,8 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind" loading="lazy" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind-reverse" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind" loading="lazy" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-soft-wind-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">ÁREAS DE INTERVENCIÓN</h2>
@@ -187,6 +187,7 @@
 <script setup>
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import mainBackgroundImg from '@/assets/images/que_ofrecemos.jpg';
 import { services, serviceCards, specialties } from '@/data/services.js';
 

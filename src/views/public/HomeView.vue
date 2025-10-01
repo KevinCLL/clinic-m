@@ -17,8 +17,8 @@
 
     <!-- Sección "Sobre nuestro nombre" -->
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda2" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-7xl mx-auto">
@@ -41,9 +41,8 @@
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
-      <!-- Plantas para Nuestros Servicios -->
-      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha_2.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
+      <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha2" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">NUESTROS SERVICIOS</h2>
@@ -107,8 +106,7 @@
 
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
-      <!-- Plantas para Te acompañamos -->
-      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
+      <ResponsiveImage :src="plantImages.ramasFondoDerecha" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6">TE ACOMPAÑAMOS EN TODAS LAS ETAPAS DE LA VIDA</h2>
@@ -157,6 +155,7 @@ import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import mainBackgroundImg from '@/assets/images/inicio.jpg';
 
 

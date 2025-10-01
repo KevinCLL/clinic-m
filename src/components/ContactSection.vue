@@ -1,8 +1,8 @@
 <template>
   <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-    <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" loading="lazy" />
-    <ResponsiveImage src="@/assets/images/ramas_fondo_abajo.png" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none transform rotate-45" loading="lazy" />
-    <ResponsiveImage src="@/assets/images/ramas_fondo_abajo_2.png" alt="" img-class="absolute right-0 bottom-5 w-40 md:w-52 lg:w-68 h-auto opacity-8 pointer-events-none transform -rotate-45" loading="lazy" />
+    <ResponsiveImage :src="plantImages.ramasFondoIzquierda2" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" loading="lazy" />
+    <ResponsiveImage :src="plantImages.ramasFondoAbajo" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none transform rotate-45" loading="lazy" />
+    <ResponsiveImage :src="plantImages.ramasFondoAbajo2" alt="" img-class="absolute right-0 bottom-5 w-40 md:w-52 lg:w-68 h-auto opacity-8 pointer-events-none transform -rotate-45" loading="lazy" />
 
     <div class="container mx-auto px-4 relative z-10">
       <h2 v-if="showTitle" class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6">{{ title.toUpperCase() }}</h2>
@@ -24,6 +24,7 @@
 <script setup>
 import ContactForm from '@/components/ContactForm.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import { plantImages } from '@/assets/plantImages.js';
 import { defineProps, defineEmits, ref, onMounted, onUnmounted } from 'vue';
 
 const isMobile = ref(window.innerWidth < 768);
