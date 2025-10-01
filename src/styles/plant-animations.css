@@ -1,5 +1,59 @@
 
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-gentle-breeze,
+  .animate-gentle-breeze-reverse,
+  .animate-gentle-sway,
+  .animate-gentle-sway-delayed,
+  .animate-gentle-sway-reverse,
+  .animate-soft-wind,
+  .animate-soft-wind-reverse,
+  .animate-pulse-slow,
+  .animate-sway-subtle,
+  .animate-sway-subtle-reverse,
+  .animate-float-subtle,
+  .animate-float-left,
+  .animate-float-right,
+  .animate-sway-gentle,
+  .animate-sway-gentle-reverse,
+  .animate-sway-footer,
+  .animate-sway-footer-reverse {
+    animation: none !important;
+  }
+
+  .hover\:scale-105:hover,
+  .hover\:scale-110:hover,
+  .group-hover\:scale-105,
+  .group-hover\:scale-110 {
+    transform: none !important;
+  }
+
+  .hover\:-translate-y-1:hover,
+  .hover\:shadow-xl:hover,
+  .hover\:shadow-primary-lg:hover,
+  .hover\:shadow-teal-lg:hover,
+  .hover\:shadow-secondary-lg:hover,
+  .group-hover\:shadow-teal-lg {
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
+
+  .transition-transform,
+  .transition-all,
+  .transition {
+    transition: none !important;
+  }
+}
 
 @keyframes gentle-breeze {
   0%, 100% {
@@ -118,4 +172,144 @@
 .animate-soft-wind-reverse {
   animation: soft-wind-reverse 7s ease-in-out infinite;
   animation-delay: 1.5s;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+@keyframes sway-subtle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+@keyframes sway-subtle-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-0.5deg);
+  }
+}
+
+.animate-sway-subtle {
+  animation: sway-subtle 15s ease-in-out infinite;
+}
+
+.animate-sway-subtle-reverse {
+  animation: sway-subtle-reverse 15s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-subtle {
+  animation: float-subtle 12s ease-in-out infinite;
+}
+
+@keyframes float-left {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(10px) translateY(-5px);
+  }
+}
+
+@keyframes float-right {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-5px);
+  }
+}
+
+.animate-float-left {
+  animation: float-left 7s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float-right 7s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes sway-gentle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-0.5deg);
+  }
+}
+
+@keyframes sway-gentle-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(3px) rotate(0.5deg);
+  }
+}
+
+.animate-sway-gentle {
+  animation: sway-gentle 10s ease-in-out infinite;
+}
+
+.animate-sway-gentle-reverse {
+  animation: sway-gentle-reverse 10s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes sway-footer {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0.5deg);
+  }
+}
+
+@keyframes sway-footer-reverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(-0.5deg);
+  }
+}
+
+.animate-sway-footer {
+  animation: sway-footer 20s ease-in-out infinite;
+}
+
+.animate-sway-footer-reverse {
+  animation: sway-footer-reverse 20s ease-in-out infinite;
+  animation-delay: 4s;
 }

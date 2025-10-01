@@ -17,8 +17,8 @@
 
     <!-- Sección "Sobre nuestro nombre" -->
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda_2.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-delayed" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-7xl mx-auto">
@@ -42,8 +42,8 @@
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-200 to-transparent"></div>
 
       <!-- Plantas para Nuestros Servicios -->
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
-      <img src="@/assets/images/ramas_fondo_derecha_2.png" alt="" class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha_2.png" alt="" img-class="absolute right-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">NUESTROS SERVICIOS</h2>
@@ -54,7 +54,7 @@
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm flex flex-col">
             <div class="h-60 overflow-hidden">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psicologia-clinica' }}">
-                <img src="@/assets/images/psychotherapy.jpg" alt="Psicoterapia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <ResponsiveImage :src="imgPsychotherapy" alt="Psicoterapia" img-class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </router-link>
             </div>
             <div class="p-6 border-t border-primary-50 flex flex-col flex-grow">
@@ -70,7 +70,7 @@
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm flex flex-col">
             <div class="h-60 overflow-hidden">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'psiquiatria' }}">
-                <img src="@/assets/images/psychiatry.jpg" alt="Psiquiatría" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <ResponsiveImage :src="imgPsychiatry" alt="Psiquiatría" img-class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </router-link>
             </div>
             <div class="p-6 border-t border-primary-50 flex flex-col flex-grow">
@@ -86,7 +86,7 @@
           <div class="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-primary-lg hover:-translate-y-1 group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm flex flex-col">
             <div class="h-60 overflow-hidden">
               <router-link :to="{ name: 'servicio-detalle', params: { id: 'mindfulness' }}">
-                <img src="@/assets/images/mindfulness.jpg" alt="Mindfulness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <ResponsiveImage :src="imgMindfulness" alt="Mindfulness" img-class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </router-link>
             </div>
             <div class="p-6 border-t border-primary-50 flex flex-col flex-grow">
@@ -108,7 +108,7 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
       <!-- Plantas para Te acompañamos -->
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6">TE ACOMPAÑAMOS EN TODAS LAS ETAPAS DE LA VIDA</h2>
@@ -119,7 +119,7 @@
           <div v-for="(stage, index) in lifeStages" :key="`mobile-${index}`" class="flex flex-col items-center w-[calc(50%-0.375rem)]">
             <router-link :to="stage.route" class="block group flex flex-col items-center w-full">
               <div class="w-full aspect-square rounded-full overflow-hidden mb-3 relative transition-transform duration-700 group-hover:scale-110">
-                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 65%, transparent 70%); mask-image: radial-gradient(black 65%, transparent 70%);" />
+                <ResponsiveImage :src="stage.image" :alt="stage.alt" img-class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 65%, transparent 70%); mask-image: radial-gradient(black 65%, transparent 70%);" />
               </div>
               <h3 class="text-base font-semibold text-primary-700 group-hover:text-primary-600 transition-colors text-center">{{ stage.title }}</h3>
             </router-link>
@@ -131,7 +131,7 @@
           <div v-for="(stage, index) in lifeStages" :key="`desktop-${index}`" class="flex flex-col items-center w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-1.2rem)] max-w-[280px]">
             <router-link :to="stage.route" class="block group flex flex-col items-center w-full">
               <div class="w-full aspect-square rounded-full overflow-hidden mb-3 relative transition-transform duration-700 group-hover:scale-110">
-                <img :src="stage.image" :alt="stage.alt" class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 65%, transparent 70%); mask-image: radial-gradient(black 65%, transparent 70%);" />
+                <ResponsiveImage :src="stage.image" :alt="stage.alt" img-class="w-full h-full object-cover" style="-webkit-mask-image: radial-gradient(black 65%, transparent 70%); mask-image: radial-gradient(black 65%, transparent 70%);" />
               </div>
               <h3 class="text-lg font-semibold text-primary-700 group-hover:text-primary-600 transition-colors text-center">{{ stage.title }}</h3>
             </router-link>
@@ -156,6 +156,7 @@
 import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
+import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import mainBackgroundImg from '@/assets/images/inicio.jpg';
 
 
@@ -164,6 +165,9 @@ import imgTeen from '@/assets/images/teen.jpg';
 import imgAdult from '@/assets/images/adult.jpg';
 import imgPerinatal from '@/assets/images/perinatal.jpg';
 import imgThirdAge from '@/assets/images/third_age.jpg';
+import imgPsychotherapy from '@/assets/images/psychotherapy.jpg';
+import imgPsychiatry from '@/assets/images/psychiatry.jpg';
+import imgMindfulness from '@/assets/images/mindfulness.jpg';
 
 const lifeStages = [
   {
@@ -334,53 +338,6 @@ const handleHomeFormSubmit = () => {
 }
 .hover\:shadow-primary-sm:hover {
   box-shadow: 0 4px 8px -1px rgba(0, 121, 113, 0.25);
-}
-
-@keyframes gentle-sway {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(2deg);
-  }
-}
-
-@keyframes gentle-sway-reverse {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(-2deg);
-  }
-}
-
-.animate-gentle-breeze {
-  animation: gentle-sway 8s ease-in-out infinite;
-}
-
-.animate-gentle-breeze-reverse {
-  animation: gentle-sway-reverse 8s ease-in-out infinite;
-  animation-delay: 2s;
-}
-
-@keyframes pulse-gentle {
-  0%, 100% {
-    opacity: 0.1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.15;
-    transform: scale(1.02);
-  }
-}
-
-.animate-gentle-breeze {
-  animation: pulse-gentle 6s ease-in-out infinite;
-}
-
-.animate-gentle-breeze-reverse {
-  animation: pulse-gentle 6s ease-in-out infinite;
-  animation-delay: 3s;
 }
 
 

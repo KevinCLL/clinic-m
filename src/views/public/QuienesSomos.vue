@@ -16,8 +16,8 @@
     </SectionHeader>
 
     <section class="py-8 md:py-12 bg-gray-50 relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze" />
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">PILARES DEL PROYECTO</h2>
@@ -80,8 +80,8 @@
 
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-primary-50 via-white to-primary-50 relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze" />
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-breeze-reverse" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">CONOCE A NUESTRO EQUIPO</h2>
@@ -107,6 +107,7 @@
 <script setup>
 import TeamCard from '@/components/TeamCard.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
+import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import quienesSomosImg from '@/assets/images/quienes_somos.jpg';
 import { getTeamMembersWithSpecialtyColors } from '@/data/team.js';
 
@@ -387,30 +388,12 @@ const teamMembers = getTeamMembersWithSpecialtyColors();
   background-color: #f9fafb;
 }
 
-@keyframes float-slow {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes float-slow-reverse {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-}
-
 .animate-gentle-breeze {
-  animation: float-slow 12s ease-in-out infinite;
+  animation: gentle-breeze 12s ease-in-out infinite;
 }
 
 .animate-gentle-breeze-reverse {
-  animation: float-slow-reverse 12s ease-in-out infinite;
+  animation: gentle-breeze-reverse 12s ease-in-out infinite;
   animation-delay: 3s;
 }
 </style>

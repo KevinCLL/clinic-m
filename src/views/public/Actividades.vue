@@ -9,8 +9,8 @@
 
 
     <section class="py-12 md:py-16 bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" />
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-20 w-56 md:w-72 lg:w-96 h-auto opacity-15 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-5xl mx-auto">
@@ -21,7 +21,7 @@
               class="bg-white card-rounded shadow-soft overflow-hidden transition-all duration-500 ease-in-out hover:shadow-secondary-lg hover:-translate-y-1 group"
             >
               <router-link :to="`/actividades/${activity.id}`" class="h-64 overflow-hidden block">
-                <img :src="activity.image" :alt="activity.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <ResponsiveImage :src="activity.image" :alt="activity.title" img-class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </router-link>
               <div class="p-6">
                 <h3 class="text-xl md:text-2xl font-semibold text-secondary-700 mb-4">{{ activity.title }}</h3>
@@ -39,8 +39,8 @@
 
     <section class="py-12 md:py-16 bg-gradient-to-br from-secondary-50 to-white relative overflow-hidden">
       <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-200 to-transparent"></div>
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" />
-      <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway" loading="lazy" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-10 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-gentle-sway-reverse" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-secondary-800 mb-12">Beneficios de nuestras actividades</h2>
@@ -128,6 +128,7 @@
 <script setup>
 import InfoComponent from '@/components/InfoComponent.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
+import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { activities } from '@/data/activities.js';
 import actividadesBackgroundImg from '@/assets/images/actividades.jpg';
 
@@ -238,30 +239,4 @@ defineOptions({
   box-shadow: 0 10px 20px -5px rgba(138, 100, 163, 0.3);
 }
 
-@keyframes gentle-sway {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(2deg);
-  }
-}
-
-@keyframes gentle-sway-reverse {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(-2deg);
-  }
-}
-
-.animate-gentle-sway {
-  animation: gentle-sway 8s ease-in-out infinite;
-}
-
-.animate-gentle-sway-reverse {
-  animation: gentle-sway-reverse 8s ease-in-out infinite;
-  animation-delay: 2s;
-}
 </style>

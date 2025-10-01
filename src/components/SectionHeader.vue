@@ -1,6 +1,6 @@
 <template>
   <section class="section-header relative overflow-hidden">
-    <div class="background-container absolute inset-0 z-0" :style="{ backgroundImage: `url(${backgroundImage})` }">
+    <div class="background-container absolute inset-0 z-0" :style="responsiveBackgroundStyle">
       <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/25"></div>
     </div>
 
@@ -17,7 +17,10 @@
 </template>
 
 <script setup>
-defineProps({
+import { useResponsiveImage } from '@/composables/useResponsiveImage.js';
+import { computed } from 'vue';
+
+const props = defineProps({
   title: {
     type: String,
     default: ''
@@ -27,6 +30,11 @@ defineProps({
     required: true
   }
 });
+
+const { imagePath } = useResponsiveImage(props.backgroundImage);
+const responsiveBackgroundStyle = computed(() => ({
+  backgroundImage: `url(${imagePath.value})`
+}));
 </script>
 
 <style scoped>

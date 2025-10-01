@@ -1,9 +1,11 @@
+import unknownImg from '@/assets/images/unknown.jpg';
+
 export const teamMembers = [
   {
     id: 'marta-sanchez',
     name: 'Marta Sánchez',
     role: 'Directora de CODA. Médica Psiquiatra y psicoterapeuta',
-    image: '/unknown.jpg',
+    image: unknownImg,
     specialties: [
       {
         id: 'psiquiatria',
@@ -31,7 +33,7 @@ export const teamMembers = [
     id: 'mara-descalzo',
     name: 'Mara Descalzo',
     role: 'Médica Psiquiatra y psicoterapeuta',
-    image: '/unknown.jpg',
+    image: unknownImg,
     specialties: [
       {
         id: 'psiquiatria',
@@ -49,7 +51,7 @@ export const teamMembers = [
     id: 'elvira-garcia',
     name: 'Elvira García',
     role: 'Psicóloga clínica',
-    image: '/unknown.jpg',
+    image: unknownImg,
     specialties: [
       {
         id: 'psicologia-clinica',
@@ -67,7 +69,7 @@ export const teamMembers = [
     id: 'irene-saiz',
     name: 'Irene Saiz',
     role: 'Psicóloga clínica',
-    image: '/unknown.jpg',
+    image: unknownImg,
     specialties: [
       {
         id: 'psicologia-clinica',
@@ -90,7 +92,7 @@ export const teamMembers = [
     id: 'responsable-actividades',
     name: 'Ana González',
     role: 'Profesora de yoga y meditación',
-    image: '/unknown.jpg',
+    image: unknownImg,
     specialties: [
       {
         id: 'actividades',

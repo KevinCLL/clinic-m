@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group w-full max-w-sm md:w-80">
     <div class="relative aspect-square overflow-hidden bg-gray-100">
-      <img :src="image" :alt="name" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <ResponsiveImage :src="image" :alt="name" img-class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
     </div>
     <div class="p-6">
       <h3 class="text-xl md:text-2xl font-bold text-primary-800 mb-2">{{ name }}</h3>
@@ -22,6 +22,8 @@
 </template>
 
 <script setup>
+import ResponsiveImage from './ResponsiveImage.vue';
+
 defineProps({
   name: {
     type: String,
@@ -37,7 +39,7 @@ defineProps({
   },
   image: {
     type: String,
-    default: '@/assets/images/unknown.jpg'
+    required: true
   }
 });
 </script>

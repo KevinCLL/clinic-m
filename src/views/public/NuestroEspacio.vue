@@ -10,7 +10,7 @@
 
 
     <section class="facilities-section bg-white relative overflow-hidden">
-      <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow z-0" />
+      <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-40 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-pulse-slow z-0" loading="lazy" />
 
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="section-title-primary text-2xl md:text-3xl font-bold text-center mb-12">NUESTRAS INSTALACIONES</h2>
@@ -20,7 +20,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Recepción" class="facility-image">
+                <ResponsiveImage :src="placeholderImg" alt="Recepción" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
@@ -33,13 +33,13 @@
         </div>
 
 
-        <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" />
+        <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute -left-10 top-[300px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle z-0" loading="lazy" />
 
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia" class="facility-image">
+                <ResponsiveImage :src="placeholderImg" alt="Sala de terapia" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -57,7 +57,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Sala infantil" class="facility-image">
+                <ResponsiveImage :src="placeholderImg" alt="Sala infantil" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
@@ -70,13 +70,13 @@
         </div>
 
 
-        <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" />
+        <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute -right-10 top-[700px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-sway-subtle-reverse z-0" loading="lazy" />
 
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Sala de terapia grupal" class="facility-image">
+                <ResponsiveImage :src="placeholderImg" alt="Sala de terapia grupal" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -93,7 +93,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Terraza" class="facility-image">
+                <ResponsiveImage :src="placeholderImg" alt="Terraza" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
@@ -106,13 +106,13 @@
         </div>
 
 
-        <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" />
+        <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" loading="lazy" />
 
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <img src="@/assets/images/placeholder.jpg" alt="Exterior" class="facility-image">
+                <ResponsiveImage :src="placeholderImg" alt="Exterior" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -130,7 +130,9 @@
 
 <script setup>
 import SectionHeader from '@/components/SectionHeader.vue';
+import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
+import placeholderImg from '@/assets/images/placeholder.jpg';
 </script>
 
 <style scoped>
@@ -227,8 +229,10 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   }
 }
 
-.facility-image-wrapper:hover {
-  transform: translateY(-0.5rem);
+@media (min-width: 769px) {
+  .facility-image-wrapper:hover {
+    transform: translateY(-0.5rem);
+  }
 }
 
 .facility-image-container {
@@ -250,8 +254,10 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   }
 }
 
-.group:hover .facility-image {
-  transform: scale(1.05);
+@media (min-width: 769px) {
+  .group:hover .facility-image {
+    transform: scale(1.05);
+  }
 }
 
 .facility-content {
@@ -272,61 +278,10 @@ import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
   }
 }
 
-.facility-content:hover {
-  opacity: 1;
-}
-
-@keyframes pulse-slow {
-  0%, 100% {
-    opacity: 0.1;
+@media (min-width: 769px) {
+  .facility-content:hover {
+    opacity: 1;
   }
-  50% {
-    opacity: 0.2;
-  }
-}
-
-.animate-pulse-slow {
-  animation: pulse-slow 4s ease-in-out infinite;
-}
-
-@keyframes sway-subtle {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-8px) rotate(0.5deg);
-  }
-}
-
-@keyframes sway-subtle-reverse {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(8px) rotate(-0.5deg);
-  }
-}
-
-@keyframes float-subtle {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-sway-subtle {
-  animation: sway-subtle 15s ease-in-out infinite;
-}
-
-.animate-sway-subtle-reverse {
-  animation: sway-subtle-reverse 15s ease-in-out infinite;
-  animation-delay: 5s;
-}
-
-.animate-float-subtle {
-  animation: float-subtle 12s ease-in-out infinite;
 }
 
 

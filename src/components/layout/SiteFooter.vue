@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-primary-600 text-white py-12 relative overflow-hidden">
-    <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-footer" />
-    <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 bottom-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-footer-reverse" />
+    <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-footer" loading="lazy" />
+    <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 bottom-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-footer-reverse" loading="lazy" />
     
     <div class="container mx-auto px-4 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -53,6 +53,7 @@
 
 <script setup>
 import { contactInfo } from '@/data/contactInfo.js';
+import ResponsiveImage from '@/components/ResponsiveImage.vue';
 </script>
 
 <style scoped>

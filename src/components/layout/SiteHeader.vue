@@ -1,7 +1,7 @@
 <template>
   <header class="relative overflow-hidden">
-    <img src="@/assets/images/ramas_fondo_derecha.png" alt="" class="absolute right-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-gentle" />
-    <img src="@/assets/images/ramas_fondo_izquierda.png" alt="" class="absolute left-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-gentle-reverse" />
+    <ResponsiveImage src="@/assets/images/ramas_fondo_derecha.png" alt="" img-class="absolute right-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-gentle" loading="lazy" />
+    <ResponsiveImage src="@/assets/images/ramas_fondo_izquierda.png" alt="" img-class="absolute left-0 top-0 w-48 md:w-64 lg:w-80 h-auto opacity-10 pointer-events-none animate-sway-gentle-reverse" loading="lazy" />
     
     <div class="container mx-auto px-4 py-4 relative z-10">
       <div class="flex justify-between items-center mb-4">
@@ -23,7 +23,7 @@
 
       <div class="flex justify-center" ref="logoContainer">
         <router-link to="/" class="flex items-center space-x-4">
-          <img src="@/assets/images/logo.png" :alt="contactInfo.clinicName" class="h-20 w-auto" />
+          <ResponsiveImage :src="logoImg" :alt="contactInfo.clinicName" img-class="h-20 w-auto" loading="eager" />
         </router-link>
       </div>
     </div>
@@ -78,6 +78,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import { contactInfo } from '@/data/contactInfo.js';
+import ResponsiveImage from '@/components/ResponsiveImage.vue';
+import logoImg from '@/assets/images/logo.png';
 
 const mobileMenuOpen = ref(false);
 const navBar = ref(null);
