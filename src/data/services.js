@@ -119,7 +119,7 @@ export const services = [
       '•    Compatible con otros enfoques terapéuticos.',
       '•    Enfoque centrado en la seguridad, el ritmo y la regulación emocional de la persona.'
     ],
-    professionalIds: ['elvira-garcia', 'irene-saiz'],
+    professionalIds: ['marta-sanchez', 'elvira-garcia', 'irene-saiz'],
     faqs: [
       {
         pregunta: '¿Qué tipo de problemas se pueden tratar con EMDR?',

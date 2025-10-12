@@ -86,4 +86,24 @@ defineProps({
   background-color: var(--secondary-600);
   color: white;
 }
+
+.specialty-badge[data-specialty="grupos-mindfulness"] {
+  background-color: var(--secondary-600);
+  color: white;
+}
+
+.specialty-badge[data-specialty="retiros"] {
+  background-color: var(--secondary-600);
+  color: white;
+}
+
+.specialty-badge[data-specialty="yoga"] {
+  background-color: var(--secondary-600);
+  color: white;
+}
+
+.specialty-badge[data-specialty="yoga-trauma"] {
+  background-color: var(--secondary-600);
+  color: white;
+}
 </style>

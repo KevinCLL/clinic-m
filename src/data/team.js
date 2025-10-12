@@ -26,6 +26,16 @@ export const teamMembers = [
         id: 'perinatal',
         name: 'Perinatal',
         link: '/servicios/perinatal'
+      },
+      {
+        id: 'grupos-mindfulness',
+        name: 'Grupos de Mindfulness',
+        link: '/actividades/mindfulness'
+      },
+      {
+        id: 'retiros',
+        name: 'Retiros',
+        link: '/actividades/retiros'
       }
     ]
   },
@@ -95,9 +105,19 @@ export const teamMembers = [
     image: unknownImg,
     specialties: [
       {
-        id: 'actividades',
-        name: 'Actividades',
-        link: '/actividades'
+        id: 'yoga',
+        name: 'Yoga',
+        link: '/actividades/yoga'
+      },
+      {
+        id: 'yoga-trauma',
+        name: 'Yoga Sensible al Trauma',
+        link: '/actividades/yoga-trauma'
+      },
+      {
+        id: 'retiros',
+        name: 'Retiros',
+        link: '/actividades/retiros'
       }
     ]
   }
@@ -120,7 +140,11 @@ export function getTeamMembersWithSpecialtyColors() {
     'terapia-emdr': 'var(--specialty-emdr)',
     'mindfulness': 'var(--specialty-mindfulness)',
     'perinatal': 'var(--specialty-perinatal)',
-    'actividades': 'var(--secondary-600)'
+    'actividades': 'var(--secondary-600)',
+    'grupos-mindfulness': 'var(--secondary-600)',
+    'retiros': 'var(--secondary-600)',
+    'yoga': 'var(--secondary-600)',
+    'yoga-trauma': 'var(--secondary-600)'
   };
 
   return teamMembers.map(member => ({

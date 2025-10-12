@@ -67,7 +67,7 @@ export const activities = [
       'Los grupos de mindfulness ofrecen una oportunidad para detener el ritmo, encontrar calma y entrenar recursos que luego pueden aplicarse a la vida cotidiana, mejorando la manera en que nos relacionamos con nosotros mismos, con los demás y con los desafíos del día a día.'
     ],
     targetAudience: 'Dirigido a cualquier persona interesada en aprender técnicas de mindfulness, ya sea para mejorar su bienestar general, gestionar situaciones de estrés o ansiedad, o complementar un proceso terapéutico. No se requiere experiencia previa.',
-    responsableIds: ['responsable-actividades'],
+    responsableIds: ['marta-sanchez'],
     status: 'active'
   },
   {
@@ -85,7 +85,7 @@ export const activities = [
       'Es un espacio para volver al centro, compartir con otros desde la autenticidad y, al mismo tiempo, regalarte la oportunidad de estar contigo mismo de una manera distinta: con calma, presencia y compasión.'
     ],
     targetAudience: 'Recomendado para personas que buscan un espacio de pausa y conexión profunda. Abierto a todas las personas, tanto principiantes como quienes ya tienen experiencia en yoga o meditación.',
-    responsableIds: ['responsable-actividades'],
+    responsableIds: ['marta-sanchez', 'responsable-actividades'],
     status: 'upcoming'
   }
 ];
