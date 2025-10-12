@@ -107,7 +107,9 @@ export const services = [
         'La Terapia EMDR (Desensibilización y Reprocesamiento por Movimientos Oculares) es un abordaje psicoterapéutico para tratar experiencias traumáticas o emocionalmente perturbadoras, que ha sido avalado por numerosas instituciones científicas y clínicas a nivel internacional.',
         'EMDR se basa en la idea de que muchos de nuestros síntomas emocionales (como ansiedad, bloqueos, miedos intensos, reacciones desproporcionadas, etc.) tienen su origen en experiencias pasadas que no han sido correctamente procesadas por el sistema nervioso. Estas experiencias quedan "atascadas" en la memoria con la misma carga emocional con la que fueron vividas, y se reactivan una y otra vez ante situaciones actuales.',
         'La terapia EMDR es conocida a veces por la fase de reprocesamiento (en la que se hacen movimientos oculares), pero es un modelo psicoterapéutico mucho más complejo. Desde un enfoque integrador, combina elementos teórico-clínicos de diferentes orientaciones y trabaja con la historia temprana de la persona, el apego y las experiencias adversas a lo largo de la vida.',
-        'En nuestra clínica, los profesionales que aplican EMDR están formados y acreditados por organismos oficiales, y aplican esta técnica dentro de un marco seguro, empático y profesional.'
+        'En nuestra clínica, los profesionales que aplican EMDR están formados y acreditados por organismos oficiales, y aplican esta técnica dentro de un marco seguro, empático y profesional.',
+        '<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 mt-8" style="color: var(--primary-700);">¿En qué consiste el proceso de la terapia EMDR?</h2>',
+        'La terapia comienza con una fase de evaluación y preparación. Antes de iniciar el reprocesamiento de recuerdos dolorosos, se trabajamos la estabilización emocional, asegurándonos de que la persona se encuentra en un momento adecuado para iniciar este proceso y dispone de herramientas suficientes de <strong>regulación emocional</strong> y contención interna. Una vez establecida esta base de seguridad, se identifican experiencias que siguen generando malestar y se trabaja sobre ellas mediante <strong>estimulación bilateral</strong>. Todo el proceso es progresivo, respetuoso y guiado por el terapeuta, adaptándose al ritmo y necesidades de cada persona.'
       ]
     },
     characteristics: [
@@ -128,10 +130,6 @@ export const services = [
       {
         pregunta: '¿Qué significa reprocesar un recuerdo?',
         respuesta: 'EMDR se basa en la idea de que muchos de nuestros síntomas emocionales (como ansiedad, bloqueos, miedos intensos, reacciones desproporcionadas, etc.) tienen su origen en experiencias pasadas que no han sido correctamente procesadas por el sistema nervioso. Estas experiencias quedan "atascadas" en la memoria con la misma carga emocional con la que fueron vividas, y se reactivan una y otra vez ante situaciones actuales.\nDurante las sesiones, el terapeuta guía a la persona en el reprocesamiento de estos recuerdos, ayudando a integrar la experiencia de forma adaptativa. Esto se logra mediante la estimulación bilateral del cerebro (habitualmente a través del movimiento ocular), permitiendo que el sistema nervioso "archive" adecuadamente la información, liberando así el malestar emocional.'
-      },
-      {
-        pregunta: '¿En qué consiste el proceso de la terapia EMDR?',
-        respuesta: 'La terapia comienza con una fase de evaluación y preparación. Antes de iniciar el reprocesamiento de recuerdos dolorosos, se trabajamos la estabilización emocional, asegurándonos de que la persona se encuentra en un momento adecuado para iniciar este proceso y dispone de herramientas suficientes de <strong>regulación emocional</strong> y contención interna. Una vez establecida esta base de seguridad, se identifican experiencias que siguen generando malestar y se trabaja sobre ellas mediante <strong>estimulación bilateral</strong>. Todo el proceso es progresivo, respetuoso y guiado por el terapeuta, adaptándose al ritmo y necesidades de cada persona.'
       }
     ]
   },
