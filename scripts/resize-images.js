@@ -87,6 +87,27 @@ const IMAGE_SIZES = {
     mobile: { width: 400, height: 300 }
   },
 
+  'zona_espera.jpg': {
+    desktop: { width: 800, height: 600 },
+    mobile: { width: 400, height: 300 }
+  },
+  'sala_terapia.jpg': {
+    desktop: { width: 800, height: 600 },
+    mobile: { width: 400, height: 300 }
+  },
+  'espacio_infantojuvenil.jpg': {
+    desktop: { width: 800, height: 600 },
+    mobile: { width: 400, height: 300 }
+  },
+  'sala_grupal.jpg': {
+    desktop: { width: 800, height: 600 },
+    mobile: { width: 400, height: 300 }
+  },
+  'fachada.jpg': {
+    desktop: { width: 800, height: 600 },
+    mobile: { width: 400, height: 300 }
+  },
+
   'grupos_mindfulness.png': {
     desktop: { width: 600, height: 400 },
     mobile: { width: 400, height: 300 }
@@ -148,10 +169,6 @@ const IMAGE_SIZES = {
   },
   'yoga_sensible.jpg': {
     desktop: { width: 600, height: 400 },
-    mobile: { width: 400, height: 300 }
-  },
-  'placeholder.jpg': {
-    desktop: { width: 800, height: 600 },
     mobile: { width: 400, height: 300 }
   },
   'unknown.jpg': {

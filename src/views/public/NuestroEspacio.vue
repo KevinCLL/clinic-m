@@ -20,13 +20,13 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <ResponsiveImage :src="placeholderImg" alt="Recepción" img-class="facility-image" loading="lazy" />
+                <ResponsiveImage :src="zonaEsperaImg" alt="Zona de Espera" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
-              <h3 class="facility-title text-primary">Recepción</h3>
+              <h3 class="facility-title text-primary">Zona de Espera</h3>
               <p class="text-gray-700 facility-description text-justify">
-                Espacio acogedor donde te recibimos y te acompañamos desde el primer momento. Nuestro personal te atenderá con calidez, haciendo que te sientas bienvenido/a desde que cruzas nuestra puerta. Diseñado para transmitir serenidad y profesionalidad, es el primer contacto con nuestro concepto de bienestar.
+                Un espacio diseñado para tu comodidad mientras aguardas tu sesión. Con asientos confortables, iluminación natural y un ambiente tranquilo, nuestra zona de espera te invita a relajarte y prepararte mentalmente para tu consulta en un entorno sereno y acogedor.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <ResponsiveImage :src="placeholderImg" alt="Sala de terapia" img-class="facility-image" loading="lazy" />
+                <ResponsiveImage :src="salaTerapiaImg" alt="Sala de terapia" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -57,7 +57,7 @@
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <ResponsiveImage :src="placeholderImg" alt="Sala infantil" img-class="facility-image" loading="lazy" />
+                <ResponsiveImage :src="espacioInfantojuvenilImg" alt="Sala infantil" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
@@ -76,7 +76,7 @@
           <div class="flex flex-col md:flex-row-reverse items-center relative">
             <div class="facility-image-wrapper group md:pl-8">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <ResponsiveImage :src="placeholderImg" alt="Sala de terapia grupal" img-class="facility-image" loading="lazy" />
+                <ResponsiveImage :src="salaGrupalImg" alt="Sala de terapia grupal" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content md:pr-8" data-aos="fade-right">
@@ -89,33 +89,16 @@
         </div>
 
 
+        <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" loading="lazy" />
+
         <div class="max-w-6xl mx-auto facility-item relative z-20">
           <div class="flex flex-col md:flex-row items-center">
             <div class="facility-image-wrapper group">
               <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <ResponsiveImage :src="placeholderImg" alt="Terraza" img-class="facility-image" loading="lazy" />
+                <ResponsiveImage :src="fachadaImg" alt="Exterior" img-class="facility-image" loading="lazy" />
               </div>
             </div>
             <div class="facility-content" data-aos="fade-left">
-              <h3 class="facility-title text-primary">Terraza</h3>
-              <p class="text-gray-700 facility-description text-justify">
-                Un espacio al aire libre donde disfrutar de momentos de tranquilidad y conexión con la naturaleza. Nuestra terraza ofrece un ambiente relajante ideal para sesiones terapéuticas al aire libre o simplemente para tomar un respiro entre sesiones.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <ResponsiveImage :src="plantImages.ramasFondoIzquierda" alt="" img-class="absolute -left-10 bottom-[200px] w-48 md:w-64 lg:w-80 h-auto opacity-7 pointer-events-none animate-float-subtle z-0" loading="lazy" />
-
-        <div class="max-w-6xl mx-auto facility-item relative z-20">
-          <div class="flex flex-col md:flex-row-reverse items-center relative">
-            <div class="facility-image-wrapper group md:pl-8">
-              <div class="facility-image-container shadow-soft group-hover:shadow-teal-lg">
-                <ResponsiveImage :src="placeholderImg" alt="Exterior" img-class="facility-image" loading="lazy" />
-              </div>
-            </div>
-            <div class="facility-content md:pr-8" data-aos="fade-right">
               <h3 class="facility-title text-primary">Exterior</h3>
               <p class="text-gray-700 facility-description text-justify">
                 La fachada y entrada a nuestra clínica, con acceso adaptado y un diseño que refleja la calidez y profesionalidad que encontrarás en nuestro interior. Nuestra ubicación ofrece comodidad y accesibilidad para todos nuestros visitantes.
@@ -133,7 +116,11 @@ import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { plantImages } from '@/assets/plantImages.js';
 import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
-import placeholderImg from '@/assets/images/placeholder.jpg';
+import zonaEsperaImg from '@/assets/images/zona_espera.jpg';
+import salaTerapiaImg from '@/assets/images/sala_terapia.jpg';
+import espacioInfantojuvenilImg from '@/assets/images/espacio_infantojuvenil.jpg';
+import salaGrupalImg from '@/assets/images/sala_grupal.jpg';
+import fachadaImg from '@/assets/images/fachada.jpg';
 </script>
 
 <style scoped>
