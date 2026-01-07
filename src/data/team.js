@@ -1,11 +1,14 @@
 import unknownImg from '@/assets/images/unknown.jpg';
+import martaImg from '@/assets/images/foto_corporativa_marta.jpg';
+import maraImg from '@/assets/images/foto_corporativa_mara.jpg';
+import elviraImg from '@/assets/images/foto_corporativa_elvira.jpg';
 
 export const teamMembers = [
   {
     id: 'marta-sanchez',
     name: 'Marta Sánchez',
     role: 'Directora de CODA. Médica Psiquiatra y psicoterapeuta',
-    image: unknownImg,
+    image: martaImg,
     specialties: [
       {
         id: 'psiquiatria',
@@ -43,7 +46,7 @@ export const teamMembers = [
     id: 'mara-descalzo',
     name: 'Mara Descalzo',
     role: 'Médica Psiquiatra y psicoterapeuta',
-    image: unknownImg,
+    image: maraImg,
     specialties: [
       {
         id: 'psiquiatria',
@@ -61,7 +64,7 @@ export const teamMembers = [
     id: 'elvira-garcia',
     name: 'Elvira García',
     role: 'Psicóloga clínica',
-    image: unknownImg,
+    image: elviraImg,
     specialties: [
       {
         id: 'psicologia-clinica',
