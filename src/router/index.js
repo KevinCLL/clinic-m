@@ -22,22 +22,26 @@ const routes = [
       {
         path: '',
         name: 'home',
-        component: HomeView
+        component: HomeView,
+        meta: { title: 'CODA - Salud Mental Integral en Valencia | Psiquiatría y Psicología Clínica' }
       },
       {
         path: 'quienes-somos',
         name: 'quienes-somos',
-        component: () => import('@/views/public/QuienesSomos.vue')
+        component: () => import('@/views/public/QuienesSomos.vue'),
+        meta: { title: 'Equipo de Profesionales - CODA Salud Mental Valencia' }
       },
       {
         path: 'que-ofrecemos',
         name: 'que-ofrecemos',
-        component: () => import('@/views/public/QueOfrecemos.vue')
+        component: () => import('@/views/public/QueOfrecemos.vue'),
+        meta: { title: 'Servicios de Salud Mental - CODA Valencia | Psiquiatría, Psicología, EMDR' }
       },
       {
         path: 'actividades',
         name: 'actividades',
-        component: () => import('@/views/public/Actividades.vue')
+        component: () => import('@/views/public/Actividades.vue'),
+        meta: { title: 'Actividades - CODA Salud Mental Valencia | Yoga, Mindfulness, Retiros' }
       },
       {
         path: 'servicios/:id',
@@ -52,12 +56,14 @@ const routes = [
       {
         path: 'nuestro-espacio',
         name: 'nuestro-espacio',
-        component: () => import('@/views/public/NuestroEspacio.vue')
+        component: () => import('@/views/public/NuestroEspacio.vue'),
+        meta: { title: 'Nuestro Espacio - CODA Salud Mental Valencia' }
       },
       {
         path: 'contacto',
         name: 'contacto',
-        component: () => import('@/views/public/Contacto.vue')
+        component: () => import('@/views/public/Contacto.vue'),
+        meta: { title: 'Contacto - CODA Salud Mental Valencia | Avinguda Peris i Valero 178' }
       }
     ]
   },
@@ -137,6 +143,34 @@ router.beforeEach((to, from, next) => {
     next('/admin-login')
   } else {
     next()
+  }
+})
+
+const serviceTitles = {
+  'psiquiatria': 'Psiquiatría en Valencia - CODA Salud Mental',
+  'psicologia-clinica': 'Psicología Clínica en Valencia - CODA Salud Mental',
+  'infancia-adolescencia': 'Salud Mental Infantil y Adolescente en Valencia - CODA',
+  'terapia-emdr': 'Terapia EMDR en Valencia - CODA Salud Mental',
+  'mindfulness': 'Mindfulness en Valencia - CODA Salud Mental',
+  'perinatal': 'Salud Mental Perinatal en Valencia - CODA'
+}
+
+const activityTitles = {
+  'yoga': 'Yoga Terapéutico en Valencia - CODA Salud Mental',
+  'yoga-trauma': 'Yoga Sensible al Trauma en Valencia - CODA Salud Mental',
+  'mindfulness': 'Grupos de Mindfulness en Valencia - CODA Salud Mental',
+  'retiros': 'Retiros de Mindfulness - CODA Salud Mental Valencia'
+}
+
+router.afterEach((to) => {
+  if (to.meta.title) {
+    document.title = to.meta.title
+  } else if (to.name === 'servicio-detalle' && to.params.id) {
+    document.title = serviceTitles[to.params.id] || 'CODA - Salud Mental Integral en Valencia'
+  } else if (to.name === 'actividad-detalle' && to.params.id) {
+    document.title = activityTitles[to.params.id] || 'CODA - Salud Mental Integral en Valencia'
+  } else {
+    document.title = 'CODA - Salud Mental Integral en Valencia'
   }
 })
 
