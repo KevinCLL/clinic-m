@@ -133,6 +133,7 @@
 
 <script setup>
 import { computed, watch } from 'vue';
+import { useHead } from '@vueuse/head';
 import { useRoute, useRouter } from 'vue-router';
 import AreaIntervencion from '@/components/AreaIntervencion.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
@@ -219,6 +220,44 @@ const servicioActual = computed(() => {
       respuesta: faq.respuesta
     })) : []
   };
+});
+
+const serviceMetaDescriptions = {
+  'psiquiatria': 'Servicio de psiquiatría en Valencia. Valoración, diagnóstico y tratamiento de trastornos mentales con un enfoque integral y personalizado en CODA Salud Mental.',
+  'psicologia-clinica': 'Psicología clínica en Valencia. Psicoterapia basada en evidencia para ansiedad, depresión y dificultades emocionales. Psicólogas especialistas en CODA Salud Mental.',
+  'infancia-adolescencia': 'Psicología infantil y del adolescente en Valencia. Evaluación, diagnóstico e intervención especializada para niños y adolescentes en CODA Salud Mental.',
+  'terapia-emdr': 'Terapia EMDR en Valencia. Tratamiento especializado del trauma y experiencias adversas con profesionales acreditados en CODA Salud Mental.',
+  'mindfulness': 'Mindfulness en Valencia. Programas de atención plena para reducir el estrés y mejorar el bienestar emocional en CODA Salud Mental.',
+  'perinatal': 'Salud mental perinatal en Valencia. Acompañamiento especializado durante embarazo, parto y posparto en CODA Salud Mental.'
+};
+
+const faqSchema = computed(() => {
+  if (!servicioActual.value.preguntas || servicioActual.value.preguntas.length === 0) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': servicioActual.value.preguntas.map(faq => ({
+      '@type': 'Question',
+      'name': faq.pregunta,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.respuesta.replace(/<[^>]*>/g, '')
+      }
+    }))
+  };
+});
+
+useHead({
+  meta: [
+    { name: 'description', content: computed(() => serviceMetaDescriptions[servicioId.value] || 'Servicios de salud mental en CODA Valencia.') }
+  ],
+  link: [
+    { rel: 'canonical', href: computed(() => `https://codasaludmental.es/servicios/${servicioId.value}`) }
+  ],
+  script: computed(() => {
+    if (!faqSchema.value) return [];
+    return [{ type: 'application/ld+json', children: JSON.stringify(faqSchema.value) }];
+  })
 });
 </script>
 

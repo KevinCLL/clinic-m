@@ -84,6 +84,7 @@
 
 <script setup>
 import { computed } from 'vue';
+import { useHead } from '@vueuse/head';
 import { useRoute } from 'vue-router';
 import InfoComponent from '@/components/InfoComponent.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
@@ -97,6 +98,22 @@ defineOptions({
 
 const route = useRoute();
 const actividadId = route.params.id;
+
+const activityMetaDescriptions = {
+  'yoga': 'Yoga terapéutico en Valencia. Hatha Yoga, yoga adaptado y yoga para niños/as y adolescentes en CODA Salud Mental.',
+  'yoga-trauma': 'Yoga sensible al trauma en Valencia. Práctica adaptada y segura para personas que han vivido experiencias traumáticas en CODA Salud Mental.',
+  'mindfulness': 'Grupos de mindfulness en Valencia. Practica la atención plena en grupo con profesionales especializados en CODA Salud Mental.',
+  'retiros': 'Retiros de mindfulness y bienestar organizados por CODA Salud Mental Valencia. Experiencias de desconexión y crecimiento personal.'
+};
+
+useHead({
+  meta: [
+    { name: 'description', content: activityMetaDescriptions[actividadId] || 'Actividades de bienestar en CODA Salud Mental Valencia.' }
+  ],
+  link: [
+    { rel: 'canonical', href: `https://codasaludmental.es/actividades/${actividadId}` }
+  ]
+});
 
 
 const actividadActual = computed(() => {

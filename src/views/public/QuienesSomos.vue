@@ -106,11 +106,21 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import TeamCard from '@/components/TeamCard.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { plantImages } from '@/assets/plantImages.js';
 import quienesSomosImg from '@/assets/images/quienes_somos.jpg';
+
+useHead({
+  meta: [
+    { name: 'description', content: 'Equipo de profesionales de CODA Salud Mental en Valencia: Marta Sánchez Llorens, Mara Descalzo Cabadés, Elvira García Trilles, Irene Saiz Arnedo, Diego Scaraffia, Esther Martínez Roca y Ana González Valeiras. Psiquiatras, psicólogas clínicas y especialistas en bienestar.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://codasaludmental.es/quienes-somos' }
+  ]
+});
 import { getTeamMembersWithSpecialtyColors } from '@/data/team.js';
 
 const teamMembers = getTeamMembersWithSpecialtyColors();

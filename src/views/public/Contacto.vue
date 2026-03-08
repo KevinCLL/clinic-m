@@ -26,6 +26,7 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import ContactForm from '@/components/ContactForm.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { plantImages } from '@/assets/plantImages.js';
@@ -33,6 +34,15 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 defineOptions({
   name: 'ContactoView'
+});
+
+useHead({
+  meta: [
+    { name: 'description', content: 'Contacta con CODA Salud Mental en Valencia. Avinguda Peris i Valero 178, 46006 Valencia. Teléfono: 688 764 073. Horario: Lunes a Jueves 9:00-20:00, Viernes 9:00-14:00. Pide tu cita.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://codasaludmental.es/contacto' }
+  ]
 });
 
 const isMobile = ref(window.innerWidth < 768);

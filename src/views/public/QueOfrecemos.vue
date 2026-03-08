@@ -185,11 +185,21 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { plantImages } from '@/assets/plantImages.js';
 import mainBackgroundImg from '@/assets/images/que_ofrecemos.jpg';
 import { services, serviceCards, specialties } from '@/data/services.js';
+
+useHead({
+  meta: [
+    { name: 'description', content: 'Servicios de salud mental en CODA Valencia: psiquiatría, psicología clínica, terapia EMDR, mindfulness, salud mental perinatal e infantojuvenil. Acompañamiento terapéutico personalizado basado en evidencia científica.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://codasaludmental.es/que-ofrecemos' }
+  ]
+});
 
 defineOptions({
   name: 'QueOfrecemosView'

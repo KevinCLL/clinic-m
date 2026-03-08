@@ -126,6 +126,7 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import InfoComponent from '@/components/InfoComponent.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
@@ -135,6 +136,15 @@ import actividadesBackgroundImg from '@/assets/images/actividades.jpg';
 
 defineOptions({
   name: 'ActividadesView'
+});
+
+useHead({
+  meta: [
+    { name: 'description', content: 'Actividades de bienestar en CODA Salud Mental Valencia: yoga terapéutico, yoga sensible al trauma, grupos de mindfulness y retiros. Complementa tu proceso terapéutico con nuestras actividades grupales.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://codasaludmental.es/actividades' }
+  ]
 });
 </script>
 

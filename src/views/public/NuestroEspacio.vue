@@ -112,10 +112,20 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { plantImages } from '@/assets/plantImages.js';
 import nuestroEspacioImg from '@/assets/images/nuestro_espacio.jpg';
+
+useHead({
+  meta: [
+    { name: 'description', content: 'Conoce las instalaciones de CODA Salud Mental en Valencia. Espacios cálidos y acogedores diseñados para tu bienestar: salas de terapia individual, sala grupal, espacio infantojuvenil y zona de espera.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://codasaludmental.es/nuestro-espacio' }
+  ]
+});
 import zonaEsperaImg from '@/assets/images/zona_espera.jpg';
 import salaTerapiaImg from '@/assets/images/sala_terapia.jpg';
 import espacioInfantojuvenilImg from '@/assets/images/espacio_infantojuvenil.jpg';

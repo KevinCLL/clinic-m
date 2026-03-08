@@ -151,12 +151,22 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import Button from '@/components/Button.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 import ResponsiveImage from '@/components/ResponsiveImage.vue';
 import { plantImages } from '@/assets/plantImages.js';
 import mainBackgroundImg from '@/assets/images/inicio.jpg';
+
+useHead({
+  meta: [
+    { name: 'description', content: 'CODA - Clínica de Salud Mental Integral en Valencia. Psiquiatría, psicología clínica, terapia EMDR, mindfulness y salud mental perinatal. Equipo multidisciplinar especializado en el acompañamiento terapéutico para todas las etapas de la vida.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://codasaludmental.es/' }
+  ]
+});
 
 
 import imgChild from '@/assets/images/child.jpg';
