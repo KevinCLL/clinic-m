@@ -1,14 +1,18 @@
-import unknownImg from '@/assets/images/unknown.jpg';
 import martaImg from '@/assets/images/foto_corporativa_marta.jpg';
 import maraImg from '@/assets/images/foto_corporativa_mara.jpg';
 import elviraImg from '@/assets/images/foto_corporativa_elvira.jpg';
+import ireneImg from '@/assets/images/foto_corporativa_irene.jpg';
+import diegoImg from '@/assets/images/foto_corporativa_diego.jpg';
+import estherImg from '@/assets/images/foto_corporativa_esther.jpg';
+import anaImg from '@/assets/images/foto_corporativa_ana.jpg';
 
 export const teamMembers = [
   {
     id: 'marta-sanchez',
-    name: 'Marta Sánchez',
-    role: 'Directora de CODA. Médica Psiquiatra y psicoterapeuta',
+    name: 'Marta Sánchez Llorens',
+    role: 'Directora Médica\nPsiquiatra y psicoterapeuta',
     image: martaImg,
+    linkedin: 'https://www.linkedin.com/in/marta-sanchez-llorens-4684181a8/',
     specialties: [
       {
         id: 'psiquiatria',
@@ -44,8 +48,8 @@ export const teamMembers = [
   },
   {
     id: 'mara-descalzo',
-    name: 'Mara Descalzo',
-    role: 'Médica Psiquiatra y psicoterapeuta',
+    name: 'Mara Descalzo Cabadés',
+    role: 'Psiquiatra y psicoterapeuta infantojuvenil',
     image: maraImg,
     specialties: [
       {
@@ -62,7 +66,7 @@ export const teamMembers = [
   },
   {
     id: 'elvira-garcia',
-    name: 'Elvira García',
+    name: 'Elvira García Trilles',
     role: 'Psicóloga clínica',
     image: elviraImg,
     specialties: [
@@ -80,9 +84,9 @@ export const teamMembers = [
   },
   {
     id: 'irene-saiz',
-    name: 'Irene Saiz',
-    role: 'Psicóloga clínica',
-    image: unknownImg,
+    name: 'Irene Saiz Arnedo',
+    role: 'Psicóloga Clínica',
+    image: ireneImg,
     specialties: [
       {
         id: 'psicologia-clinica',
@@ -102,10 +106,38 @@ export const teamMembers = [
     ]
   },
   {
+    id: 'diego-scaraffia',
+    name: 'Diego Scaraffia',
+    role: 'Psicólogo clínico',
+    image: diegoImg,
+    linkedin: 'https://www.linkedin.com/in/diegoscaraffia/',
+    specialties: [
+      {
+        id: 'psicologia-clinica',
+        name: 'Psicología Clínica',
+        link: '/servicios/psicologia-clinica'
+      }
+    ]
+  },
+  {
+    id: 'esther-martinez',
+    name: 'Esther Martínez Roca',
+    role: 'Psicóloga General Sanitaria',
+    image: estherImg,
+    linkedin: 'https://www.linkedin.com/in/esther-mart%C3%ADnez-roca-5b078148/',
+    specialties: [
+      {
+        id: 'psicologia-clinica',
+        name: 'Psicología Clínica',
+        link: '/servicios/psicologia-clinica'
+      }
+    ]
+  },
+  {
     id: 'responsable-actividades',
-    name: 'Ana González',
-    role: 'Profesora de yoga y meditación',
-    image: unknownImg,
+    name: 'Ana González Valeiras',
+    role: 'Profesora de Yoga',
+    image: anaImg,
     specialties: [
       {
         id: 'yoga',

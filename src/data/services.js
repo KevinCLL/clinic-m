@@ -57,7 +57,7 @@ export const services = [
       'Trabajo en equipo y coordinación con otros profesionales.',
       'Seguimiento cercano y ajustado a la evolución.'
     ],
-    professionalIds: ['elvira-garcia', 'irene-saiz'],
+    professionalIds: ['elvira-garcia', 'irene-saiz', 'diego-scaraffia', 'esther-martinez'],
     faqs: [
       {
         pregunta: '¿Qué quiere decir "especialista en psicología clínica"?',

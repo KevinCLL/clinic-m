@@ -95,6 +95,7 @@
               :role="member.role"
               :specialties="member.specialties"
               :image="member.image"
+              :linkedin="member.linkedin"
               class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm"
             />
           </div>
